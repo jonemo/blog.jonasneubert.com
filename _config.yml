@@ -1,5 +1,20 @@
-name: Your New Jekyll Site
-markdown: redcarpet
-pygments: true
-baseurl: /neubertify
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+baseurl:          /neubertify
+
+# Setup
+title:            Neubertify
+tagline:          'Get neubertified here.'
+description:      'Learn about the source of neubertification on www.jonasneubert.com.<br><br>Neubertification in 140 characters or less is available at twitter.com/jonemo'
+url:              http://jonemo.github.io/neubertify
+
+author:
+  name:           'Jonas Neubert'
+  url:            http://jonasneubert.com
+
+paginate:         5
 
