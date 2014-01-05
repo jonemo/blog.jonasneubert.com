@@ -1,7 +1,7 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
-      <h1>{{ site.title }}</h1>
+      <h1><a href="{{ site.baseurl }}{{ node.url }}">{{ site.title }}</a></h1>
       <p class="lead">{{ site.description }}</p>
     </div>
 
@@ -20,7 +20,7 @@
         {% if node.title != null %}
           {% if node.layout == "page" %}
             <li class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">
-              <a href="{{ node.url }}">{{ node.title }}</a>
+              <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
             </li>
           {% endif %}
         {% endif %}

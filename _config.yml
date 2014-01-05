@@ -12,7 +12,7 @@ baseurl:          /neubertify
 # Setup
 title:            Neubertify
 tagline:          'Get neubertified here.'
-description:      'Learn about the source of neubertification on www.jonasneubert.com.<br><br>Neubertification in 140 characters or less is available at twitter.com/jonemo'
+description:      'Learn about the source of neubertification on <a href="http://jonasneubert.com">jonasneubert.com</a><br><br>Neubertification in 140 characters or less is available at <a href="https://twitter.com/jonemo">twitter.com/jonemo</a>'
 url:              http://jonemo.github.io/neubertify
 
 author:
