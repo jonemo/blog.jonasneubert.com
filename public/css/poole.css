@@ -303,6 +303,10 @@ tbody tr:nth-child(odd) th {
 .page,
 .post {
   margin-bottom: 4em;
+  background-color:white;
+  border-color:1px solid white;
+  border-radius:0.8em;
+  padding: 2em;
 }
 
 /* Blog post or page title */
