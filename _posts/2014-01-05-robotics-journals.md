@@ -12,7 +12,7 @@ I didn't get a chance to do a lot of writing during my time in grad school. Iron
 
 One of the first steps of the actual writing process for a journal paper is to select a journal to publish in. Things to consider are the relevance and impact of the journal, and mechanical details such as limits on page count. None of this info is easy to find, so I set down for a few hours and compiled the following table for seven of the better known robotics journals.
 
-
+<div style="overflow:auto">
 |     | IJRR | TRO | RAM | AuRo | RAS | Robotica | IRS | TMe |
 | --- |:----:|:---:|:---:|:----:|:---:|:--------:|:---:|:---:|
 | Publisher | Sage | IEEE | IEEE | Springer | Elsevier | Cambridge | Springer | IEEE |
@@ -27,7 +27,7 @@ One of the first steps of the actual writing process for a journal paper is to s
 | Latex Class/Template | ? | [link](http://www.ieee.org/publications_standards/publications/authors/author_templates.html) | any pdf | [link](http://static.springer.com/sgw/documents/468198/application/zip/LaTeX.zip) | [link](http://www.elsevier.com/author-schemas/latex-instructions) | any pdf | [link](http://static.springer.com/sgw/documents/468198/application/zip/LaTeX.zip) | [link](http://www.ieee.org/publications_standards/publications/authors/author_templates.html) |
 | Review Style | ? | single blind | single blind | single blind (?) | single blind (?) | ? | ? | single blind |
 | Suggested Reviewers | yes (3) | no | no | yes (4) | yes (3) | no | no | no |
-
+<div>
 
 ```
 IJRR: International Journal on Robotics Research
