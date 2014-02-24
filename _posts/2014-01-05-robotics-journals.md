@@ -19,7 +19,7 @@ One of the first steps of the actual writing process for a journal paper is to s
 | Impact Factor (2012) | 2.863 | 2.571 | 2.484 | 1.908 | 1.156 | 0.88 | 0.827 | 3.135 |
 | Eigenfactor | 0.007497 | 0.01148 | 0.004455 | 0.002366 | 0.004485 | 0.002241 | 0.001613 | 0.004954 |
 | Article Influence | 1.0871 | 1.0279 | 1.3031 | 0.5709 | 0.496 | 0.3036 | 0.252 | 0.6653 |
-| Issues per Year | 12-14 | 6 | 4 | 3-4 | 12 | 7-8 | 8-10 | 6 |
+| Issues per Year | 12-14 | 6 | 4 | 6-8 | 12 | 7-8 | 8-10 | 6 |
 | Length Limit | ? | 10 pages | 4000 words | 75,000 chars | none | none | none | 8 pages |
 | Additional Paid Length | N/A | 7 pages | yes | no | N/A | N/A | N/A | yes |
 | Additional Length Cost | N/A | $175/page | $250/page | N/A | N/A | N/A | N/A | $200 |
