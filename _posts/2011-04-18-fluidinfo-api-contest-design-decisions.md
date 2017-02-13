@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fluidinfo API Contest: Fluidinfo API Contest: Design Decisions
+title: "Fluidinfo API Contest: Fluidinfo API Contest: Design Decisions"
 tags:
  - fluidinfo
 published: true
