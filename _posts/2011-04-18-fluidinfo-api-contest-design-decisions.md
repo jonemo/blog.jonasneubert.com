@@ -26,7 +26,7 @@ Based on my skill set (which you will soon be able to see on Skillshelv.es) and 
 
 ## User Authentication
 
-Any service that requires user accounts presents the headache of authentication. Sure, there is fancy PECL packages and libraries and whatnot, but in the end you'll still be storing usernames and passwords and sending password reset emails and all that. I decided to give OpenID a shot. I know that OpenID [is](http://productblog.37signals.com/products/2011/01/well-be-retiring-our-support-of-openid-on-may-1.html) [a](http://blog.wekeroad.com/thoughts/open-id-is-a-party-that-happened) [failure](http://www.quora.com/OpenID/What-s-wrong-with-OpenID). I don't care. I want to fail in the first person. The good part is that [Google App Engine makes using OpenID ~really~ easy](http://code.google.com/appengine/articles/openid.html).
+Any service that requires user accounts presents the headache of authentication. Sure, there is fancy PECL packages and libraries and whatnot, but in the end you'll still be storing usernames and passwords and sending password reset emails and all that. I decided to give OpenID a shot. I know that OpenID [is](http://productblog.37signals.com/products/2011/01/well-be-retiring-our-support-of-openid-on-may-1.html) [a](http://blog.wekeroad.com/thoughts/open-id-is-a-party-that-happened) [failure](http://www.quora.com/OpenID/What-s-wrong-with-OpenID). I don't care. I want to fail in the first person. The good part is that [Google App Engine makes using OpenID ~~really~~ easy](http://code.google.com/appengine/articles/openid.html).
 
 ## Data Source
 
