@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Manufacturers are also just Middle Men
-# tags:
+tags:
+ - digitalmanufacturing
 published: true
 date: May 6th, 2012 5:38pm
 ---

@@ -2,10 +2,10 @@
 layout: post
 title: Robotics Journals Comparison
 tags:
-- robotics
-- gradschool
+ - robotics
+ - gradschool
 published: true
-# date:
+date: Jan 5th, 2014
 ---
 
 I didn't get a chance to do a lot of writing during my time in grad school. Ironically, recently I had to do a lot of writing to be formally left out of grad school.
