@@ -27,4 +27,4 @@ I spent the last two weekends[1] working with the Fluidinfo API ([here is why]({
 
 [1] Like every good grad student I did not devote the entire weekend but also did some ~~real~~ research work on these weekends.
 
-[2] I realize that I could be suffering the [Dunning-Kruger Effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect: I could have missed those 99% of Fluidinfo's functionality that take three years to learn. But my lack of knowledge about Fluidinfo leads me to the erroneous conclusion that I learned the usage of Fluidinfo in two weekends. Unfortunately, I would have no way of realizing this.
+[2] I realize that I could be suffering the [Dunning-Kruger Effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect): I could have missed those 99% of Fluidinfo's functionality that take three years to learn. But my lack of knowledge about Fluidinfo leads me to the erroneous conclusion that I learned the usage of Fluidinfo in two weekends. Unfortunately, I would have no way of realizing this.
