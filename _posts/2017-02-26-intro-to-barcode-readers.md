@@ -39,7 +39,7 @@ When I write "barcode format", I mean two things: The physical shape of the barc
 
 As for physical shape: There are 1-dimensional (linear) codes and 2-dimensional codes. Half way in between there are _stacked_ codes which are basically multiple 1-dimensional codes side by side.
 
-![1-dimensional barcode formats: PYCON 2017]({{ site.url }}/assets/2017-02-19-one-dimensional-barcodes.png)
+![1-dimensional barcode formats: PYCON 2017]({{ site.url }}/assets/2017-02-26-one-dimensional-barcodes.png)
 
 The figure above shows a few example of 1-dimensional barcodes[^10]. Wikipedia has a wealth of information on each format
 
@@ -59,7 +59,7 @@ The figure above shows a few example of 1-dimensional barcodes[^10]. Wikipedia h
 * [PostNet](https://en.wikipedia.org/wiki/POSTNET) -- 5-7 fixed-width varying height bars to encode a digit. Used by USPS for zip codes.
 * [KarTrak](https://en.wikipedia.org/wiki/KarTrak) Large multi-color codes that were on 90% of US railroad cars in the 1970s.
 
-![2-dimensional barcode formats: PYCON 2017]({{ site.url }}/assets/2017-02-19-two-dimensional-barcodes.png)
+![2-dimensional barcode formats: PYCON 2017]({{ site.url }}/assets/2017-02-26-two-dimensional-barcodes.png)
 
 There are fewer commonly used stacked and 2-dimensional barcode formats than there are 1-dimensional ones, probably because the technology to read them has been around for a shorter time span. For the sake of completeness, here's the list including links to Wikipedia:
 
