@@ -5,6 +5,7 @@ tags:
  - pycon
  - robotics
  - factorytech
+ - serial
 published: true
 date: Mar 6th, 2017
 ---
