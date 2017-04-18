@@ -173,6 +173,6 @@ One more thing: [The talk abstract for my talk](https://us.pycon.org/2017/schedu
 [^5]: A good use case for software libraries for barcode reading are when you only have the digital image of the barcode to start with, for example when people are faxing barcoded forms to your fax-to-email gateway or when you are [pursuing mischievous activities with Instagram photos of boarding passes](https://media.ccc.de/v/33c3-7964-where_in_the_world_is_carmen_sandiego).
 [^6]: _Symbology_ describes the mapping between geometrical features in a barcode (lines, squares, dots) and characters (or other content).
 [^7]: That explains why "barcode scanner" is often used as a generic term for all barcode readers, including imagers.
-[^8] Maybe there is a way to pipe different keyboards to different shells or services?
-[^9] In industry-heavy areas like Silicon Valley it's also worth checking Craigslist. I usually do, but until now I've always found a better deal on Ebay.
-[^10] Most of the barcodes in these figures are made with online tools from http://generator.onbarcode.com/
+[^8]: Maybe there is a way to pipe different keyboards to different shells or services?
+[^9]: In industry-heavy areas like Silicon Valley it's also worth checking Craigslist. I usually do, but until now I've always found a better deal on Ebay.
+[^10]: Most of the barcodes in these figures are made with online tools from http://generator.onbarcode.com/
