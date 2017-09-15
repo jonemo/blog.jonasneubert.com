@@ -134,7 +134,7 @@ Uploading packagename-0.1.2.tar.gz
 Next, go to `https://test.pypi.org/project/packagename/` to confirm that your package shows up on (Test)PyPI. If it does, you are ready to graduate to the "real" PyPI!
 
 
-# Final: Repeat with pypi.org"
+# Final: Repeat with pypi.org
 
 1. Register on pypi.python.org ([direct link to registration form](https://pypi.python.org/account/register/))
 2. Click confirmation link in email and accept terms
