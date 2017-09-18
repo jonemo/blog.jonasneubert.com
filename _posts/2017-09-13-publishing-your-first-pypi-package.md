@@ -125,7 +125,7 @@ pip install twine
 Upload your tarball[^7]:
 
 ```
-$ twine upload -r testpypi dist/packagename-0.1.2.tar.gz
+$ twine upload -r pypitest dist/packagename-0.1.2.tar.gz
 Uploading distributions to https://test.pypi.org/legacy/
 Enter your password:
 Uploading packagename-0.1.2.tar.gz
