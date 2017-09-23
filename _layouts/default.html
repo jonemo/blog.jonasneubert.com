@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
-  {% include head.html %}
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>
+      {% if page.title %}
+        {{ page.title }} &middot; {{ site.title }}
+      {% else %}
+        {{ site.title }} &middot; {{ site.tagline }}
+      {% endif %}
+    </title>
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ site.baseurl }}/atom.xml">
+    <link rel="shortcut icon" href="http://jonasneubert.com/favicon.ico">
+
+    <link rel="stylesheet" href="http://jonasneubert.com/css/stylev3.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/poole.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/syntax.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/public/css/hyde.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+    <style>
+      table {font-size:small;}
+    </style>
+
+  </head>
 
   <body class="layout-reverse theme-base-0d">
 
-    {% include sidebar.html %}
+    <div class="sidebar">
+      <div class="container sidebar-sticky">
+        <div class="sidebar-about">
+          <h1><a href="{{ site.baseurl }}{{ node.url }}">{{ site.title }}</a></h1>
+          <p class="lead">{{ site.description }}</p>
+        </div>
+
+        <ul class="sidebar-nav">
+
+          <div id="projectsiteSidebarImage">
+            <img src="http://jonasneubert.com/couch.png" height="88" width="125" alt="">
+          </div>
+
+          <li class="sidebar-nav-item{% if page.title == "Home" %} active{% endif %}">
+            <a href="{{ site.baseurl }}">Home</a>
+          </li>
+
+          {% comment %}
+            The code below dynamically generates a sidebar nav of pages with
+            `layout: page` in the front-matter. See readme for usage.
+          {% endcomment %}
+
+          {% assign pages_list = site.pages %}
+          {% for node in pages_list %}
+            {% if node.title != null %}
+              {% if node.layout == "page" %}
+                <li class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}">
+                  <a href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+                </li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+        <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+      </div>
+    </div>
 
     <div class="content container">
       {{ content }}
