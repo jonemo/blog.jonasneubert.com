@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  jeykyll:
+    image: jekyll/jekyll:latest
+    command: jekyll serve
+    volumes:
+      - $PWD:/srv/jekyll
+    ports:
+      - 4000:4000
