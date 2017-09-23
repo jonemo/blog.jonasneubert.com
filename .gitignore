@@ -17,5 +17,6 @@ tmp
 _yardoc
 doc/
 
-#
+# where Jeykyll keeps compiled things
 _site/
+.sass-cache/
