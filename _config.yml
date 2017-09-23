@@ -12,9 +12,9 @@ tagline:          'Get neubertified here.'
 description:      'Learn about the source of neubertification on <a href="http://jonasneubert.com">jonasneubert.com</a><br><br>Neubertification in 140&nbsp;characters or less is available at <a href="https://twitter.com/jonemo">twitter.com/jonemo</a>'
 url:              http://jonemo.github.io/neubertify
 
-author:
-  name:           'Jonas Neubert'
-  url:            http://jonasneubert.com
-
+analytics_id:     "UA-435125-11"
 paginate:         20
 
+author:
+  name:           "Jonas Neubert"
+  url:            "http://jonasneubert.com"
