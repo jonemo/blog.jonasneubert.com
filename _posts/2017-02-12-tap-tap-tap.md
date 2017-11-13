@@ -23,6 +23,6 @@ I happen to follow a strict "no talk without a demo" doctrine. Which is to say t
 
 You, dear reader, will be able to couch-participate by reading my irregular status updates about writing Python and digging through surplus factory tech website. Part 1 will be about barcode scanners, and specifically the procurement and utilization of this beauty:
 
-![Barcode Scanner]({{ site.url }}/assets/2017-02-12-barcode-scanner.jpg)
+![Barcode Scanner]({{ site.baseurl }}/assets/2017-02-12-barcode-scanner.jpg)
 
 If that tickles your fancy, oil your RSS readers, or whatever it is kids these days do to subscribe to blogs.
