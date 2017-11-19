@@ -126,7 +126,7 @@ a.sidebar-archive-link:hover::before {
   text-align: center;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 64em) {
   .sidebar {
     position: absolute;
     bottom: 0;
@@ -140,17 +140,7 @@ a.sidebar-archive-link:hover::before {
 
 /* Container
  *
- * Align the contents of the site above the proper threshold with some margin-fu
- * with a 25%-wide `.sidebar`.
  */
-
-@media (min-width: 48em) {
-  .content {
-    max-width: 38rem;
-    margin-left: 2rem;
-    margin-right: 20rem;
-  }
-}
 
 @media (min-width: 64em) {
   .content {
