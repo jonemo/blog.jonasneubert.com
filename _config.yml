@@ -4,8 +4,8 @@ highlighter:      rouge
 
 # SASS
 sass:
-  sass_dir: _sass
-  style: compressed
+  sass_dir:       _sass
+  style:         :compressed
 
 # Permalinks
 permalink:        pretty
@@ -14,8 +14,7 @@ baseurl:          /neubertify
 # Setup
 title:            Neubertify
 tagline:          'Get neubertified here.'
-description:      'Learn about the source of neubertification on <a href="http://jonasneubert.com">jonasneubert.com</a><br><br>Neubertification in 140&nbsp;characters or less is available at <a href="https://twitter.com/jonemo">twitter.com/jonemo</a>'
-url:              http://jonemo.github.io/neubertify
+url:              "http://jonemo.github.io/neubertify"
 
 analytics_id:     "UA-435125-11"
 paginate:         20

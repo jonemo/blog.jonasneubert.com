@@ -1,0 +1,157 @@
+/*
+ * Custom template for Poole, modified from Hyde. The license notice from the
+ * original hyde.scss file is:
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/hyde.
+ */
+
+
+/*
+ * Typography
+ */
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+}
+
+/*
+ * Offset Printing Design Elements
+ */
+
+body {
+  background: url('/neubertify/registration-mark.svg');
+  background-repeat: no-repeat;
+  background-size: 2.5rem;
+  background-position: bottom 1.0rem right 2rem;
+}
+
+.content {
+  border-width: 0px;
+  border-style: solid; /* required to make border-image show */
+  border-color: white;
+  border-image-width: 30px; /* inset into box because of border-width: 0px */
+  border-image-slice: 30%;
+  border-image-source: url('/neubertify/cropmarks-corner.svg');
+  padding: 60px 0; /* overlaps with top & bottom border image, at least 30px */
+
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+
+  .post > *, .page > * {
+    border-width: 0 30px; /* matches width of border-image-width of <main> */
+    border-style: solid;
+    border-color: transparent;
+    padding: 0 1rem;
+  }
+}
+
+/*
+ * Post page
+ */
+
+.content > .post > .post-date {
+  font-family: 'Cutive Mono', monospace;
+  text-transform: uppercase;
+
+  /* rotate to "page margin" */
+  position: absolute;
+  transform: rotate(-90deg) translateX(-100%);
+  transform-origin: top left;
+
+  /* CMYK check boxes */
+  background-image: url('/neubertify/cmyk-colors.svg');
+  background-repeat: no-repeat;
+  background-size: 150px;
+  padding-left: 200px;
+
+  /* resetting margins et al */
+  margin: 0;
+  border: 0;
+}
+
+img[title]:after {
+  content: attr(title);
+  color: green;
+}
+
+table {
+  font-size:small;
+}
+
+
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
+
+.sidebar {
+  font-family: 'Cutive Mono', monospace;
+  text-transform: uppercase;
+  color: $gray-5;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.sidebar-line::after{
+  content: "↵";
+  font-size: 0.5rem;
+}
+
+a.sidebar-archive-link {
+  text-decoration: none;
+}
+
+a.sidebar-archive-link:hover::before {
+  content: attr(title);;
+  position: absolute;
+  width: 12rem;
+  margin: 20px 0 0 -10rem;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  font-size: 0.7rem;
+  color: $gray-1;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+}
+
+@media (min-width: 48em) {
+  .sidebar {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    bottom: 0;
+    width: 18rem;
+    text-align: left;
+  }
+}
+
+/* Container
+ *
+ * Align the contents of the site above the proper threshold with some margin-fu
+ * with a 25%-wide `.sidebar`.
+ */
+
+@media (min-width: 48em) {
+  .content {
+    max-width: 38rem;
+    margin-left: 2rem;
+    margin-right: 20rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .content {
+    margin-left: 4rem;
+    margin-right: 22rem;
+  }
+}
