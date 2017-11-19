@@ -72,7 +72,10 @@ body {
   /* resetting margins et al */
   margin: 0;
   border: 0;
+
+  /* make mobile browser keep this in one line */
   width: fit-content;
+  white-space: nowrap;
 }
 
 img[title]:after {
