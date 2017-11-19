@@ -1,16 +1,22 @@
 ---
 layout: default
-title: Blog
+title: Table of Contents
 ---
 
 {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
 
-{% for year in posts_by_year %}
+<div class="page">
+
+  {% for year in posts_by_year %}
 
   <h3 class="year-heading">{{ year.name }}</h3>
 
-  {% for post in year.items %}
-    <p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> &mdash; {{ post.date | date: '%b&nbsp;%d' }}</p>
+  <div class="year-content">
+    {% for post in year.items %}
+    <p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> &mdash;&nbsp;{{ post.date | date: '%b&nbsp;%d' }}</p>
+    {% endfor %}
+  </div>
+
   {% endfor %}
 
-{% endfor %}
+</div>
