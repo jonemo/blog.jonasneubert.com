@@ -23,3 +23,7 @@ paginate:         20
 author:
   name:           "Jonas Neubert"
   url:            "http://jonasneubert.com"
+
+# Gems
+gems:
+  - jekyll-paginate
