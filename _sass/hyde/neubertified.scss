@@ -63,19 +63,24 @@ body {
   transform: rotate(-90deg) translateX(-100%);
   transform-origin: top left;
 
-  /* CMYK check boxes */
-  background-image: url('/neubertify/cmyk-colors.svg');
-  background-repeat: no-repeat;
-  background-size: 150px;
-  padding-left: 200px;
-
   /* resetting margins et al */
   margin: 0;
   border: 0;
 
   /* make mobile browser keep this in one line */
-  width: fit-content;
+  width: max-content;
   white-space: nowrap;
+}
+
+.content > .post > .post-date::before {
+  /* CMYK check boxes */
+  content: 'cmyk'; /* must have text or else background doesn't show */
+  color: transparent; /* make text invisible */
+  display: inline-block;
+  width: 200px;
+  background-image: url('/neubertify/cmyk-colors.svg');
+  background-repeat: no-repeat;
+  background-size: 150px;
 }
 
 img[title]:after {
