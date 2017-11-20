@@ -54,7 +54,7 @@ body {
  * Post page
  */
 
-.content > .post > .post-date {
+.content > .page > .metadata, .content > .post > .metadata {
   font-family: 'Cutive Mono', monospace;
   text-transform: uppercase;
 
@@ -72,7 +72,7 @@ body {
   white-space: nowrap;
 }
 
-.content > .post > .post-date::before {
+.content > .page > .metadata::before, .content > .post > .metadata::before {
   /* CMYK check boxes */
   content: 'cmyk'; /* must have text or else background doesn't show */
   color: transparent; /* make text invisible */
