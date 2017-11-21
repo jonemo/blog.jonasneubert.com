@@ -10,7 +10,7 @@ date: Nov 20th, 2017
 
 The [PyCon 2018](https://us.pycon.org/2018/) website is up and the January 3rd deadline for [talk proposals](https://us.pycon.org/2018/speaking/) is approaching steadily. Could there be a better time than this to reflect on my experience as a first-time speaker at PyCon 2017 and maybe encourage someone else to be a first-time speaker in 2018?
 
-I'm not a seasoned public speaker by any measure, but I have talked in front of audiences while waving my arms at slideshows a hand-full of times, and somewhat regularly go to events where others do the same. I've also been humbled by how hard it is to stage even a small speaking event while co-organizing [Ignite](http://ignitetalks.io).
+I'm not a seasoned public speaker by any measure, but I have talked in front of audiences while waving my arms at slideshows a hand-full of times, and somewhat regularly go to events where others do the same. I've also been humbled by how hard it is to stage even a small speaking event while co-organizing [Ignite](http://ignitetalks.io) Ithaca.
 
 Based on this negligible but non-zero prior experience with public speaking, let me tell you: **The PyCon organizers are phenomenal at supporting their speakers!**
 
