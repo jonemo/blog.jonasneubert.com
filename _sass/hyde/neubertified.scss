@@ -19,13 +19,15 @@ body {
 h1 {
   font-family: 'Poiret One', cursive;
   font-size: 2.5rem;
-  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
 ul {
-  list-style: inside;
-  margin-left: 1.25rem;
+  list-style: outside;
+}
+
+table {
+  font-size:small;
 }
 
 /*
@@ -52,10 +54,8 @@ body {
   max-width: 42rem;
 
   .post > *, .page > * {
-    border-width: 0 30px; /* matches width of border-image-width of <main> */
-    border-style: solid;
-    border-color: transparent;
-    padding: 0 1.5rem 0 3.5rem;
+    margin-left: 3.5rem;
+    margin-right: 1.5rem;
   }
 }
 
@@ -69,7 +69,8 @@ body {
 
   /* rotate to "page margin" */
   position: absolute;
-  transform: rotate(-90deg) translateX(-100%) translateY(-0.25rem);
+  /* 30px matches width of border-image-width of .content */
+  transform: rotate(-90deg) translateX(-100%) translateY(-30px); 
   transform-origin: top left;
 
   /* resetting margins et al */
@@ -91,15 +92,6 @@ body {
   background-image: url('/neubertify/cmyk-colors.svg');
   background-repeat: no-repeat;
   background-size: 150px;
-}
-
-img[title]:after {
-  content: attr(title);
-  color: green;
-}
-
-table {
-  font-size:small;
 }
 
 
