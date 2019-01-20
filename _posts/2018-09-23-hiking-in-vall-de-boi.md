@@ -9,7 +9,10 @@ How I found out about Vall de Boí was dumb luck: Seeing that there are direct f
 
 To get your bearings of the valley on a map, find the L-500 road. It branches off of [N-230](https://en.wikipedia.org/wiki/N-230_road_(Spain)) just north of the town of El Pont de Suert and ends 24.3 kilometers to the north and 925 meters of elevation higher on top of the buttress dam of the Pantà de Cavallers reservoir. The road mostly follows the river La Noguera de Tor. Driving (or cycling?) up the valley, you pass a few villages. Most notably, Barruera has the only campground of the valley and a few stores and Boí after which the valley is named and which is the tourism center of the valley. Boí is off the main road on L-501 which ultimately gets you to the Boí-Taüll ski resort. Once you pass the spa and resort Caldes de Boí, the road becomes single lane for the remainder of the way up to the dam.
 
-![Erill la Vall to the left and Boí to the right]({{ site.baseurl }}/assets/2018-09-23-vall-de-boi.jpg)
+{% include image.html
+  img="/assets/2018-09-23-vall-de-boi.jpg"
+  title="Erill la Vall to the left and Boí to the right"
+%}
 
 The terrain is very steep: The base elevation of the valley is 1200 meters in Boí, the plateau in the National Park is at 1700 meters, and several of the nearby peaks exceed 3000 meters. Keep the effects of this terrain in mind when planning hikes: Weather is regional and varies valley by valley, south facing slopes are hot and rocky while north-facing slopes are covered in vegetation, and it gets dark early in the valley.
 
@@ -17,7 +20,10 @@ Outside of ski season, there seem to be two main reasons why tourists come to Va
 
 We stayed in the [La Plaça Hotel](http://hostal-laplaza.com/en/) in the village of Erill la Vall, directly across the tiny village plaza from the Santa Eulalia church and the visitor center that has information about all churches in the valley. While we didn't come to Vall de Boí with a particular interest in the churches, seeing them during our hikes made me wonder what life in this region was like 800 years ago when riches from silver mining allowed the locals to invest so many resources into cultural and artistic activities. One thing to be aware of when planning to visit Vall de Boí to see the churches is that most of the artwork from the churches are kept in the [MNAC](https://en.wikipedia.org/wiki/Museu_Nacional_d%27Art_de_Catalunya) in Barcelona.
 
-![Erill la Vall seen from the church tower of Eglesia Santa Eulalia]({{ site.baseurl }}/assets/2018-09-23-erill-la-vall.jpg)
+{% include image.html
+  img="/assets/2018-09-23-erill-la-vall.jpg"
+  title="Erill la Vall seen from the church tower of Eglesia Santa Eulalia"
+%}
 
 While researching Vall de Boí I didn't find any terribly useful online resources beyond the common ones:
 
@@ -62,7 +68,10 @@ For day hikes, starting the hike from the edge of the park would limit the route
 
 Did I mention the cows? Commercial activity is not allowed in the National Park with two exceptions: Hydropower generation and cattle ranching. There are hundreds of off-white cows walking around seemingly freely in the park. They wear huge cowbells and are friendly. I'm sure there is an interesting story in the why and how of this, but I haven't found it yet.
 
-![A cow in the Aigüestortes i Estany de Sant Maurici National Park]({{ site.baseurl }}/assets/2018-09-23-aiguestortes-cow.jpg)
+{% include image.html
+  img="/assets/2018-09-23-aiguestortes-cow.jpg"
+  title="A cow in the Aigüestortes i Estany de Sant Maurici National Park"
+%}
 
 The [National Park's official website](http://parcsnaturals.gencat.cat/en/aiguestortes/index.html) has some information in a mix of languages, and a great [Instagram account](https://www.instagram.com/pnaiguestortes/).
 
@@ -88,7 +97,10 @@ This might be obvious to other European hikers, but I only learned on this trip 
 
 In summary: Get the Meteoblue app or bookmark the website and check the forecast before heading into the mountains. And take rain gear: waterproof jacket, pants, backpack cover, and you have waterproof shoes anyway, right?
 
-![Sant Joan de Boí at night with lightning in the background]({{ site.baseurl }}/assets/2018-09-23-lightning.jpg)
+{% include image.html
+  img="/assets/2018-09-23-lightning.jpg"
+  title="Sant Joan de Boí at night with lightning in the background"
+%}
 
 
 ## Warmup Hike: Camins Vius Loop (2 hours)
@@ -97,20 +109,28 @@ After driving to Vall de Boí from Barcelona we arrived around lunchtime and dec
 
 Park in the parking lot at the far end of Erill la Vall. Follow the signs for "Camins Vius" to head up the mountain following the Barranc d'Erill stream. When the trail splits into one branch heading north towards a dam and another heading south into the forest, cross the water and head into the forest. It's hard to get lost here and occasionally posts provide reassurance. Once you meet the other branch of the Camins Vius, turn to head back down into the village.
 
-![Boí and Taüll seen from a lookout along Camins Vius]({{ site.baseurl }}/assets/2018-09-23-boi-and-taull.jpg)
-
+{% include image.html
+  img="/assets/2018-09-23-boi-and-taull.jpg"
+  title="Boí and Taüll seen from a lookout along Camins Vius"
+%}
 
 ## Hike 1: Estany Llong and Estany Dellui (6 hours)
 
 For our first full day of hiking, we used the taxi service into the National Park. From the taxi drop-off location we followed the well maintained and signposted gravel track to the Refugi Estany Llong. 
 
-![Main path to Estany Llong in the Aigüestortes i Estany de Sant Maurici National Park]({{ site.baseurl }}/assets/2018-09-23-aiguestortes-track.jpg)
+{% include image.html
+  img="/assets/2018-09-23-aiguestortes-track.jpg"
+  title="Main path to Estany Llong in the Aigüestortes i Estany de Sant Maurici National Park"
+%}
 
 After lunch break overlooking the lake we decided that following the same track further would be just too boring. Instead we started climbing a footpath towards "Estany Dellui" starting almost exactly where the main track passes the refugio. This path is also signposted (sometimes as "Carros de Foc") and well maintained, but distinctly steeper. An hour later, we were still climbing and questioning our choices.
 
 After 90 minutes of gaining height the path bent around a mountain into a smaller valley and the view opened over "Estanyets de Dellui" ("estanyets" being little lakes). Neither the dark clouds nor the boulder field ahead of us helped our mood but we soldiered on and reached Estany Dellui, the big brother of the estanyets, just when the thunderstorm reached us. The forecast was on showers, and the downpour did indeed only last for 10 minutes, followed by a bit of hail and then sunshine. Don't loop around Estany Dellui, instead turn left just before you reach the lake to head back down into the valley. This part of the path is less obvious and not in every map but yellow posts guide the way, once again passing the Estanyets. If you don't mind missing out on seeing Estany Dellui, you can skip the aforementioned boulder field and turn right to and cut through between the Estanyets de Dellui to meet the path that gets you back into the valley, saving about 30 minutes.
 
-![The valley of Estany Dellui in the Aigüestortes i Estany de Sant Maurici National Park]({{ site.baseurl }}/assets/2018-09-23-estany-dellui.jpg)
+{% include image.html
+  img="/assets/2018-09-23-estany-dellui.jpg"
+  title="The valley of Estany Dellui in the Aigüestortes i Estany de Sant Maurici National Park"
+%}
 
 The steep descent back to the main track between the taxi drop-off location and Estany Llong follows the unnamed little stream that drains Estany Dellui. Soon you'll hear the bells of the cows down below and be grateful that you didn't do the detour towards Estany Dellui in the other direction because, wow is this steep. Maybe stick your feet into the water once you reach the bridge across Riu de Sant Nicolau?
 
@@ -123,17 +143,26 @@ After our adventure in the mountains on the first day, we decided to stay in the
 
 My sister wasn't particularly pleased when she found out that my secret plan had always been to not simply return on the other side of the river, but to climb 250 meters up to the village of Durro and follow a path higher up to get back. My mother cast the deciding vote and off we were, climbing the hiking route "Cami de Durro a Barruera" which starts at the road to Durro 200 meters after the bridge in Barruera. This is a north facing slope, so you're in the shade of trees most of the way with some beautiful moss covered old stone walls separating the path from field.
 
-![Moss covered stone wall along trail from Barruera to Durro]({{ site.baseurl }}/assets/2018-09-23-durro-hike-moss.jpg)
+{% include image.html
+  img="/assets/2018-09-23-durro-hike-moss.jpg"
+  title="Moss covered stone wall along trail from Barruera to Durro"
+%}
 
 It's easy to get lost in Durro, so we did just that. After looking at the map one more time we found the start to the path to Boí by following a concrete wall around a private property. The view gets better once that is passed. My kudos to to anyone who actually rides this path on a bike, as suggested by the signs. From Boí we walked another half hour back to our hotel in Erill la Vall on the other side of the valley, this time crossing the road without the help of a tunnel.
 
 Four hours later we had seen four of the villages in Vall de Boí: Erill la Vall, Barruera, Durro, and Boí.
 
-![View over Vall de Boí from the path between Durro and Boí]({{ site.baseurl }}/assets/2018-09-23-durro-to-boi-track.jpg)
+{% include image.html
+  img="/assets/2018-09-23-durro-to-boi-track.jpg"
+  title="View over Vall de Boí from the path between Durro and Boí"
+%}
 
 Tourism is very clearly the main economic activity in Vall de Boí. Most buildings along the main roads are hotels or vacation rentals or restaurants. But, of course, there are locals and they do the same sort of things that locals everywhere do, such as forming a band. "Crystal Durro" had posters up all over the valley:
 
-![Poster advertising Crystal Durro]({{ site.baseurl }}/assets/2018-09-23-crystal-durro.jpg)
+{% include image.html
+  img="/assets/2018-09-23-crystal-durro.jpg"
+  title="Poster advertising Crystal Durro"
+%}
 
 
 ## Hike 3: Cavallers Reservoir (2 hours)
@@ -146,7 +175,10 @@ It's only a quick but steep 5 minute climb to the top of the dam. While we just 
 
 The path along the eastern side of the reservoir is only flat on average, but a constant up and down over and around rocks of all sizes. It was also the busiest of all routes we hiked and we passed or were passed by or let pass someone every other minute or so. Once you reach the far end of the reservoir lake, you could start the climb to 3029 meters high Pic de Comaloforno to the west or follow route 15 from the Sua Edizioak book mentioned above to Estany Negre, the Black Lake. We did neither and turned around to get back to the car for a total hiking time of under two hours.
 
-![The Cavallers reservoir lake]({{ site.baseurl }}/assets/2018-09-23-callavers-lake.jpg)
+{% include image.html
+  img="/assets/2018-09-23-callavers-lake.jpg"
+  title="The Cavallers reservoir lake"
+%}
 
 Driving back down the valley we parked in the parking lot at Caldes de Boí, ate lunch at the well by the road saying hello to the construction workers who stopped to fill up their water bottles before siesta. From there we followed the path west of the river back upstream, then crossing the road bridge to get to Campament de Toirigo (a youth camp). Turn right just before the first buildings of the camp and follow the forrest track up the mountain which ends at an overlook on top of old building foundations. There's no reason to recommend this hike, but I got a few macro photos of flowers out of it and it kept us busy until the scheduled arrival of the rain.
 
@@ -155,11 +187,17 @@ Driving back down the valley we parked in the parking lot at Caldes de Boí, ate
 
 For our final day of hiking we aimed for maximal laziness. We bought a one-way taxi ticket to go from Boí into the National Park and immediately started the hike back down. Everyone else seemed to be sweating their way uphill while we had a relaxed downhill stroll. Based on a park ranger's recommendation we took aslight detour past the small chapel of Sant Nicolau. Otherwise, the path took us past Estany de Llebreta which we had already seen from the taxi rides, cow pastures, and lots of flowers.
 
-![Hiking in the rain near the village Boí]({{ site.baseurl }}/assets/2018-09-23-hiking-in-the-rain.jpg)
+{% include image.html
+  img="/assets/2018-09-23-hiking-in-the-rain.jpg"
+  title="Hiking in the rain near the village Boí"
+%}
 
 For the last hour of hiking in this vacation we got very lost and very wet. From the main parking lot at the entrance to the park, you have to follow the main road back to Boí. Unless you believe the Editorial Alpina map which has an unpaved track parallel to the road most of the way. The track exists but it fizzles out into a maze of cattle paths just when the rain really starts. We ultimately turned around and followed the road until just before the intersection of L-500 and L-501. The hiking path from here into Boí does, in fact, exist and leads you straight to Pizzaria Casós in Boí. We walked the final 100 meters back to our car in hail. The car park had turned into an ankle deep lake.
 
-![Macro flower]({{ site.baseurl }}/assets/2018-09-23-macro-flower.jpg)
+{% include image.html
+  img="/assets/2018-09-23-macro-flower.jpg"
+  title="Macro flower"
+%}
 
 
 ## Footnotes

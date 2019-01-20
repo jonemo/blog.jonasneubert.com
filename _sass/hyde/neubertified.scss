@@ -153,13 +153,36 @@ a.sidebar-archive-link:hover::before {
   }
 }
 
-/* Container
- *
+/*
+ * Container
  */
 
 @media (min-width: 64em) {
   .content {
     margin-left: 2rem;
     margin-right: 20rem;
+  }
+}
+
+/*
+ * Image with caption
+ */
+
+.image-wrapper {
+
+  img {
+    border-radius: 5px 5px 0 0;
+    background-color: black;
+    border: 2px solid black;
+    margin-bottom: 0;
+  }
+
+  .image-caption {
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 0.25em;
+    font-size: 0.9em;
   }
 }
