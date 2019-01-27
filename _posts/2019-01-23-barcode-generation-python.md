@@ -16,7 +16,7 @@ While preparing a conference talk about barcodes, I spent three evenings researc
 *This article was last updated on January 21th, 2019.*
 
 
-# Summary: Recommendations
+## Summary: Recommendations
 
 [**treepoem**](https://pypi.org/project/treepoem) is the most feature-rich Python package for rendering images barcodes. It supports all common barcode symbologies as well as many obscure ones, is actively maintained, and is available under the MIT license. It's my recommendation for anyone who wants to work with many symbologies.
 
@@ -363,18 +363,18 @@ The comparison table includes both types of packages. In deciding which packages
 
 The comparison table includes columns for 13 symbologies. This might seem unfair because those 13 are an arbitrarily chosen subset of the fifty or so barcode symbologies that have some common use case today. My time and the available space on the conference slide deck were the reasons for this limitation. (A snide aside: If all Readme files were up-to-date with the package functionality, adding columns for additional symbologies would have been a lot easier!) Hopefully, my choice presents a useful balance by including the union set of common and frequently supported symbologies.
 
-A further complication was that some symbologies are subsets of other symbologies and, in some cases, I disagree with the way symbology support is described in the package documentation or readme file. For example, many packages advertise support for ISSN. I do not include [ISSN](https://github.com/bwipp/postscriptbarcode/wiki/ISSN) because it is simply an EAN-13 barcode with the first three digits equal to "977". Similarly, the JAN (Japanese Article Number) symbology is sometimes listed separately but is actually identical to EAN.
+A further complication was that some symbologies are subsets of other symbologies and, in some cases, I disagree with the way symbology support is described in the package documentation or readme file. For example, many packages advertise support for [ISSN](https://github.com/bwipp/postscriptbarcode/wiki/ISSN). I do not include ISSN because it is simply an EAN-13 barcode with the first three digits equal to "977". Similarly, the JAN (Japanese Article Number) symbology is sometimes listed separately but is actually identical to [EAN](https://github.com/bwipp/postscriptbarcode/wiki/EAN-13).
 
-Note that I omit the short versions of UPC and EAN, for example UPC-E and EAN-5, purely for space reasons. Most packages that support the long version also support the common short versions.
+Note that I omit the short versions of UPC and EAN, for example [UPC-E](https://github.com/bwipp/postscriptbarcode/wiki/UPC-E) and [EAN-5](https://github.com/bwipp/postscriptbarcode/wiki/EAN-5), purely for space reasons. Most packages that support the long version also support the common short versions.
 
 
 ### Project Activity and Popularity
 
 Most barcode symbologies have been set in stone for decades. In theory, software for generating them could be truly complete, with zero remaining feature requests or bug fixes. However, even if bug-free software existed, some maintenance would be necessary because the Python language has evolved over the years, and so has the ecosystem of available tools for writing image file formats which many barcode generating tools utilize.
 
-The usual tradeoff between project completeness and project activity applies: The more comprehensive the functionality and the higher the quality, the lower the project activity needs to be for a package to likely be a good choice for many users. I tried to find a reasonable balance, but my judgement is subjective. Sadly, the majority of packages I reviewed meet neither the threshold for completeness nor activity.
+The usual tradeoff between project completeness and project activity applies: The more comprehensive the functionality and the higher the quality, the lower the project activity needs to be for a package to likely be a good choice for many users. I tried to find a reasonable balance, but my judgment is subjective. Sadly, the majority of packages I reviewed meet neither the threshold for completeness nor activity.
 
-To judge the level of project activity I relied mainly on the date of the most recent project release. In addition, I looked at the number of Github stars, where available, as an indicator for how much secondary activity to expect. Only [qrcode](https://pypi.org/project/qrcode) benefited from this factor, but not enough to compensate for its lack of support for the Micro QR symbology in the head-to-head comparison with <a href="https://pypi.org/project/segno">segno</a>.
+To judge the level of project activity I relied mainly on the date of the most recent project release. In addition, I looked at the number of Github stars, where available, as an indicator of how much secondary activity to expect. Only [qrcode](https://pypi.org/project/qrcode) benefited from this factor, but not enough to compensate for its lack of support for the Micro QR symbology in the head-to-head comparison with [segno](https://pypi.org/project/segno).
 
 
 ### Python 3 support
@@ -386,17 +386,17 @@ All recommendations have explicit Python 3 support. By "explicit" I mean "not ac
 
 ### Image file format exporters
 
-The task of rendering a text into a barcode of a certain symbology consists of two steps: First, figure out what lines (or squares or other geometric artifacts) represent the given text (or number or URL or other content). Second, exporting the lines in an image file format such as PNG, JPG, or SVG.
+The task of rendering a string of text into a barcode of a certain symbology consists of two steps: First, figure out what lines (or squares or circles or other geometric artifacts) represent the given text (or number or URL or other content). Second, exporting the lines in an image file format such as PNG, JPG, or SVG.
 
-You'll find a Python package to generate each of the common image file formats, but many of them contain C code and must be compiled. The [Pillow](https://pypi.org/project/Pillow/) bundles many such packages to provide one convenient API for many image file formats, but can still prove [troublesome](https://stackoverflow.com/search?tab=newest&q=[python-imaging-library]%20install) to [install](https://Pillow.readthedocs.io/en/latest/installation.html).
+You'll find a Python package to generate each of the common image file formats, but many of them contain C code. The [Pillow](https://pypi.org/project/Pillow/) project is a bundle of many such packages and provide one consistent API for many image file formats, but can still prove [troublesome](https://stackoverflow.com/search?tab=newest&q=[python-imaging-library]%20install) to [install](https://Pillow.readthedocs.io/en/latest/installation.html).
 
-Thanks to [wheels](https://pythonwheels.com) and [conda](https://conda.io), installing Python packages is less thorny than the war stories in 2013 Stackoverflow results would make you think. Nonetheless, it remains a common stumbling block, especially for Windows users, which is why I consider a dependency on Pillow a downside in this review.
+Thanks to [wheels](https://pythonwheels.com) and [conda](https://conda.io), installing Python packages is less thorny than the war stories in 2013 StackOverflow results would make you think. Nonetheless, it remains a common stumbling block, especially for Windows users, which is why I consider a dependency on Pillow a downside in this review.
 
-Ease of installation is a natural side effect of any Python package that is itself written in self-contained pure Python, i.e. without any embedded C code or external dependencies. The [pypng](https://pypi.org/project/pypng/) package is a pure Python implementation of the PNG file format. The SVG file format is an XML document type and therefore plain text and easily written from pure Python.
+Ease of installation is a natural side effect of any Python package that is itself written in self-contained pure Python, i.e. without any embedded C code or external dependencies. The [pypng](https://pypi.org/project/pypng/) package is a pure Python implementation of the PNG file format. The SVG file format is an XML document type and therefore plain text and easily generated from pure Python.
 
 A reasonable in-between solution is offered by several packages that support a limited set of formats in the default installation and expanded capabilities if Pillow happens to be independently installed.
 
-The [**segno**](https://pypi.org/project/segno/) package for QR codes deserves a mention for supporting nine outputs formats without relying on an external library.
+The [segno](https://pypi.org/project/segno/) package for QR codes deserves a mention for supporting nine outputs formats without relying on any external dependency.
 
 
 ## Notes on Options
@@ -408,7 +408,7 @@ For anyone still reading, this section contains a collection of marginally inter
 
 The genealogy of the [pyBarcode](https://pypi.org/project/pyBarcode/) family is a fascinating story for every code archeologist. For several years, pyBarcode was the only game in town for generating barcodes in Python and there was a steady trickle of features and version releases. When this stopped 2013, two forks gained some tractions by releasing their own version 0.8: [python-barcode](https://pypi.org/project/python-barcode/) and [viivakoodi](https://pypi.org/project/viivakoodi) ("barcode" in Finnish). The former has received a handful of bugfix and maintance releases including, most recently, "official" Python 3.7 support and is my alternative recommendation in this article. The latter fizzled out in 2014 and sparked further forks, none of which have recent updates. In addition to those that became PyPI packages, Github has tens of other forks, each with their own independent bug fixes. Oh open source.
 
-PyPI historians will not want to miss a final (?) plot twist in 2017: Suddenly there was a new pre-release version of pyBarcode! Sadly, it has stayed a pre-release since then. As, sadly, usual for dormat open source code, the lack of activity does not deter people from filling [the issue tracker](https://bitbucket.org/whitie/python-barcode/issues) and demanding fixes and new features from the solo maintainer.
+PyPI historians will not want to miss a final (?) plot twist in 2017: Suddenly there was a new pre-release version of pyBarcode! Sadly, it has stayed a pre-release since then. As, sadly, usual for dormant open source code, the lack of activity does not deter people from filling [the issue tracker](https://bitbucket.org/whitie/python-barcode/issues) and demanding fixes and new features from the solo maintainer.
 
 
 ### code128, PubCode
@@ -419,7 +419,7 @@ https://bitbucket.org/01100101/code128/issues/3/typeerror-encoding-is-an-invalid
 Then code disappeared and remains gone:
 https://bitbucket.org/01100101/code128/issues/4/code-has-gone
 
-Would have preferred over PubCode due to Pillow being optional, but in absence of code or maintance cannot recommend it.
+Would have preferred over PubCode due to Pillow being optional, but in absence of code or maintenance cannot recommend it.
 
 
 ### qrcode, PyQRCode, qrcodegen, segno

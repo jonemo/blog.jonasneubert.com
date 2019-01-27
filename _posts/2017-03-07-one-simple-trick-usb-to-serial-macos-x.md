@@ -20,7 +20,7 @@ Do this and you will never have to fuzz around with manually installing drivers 
 
 ## macOS >= 10.9 comes with (working) FTDI drivers
 
-macOS includes kernel drivers for FTDI chips as of version 10.9 (Mavericks), which was released 2013). I can't find the Engadget article about the five minute time slot Phil Schiller devoted to announcing this revolutionary innovation at WWDC, but [here is the official Apple tech note](https://developer.apple.com/library/content/technotes/tn2315/_index.html).
+macOS includes kernel drivers for FTDI chips as of version 10.9, aka "Mavericks", released in 2013. I can't find the Engadget article about the five minute time slot Phil Schiller devoted to announcing this revolutionary innovation at WWDC, but [here is the official Apple tech note](https://developer.apple.com/library/content/technotes/tn2315/_index.html).
 
 I had no idea because the last time I tried using a USB-to-Serial cable on macOS was with version 10.8.
 

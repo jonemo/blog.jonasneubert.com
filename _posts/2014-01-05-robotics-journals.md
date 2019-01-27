@@ -27,23 +27,22 @@ One of the first steps of the actual writing process for a journal paper is to s
 | Review Style | ? | single blind | single blind | single blind (?) | single blind (?) | ? | ? | single blind |
 | Suggested Reviewers | yes (3) | no | no | yes (4) | yes (3) | no | no | no |
 
-```
-IJRR: International Journal on Robotics Research
-TRO: IEEE Transactions on Robotics
-RAM: Robotics and Automation Magazine
-AuRo: Autonomous Robots
-RAS: Robotics and Autonomous Systems
-IRS: Journal of Intelligent & Robotic Systems
-TMe: Transactions on Mechatronics
-```
+The long-form names of abbreviated journal titles in the table above are:
+
+* IJRR: International Journal on Robotics Research
+* TRO: IEEE Transactions on Robotics
+* RAM: Robotics and Automation Magazine
+* AuRo: Autonomous Robots
+* RAS: Robotics and Autonomous Systems
+* IRS: Journal of Intelligent & Robotic Systems
+* TMe: Transactions on Mechatronics
 
 Notes:
 
- * The length limit is for normal papers. Other types of papers (e.g. review, short) might have different limits.
- * The impact factor stated on the journals' websites is used.
- * The eigenfactor is that reported by www.eigenfactor.org.
- * RAM: 8 magazine pages, 10 equations, 20 references, 10 figures, at least one high quality photo
- * AuRo counts a figure as 2000 characters towards the character limit
-
+* The length limit is for normal papers. Other types of papers (e.g. review, short) might have different limits.
+* The impact factor stated on the journals' websites is used.
+* The eigenfactor is that reported by www.eigenfactor.org.
+* RAM: 8 magazine pages, 10 equations, 20 references, 10 figures, at least one high quality photo
+* AuRo counts a figure as 2000 characters towards the character limit
 
 The Intelligent Autonomous Systems lab at TU Darmstadt maintains a [page about impact factors of robotics journals](http://www.ias.tu-darmstadt.de/Miscellaneous/JournalImpactFactors), which is one of the sources I used for the table above.

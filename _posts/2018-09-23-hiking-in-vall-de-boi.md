@@ -1,6 +1,15 @@
+---
+layout: post
+title: "Hiking in Vall de Boí"
+tags:
+ - travel
+published: true
+date: Sep 23th, 2018
+---
+
 I travel to Germany to visit family approximately once every 18 months. This year, I mixed things up a little bit and asked my mother and my sister to meet me in Spain for a hiking vacation. We ended up spending five days in Vall de Boí, a dead end mountain valley in the Pyrenees. One valley to the west is the border between Catalonia and Aragon, 50 miles to the north is the border to France.
 
-Regular readers of this blog should know that I have no plans to become a travel blogger[^1]. This post exists because with Vall de Boí I feel like I was lucky to discover an excellent travel destination about which only sparse amounts of information exist for anyone who is not fluent in Spanish or Catalan. The target audience is people Google sent here after searching for "Vall de Boí" and anyone looking for a place to go hiking that Lonely Planet doesn't know about (yet).
+Regular readers of this blog should know that I have no plans to become a travel blogger[^1]. This post exists because with Vall de Boí I feel like I was lucky to discover an excellent travel destination about which only sparse amounts of information exist for anyone who is not fluent in Spanish or Catalan. The target audience of this report is people Google sent here after searching for "Vall de Boí" as well as anyone looking for a place to go hiking that Lonely Planet doesn't know about (yet).
 
 How I found out about Vall de Boí was dumb luck: Seeing that there are direct flights from Oakland to Barcelona, I explored green patches on Google Maps within a reasonable driving distance of Barcelona. A serendipitous half hour later I had my mind set on Vall de Boí. If I remember correctly, the first place I read about it was a two-star review for a ski resort elsewhere in the Pyrenees that mentioned Vall de Boí as the better alternative.
 
