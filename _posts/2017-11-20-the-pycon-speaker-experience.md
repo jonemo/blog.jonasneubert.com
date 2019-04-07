@@ -18,7 +18,7 @@ From one first-time PyCon presenter to a potential next first-time PyCon present
 
 ## Before the Conference
 
-Several weeks before PyCon 2017, speakers received surprisingly detailed communication about both technical details as well as the timeline of events leading up to the conference. For example, this included instructions on when and where to submit slides early to aid the live captioners' preparation and such banal but important things like the screen aspect ratio of the projectors. I owe a big thank you to [Ewa](https://twitter.com/ewa_jodlowska) and [David](https://twitter.com/wolever) for responding to all my questions surrounding the logistics of having to set up a factory on stage.
+Several weeks before PyCon 2017, speakers received surprisingly detailed communication about both technical details as well as the timeline of events leading up to the conference. For example, this included instructions on when and where to submit slides early to aid the live captioners' preparation and such banal but important things like the screen aspect ratio of the projectors. I owe a big thank you to [Ewa](https://twitter.com/ewa_jodlowska) and [David](https://twitter.com/wolever) for responding to all my questions surrounding the logistics of setting up a factory on stage.
 
 ## Before the Talk
 
@@ -26,7 +26,7 @@ On-site at the conference it was great to have the speakers-only "Green Room" wi
 
 I saw many speakers use the green room as a quiet space to go through their presentation "one last time", or some others working on their slides up to the last minute. In general, the atmosphere in the Green Room was somewhere between library reading room and quiet cafe. I caught a few annoyed stares while disturbing the quiet when I was unpacking and testing the conveyor. Sorry!
 
-While speakers were invited to come to the Green Room on every day of the conference, they had to arrive there 30 minutes before the scheduled start time of their talk.
+While speakers were invited to come to the Green Room on every day of the conference, they _had to_ arrive there 30 minutes before the scheduled start time of their talk.
 
 ## Getting on Stage
 

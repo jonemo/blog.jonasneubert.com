@@ -13,12 +13,12 @@ Barcodes are a cheap and ubiquitous way to add machine-readable information to a
 
 While preparing a conference talk about barcodes, I spent three evenings researching Python packages for generating images of 1D and 2D barcodes. This review article is the result of that work.
 
-*This article was last updated on January 21th, 2019.*
+*This article was last updated on January 23th, 2019.*
 
 
 ## Summary: Recommendations
 
-[**treepoem**](https://pypi.org/project/treepoem) is the most feature-rich Python package for rendering images barcodes. It supports all common barcode symbologies as well as many obscure ones, is actively maintained, and is available under the MIT license. It's my recommendation for anyone who wants to work with many symbologies.
+[**treepoem**](https://pypi.org/project/treepoem) is the most feature-rich Python package for rendering barcodes as images. It supports all common barcode symbologies as well as many obscure ones, is actively maintained, and is available under the MIT license. It's my recommendation for anyone who wants to work with many symbologies.
 
 However, treepoem requires non-Python dependencies which might be difficult or impossible to install in some situations. If you cannot install treepoem's dependencies, or just don't want to, the next best general purpose option is [**python-barcode**](https://pypi.org/project/python-barcode), the most actively maintained fork of the dormant [pyBarcode](https://pypi.org/project/pyBarcode) package.
 
@@ -27,26 +27,39 @@ To generate barcodes of only a single symbology, I recommend these libraries: [s
 
 ## Overview Table
 
-<table>
+<style>
+    .comparison-table th.comparison-table-symbology {
+        white-space: nowrap;
+    }
+    
+    .comparison-table th.comparison-table-symbology>a {
+        transform: rotate(-90deg);
+        display: block;
+        position: absolute;
+        width: 1em;
+    }
+</style>
+
+<table class="comparison-table">
   <tr>
     <th>Package</th>
     <th>last updated</th>
     <th>License</th>
-    <th><img style="width: 0.8em" alt="Octocat (Github logo)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFNTE3OEEyQTk5QTAxMUUyOUExNUJDMTA0NkE4OTA0RCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFNTE3OEEyQjk5QTAxMUUyOUExNUJDMTA0NkE4OTA0RCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkU1MTc4QTI4OTlBMDExRTI5QTE1QkMxMDQ2QTg5MDREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkU1MTc4QTI5OTlBMDExRTI5QTE1QkMxMDQ2QTg5MDREIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+m4QGuQAAAyRJREFUeNrEl21ojWEYx895TDPbMNlBK46IUiNmPvHBSUjaqc0H8pF5+aDUKPEBqU2NhRQpX5Rv5jWlDIWlMCv7MMSWsWwmb3tpXub4XXWdPHvc9/Gc41nu+nedc7/8r/99PffLdYdDPsvkwsgkTBwsA/PADJCnzX2gHTwBt8Hl7p537/3whn04XoDZDcpBlk+9P8AFcAghzRkJwPF4zGGw0Y9QS0mAM2AnQj77FqCzrtcwB1Hk81SYojHK4DyGuQ6mhIIrBWB9Xm7ug/6B/nZrBHBegrkFxoVGpnwBMSLR9EcEcC4qb8pP14BWcBcUgewMnF3T34VqhWMFkThLJAalwnENOAKiHpJq1FZgI2AT6HZtuxZwR9GidSHtI30jOrbawxlVX78/AbNfhHlomEUJJI89O2MqeE79T8/nk8nMBm/dK576hZgmA3cp/R4l9/UeSxiHLVIlNm4nFfT0bxyuIj7LHRTKai+zdJobwMKzcZSJb0ePV5PKN+BqAAKE47UlMnERELMM3EdYP/yrd+XYb2mOiYBiQ8OQnoRBlXrl9JZix7D1pHTazu4MoyBcnYamqAjIMTR8G4FT8LuhLsexXYYjICBiqhQBvYb6fLZIJCjPypVvaOoVAW2WcasCnL2Nq82xHJNSqlCeFcDshaPK0twkAhosjZL31QYw+1rlMpWGMArl23SBsZZO58F2tlJXmjOXS+s4WGvpMiBJT/I2PInZ6lIs9/hBsNS1hS6BG0DSqmYEDRlCXQrmy50P1oDRKTSegmNbUsA0zDMwRhPJXeCE3vWLPQMvan6X8AgIa1vcR4AkGZkDR4ejJ1UHpsaVI0g2LInpOsNFUud1rhxSV+fzC9Woz2EZkWQuja7/B+jUrgtIMpy9YCW4n4K41YfzRneW5E1KJTe4B2Zq1Q5EHEtj4U3AfEzR5SVY4l7QYQPJdN2as7RKBF0BPZqqH4VgMAMBL8Byxr7y8zCZiDlnOcEKIPmUpgB5Z2ww5RdOiiRiNajUmWda5IG6WbhsyY2fx6m8gLcoJDJFkH219M3We1+cnda93pfycZpIJEL/s/wSYADmOAwAQgdpBAAAAABJRU5ErkJggg==" />★</th>
+    <th style="white-space: nowrap;"><img style="width: 0.8em" alt="Octocat (Github logo)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFNTE3OEEyQTk5QTAxMUUyOUExNUJDMTA0NkE4OTA0RCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFNTE3OEEyQjk5QTAxMUUyOUExNUJDMTA0NkE4OTA0RCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkU1MTc4QTI4OTlBMDExRTI5QTE1QkMxMDQ2QTg5MDREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkU1MTc4QTI5OTlBMDExRTI5QTE1QkMxMDQ2QTg5MDREIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+m4QGuQAAAyRJREFUeNrEl21ojWEYx895TDPbMNlBK46IUiNmPvHBSUjaqc0H8pF5+aDUKPEBqU2NhRQpX5Rv5jWlDIWlMCv7MMSWsWwmb3tpXub4XXWdPHvc9/Gc41nu+nedc7/8r/99PffLdYdDPsvkwsgkTBwsA/PADJCnzX2gHTwBt8Hl7p537/3whn04XoDZDcpBlk+9P8AFcAghzRkJwPF4zGGw0Y9QS0mAM2AnQj77FqCzrtcwB1Hk81SYojHK4DyGuQ6mhIIrBWB9Xm7ug/6B/nZrBHBegrkFxoVGpnwBMSLR9EcEcC4qb8pP14BWcBcUgewMnF3T34VqhWMFkThLJAalwnENOAKiHpJq1FZgI2AT6HZtuxZwR9GidSHtI30jOrbawxlVX78/AbNfhHlomEUJJI89O2MqeE79T8/nk8nMBm/dK576hZgmA3cp/R4l9/UeSxiHLVIlNm4nFfT0bxyuIj7LHRTKai+zdJobwMKzcZSJb0ePV5PKN+BqAAKE47UlMnERELMM3EdYP/yrd+XYb2mOiYBiQ8OQnoRBlXrl9JZix7D1pHTazu4MoyBcnYamqAjIMTR8G4FT8LuhLsexXYYjICBiqhQBvYb6fLZIJCjPypVvaOoVAW2WcasCnL2Nq82xHJNSqlCeFcDshaPK0twkAhosjZL31QYw+1rlMpWGMArl23SBsZZO58F2tlJXmjOXS+s4WGvpMiBJT/I2PInZ6lIs9/hBsNS1hS6BG0DSqmYEDRlCXQrmy50P1oDRKTSegmNbUsA0zDMwRhPJXeCE3vWLPQMvan6X8AgIa1vcR4AkGZkDR4ejJ1UHpsaVI0g2LInpOsNFUud1rhxSV+fzC9Woz2EZkWQuja7/B+jUrgtIMpy9YCW4n4K41YfzRneW5E1KJTe4B2Zq1Q5EHEtj4U3AfEzR5SVY4l7QYQPJdN2as7RKBF0BPZqqH4VgMAMBL8Byxr7y8zCZiDlnOcEKIPmUpgB5Z2ww5RdOiiRiNajUmWda5IG6WbhsyY2fx6m8gLcoJDJFkH219M3We1+cnda93pfycZpIJEL/s/wSYADmOAwAQgdpBAAAAABJRU5ErkJggg==" />★</th>
     <th>Python versions</th>
-    <th><a href="https://github.com/bwipp/postscriptbarcode/wiki/UPC-A">UPC-A</a></th>
-    <th><a href="https://github.com/bwipp/postscriptbarcode/wiki/EAN-13">EAN-13</a></th>
-    <th><a href="https://github.com/bwipp/postscriptbarcode/wiki/ISBN">ISBN</a></th>
-    <th><a href="https://github.com/bwipp/postscriptbarcode/wiki/PZN">PZN</a></th>
-    <th><a href="https://github.com/bwipp/postscriptbarcode/wiki/Interleaved-2-of-5">I. 2 of 5</a></th>
-    <th><a href="https://github.com/bwipp/postscriptbarcode/wiki/Code-39">Code 39</a></th>
-    <th><a href="https://github.com/bwipp/postscriptbarcode/wiki/Code-93">Code 93</a></th>
-    <th><a href="https://github.com/bwipp/postscriptbarcode/wiki/Code-128">Code 128</a></th>
-    <th><a href="https://github.com/bwipp/postscriptbarcode/wiki/GS1-DataMatrix">Datamatrix</a></th>
-    <th><a href="https://github.com/bwipp/postscriptbarcode/wiki/PDF417">PDF417</a></th>
-    <th><a href="https://github.com/bwipp/postscriptbarcode/wiki/QR-Code">QR</a></th>
-    <th><a href="https://github.com/bwipp/postscriptbarcode/wiki/Micro-QR-Code">Micro QR</a></th>
-    <th><a href="https://github.com/bwipp/postscriptbarcode/wiki/Aztec-Code">Aztec</a></th>
+    <th class="comparison-table-symbology"><a href="https://github.com/bwipp/postscriptbarcode/wiki/UPC-A">UPC-A</a></th>
+    <th class="comparison-table-symbology"><a href="https://github.com/bwipp/postscriptbarcode/wiki/EAN-13">EAN-13</a></th>
+    <th class="comparison-table-symbology"><a href="https://github.com/bwipp/postscriptbarcode/wiki/ISBN">ISBN</a></th>
+    <th class="comparison-table-symbology"><a href="https://github.com/bwipp/postscriptbarcode/wiki/PZN">PZN</a></th>
+    <th class="comparison-table-symbology"><a href="https://github.com/bwipp/postscriptbarcode/wiki/Interleaved-2-of-5">I. 2 of 5</a></th>
+    <th class="comparison-table-symbology"><a href="https://github.com/bwipp/postscriptbarcode/wiki/Code-39">Code 39</a></th>
+    <th class="comparison-table-symbology"><a href="https://github.com/bwipp/postscriptbarcode/wiki/Code-93">Code 93</a></th>
+    <th class="comparison-table-symbology"><a href="https://github.com/bwipp/postscriptbarcode/wiki/Code-128">Code 128</a></th>
+    <th class="comparison-table-symbology"><a href="https://github.com/bwipp/postscriptbarcode/wiki/GS1-DataMatrix">Datamatrix</a></th>
+    <th class="comparison-table-symbology"><a href="https://github.com/bwipp/postscriptbarcode/wiki/PDF417">PDF417</a></th>
+    <th class="comparison-table-symbology"><a href="https://github.com/bwipp/postscriptbarcode/wiki/QR-Code">QR</a></th>
+    <th class="comparison-table-symbology"><a href="https://github.com/bwipp/postscriptbarcode/wiki/Micro-QR-Code">Micro QR</a></th>
+    <th class="comparison-table-symbology"><a href="https://github.com/bwipp/postscriptbarcode/wiki/Aztec-Code">Aztec</a></th>
     <th>Output</th>
   </tr>
   <tr>
@@ -290,7 +303,7 @@ To generate barcodes of only a single symbology, I recommend these libraries: [s
 
 [treepoem](https://pypi.org/project/treepoem) stands out by the sheer number of supported symbologies and symbology variants. The way this feat is achieved, however, brings with it a few possible downsides.
 
-The Python package treepoem is a wrapper around the Postscript program [BWIPP](https://bwipp.terryburton.co.uk). treepoem invokes Postscript [using `subprocess.Popen()`](https://github.com/adamchainz/treepoem/blob/master/treepoem/__init__.py#L80-L99) meaning that Postscript must already be installed and `subprocess` available. This may be a problem, for example if you are trying to generate barcode images in a shared environment such as a notebook server. In addition, treepoem [requires](https://github.com/adamchainz/treepoem/blob/master/treepoem/__init__.py#L11) the [Pillow](https://pypi.org/project/Pillow/) package for producing image file formats (see the section "Image file format exporters" below for why this matters).
+The Python package treepoem is a wrapper around the Postscript program [BWIPP](https://bwipp.terryburton.co.uk). treepoem invokes Postscript [using `subprocess.Popen()`](https://github.com/adamchainz/treepoem/blob/master/treepoem/__init__.py#L80-L99) meaning that Postscript must already be installed and `subprocess` available. This may be a problem if you are trying to generate barcode images in a shared environment such as a notebook server, to name just one example. In addition, treepoem [requires](https://github.com/adamchainz/treepoem/blob/master/treepoem/__init__.py#L11) the [Pillow](https://pypi.org/project/Pillow/) package for producing image file formats (see the section "Image file format exporters" below for why this matters).
 
 If you are not affected by any of these potential stumbling blocks, then treepoem is refreshingly easy to use.
 
@@ -306,7 +319,7 @@ To use as a command line tool:
 treepoem --type code128 --output code128.png PyBay2018
 ```
 
-Barcode types with options (see [BWIPP docs](https://github.com/bwipp/postscriptbarcode/wiki/QR-Code) for reference):
+Some barcode types have options for the generator. This example sets the `eclevel` flag to control the error correction level of the QR Code. To know which options are available for a barcode type, use the [BWIPP docs](https://github.com/bwipp/postscriptbarcode/wiki/QR-Code) as reference:
 
 ```sh
 treepoem --type qrcode --output qr.gif \
@@ -314,7 +327,7 @@ treepoem --type qrcode --output qr.gif \
     eclevel=Q
 ```
 
-To use as a library:
+To use as a library, this is the same example as Python code:
 
 ```python
 import treepoem
@@ -352,7 +365,7 @@ Of course, an implicit requirement is that I must be able to discover the packag
 * Enter various barcode related terminology into the search box on [pypi.org](https://pypi.org).
 * Search Stackoverflow for barcode related terminology.
 * Look at the list of forks for repos associated with packages I had already found.
-* Browse the issue tracker of packages I had already found.
+* Browse through the issue tracker of packages I had already found and follow links.
 
 
 ### Supported Symbologies
@@ -372,7 +385,7 @@ Note that I omit the short versions of UPC and EAN, for example [UPC-E](https://
 
 Most barcode symbologies have been set in stone for decades. In theory, software for generating them could be truly complete, with zero remaining feature requests or bug fixes. However, even if bug-free software existed, some maintenance would be necessary because the Python language has evolved over the years, and so has the ecosystem of available tools for writing image file formats which many barcode generating tools utilize.
 
-The usual tradeoff between project completeness and project activity applies: The more comprehensive the functionality and the higher the quality, the lower the project activity needs to be for a package to likely be a good choice for many users. I tried to find a reasonable balance, but my judgment is subjective. Sadly, the majority of packages I reviewed meet neither the threshold for completeness nor activity.
+The usual tradeoff between project completeness and project activity applies: The more comprehensive the functionality and the higher the quality, the lower the project activity needs to be for a package to likely be a good choice for many users. I tried to find a reasonable balance, but my judgment is subjective. Sadly, the majority of packages I reviewed meet neither the threshold for completeness nor the threshold for activity.
 
 To judge the level of project activity I relied mainly on the date of the most recent project release. In addition, I looked at the number of Github stars, where available, as an indicator of how much secondary activity to expect. Only [qrcode](https://pypi.org/project/qrcode) benefited from this factor, but not enough to compensate for its lack of support for the Micro QR symbology in the head-to-head comparison with [segno](https://pypi.org/project/segno).
 
@@ -399,27 +412,23 @@ A reasonable in-between solution is offered by several packages that support a l
 The [segno](https://pypi.org/project/segno/) package for QR codes deserves a mention for supporting nine outputs formats without relying on any external dependency.
 
 
-## Notes on Options
+## Notes about the Contenders
 
 For anyone still reading, this section contains a collection of marginally interesting notes I scribbled down while researching the packages covered in this review.
 
 
 ### pyBarcode and its forks
 
-The genealogy of the [pyBarcode](https://pypi.org/project/pyBarcode/) family is a fascinating story for every code archeologist. For several years, pyBarcode was the only game in town for generating barcodes in Python and there was a steady trickle of features and version releases. When this stopped 2013, two forks gained some tractions by releasing their own version 0.8: [python-barcode](https://pypi.org/project/python-barcode/) and [viivakoodi](https://pypi.org/project/viivakoodi) ("barcode" in Finnish). The former has received a handful of bugfix and maintance releases including, most recently, "official" Python 3.7 support and is my alternative recommendation in this article. The latter fizzled out in 2014 and sparked further forks, none of which have recent updates. In addition to those that became PyPI packages, Github has tens of other forks, each with their own independent bug fixes. Oh open source.
+The genealogy of the [pyBarcode](https://pypi.org/project/pyBarcode/) family is a fascinating story for every code archeologist. For several years, pyBarcode was the only game in town for generating barcodes in Python and there was a steady trickle of features and version releases. When this stopped 2013, two forks gained some tractions by releasing their own version 0.8: [python-barcode](https://pypi.org/project/python-barcode/) and [viivakoodi](https://pypi.org/project/viivakoodi) ("barcode" in Finnish). The former has received a handful of bugfix and maintance releases including, most recently, "official" Python 3.7 support and is my second recommendation at the top of this article. viivakoodi fizzled out in 2014 and sparked further forks, none of which have recent updates. In addition to those that became PyPI packages, Github has tens of other forks, each with their own independent bug fixes. Oh open source.
 
-PyPI historians will not want to miss a final (?) plot twist in 2017: Suddenly there was a new pre-release version of pyBarcode! Sadly, it has stayed a pre-release since then. As, sadly, usual for dormant open source code, the lack of activity does not deter people from filling [the issue tracker](https://bitbucket.org/whitie/python-barcode/issues) and demanding fixes and new features from the solo maintainer.
+PyPI historians will not want to miss a final (?) plot twist in 2017: Suddenly there was [a new pre-release](https://pypi.org/project/pyBarcode/0.8b1/) version of pyBarcode! Sadly, it has stayed a pre-release since then. As, sadly, usual for dormant open source code, the lack of activity does not deter people from filling [the issue tracker](https://bitbucket.org/whitie/python-barcode/issues) and demanding fixes and new features from the solo maintainer.
 
 
 ### code128, PubCode
 
-Code development seems to have continued without releases:
-https://bitbucket.org/01100101/code128/issues/3/typeerror-encoding-is-an-invalid-keyword
+Most small open source projects eventually go dormant, but some maintainers actively delete their work. This is what happened to code128. The latest version on PyPI is [0.3](https://pypi.org/project/code128/0.3/) from 2015. There are [indications](https://bitbucket.org/01100101/code128/issues/3/typeerror-encoding-is-an-invalid-keyword) that development continued after that date, but [the source code disappeared and remains gone](https://bitbucket.org/01100101/code128/issues/4/code-has-gone).
 
-Then code disappeared and remains gone:
-https://bitbucket.org/01100101/code128/issues/4/code-has-gone
-
-Would have preferred over PubCode due to Pillow being optional, but in absence of code or maintenance cannot recommend it.
+Based on features alone, I have a preference for code128 over PubCode due to Pillow being optional, but in absence of code or maintenance cannot recommend the package.
 
 
 ### qrcode, PyQRCode, qrcodegen, segno
@@ -437,3 +446,8 @@ segno's documentation has [a much more detailed comparison of QR Code generators
 ## More about Barcodes
 
 The content of this article was part of my talk "Zebras & Lasers" at PyBay 2018. [Slide deck and video from the talk are here](https://jonasneubert.com/talks/pybay2018).
+
+Other posts about barcodes on my blog:
+{% for post in site.tags["barcodes"] if post.url != page.url %}
+* <a href="{{ post.url }}">{{ post.title }}</a>
+{% endfor %}

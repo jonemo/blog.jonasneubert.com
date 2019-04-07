@@ -5,6 +5,7 @@ tags:
  - pycon
  - robotics
  - factorytech
+ - barcodes
 published: true
 date: Feb 26th, 2017
 ---
