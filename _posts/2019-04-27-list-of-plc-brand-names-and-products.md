@@ -7,7 +7,7 @@ published: true
 date: April 27, 2019
 ---
 
-tl;dr: Here's the link to the spreadsheet.
+tl;dr: [Here's the link to the spreadsheet](https://docs.google.com/spreadsheets/d/15R6rOn6HexPPkxQu_sHcqVbk_W1myLeLFAvGkUWLZfw/edit?usp=sharing).
 
 I've been thinking about Programmable Logic Controllers (PLC) again recently, not least because I am preparing [a conference talk](https://us.pycon.org/2019/schedule/presentation/237/) about them. While putting together the presentation I thought to myself "Why not make a list of PLC products out there, I wonder how many there are‽" 
 
