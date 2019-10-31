@@ -8,6 +8,8 @@ published: true
 date: October 27, 2019
 ---
 
+*This post is part 1 of a series. Scroll down for a table of contents.*
+
 If you've found your way to this blog, chances are that you already know that I've given a few conference talks about Python and factory automation.
 **Why am I doing this?**
 
@@ -34,9 +36,10 @@ This blog post is the first in a series that puts the contents of these talks in
 * Part 2: What is a Programmable Logic Controller?
 * Part 3: [Ladder Logic‽]({{ site.url }}/2019/10/29/ladder-logic)
 * Part 4: Using pymodbus to communicate with a PLC
-* Part 5: Other protocols and libraries for communicating with PLCs
+* Part 5: Other Python libraries for communicating with PLCs
 * Part 6: PLC vs Raspberry Pi
 * Part 7: How to get started with Python and PLCs?
+* Appendix: [List of PLC brands and products]({{ site.url }}/2019/04/27/list-of-plc-brand-names-and-products)
 
 I will add links to the table of contents as I publish each part.
 

@@ -70,7 +70,7 @@ The reason this terminology and the electrical analogy with hot and neutral rail
 If you go to the top of an old building and figure out a way to get into the elevator control room[^1], you might still run into something that looks like this:
 
 {% include image.html
-  img="/assets/2019/2019-10-29-ladder-logic-slide-other-languages.png"
+  img="/assets/2019/2019-10-29-ladder-logic-slide-relays.png"
   title="Slide from my Pycon 2019 presentation showing a photo of elevator logic by Tom Magliery on Flickr (CC-BY-NC-SA-2.0). Source: https://www.flickr.com/photos/mag3737/306386128."
 %}
 
