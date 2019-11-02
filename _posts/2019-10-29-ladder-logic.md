@@ -170,6 +170,6 @@ The [PLCopen organization](https://en.wikipedia.org/wiki/PLCopen) (not to be con
 
 [^3]: I didn't mention any PLC programming languages besides ladder logic during my presentations at all. Both times when I gave this presentation I only had 25 minutes, and the slide covering other languages got cut in my effort to shrink the presentation into the allocated time slot. I did get the appropriate amount of comments and complaints for doing so.
 
-[^4]: As with most technical standards, you have to pay the copyright holder (in this case: the IEC) a big chunk of money just to get access to the standard text. PLCopen has [a short summary](https://plcopen.org/technical-activities/logic) of what the other parts of IEC-61131-3 are about.
+[^4]: As with most technical standards, you have to pay the copyright holder (in this case: the IEC) a big chunk of money just to get access to the standard text. PLCopen has [a short summary](https://plcopen.org/technical-activities/logic) of what the other parts of IEC-61131 are about.
 
 [^5]: What about other parts of the world? I don't know. Japan is home to several PLC vendors but I wasn't able to get enough information about their tools to see any trend. Trends in other parts of the world might mostly be driven by which PLC-vendor-containing country they primarily trade with. I would be very curious about China, drop me a message if you know about PLC programming trends there!
