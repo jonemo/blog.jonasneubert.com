@@ -155,7 +155,7 @@ I suspect that this is due to different vendors being market leaders in differen
 If you want to tinker with Structured Text, you can download the [CODESYS programming software](https://www.codesys.com/products/codesys-engineering/development-system.html) for free (trial version).
 CODESYS is used either directly or "under the hood" by many European PLC vendors as their programming tool, but also tries to address the hobbyist market with tools like [CODESYS for Raspberry Pi](https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html?___store=en).
 
-Compared to other programming languages, usage of the IEC-61131 seems like the Wild West.
+Compared to other programming languages, usage of the IEC-61131-3 languages seems like the Wild West.
 The [PLCopen organization](https://en.wikipedia.org/wiki/PLCopen) (not to be confused with the [openPLC](https://hackaday.com/2016/06/07/openplc-is-ready-for-hacking/) project) has tried to address this by publishing a set of [coding guidelines and a library of generic building blocks](https://plcopen.org/software-construction-guidelines).
 
 
