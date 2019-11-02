@@ -9,19 +9,19 @@ sass:
 
 # Permalinks
 permalink:        pretty
-baseurl:          /neubertify
+baseurl:          /
 
 # Setup
 title:            Neubertify
 tagline:          'Get neubertified here.'
-url:              "http://jonemo.github.io/neubertify"
+url:              "https://blog.jonasneubert.com"
 
 analytics_id:     "UA-435125-11"
 paginate:         20
 
 author:
   name:           "Jonas Neubert"
-  url:            "http://jonasneubert.com"
+  url:            "https://jonasneubert.com"
 
 # Gems
 gems:
