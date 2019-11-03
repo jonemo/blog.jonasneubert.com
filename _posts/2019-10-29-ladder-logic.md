@@ -130,7 +130,7 @@ Among the PLC vendors, I found AutomationDirect worth looking at for hobbyists w
 ## Languages other than Ladder Logic
 
 Ladder logic is not the only language available for programming PLCs[^3].
-This (skipped) slide covers the most noteworthy other languages.
+This (skipped) slide covers the most noteworthy other languages:
 
 {% include image.html
   img="/assets/2019/2019-10-29-ladder-logic-slide-other-languages.png"
@@ -139,7 +139,6 @@ This (skipped) slide covers the most noteworthy other languages.
 
 The most important thing to know is that there exists a well-established standard that defines what a PLC is and what requirements it must satisfy: [IEC 61131](https://en.wikipedia.org/wiki/IEC_61131)[^4].
 Part 3 of this standard, [IEC-61131-3](https://en.wikipedia.org/wiki/IEC_61131-3) specifies five programming languages for PLCs, including ladder logic.
-
 IEC-61131-3 was first published in 1993 and has mostly weathered the progress of technology. Of the five languages it specifies, three are still in widespread use:
 
 | IEC-61131-3 language | format    | usage      |
@@ -150,14 +149,17 @@ IEC-61131-3 was first published in 1993 and has mostly weathered the progress of
 | [Instruction list](https://en.wikipedia.org/wiki/Instruction_list) (IL) | text      | deprecated |
 | [Sequential function chart](https://en.wikipedia.org/wiki/Sequential_function_chart) (SFC) | graphical | rare       |
 
-While researching PLC vendors and programming softwares I got the impression that while ladder logic is the most popular IEC-61131-3 language in the United States, Structured Text is the most common in Europe[^5].
-I suspect that this is due to different vendors being market leaders in different parts of the world, with the wider industry's products and education curricula having developed around those.
-If you want to tinker with Structured Text, you can download the [CODESYS programming software](https://www.codesys.com/products/codesys-engineering/development-system.html) for free (trial version).
+While researching PLC vendors and programming softwares, I got the impression that while ladder logic is the most popular IEC-61131-3 language in the United States, Structured Text is the most common in Europe[^5].
+If you want to tinker with Structured Text, you can download a trial version of the [CODESYS programming software](https://www.codesys.com/products/codesys-engineering/development-system.html) for free.
 CODESYS is used either directly or "under the hood" by many European PLC vendors as their programming tool, but also tries to address the hobbyist market with tools like [CODESYS for Raspberry Pi](https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html?___store=en).
 
 Compared to other programming languages, usage of the IEC-61131-3 languages seems like the Wild West.
 The [PLCopen organization](https://en.wikipedia.org/wiki/PLCopen) (not to be confused with the [openPLC](https://hackaday.com/2016/06/07/openplc-is-ready-for-hacking/) project) has tried to address this by publishing a set of [coding guidelines and a library of generic building blocks](https://plcopen.org/software-construction-guidelines).
 
+On the higher end of the PLC market, you will find some brands that allow programming in C++ and [even in Matlab](https://www.beckhoff.com/english.asp?twincat/twincat-3-xa-language-support-matlab-simulink.htm?id=1893323818933262). 
+The latter makes a lot of sense to me: Matlab and its [Simulink](https://en.wikipedia.org/wiki/Simulink) plugin are a powerful tool for developing control strategies (e.g. bytuning PID loops), and PLCs commonly execute control strategies as part of the programmable logic.
+
+On the very low end of the market, some PLCs and PLC-like systems come with non-standard programming tools aimed at beginners and projects with basic requirements.
 
 
 ---
