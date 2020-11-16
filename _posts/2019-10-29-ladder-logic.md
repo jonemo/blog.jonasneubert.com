@@ -17,8 +17,8 @@ First, PLC logic isn't programmed in text (exceptions apply, see below).
 Second, you can't use your favorite programming software; instead you will be using the one programming software that the vendor of your PLC provides.
 
 For my Pycon 2019 presentation about PLCs I brought a PLC on stage for a live demo of PLC programming.
-Like I wrote above, each brand of PLC has its own custom programming software.
-Since I wanted to live-code some ladder logic on the presentation screen, I chose the brand of PLC for this demo (Automation Direct's "Productivity" product line) specifically because the programming software that comes with it is comparatively simple user interface.
+Like I wrote above, each brand of PLC has its own custom programming software, which is why it made sense to chose the brand of PLC for the demo specifically for being "live demo friendly".
+After reviewing ~20 PLC programming softwares I settled on buying a PLC from [Automation Direct's](https://www.automationdirect.com) "Productivity" product line because the programming software that comes with it has a comparatively simple user interface.
 
 
 ## Ladders, rungs, hot rails, coils, ...
@@ -156,8 +156,8 @@ CODESYS is used either directly or "under the hood" by many European PLC vendors
 Compared to other programming languages, usage of the IEC-61131-3 languages seems like the Wild West.
 The [PLCopen organization](https://en.wikipedia.org/wiki/PLCopen) (not to be confused with the [openPLC](https://hackaday.com/2016/06/07/openplc-is-ready-for-hacking/) project) has tried to address this by publishing a set of [coding guidelines and a library of generic building blocks](https://plcopen.org/software-construction-guidelines).
 
-On the higher end of the PLC market, you will find some brands that allow programming in C++ and [even in Matlab](https://www.beckhoff.com/english.asp?twincat/twincat-3-xa-language-support-matlab-simulink.htm?id=1893323818933262). 
-The latter makes a lot of sense to me: Matlab and its [Simulink](https://en.wikipedia.org/wiki/Simulink) plugin are a powerful tool for developing control strategies (e.g. bytuning PID loops), and PLCs commonly execute control strategies as part of the programmable logic.
+On the higher end of the PLC market, you will find some brands that allow programming in C++ and [even in Matlab](https://www.beckhoff.com/english.asp?twincat/twincat-3-xa-language-support-matlab-simulink.htm?id=1893323818933262).
+The latter makes a lot of sense to me: Matlab and its [Simulink](https://en.wikipedia.org/wiki/Simulink) plugin are a powerful tool for developing control strategies (e.g. by tuning PID loops), and PLCs commonly execute control strategies as part of the programmable logic.
 
 On the very low end of the market, some PLCs and PLC-like systems come with non-standard programming tools aimed at beginners and projects with basic requirements.
 
@@ -168,7 +168,7 @@ On the very low end of the market, some PLCs and PLC-like systems come with non-
 
 [^1]: If you want to learn more about elevator control systems, you should take a look at Elevatorpedia and its entry on [Elevator Control Systems](https://elevation.fandom.com/wiki/Elevator_control_system).
 
-[^2]: If this is your first encounter with this squiggle of punction, go [here](https://en.wikipedia.org/wiki/Interrobang).
+[^2]: If this is your first encounter with this squiggle of punctuation, go [here](https://en.wikipedia.org/wiki/Interrobang).
 
 [^3]: I didn't mention any PLC programming languages besides ladder logic during my presentations at all. Both times when I gave this presentation I only had 25 minutes, and the slide covering other languages got cut in my effort to shrink the presentation into the allocated time slot. I did get the appropriate amount of comments and complaints for doing so.
 
