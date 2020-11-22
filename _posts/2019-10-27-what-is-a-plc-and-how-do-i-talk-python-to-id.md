@@ -10,8 +10,9 @@ date: October 27, 2019
 
 *This post is part 1 of a series. Scroll down for a table of contents.*
 
-If you've found your way to this blog, chances are you already know that I've given a few conference talks about using Python for factory automation.
-You are reading the blog post version of content I presented at PyCon 2019, where I started my talk by answering the question:
+If you've found your way to this blog, chances are you already know that I've given a few conference talks about using Python in automation.
+You are right now reading the blog post version of content I presented at PyCon 2019.
+I started my talk there by answering the question:
 **Why do I keep talking about this topic?**[^1]
 
 Back at the turn of the century, when I was going to high school[^2], I managed to finagle my way into an internship at the nearby semiconductor factory.

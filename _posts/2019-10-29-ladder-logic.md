@@ -8,7 +8,7 @@ published: true
 date: October 29, 2019
 ---
 
-*This post is part 3 of [a series]({{ site.url }}/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-id).*
+*This post is part 3 of [a series]({{ site.url }}/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-id) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html).*
 
 Most software engineers are used to writing text-based code using a text editor [of their choice](https://en.wikipedia.org/wiki/Editor_war).
 Things work a little bit differently in the world of PLCs.
@@ -130,7 +130,7 @@ Among the PLC vendors, I found AutomationDirect worth looking at for hobbyists w
 ## Languages other than Ladder Logic
 
 Ladder logic is not the only language available for programming PLCs[^3].
-This (skipped) slide covers the most noteworthy other languages:
+This (skipped) slide from my PyCon talk covers the most noteworthy other languages:
 
 {% include image.html
   img="/assets/2019/2019-10-29-ladder-logic-slide-other-languages.png"
@@ -151,14 +151,12 @@ IEC-61131-3 was first published in 1993 and has mostly weathered the progress of
 
 While researching PLC vendors and programming softwares, I got the impression that while ladder logic is the most popular IEC-61131-3 language in the United States, Structured Text is the most common in Europe[^5].
 If you want to tinker with Structured Text, you can download a trial version of the [CODESYS programming software](https://www.codesys.com/products/codesys-engineering/development-system.html) for free.
-CODESYS is used either directly or "under the hood" by many European PLC vendors as their programming tool, but also tries to address the hobbyist market with tools like [CODESYS for Raspberry Pi](https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html?___store=en).
+CODESYS is used either directly or "under the hood" by many European PLC vendors as their programming tool, but also addresses the hobbyist market with tools like [CODESYS for Raspberry Pi](https://store.codesys.com/codesys-control-for-raspberry-pi-sl.html?___store=en).
 
 Compared to other programming languages, usage of the IEC-61131-3 languages seems like the Wild West.
 The [PLCopen organization](https://en.wikipedia.org/wiki/PLCopen) (not to be confused with the [openPLC](https://hackaday.com/2016/06/07/openplc-is-ready-for-hacking/) project) has tried to address this by publishing a set of [coding guidelines and a library of generic building blocks](https://plcopen.org/software-construction-guidelines).
 
 On the higher end of the PLC market, you will find some brands that allow programming in C++ and [even in Matlab](https://www.beckhoff.com/english.asp?twincat/twincat-3-xa-language-support-matlab-simulink.htm?id=1893323818933262).
-The latter makes a lot of sense to me: Matlab and its [Simulink](https://en.wikipedia.org/wiki/Simulink) plugin are a powerful tool for developing control strategies (e.g. by tuning PID loops), and PLCs commonly execute control strategies as part of the programmable logic.
-
 On the very low end of the market, some PLCs and PLC-like systems come with non-standard programming tools aimed at beginners and projects with basic requirements.
 
 
