@@ -371,9 +371,9 @@ Moderna, having no international megacorp partner like Pfizer, [outsourced these
 
 ## Packaging
 
-Five doses of the Pfizer-BioNTech vaccine are combined into a single vial. News outlets report that vials are often overfilled and US and EU regulators encourage that extra doses be administered from a vial if possible.[^28][^29] 195 vials are stored on a tray and up to five trays are placed in a custom shipping box (which then holds 4,875 doses).[^30]
+Five 0.3mL doses of the Pfizer-BioNTech vaccine are combined into a single vial. News outlets report that vials are often overfilled and US and EU regulators encourage that extra doses be administered from a vial if possible.[^28][^29] 195 vials are stored on a tray and up to five trays are placed in a custom shipping box (which then holds 4,875 doses).[^30]
 
-Both Moderna contract manufacturers package the vaccine in vials containing doses each. 10 vials are combined into one carton, and 12 cartons into a case. Up to 192 cases can be stacked on one shipping pallet (which would then hold 230,400 doses).[^31]
+Moderna's vaccine vials hold 10 doses of 0.5mL each. Moderna combines 10 vials into one carton and 12 cartons into a case. Up to 192 cases can be stacked on one shipping pallet (which would then hold 230,400 doses).[^31]
 
 
 ## Global Distribution
