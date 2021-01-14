@@ -14,7 +14,7 @@ Bert’s article is primarily about the biology of the vaccine, how it relates t
 
 > At the very beginning of the vaccine production process, someone uploaded this code to a DNA printer (yes), which then converted the bytes on disk to actual DNA molecules.
 
-Next to it is a picture of a [CodexDNA BioXP](https://codexdna.com/products/bioxp-system/) device that is advertised as producing “custom DNA fragments of up to 7,000 base pairs”. Could this be the next[distributed manufacturing revolution](https://en.wikipedia.org/wiki/Makers:_The_New_Industrial_Revolution)? This time with DNA printers making COVID-19 vaccines in our garages instead of 3D printers and plastic widgets?
+Next to it is a picture of a [CodexDNA BioXP](https://codexdna.com/products/bioxp-system/) device that is advertised as producing “custom DNA fragments of up to 7,000 base pairs”. Could this be the next [distributed manufacturing revolution](https://en.wikipedia.org/wiki/Makers:_The_New_Industrial_Revolution)? This time with DNA printers making COVID-19 vaccines in our garages instead of 3D printers and plastic widgets?
 
 I'll start with the bad news: Nobody will be making an mRNA vaccine in their garage any time soon.
 
@@ -225,12 +225,12 @@ To make RNA, you start by making DNA. This makes sense if you know the [central 
 
 
 
-1. *Create:* Synthesize a small number of copies of the desired DNA, somehow. There are vendors for this sort of thing such as [Twist Bioscience](https://twistbioscience.com/) just down the street from my apartment when I lived in San Francisco.
-2. *Copy:*
+1. **Create:** Synthesize a small number of copies of the desired DNA, somehow. There are vendors for this sort of thing such as [Twist Bioscience](https://twistbioscience.com/) just down the street from my apartment when I lived in San Francisco.
+2. **Copy:**
     1. Insert this DNA into innocent [E. coli bacteria](https://en.wikipedia.org/wiki/Escherichia_coli) by means of [electrophoresis](https://en.wikipedia.org/wiki/Electrophoresis), i.e. zapping them.
     2. Put those bacteria into a stainless steel growth chamber full of nutrients and let them multiply for four days.
     3. Drain the vat, kill the bacteria, and [extract the DNA](https://en.wikipedia.org/wiki/DNA_extraction). Depending on growth chamber volume, this may take one week or longer.
-3. *Verify:* Perform several tests to confirm that the DNA you got is the DNA you wanted. There’s no need for me to explain how testing for the presence of specific DNA sequences works, y’all learned that nine months ago when you did your reading about how COVID-19 tests work.
+3. **Verify:** Perform several tests to confirm that the DNA you got is the DNA you wanted. There’s no need for me to explain how testing for the presence of specific DNA sequences works, y’all learned that nine months ago when you did your reading about how COVID-19 tests work.
 
 This yields grams of DNA and what is needed are bags of mRNA. mRNA is the most discussed ingredient of the vaccine for three reasons:
 
@@ -373,7 +373,7 @@ Moderna, having no international megacorp partner like Pfizer, [outsourced these
 
 Five 0.3mL doses of the Pfizer-BioNTech vaccine are combined into a single vial. News outlets report that vials are often overfilled and US and EU regulators encourage that extra doses be administered from a vial if possible.[^28][^29] 195 vials are stored on a tray and up to five trays are placed in a custom shipping box (which then holds 4,875 doses).[^30]
 
-Moderna's vaccine vials hold 10 doses of 0.5mL each. Moderna combines 10 vials into one carton and 12 cartons into a case. Up to 192 cases can be stacked on one shipping pallet (which would then hold 230,400 doses).[^31]
+Moderna’s vaccine vials hold 10 doses of 0.5mL each. Moderna combines 10 vials into one carton and 12 cartons into a case. Up to 192 cases can be stacked on one shipping pallet (which would then hold 230,400 doses).[^31]
 
 
 ## Global Distribution
@@ -540,7 +540,7 @@ Additionally, Pfizer-BioNTech have:
 
 The exact list and formats of materials must match the needs and regulations of every jurisdiction. For example, many countries require labels and printed materials to be included in a local language. Tracking tens of localized versions of vaccine packages from final filling (when the vial label is applied) to point of care would multiply the supply chain complexity and slow down the process. This has led to unusual accommodation such as the European Commission permitting English-only materials for all EU countries as long as a digital version of the localized materials is available for printing at the point of care.[^63]
 
-BioNTech really benefits from working with Pfizer and is miles ahead of Moderna in terms of how materials they have available: At the time of writing, Pfizer-BioNTech 44 has localized websites up, each with its own local domain name and local email addresses and so on. Some of the PDF file names look like “Hqrdtemplateclean_de” suggesting that they follow a playbook and have templates ready. Looking up some of the 44 domains suggests that they are using [Cloudflare](https://www.cloudflare.com) as registrar and hosting provider.
+BioNTech really benefits from working with Pfizer and is miles ahead of Moderna in terms of how materials they have available: At the time of writing, Pfizer-BioNTech has 44 localized websites up, each with its own local domain name and local email addresses and so on. Some of the PDF file names look like “Hqrdtemplateclean_de” suggesting that they follow a playbook and have templates ready. Looking up some of the 44 domains suggests that they are using [Cloudflare](https://www.cloudflare.com) as registrar and hosting provider.
 
 At time of writing, Moderna has local websites for Canada, Israel, and USA, hosted on AWS.
 
