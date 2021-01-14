@@ -29,6 +29,7 @@ It is unlikely that I got everything right. Corrections and suggestions are welc
   title="Source/attribution: U.S. Navy Photo by Elaine Heirigs, NHC/NMRTC Lemoore public affairs/Released, https://www.flickr.com/photos/navymedicine/50755819886/"
 %}
 
+
 ## Ingredients List
 
 The list of ingredients, or “bill of materials” in engineering parlance, is a good starting point for understanding the supply chain of any product. The ingredient lists for both Pfizer-BioNTech and Moderna’s vaccines are public and have been widely reported.
@@ -411,7 +412,10 @@ While there are no doubt fundamental reasons for temperature requirements, it is
 
 There are notable differences between the path shown for the Pfizer-BioNTech and Moderna vaccines. Pfizer appears to bypass almost all distribution steps! This is due to two reasons:
 
+
+
 1. Pfizer and OWS interact very much “at arms length”. Contrary to Moderna and makers of other vaccine candidates, Pfizer did not receive US government funds for the development of the vaccine. Instead, it only has a supply contract which is structured to minimize US government involvement.[^38]
+
 
 2. OWS currently only has a distribution contract for refrigerated and -20C cold chains.[^39] Therefore, it does not support the needs of the Pfizer-BioNTech vaccine. Of course, that situation would likely be different if Pfizer had indicated a need for assistance with distribution.
 It is likely that most vaccines authorized for distribution in the US in future will follow Moderna’s pattern and not Pfizer, given that the makers of many promising vaccine candidates already have a closer relationship with WS than Pfizer does.
@@ -572,7 +576,6 @@ At the top of this article I rhetorically asked whether mRNA vaccines for COVID-
 This investigation into the supply chain of the Pfizer-BioNTech and Moderna COVID-19 vaccines ends here. Of course, there are many more details and tangents to be explored, the [TED talk about making a toaster from scratch](http://www.ted.com/talks/thomas_thwaites_how_i_built_a_toaster_from_scratch) could really use a sequel. Please [send me an email](mailto:jn@jonasneubert.com) if you have suggestions for what to add or corrections for what is already there.
 
 
-<!-- Footnotes themselves at the bottom. -->
 ## Notes
 
 [^1]:
