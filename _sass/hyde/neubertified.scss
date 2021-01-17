@@ -27,7 +27,16 @@ ul {
 }
 
 table {
-  font-size:small;
+  font-size: small;
+}
+
+.post sup[role=doc-noteref] {
+  font-size: small;
+}
+
+.post div[role=doc-endnotes] {
+  font-size: small;
+  word-wrap: break-word; /* to force long links to break */
 }
 
 /*
@@ -70,7 +79,7 @@ body {
   /* rotate to "page margin" */
   position: absolute;
   /* 30px matches width of border-image-width of .content */
-  transform: rotate(-90deg) translateX(-100%) translateY(-30px); 
+  transform: rotate(-90deg) translateX(-100%) translateY(-30px);
   transform-origin: top left;
 
   /* resetting margins et al */
