@@ -228,7 +228,7 @@ To make RNA, you start by making DNA. This makes sense if you know the [central 
 
 1. **Create:** Synthesize a small number of copies of the desired DNA, somehow. There are vendors for this sort of thing such as [Twist Bioscience](https://twistbioscience.com/) just down the street from my apartment when I lived in San Francisco.
 2. **Copy:**
-    1. Insert this DNA into innocent [E. coli bacteria](https://en.wikipedia.org/wiki/Escherichia_coli) by means of [electrophoresis](https://en.wikipedia.org/wiki/Electrophoresis), i.e. zapping them.
+    1. Insert this DNA into innocent [E. coli bacteria](https://en.wikipedia.org/wiki/Escherichia_coli) by means of [electroporation](https://en.wikipedia.org/wiki/Electroporation), i.e. zapping them.
     2. Put those bacteria into a stainless steel growth chamber full of nutrients and let them multiply for four days.
     3. Drain the vat, kill the bacteria, and [extract the DNA](https://en.wikipedia.org/wiki/DNA_extraction). Depending on growth chamber volume, this may take one week or longer.
 3. **Verify:** Perform several tests to confirm that the DNA you got is the DNA you wanted. There’s no need for me to explain how testing for the presence of specific DNA sequences works, y’all learned that nine months ago when you did your reading about how COVID-19 tests work.
