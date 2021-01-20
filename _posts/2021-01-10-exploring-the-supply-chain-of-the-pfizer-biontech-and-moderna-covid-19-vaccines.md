@@ -6,7 +6,7 @@ published: true
 date: January 10, 2021
 ---
 
-_Sections of this post were co-authored by [Cornelia Scheitz](https://www.linkedin.com/in/cornelia-scheitz/). Last updated on January 19, 2021._
+_Sections of this post were co-authored by [Cornelia Scheitz](https://www.linkedin.com/in/cornelia-scheitz/). Last updated on January 20, 2021._
 
 Bert Hubert’s excellent and widely shared article about [Reverse Engineering the source code of the Pfizer-BioNTech SARS-CoV-2 Vaccine](https://berthub.eu/articles/posts/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/) is all it took to turn hundreds of software engineers and other Silicon Valley types into armchair vaccine experts overnight! Jokes aside, the article explains the 4284 base pair long mRNA inside the Pfizer-BioNTech’s COVID-19 vaccine for those who are more familiar with software than molecular biology.
 
@@ -498,17 +498,23 @@ It’s safe to assume that all steps of all distribution processes of both vacci
 
 ## Glass Vials
 
-The material of choice for vaccine glass vials is [borosilicate glass](https://en.wikipedia.org/wiki/Borosilicate_glass) which withstands thermal shocks and is surface treated to not react with the vaccine. The type of glass has many applications including kitchenware, but a handful of vendors dominate the world production of the vaccine vial form factor.
+Vaccine vials are not made out of any regular glass, as they must withstand mechanical shocks as well as thermal shocks due to cold storage. Minimizing chemical reactions between the glass and the contained substance appear to also be a consideration.
+
+The material of choice for vaccine glass vials is [borosilicate glass](https://en.wikipedia.org/wiki/Borosilicate_glass). Shock resistance is not only prized in vaccine storage, which is why this type of glass has many applications including kitchenware and as a substrate in electronics. The chemical element [Boron](https://en.wikipedia.org/wiki/Boron) is the component that contributes the first half of the name “borosilicate” and the key properties of the glass. Turkey’s state owned company Eti Mine Works produced almost three quarters of the world’s supply, the remainder comes from [Rio Tinto Borax Mine](https://en.wikipedia.org/wiki/Rio_Tinto_Borax_Mine) in Boron, California.
+
+A handful of manufacturers dominate the world production of borosilicate glass in the vaccine vial form factor.
 
 [Schott AG](https://www.schott.com), headquartered in Mainz, Germany, was founded by the inventor of borosilicate glass and produces vials in Germany, India, Brazil, and, as of recently, in China.[^63] Schott claims that “three out of four COVID-19 vaccine projects rely on Schott vials” and mentions supplying Operation Warp Speed partners.[^64]
 
-Fellow German glass vial competitor [Gerresheimer AG](https://www.gerresheimer.com), headquartered in Düsseldorf, produces borosilicate glass vials in China, India, USA, Mexico, France, and Poland. The company estimates to produce (and sell) a billion vials for COVID-19 vaccines.[^65] I wasn't able to find information about any specific contracts, but [this case study](https://www.gerresheimer.com/en/news-events/corporate-news/show/gerresheimer-sets-foundation-for-profitable-growth-in-2019.html) about how Gerresheimer went about rapidly getting their IT setup up to snuff for a remote workforce provided some welcome diversion from vaccine-related reading.
+Fellow German glass vial competitor [Gerresheimer AG](https://www.gerresheimer.com), headquartered in Düsseldorf, produces borosilicate glass vials in China, India, USA, Mexico, France, and Poland. The company estimates to produce (and sell) a billion vials for COVID-19 vaccines.[^65] I wasn't able to find information about any specific contracts, but [this case study](https://www.gerresheimer.com/en/news-events/corporate-news/show/gerresheimer-sets-foundation-for-profitable-growth-in-2019.html) about how Gerresheimer went about rapidly getting their IT systems up to snuff for a remote workforce provided some welcome diversion from vaccine-related reading.
 
-Other glassware manufacturers who may or may not currently supply vials COVID-19 vaccines are Stevanto (Italy), [Corning](https://www.corning.com/worldwide/en/products/pharmaceutical-technologies/valor-glass.html) (USA), and [Borosil](https://www.borosil.com/what-we-do/pharmaceutical-packaging/) (India).
+Other glassware manufacturers who may or may not currently supply borosilicate glass vials COVID-19 vaccines are [Stevanto](https://www.stevanatogroup.com/) from Italy, [Borosil](https://www.borosil.com/what-we-do/pharmaceutical-packaging/) in India, and [Corning](https://www.corning.com/worldwide/en/products/pharmaceutical-technologies/valor-glass.html) in the USA (more about Corning below).
 
 As is true for all other vaccine ingredients and accessory components, the demand for COVID-19 vaccine vials needs to be met on top of the existing demand for all other types of vaccines. Despite the optimistic projections for vial production numbers by all vendors, it’s worth acknowledging that the current situation is a workaround. If glass vial supply was unlimited, manufacturers wouldn’t fill multiple doses into a single vial.[^66] In fact, there would be no vials at all because a preferred form factor for vaccine distribution is the prefilled syringe. In May 2020 the US DoD awarded a contract to [ApiJect Systems America](https://apiject.com) to develop a facility for producing 100 million prefilled syringes for distribution by year-end 2020.[^67] The same company now constructs a second, larger, prefilled syringe facility in Research Triangle Park, North Carolina, and calls it the “ApiJect Gigafactory”.[^68]
 
-The chemical element [Boron](https://en.wikipedia.org/wiki/Boron) is the component that contributes the first half of the name “borosilicate” and the key properties of the glass. Turkey’s state owned company Eti Mine Works produced almost three quarters of the world’s supply, the remainder comes from [Rio Tinto Borax Mine](https://en.wikipedia.org/wiki/Rio_Tinto_Borax_Mine) in Boron, California.
+Just like COVID-19 catapulted mRNA vaccines from obscurity into high-volume commercial use, it also launched a glass research project into mass production: The company [Corning](https://www.corning.com/worldwide/en/products/pharmaceutical-technologies/valor-glass.html), located in the town with the same name in Upstate New York, had been developing a new material they call “[Valor Glass](https://www.corning.com/worldwide/en/products/pharmaceutical-technologies/valor-glass.html)” since 2011.[^69] The glass does not contain boron (but instead alumina) and undergoes a surface treatment similar to Corning’s [Gorilla Glass](https://en.wikipedia.org/wiki/Gorilla_Glass) of smartphone screen fame. [This Hackaday post](https://hackaday.com/2020/12/28/the-high-tech-valor-glass-vials-used-to-deliver-the-coronavirus-vaccine/) has more details on the what and how of Valor Glass as well as embedded videos full of crushed and shattered vaccine vials. In May 2020, Pfizer signed a supply agreement for Valor Glass[^70] and in June 2020 Operation Warp Speed provided funding to expand US-based manufacturing of Valor Glass[^71].
+
+[SiO2 Materials Science](https://www.sio2ms.com) in Auburn, Alabama, is another recipient of OWS funds. Since June 2020, the company has increased their staff by 5x and their production rate by 12x.[^72] In 1963, this same company was the first to manufacture the one-gallon plastic milk jug with a built-in handle and leak proof cap that you can still find in fridges all over America today.
 
 
 ## Point of Care
@@ -532,11 +538,11 @@ Depending on when and where you receive your vaccine, the “point of care” mi
 *   1 medical exam glove
 *   For disposal, a sharps container needs to be present. In the photo from Baltimore above a tupperware box fills in as the sharps container.
 
-Additional materials are required for the Pfizer-BioNTech vaccine. Each vial needs to be diluted with 1.8mL of 0.9 NaCl (sodium chloride) shortly before use.[^69] The transfer of sodium chloride into the vaccine vial (and removal of corresponding volume of air) requires one sufficiently large syringe (Pfizer recommends 3mL or 5mL) and corresponding needle _per vial_. Furthermore, anyone dealing with Pfizer’s shipping container needs appropriate protective equipment and potentially safety training before handling dry ice.
+Additional materials are required for the Pfizer-BioNTech vaccine. Each vial needs to be diluted with 1.8mL of 0.9 NaCl (sodium chloride) shortly before use.[^73] The transfer of sodium chloride into the vaccine vial (and removal of corresponding volume of air) requires one sufficiently large syringe (Pfizer recommends 3mL or 5mL) and corresponding needle _per vial_. Furthermore, anyone dealing with Pfizer’s shipping container needs appropriate protective equipment and potentially safety training before handling dry ice.
 
-In the United States the government supplies these supplies, as part of Operation Warp Speed (OWS). Kitting and delivery of Moderna and all future OWS partners’ kits is handled by OWS distribution partner McKesson.[^70] In this system, Moderna vaccine shipments are accompanied by the supplies required to administer them. As usual, Pfizer bypasses the government-operated supply chain and ships “mega kits” of supplies that contain enough materials to administer 1,000 doses as well as one set of gloves for handling dry ice. “Mega kits” arrive at the point of care separately from the vaccine.
+In the United States the government supplies these supplies, as part of Operation Warp Speed (OWS). Kitting and delivery of Moderna and all future OWS partners’ kits is handled by OWS distribution partner McKesson.[^74] In this system, Moderna vaccine shipments are accompanied by the supplies required to administer them. As usual, Pfizer bypasses the government-operated supply chain and ships “mega kits” of supplies that contain enough materials to administer 1,000 doses as well as one set of gloves for handling dry ice. “Mega kits” arrive at the point of care separately from the vaccine.
 
-The exact type and supplier of syringe in the kits varies, probably because of supply constraints. A key difference between syringe types is the amount of “dead volume” that remains in the syringe after pushing the plunger in all the way. Every syringe has some dead volume, simply because the plunger cannot possibly reach into the syringe needle. Some syringes are specifically advertised as “low dead-volume syringes” and have tens of microliters lower dead volume than those not advertised as such. Multiply that by five doses per vial for Pfizer-BioNTech or 10 doses per vial for Moderna, and you get a number in the same order of magnitude as a vaccination dose. This explains why some vaccination sites report finding extra doses in many vials: They are working with supply kits that contain low dead-volume syringes.[^71]
+The exact type and supplier of syringe in the kits varies, probably because of supply constraints. A key difference between syringe types is the amount of “dead volume” that remains in the syringe after pushing the plunger in all the way. Every syringe has some dead volume, simply because the plunger cannot possibly reach into the syringe needle. Some syringes are specifically advertised as “low dead-volume syringes” and have tens of microliters lower dead volume than those not advertised as such. Multiply that by five doses per vial for Pfizer-BioNTech or 10 doses per vial for Moderna, and you get a number in the same order of magnitude as a vaccination dose. This explains why some vaccination sites report finding extra doses in many vials: They are working with supply kits that contain low dead-volume syringes.[^75]
 
 Not listed on any bill of materials but very much required: A trained healthcare professional to prepare and administer each dose. The human component of healthcare has often been overlooked during this pandemic while the conversation focused on counting ventilators and ICU beds. Who is qualified and permitted to perform vaccine administration varies by country. My personal experience is that in the United States I have received vaccines from nurses and pharmacists and in Germany only from medical doctors.
 
@@ -565,7 +571,7 @@ Additionally, Pfizer-BioNTech have:
 *   Safety information for handling dry ice
 *   Instructions for how to return shipping containers
 
-The exact list and formats of materials must match the needs and regulations of every jurisdiction. For example, many countries require labels and printed materials to be included in a local language. Tracking tens of localized versions of vaccine packages from final filling (when the vial label is applied) to point of care would multiply the supply chain complexity and slow down the process. This has led to unusual accommodation such as the European Commission permitting English-only materials for all EU countries as long as a digital version of the localized materials is available for printing at the point of care.[^72]
+The exact list and formats of materials must match the needs and regulations of every jurisdiction. For example, many countries require labels and printed materials to be included in a local language. Tracking tens of localized versions of vaccine packages from final filling (when the vial label is applied) to point of care would multiply the supply chain complexity and slow down the process. This has led to unusual accommodation such as the European Commission permitting English-only materials for all EU countries as long as a digital version of the localized materials is available for printing at the point of care.[^76]
 
 BioNTech really benefits from working with Pfizer and is miles ahead of Moderna in terms of how materials they have available: At the time of writing, Pfizer-BioNTech has 44 localized websites up, each with its own local domain name and local email addresses and so on. Some of the PDF file names look like “Hqrdtemplateclean_de” suggesting that they follow a playbook and have templates ready. Looking up some of the 44 domains suggests that they are using [Cloudflare](https://www.cloudflare.com) as registrar and hosting provider.
 
@@ -811,13 +817,25 @@ This investigation into the supply chain of the Pfizer-BioNTech and Moderna COVI
      [https://apiject.com/wp-content/uploads/2020/11/APIJECT-PRESS-RELEASE-FINAL-%E2%80%93-201119-%E2%80%93-1.pdf](https://apiject.com/wp-content/uploads/2020/11/APIJECT-PRESS-RELEASE-FINAL-%E2%80%93-201119-%E2%80%93-1.pdf)
 
 [^69]:
-     [https://www.cvdvaccine.ca/product-storage-and-dry-ice](https://www.cvdvaccine.ca/product-storage-and-dry-ice)
+     [https://www.newyorker.com/magazine/2020/12/07/the-race-to-make-vials-for-coronavirus-vaccines](https://www.newyorker.com/magazine/2020/12/07/the-race-to-make-vials-for-coronavirus-vaccines)
 
 [^70]:
-     [https://coronavirus.health.ny.gov/system/files/documents/2020/12/hospital_vaccine_guidance_week1.pdf](https://coronavirus.health.ny.gov/system/files/documents/2020/12/hospital_vaccine_guidance_week1.pdf)
+     [https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2020/05/corning-and-pfizer-announce-new-supply-agreement-for-corning-valor-glass-packaging.html](https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2020/05/corning-and-pfizer-announce-new-supply-agreement-for-corning-valor-glass-packaging.html)
 
 [^71]:
-     [https://marginalrevolution.com/marginalrevolution/2021/01/the-magical-extra-doses-and-supply-chain-optimization.html](https://marginalrevolution.com/marginalrevolution/2021/01/the-magical-extra-doses-and-supply-chain-optimization.html)
+     [https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2020/06/us-departments-of-defense-health-human-services-select-corning-valor-glass-packaging-to-accelerate-delivery-of-covid-19-vaccines.html](https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2020/06/us-departments-of-defense-health-human-services-select-corning-valor-glass-packaging-to-accelerate-delivery-of-covid-19-vaccines.html)
 
 [^72]:
+     [https://www.sio2ms.com/news/48-barda](https://www.sio2ms.com/news/48-barda)
+
+[^73]:
+     [https://www.cvdvaccine.ca/product-storage-and-dry-ice](https://www.cvdvaccine.ca/product-storage-and-dry-ice)
+
+[^74]:
+     [https://coronavirus.health.ny.gov/system/files/documents/2020/12/hospital_vaccine_guidance_week1.pdf](https://coronavirus.health.ny.gov/system/files/documents/2020/12/hospital_vaccine_guidance_week1.pdf)
+
+[^75]:
+     [https://marginalrevolution.com/marginalrevolution/2021/01/the-magical-extra-doses-and-supply-chain-optimization.html](https://marginalrevolution.com/marginalrevolution/2021/01/the-magical-extra-doses-and-supply-chain-optimization.html)
+
+[^76]:
      [https://www.zdf.de/nachrichten/panorama/coronavirus-impfstoff-logistik-100.html](https://www.zdf.de/nachrichten/panorama/coronavirus-impfstoff-logistik-100.html)
