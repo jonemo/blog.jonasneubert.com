@@ -607,6 +607,11 @@ At the top of this article I rhetorically asked whether mRNA vaccines for COVID-
 This investigation into the supply chain of the Pfizer-BioNTech and Moderna COVID-19 vaccines ends here. Of course, there are many more details and tangents to be explored, the [TED talk about making a toaster from scratch](http://www.ted.com/talks/thomas_thwaites_how_i_built_a_toaster_from_scratch) could really use a sequel. Please [send me an email](mailto:jn@jonasneubert.com) if you have suggestions for what to add or corrections for what is already there.
 
 
+## Acknowledgements
+
+Thanks to [Ted](https://twitter.com/tedder42), [Roman](https://hut.pm), and [Noah](https://www.noahleidinger.com/en/about) for sending corrections and suggestions.
+
+
 ## Notes
 
 [^1]:
