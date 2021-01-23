@@ -611,7 +611,7 @@ This investigation into the supply chain of the Pfizer-BioNTech and Moderna COVI
 
 ## Acknowledgements
 
-Thanks to [Ted](https://twitter.com/tedder42), [Roman](https://hut.pm), and [Noah](https://www.noahleidinger.com/en/about) for sending corrections and suggestions.
+Thanks to [Ted](https://twitter.com/tedder42), [Roman](https://hut.pm), [Noah](https://www.noahleidinger.com/en/about), and [Keith](https://suddenlyathome.net) for sending corrections and suggestions.
 
 
 ## Notes
