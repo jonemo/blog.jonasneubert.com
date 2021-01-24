@@ -33,6 +33,13 @@ in Washington Post, by [Carolyn Y. Johnson](https://twitter.com/@carolynyjohnson
 The Pfizer equivalent to Boston Magazine’s story about Moderna listed above. This article focuses on the Pfizer half of Pfizer-BioNTech and traces the US-based production supply chain from St. Louis, MO, to Andover, MA, to Kalamazoo, MI.
 
 
+## [How Pfizer Delivered a Covid Vaccine in Record Time: Crazy Deadlines, a Pushy CEO](https://www.wsj.com/articles/how-pfizer-delivered-a-covid-vaccine-in-record-time-crazy-deadlines-a-pushy-ceo-11607740483)
+
+in Wall Street Journal, by [Jared S. Hopkins](https://twitter.com/jaredshopkins), published 7 December 2020
+
+Read this directly after the previous one. Your knowledge of the three Pfizer locations and the final process will make you appreciate even more what the manufacturing and operations people at Pfizer had to deal with while building a manufacturing process before the final vaccine was chosen from twenty initial candidates. It’s a story of constantly changing requirements, tens of millions of dollars being thrown at problems, many clever ideas to squeeze out additional factory capacity, and how all of that led to the changing dose count predictions that the news media breathlessly and context-freely reported about.
+
+
 ## [The Race to Make Vials for Coronavirus Vaccines](https://www.newyorker.com/magazine/2020/12/07/the-race-to-make-vials-for-coronavirus-vaccines)
 
 in New Yorker Magazine, photos by [Christopher Payne](https://www.chrispaynephoto.com), published 30 November 2020
