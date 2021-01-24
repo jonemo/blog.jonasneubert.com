@@ -6,7 +6,7 @@ published: true
 date: January 10, 2021
 ---
 
-_Sections of this post were co-authored by [Cornelia Scheitz](https://www.linkedin.com/in/cornelia-scheitz/). Last updated on January 20, 2021._
+_Sections of this post were co-authored by [Cornelia Scheitz](https://www.linkedin.com/in/cornelia-scheitz/). Last updated on January 24, 2021._
 
 Bert Hubert’s excellent and widely shared article about [Reverse Engineering the source code of the Pfizer-BioNTech SARS-CoV-2 Vaccine](https://berthub.eu/articles/posts/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/) is all it took to turn hundreds of software engineers and other Silicon Valley types into armchair vaccine experts overnight! Jokes aside, the article explains the 4284 base pair long mRNA inside the Pfizer-BioNTech’s COVID-19 vaccine for those who are more familiar with software than molecular biology.
 
@@ -91,7 +91,7 @@ The two vaccines share some ingredients but not all. The following table is my a
    </td>
   </tr>
   <tr>
-   <td>(4-hydroxybutyl)azanediyl)bis(hexane-6,1-diyl)bis(2- hexyldecanoate) (ALC-3015)
+   <td>((4-hydroxybutyl)azanediyl)bis(hexane-6,1-diyl)bis(2- hexyldecanoate) (ALC-3015)
    </td>
    <td>✔
    </td>
@@ -345,7 +345,7 @@ mRNA production has never been done at the volume required for the COVID-19 vacc
 
 Pfizer sources all four lipids ingredients from UK-headquartered [Croda international](https://www.croda.com). The [news release](https://www.croda.com/en-gb/news/2020/11/pfizer-croda) implies that the recently acquired subsidiary [Avanti Polar Lipids](https://avantilipids.com), located in Alabaster, Alabama, would handle the production.
 
-Moderna sources all lipids ingredients from the German-headquartered company [CordenPharma](https://www.cordenpharma.com).[^22] One facility in Boulder, CO, which was recently expanded and can now produce 400kg per batch[^23], and two facilities in [Liestal, Switzerland](https://www.cordenpharma.com/facilities/liestal/), and [Chenôve, France](https://www.cordenpharma.com/facilities/chenove/), are set up to produce the lipids required by Moderna. According to this [Chemical & Engineering News](https://cen.acs.org/business/outsourcing/Pfizer-Moderna-ready-vaccine-manufacturing/98/i46) article CordonPharma had to expand their capacity ten-fold and can now produce three to four times Moderna’s demand.
+Moderna sources all lipids ingredients from the German-headquartered company [CordenPharma](https://www.cordenpharma.com).[^22] One facility in Boulder, CO, which was recently expanded and can now produce 400kg per batch[^23], and two facilities in [Liestal, Switzerland](https://www.cordenpharma.com/facilities/liestal/), and [Chenôve, France](https://www.cordenpharma.com/facilities/chenove/), are set up to produce the lipids required by Moderna. According to this [Chemical & Engineering News](https://cen.acs.org/business/outsourcing/Pfizer-Moderna-ready-vaccine-manufacturing/98/i46) article CordenPharma had to expand their capacity ten-fold and can now produce three to four times Moderna’s demand.
 
 
 ## Lipid Nanoparticle (LNP) Production
@@ -354,7 +354,7 @@ Welcome to the bottleneck of mRNA vaccine production! The number of people in th
 
 The problem at hand is this: How do you get the four lipids and the mRNA to combine in such a way that they form the protective sphere of the LNP, in a reproducible way? You can’t just combine all parts in your Vitamix and run the smoothie program. Well, you could, but it’s not going to give you a weird smoothie and not mRNA filled lipid nano-particles. What is of the essence is precise control of molecule sizes, precise control of flow rates, and probably precise control of many other parameters. Microfluidics is the technology of choice for these requirements and are most likely used for nanoparticle formation in mRNA vaccine making.
 
-Vancouver, British Columbia, appears to be one center of expertise for LNPs in the world. The Vancouver company [Precision Nanosystems](https://www.precisionnanosystems.com/workflows/payloads/mrna) makes devices for LNP production and is part of an effort to create a Made in Canada COVID-19 vaccine.[^24] Transferra Nanosciences, also in Vancouver, was recently acquired by German chemistry mega-corp Evonik[^25] but seems to not be involved in any COVID-19 vaccine efforts. The educational content on Precision Nanosystems’ website is worth a watch if you want to know more about the process. [Acuitas Therapeutics](https://acuitastx.com), also in Vancouver, develops LNPs and works with several vaccine developers including Pfizer-BioNTech.[^26]
+Vancouver, British Columbia, appears to be one center of expertise for LNPs in the world. The Vancouver company [Precision Nanosystems](https://www.precisionnanosystems.com/workflows/payloads/mrna) makes devices for LNP production and is part of an effort to create a Made in Canada COVID-19 vaccine.[^24] Transferra Nanosciences, also in Vancouver, was acquired by German chemistry mega-corp Evonik[^25] in 2016 but seems to not be involved in any COVID-19 vaccine efforts. The educational content on Precision Nanosystems’ website is worth a watch if you want to know more about the process. [Acuitas Therapeutics](https://acuitastx.com), also in Vancouver, develops LNPs and works with several vaccine developers including Pfizer-BioNTech.[^26]
 
 Klosterneuburg outside Vienna, Austria, is the other global center of excellence for LNPs. That’s where the company [Polymun Scientific Immunbiologische Forschung GmbH](https://www.polymun.com) is located which is the subject of the aforementioned WSJ article. According to the article, technology transfer to scale up Polymun’s process in-house at Pfizer and/or BioNTech was happening as of November. In addition, Pfizer uses technology developed by Acuitas Therapeutics.[^27] [The previously referenced Washington Post article](https://www.washingtonpost.com/health/2020/11/17/coronavirus-vaccine-manufacturing/) reports that as of November the LNP production step in Kalamazoo is the bottleneck of the US supply chain.
 
@@ -387,9 +387,9 @@ Moderna’s vaccine vials hold 10 doses of 0.5mL each. Moderna combines 10 vials
 
 ## Global Distribution
 
-From the previous sections, we already know that the vaccine is inside the multi-dose vials for the entire distribution process from the fill-and-finish to the [point of care](https://en.wikipedia.org/wiki/Point_of_care). This is unlike many other products which are shipped from the manufacturer in bulk quantities and split up into saleable units closer to the point of sale/care.
+From the previous sections, we already know that the vaccine is inside the multi-dose vials for the entire distribution process from the fill-and-finish to the [point of use](https://en.wikipedia.org/wiki/Point_of_care). This is unlike many other products which are shipped from the manufacturer in bulk quantities and split up into saleable units closer to the point of sale/care.
 
-Which manufacturing location a vaccine originates from is determined by which country the point of care is located in, with the primary distinction being United States versus non-US for both Pfizer-BioNTech and Moderna supply chains. It seems likely that the supply chains will branch or split further as more countries with relevant local industry authorize the use of the vaccines.
+Which manufacturing location a vaccine originates from is determined by which country the point of use is located in, with the primary distinction being United States versus non-US for both Pfizer-BioNTech and Moderna supply chains. It seems likely that the supply chains will branch or split further as more countries with relevant local industry authorize the use of the vaccines.
 
 The remaining challenge is transport of the vaccine vials to all points of care, such as hospitals, vaccine centers, and pharmacies. While the manufacturing process described above is a highly complicated process that occurs in a few well-defined environments, the distribution process is moderately complicated and needs to occur in countless environments with highly varied environments. The remaining sections attempt to do this complex challenge justice by highlighting a few specific aspects of it.
 
@@ -400,7 +400,7 @@ Temperature requirements are a defining characteristic of vaccine distribution i
 
 The term [cold chain](https://en.wikipedia.org/wiki/Cold_chain) is used broadly to describe all components of supply chains that require temperature control at below ambient conditions. Curiously, there appears to not be a corresponding term like “hot chain” related to products that have minimum temperature requirements such as cooked foods and some adhesives.
 
-The Pfizer-BioNTech vaccine requires “ultra-low temperature” during transport and storage. Depending on which news article you read, the maximum permissible temperature is anywhere between -60°C (-76°F) and -80°C (-112°F). These are, in fact, the temperatures bounds specified for storage at the point of care. Once thawed, further chilled storage at 2°C (36°F) to 8°C (46°F) is specified as permissible for up to five days.[^38] An assortment of news sources corroborate that the range from -60°C to -80°C is also maintained for all RNA-containing substances throughout the supply chain with the exception of a 72-hour window during the final assembly and filling[^39].
+The Pfizer-BioNTech vaccine requires “ultra-low temperature” during transport and storage. Depending on which news article you read, the maximum permissible temperature is anywhere between -60°C (-76°F) and -80°C (-112°F). These are, in fact, the temperatures bounds specified for storage at the point of use. Once thawed, further chilled storage at 2°C (36°F) to 8°C (46°F) is specified as permissible for up to five days.[^38] An assortment of news sources corroborate that the range from -60°C to -80°C is also maintained for all RNA-containing substances throughout the supply chain with the exception of a 72-hour window during the final assembly and filling[^39].
 
 On December 28, shipments of the Pfizer-BioNTech vaccine from a Pfizer plant in Belgium to various European countries were delayed due to a “problem in the loading and shipment process” that was, allegedly, related to temperature control problems.[^40] Earlier in December, shipments of Pfizer-BioNTech vaccine in the US were returned to Pfizer after they were found to be at -92°C, i.e. colder than the specified temperature range.[^41]
 
@@ -418,17 +418,17 @@ While there are no doubt fundamental reasons for temperature requirements, it is
   title="Operation Warp Speed vaccine distribution process. Source: Coronavirus U.S. Department of Health & Human Services, https://www.hhs.gov/coronavirus/explaining-operation-warp-speed/index.html"
 %}
 
-There are notable differences between the path shown for the Pfizer-BioNTech and Moderna vaccines. Pfizer appears to bypass almost all distribution steps! This is due to two reasons:
+There are notable differences between the path shown for the Pfizer-BioNTech and Moderna vaccines. Pfizer appears to bypass almost all distribution steps! Indeed, Pfizer chose to ship its vaccine directly from its factory to the point of use.[^44] This is due to two reasons:
 
 
 
-1. Pfizer and OWS interact very much “at arms length”. Contrary to Moderna and makers of other vaccine candidates, Pfizer did not receive US government funds for the development of the vaccine. Instead, it only has a supply contract which is structured to minimize US government involvement.[^44]
+1. Pfizer and OWS interact very much “at arms length”. Contrary to Moderna and makers of other vaccine candidates, Pfizer did not receive US government funds for the development of the vaccine. Instead, it only has a supply contract which is structured to minimize US government involvement.[^45]
 
 
-2. OWS currently only has a distribution contract for refrigerated and -20C cold chains.[^45] Therefore, it does not support the needs of the Pfizer-BioNTech vaccine. Of course, that situation would likely be different if Pfizer had indicated a need for assistance with distribution.
-It is likely that most vaccines authorized for distribution in the US in future will follow Moderna’s pattern and not Pfizer, given that the makers of many promising vaccine candidates already have a closer relationship with WS than Pfizer does.
+2. OWS currently only has a distribution contract for refrigerated and -20C cold chains.[^46] Therefore, it does not support the needs of the Pfizer-BioNTech vaccine. Of course, that situation would likely be different if Pfizer had indicated a need for assistance with distribution.
+It is likely that most vaccines authorized for distribution in the US in future will follow Moderna’s pattern and not Pfizer’s, given that the makers of many promising vaccine candidates already have a closer relationship with WS than Pfizer does.
 
-Of the companies named in the OWS figure above, you have probably heard about UPS and FedEx, but maybe not of McKesson. [McKesson](https://www.mckesson.com/About-McKesson/Coronavirus-Response/) is an S&P 500 company. [This landing page on McKesson’s website](https://www.mckesson.com/About-McKesson/Coronavirus-Response/) describes their “COVID-19 response” and includes photos of Moderna vaccine being handled inside of McKesson distribution centers. Side note, due to [current events](https://sanfrancisco.cbslocal.com/2020/12/11/silicon-valley-exodus-oracle-moves-headquarters-redwood-city-austin-texas/): McKesson was ahead of the curve and moved their headquarters from San Francisco to Irving, Texas, in 2018.[^46]
+Of the companies named in the OWS figure above, you have probably heard about UPS and FedEx, but maybe not of McKesson. [McKesson](https://www.mckesson.com/About-McKesson/Coronavirus-Response/) is an S&P 500 company. [This landing page on McKesson’s website](https://www.mckesson.com/About-McKesson/Coronavirus-Response/) describes their “COVID-19 response” and includes photos of Moderna vaccine being handled inside of McKesson distribution centers. Side note, due to [current events](https://sanfrancisco.cbslocal.com/2020/12/11/silicon-valley-exodus-oracle-moves-headquarters-redwood-city-austin-texas/): McKesson was ahead of the curve and moved their headquarters from San Francisco to Irving, Texas, in 2018.[^47]
 
 [UPS Cold Chain Solutions](https://www.ups.com/us/en/services/healthcare/cold-chain-solutions.page) and [FedEx Cold Chain Services](http://www.fedex.com/pt_english/shipping-services/industry-solutions/supplychain/coldchain.html) are the existing cold chain logistics offerings of UPS and Fedex.
 
@@ -437,13 +437,13 @@ I was unable to find any evidence for [the Dippin’ Dots cold chain](https://ww
 
 ## Distribution Outside the United States
 
-Pfizer’s Kalamazoo, Michigan, facility only produces vaccine for the United States market. All other countries to which Pfizer distributes the Pfizer-BioNTech vaccine receive it from the Puurs, Belgium. This includes Canada, even though Canada is geographically much closer to Michigan than Belgium.[^47]
+Pfizer’s Kalamazoo, Michigan, facility only produces vaccine for the United States market. All other countries to which Pfizer distributes the Pfizer-BioNTech vaccine receive it from the Puurs, Belgium. This includes Canada, even though Canada is geographically much closer to Michigan than Belgium.[^48]
 
-In Canada, Moderna’s vaccine is distributed by FedEx and [Innomar Strategies](https://www.innomar-strategies.com) which is a subsidiary of [AmerisourceBergen](https://www.amerisourcebergen.com).[^48]
+In Canada, Moderna’s vaccine is distributed by FedEx and [Innomar Strategies](https://www.innomar-strategies.com) which is a subsidiary of [AmerisourceBergen](https://www.amerisourcebergen.com).[^49]
 
-In Germany, BioNTech and Moderna are both responsible for shipping to 25 distribution centers from where authorities handle the “last mile” delivery.[^49] Each of the 16 German states independently coordinates the final leg of the journey. For example, the state of North Rhine-Westphalia has contracted out all transport as well as operation of its distribution centers to Swiss-headquartered logistics company [Kuehne+Nagel](https://home.kuehne-nagel.com/homepage). The video in [this tweet](https://twitter.com/Kuehne_Nagel/status/1343448715869249536) shows the interior of one of those distribution centers. The states of Baden-Württemberg and Lower Saxony chose DHL instead.[^50]
+In Germany, BioNTech and Moderna are both responsible for shipping to 25 distribution centers from where authorities handle the “last mile” delivery.[^50] Each of the 16 German states independently coordinates the final leg of the journey. For example, the state of North Rhine-Westphalia has contracted out all transport as well as operation of its distribution centers to Swiss-headquartered logistics company [Kuehne+Nagel](https://home.kuehne-nagel.com/homepage). The video in [this tweet](https://twitter.com/Kuehne_Nagel/status/1343448715869249536) shows the interior of one of those distribution centers. The states of Baden-Württemberg and Lower Saxony chose DHL instead.[^51]
 
-The same Kuehne+Nagel mentioned in the previous paragraph  also has the contract for distribution of Moderna’s vaccine from the manufacturing location in Spain to customers in “Europe, Asia, Middle East and Africa, and parts of the Americas”[^51] (excluding USA and Canada, presumably). Note that this contract is about the transport from factory to distribution centers, while the aforementioned contract in Germany is about the transport from distribution center to point of care. The service is advertised as [KN PharmaChain](https://home.kuehne-nagel.com/-/services/pharma-healthcare-logistics) and just got expanded to now include 230 locations all over the world in September 2020.[^52]
+The same Kuehne+Nagel mentioned in the previous paragraph  also has the contract for distribution of Moderna’s vaccine from the manufacturing location in Spain to customers in “Europe, Asia, Middle East and Africa, and parts of the Americas”[^52] (excluding USA and Canada, presumably). Note that this contract is about the transport from factory to distribution centers, while the aforementioned contract in Germany is about the transport from distribution center to point of use. The service is advertised as [KN PharmaChain](https://home.kuehne-nagel.com/-/services/pharma-healthcare-logistics) and just got expanded to now include 230 locations all over the world in September 2020.[^53]
 
 Pfizer intends to bypass government-operated distribution processes in all countries. Their dedicated website on [Manufacturing and Distributing the COVID-19 vaccine states](https://www.pfizer.com/products/coronavirus/manufacturing-and-distribution):
 
@@ -456,9 +456,9 @@ This is well-aligned with Pfizer’s stated goal to start selling the vaccine to
 
 Freezers play a big role in the vaccine distribution and most articles about mRNA vaccine distribution mention freezers. For the purpose of this article, two broad categories of freezer matter: Regular freezers are those with temperature setpoints around -20°C like the one in kitchens. Ultra-cold freezers (or [ULT freezers](https://en.wikipedia.org/wiki/ULT_freezer)) have setpoints near -80°C.
 
-Pfizer’s “freezer farm” in Kalamazoo, Michigan, gained some notoriety in the media while the first production batches of vaccine were stored there before the Emergency Use Authorization by the FDA arrived. If you look closely at [the photo](https://www.npr.org/sections/health-shots/2020/11/24/938591815/pfizers-coronavirus-vaccine-supply-contract-excludes-many-taxpayer-protections ), you can see that Pfizer has [Thermo Scientific TSX](https://www.thermofisher.com/us/en/home/life-science/lab-equipment/cold-storage/lab-freezers/ultra-low-temperature-freezers-minus-80/premium-tsx-ult-freezers.html) freezers that have stickers saying “-80°C” but all the displays read “-69°C”. TSX freezers support temperature set-points between -50°C and -86°C which makes them versatile but probably quite expensive (you’ll have to call to get a quote). German 400-person company Binder in Tuttlingen manufactures ultra-cold freezers that, too, and sells them at prices between €15k and €20k.[^53]
+Pfizer’s “freezer farm” in Kalamazoo, Michigan, gained some notoriety in the media while the first production batches of vaccine were stored there before the Emergency Use Authorization by the FDA arrived. If you look closely at [the photo](https://www.npr.org/sections/health-shots/2020/11/24/938591815/pfizers-coronavirus-vaccine-supply-contract-excludes-many-taxpayer-protections ), you can see that Pfizer has [Thermo Scientific TSX](https://www.thermofisher.com/us/en/home/life-science/lab-equipment/cold-storage/lab-freezers/ultra-low-temperature-freezers-minus-80/premium-tsx-ult-freezers.html) freezers that have stickers saying “-80°C” but all the displays read “-69°C”. TSX freezers support temperature set-points between -50°C and -86°C which makes them versatile but probably quite expensive (you’ll have to call to get a quote). German 400-person company Binder in Tuttlingen manufactures ultra-cold freezers that, too, and sells them at prices between €15k and €20k.[^54]
 
-The availability of ultra-cold freezers varies substantially around the world. For example, the country of Peru contains an estimated 30 such freezers[^54], that’s less than the number visible in Pfizer’s “freezer farm” photo.
+The availability of ultra-cold freezers varies substantially around the world. For example, the country of Peru contains an estimated 30 such freezers[^55], that’s less than the number visible in Pfizer’s “freezer farm” photo.
 
 
 ## Dry Ice and Phase Change Materials
@@ -467,11 +467,11 @@ When active cooling in freezers is not available, the alternative is passive coo
 
 [Dry ice](https://en.wikipedia.org/wiki/Dry_ice) is simply compressed CO<sub>2</sub> and sublimates at −78.5°C. Sublimation is a phase change from solid to gaseous (instead of solid-to-liquid more commonly seen in everyday life). Dry ice production can happen at ambient temperatures. Because dry ice literally vanishes into thin air as it heats up, dry ice containers can simply be refilled to maintain cold temperatures inside. These two properties make dry ice a good option for keeping things cold or ultra-cold in locations where no freezers are available.
 
-Depending on who you ask, there is plenty of dry ice production capacity available[^55] or there isn’t[^56]. The key ingredient for dry ice is liquid CO<sub>2</sub> which has been in shorter than usual supply during 2020 because it is a byproduct of natural gas production, of which there has been less of due to the overall reduction in economic activity.[^57]
+Depending on who you ask, there is plenty of dry ice production capacity available[^56] or there isn’t[^57]. The key ingredient for dry ice is liquid CO<sub>2</sub> which has been in shorter than usual supply during 2020 because it is a byproduct of natural gas production, of which there has been less of due to the overall reduction in economic activity.[^58]
 
-The rate of sublimation, measured by weight of dry ice lost per hour, is an advertised feature of shipping boxes that are designed for use with dry ice. Pfizer’s shipping boxes achieve previously unheard rates of only 1%, compared to common values of 2-3%, prompting Boeing to revise their guidance for dry ice transport on planes with expanded charts.[^58]
+The rate of sublimation, measured by weight of dry ice lost per hour, is an advertised feature of shipping boxes that are designed for use with dry ice. Pfizer’s shipping boxes achieve previously unheard rates of only 1%, compared to common values of 2-3%, prompting Boeing to revise their guidance for dry ice transport on planes with expanded charts.[^59]
 
-Regulatory limits exist for the amount of dry ice permitted on planes because releasing CO<sub>2</sub> into an enclosed space can have undesirable side effects such as confusion or unconsciousness for the people in said space. The US FAA has granted United Airlines, Pfizer’s preferred vaccine air carrier, permission to exceed the former limit five-fold[^59] but also shared some advice to airlines such as how to avoid suffocation from the released CO2 and how to account for sublimation-induced weight loss when calculating the planes center of mass[^60].
+Regulatory limits exist for the amount of dry ice permitted on planes because releasing CO<sub>2</sub> into an enclosed space can have undesirable side effects such as confusion or unconsciousness for the people in said space. The US FAA has granted United Airlines, Pfizer’s preferred vaccine air carrier, permission to exceed the former limit five-fold[^60] but also shared some advice to airlines such as how to avoid suffocation from the released CO2 and how to account for sublimation-induced weight loss when calculating the planes center of mass[^61].
 
 If you think of dry ice as analogous to Duracell batteries, then phase change materials (PCM) are the rechargeable batteries. PCMs are also used to keep insulated containers cold, but instead of sublimating they change phase to liquid state when warming. You might have seen PCMs if you receive food or grocery deliveries from companies like BlueApron or HelloFresh who include gel packs in their shipping boxes to keep the food fresh. Phase change materials are reusable which is great if you have access to a freezer to “recharge” them.
 
@@ -484,7 +484,7 @@ As mentioned above, Moderna’s vaccine distribution in the US is handled by the
 
 Pfizer’s choice of shipping box is easily determined from the instructions to healthcare providers available on their [various country-specific websites](https://www.cvdvaccine-us.com/resources). The two options described are containers by [Softbox Thermal Packaging Systems](https://www.softboxsystems.com ), headquartered in the 2,451 population village Long Crendon, United Kingdom, and [Aerosafe](https://www.aerosafeglobal.com/news) in Rochester, New York. [Softbox’s Twitter account ](https://twitter.com/SoftboxSystems)(377 followers) contains lots of photos and videos of their box in action as part of the Pfizer vaccine distribution. (AeroSafe has even fewer Twitter followers, but Softbox is one of them!) The photos and video embedded in [this article by Swiss Tagesanzeiger](https://www.tagesanzeiger.ch/so-arbeitet-die-impfanterie-der-armee-659893509675) show the arrival and unpacking of an AeroSafe box at an army facility in Ittingen, Switzerland. Fully loaded with vaccine and dry ice the containers weigh up to 36.5kg (81lb).
 
-The company va-Q-tec based in Würzburg, Germany, is a university spinout that has commercialized an insulation technology consisting of phase change material in a vacuum-sealed bag named “vacuum insulation panels”.[^61] They then use these panels to construct containers in sizes ranging from shoe box to shipping container. 2,500 of the latter are available as rentals from the company’s network of 40 international stations.[^62] You can see the production of vacuum insulation panels and some of the containers in [this video](https://www.dw.com/en/made-in-germany-containers-set-to-deliver-vaccines/av-55878745) by Deutsche Welle.
+The company va-Q-tec based in Würzburg, Germany, is a university spinout that has commercialized an insulation technology consisting of phase change material in a vacuum-sealed bag named “vacuum insulation panels”.[^62] They then use these panels to construct containers in sizes ranging from shoe box to shipping container. 2,500 of the latter are available as rentals from the company’s network of 40 international stations.[^63] You can see the production of vacuum insulation panels and some of the containers in [this video](https://www.dw.com/en/made-in-germany-containers-set-to-deliver-vaccines/av-55878745) by Deutsche Welle.
 
 va-Q-tec is a bit tight-lipped about who their vaccine distributing customers are, referring, for example, to “one of the largest pharmaceutical manufacturers” in this [press release](https://va-q-tec.com/en/news-en/va-q-tec-signs-extensive-heads-of-terms-agreement-on-provision-of-thermal-containers-for-global-covid-19-vaccine-distribution-with-top-international-pharmaceuticals-producer/). However, if you know what the boxes look like, you start seeing them everywhere: In the [previously mentioned video](https://twitter.com/Kuehne_Nagel/status/1343448715869249536) of a German distribution center, in [this article](https://www.stripes.com/news/pacific/moderna-coronavirus-vaccine-arrives-at-us-bases-in-japan-for-priority-inoculations-1.656496) about Moderna vaccines arriving at a US Air Force base in Japan, and [on Reuters](https://www.reuters.com/article/health-coronavirus-va-q-tec-idUSKBN2841KU) thanks to their stock price going up and to the right.
 
@@ -495,9 +495,9 @@ Monitoring the temperature of chilled or frozen wares while in transit through a
 
 The built-in tracking devices in Pfizer’s custom designed shipping containers have started making headlines because the first instances of the trackers reporting failure of the cold chain have occurred. For example, [this Deutsche Welle article](https://p.dw.com/p/3nGgF) quotes a spokesman for the Germany city of Lichtenfels stating that theirs recorded a temperature of 15°C in transit.
 
-Pfizer uses two types of temperature trackers from Controlant and Sensitech.[^63] The tracker supplied by Icelandic startup [Controlant](https://controlant.com )[^64] is an online tracker that also includes a GPS receiver[^65]. It has three LED indicators for cold chain integrity, network connectivity, and battery life. Controlant even had time to customize the design and included a Pfizer logo. The other device by [Sensitech](www.sensitech.com) (part of US conglomerate [Carrier](https://www.corporate.carrier.com)) is the [TempTale Ultra](https://www.sensitech.com/en/media/TTUItra_LS_060820_Web_tcm35-80848.pdf) and is an offline logger with an LCD display as readout. The devices are embedded into the insulation part of Pfizer’s shipping box assembly.
+Pfizer uses two types of temperature trackers from Controlant and Sensitech.[^64] The tracker supplied by Icelandic startup [Controlant](https://controlant.com )[^65] is an online tracker that also includes a GPS receiver[^66]. It has three LED indicators for cold chain integrity, network connectivity, and battery life. Controlant even had time to customize the design and included a Pfizer logo. The other device by [Sensitech](www.sensitech.com) (part of US conglomerate [Carrier](https://www.corporate.carrier.com)) is the [TempTale Ultra](https://www.sensitech.com/en/media/TTUItra_LS_060820_Web_tcm35-80848.pdf) and is an offline logger with an LCD display as readout. The devices are embedded into the insulation part of Pfizer’s shipping box assembly.
 
-It’s safe to assume that all steps of all distribution processes of both vaccines are somehow temperature monitored. For example, Moderna’s vaccine shipments through McKesson in the US contain an unspecified “digital temperature monitor” that allows recipients to validate cold chain compliance, apparently without any remote connectivity.[^66]
+It’s safe to assume that all steps of all distribution processes of both vaccines are somehow temperature monitored. For example, Moderna’s vaccine shipments through McKesson in the US contain an unspecified “digital temperature monitor” that allows recipients to validate cold chain compliance, apparently without any remote connectivity.[^67]
 
 
 ## Glass Vials
@@ -510,24 +510,24 @@ Shock resistance is not only prized in vaccine storage, which is why borosilicat
 
 A handful of manufacturers dominate the world production of borosilicate glass in the vaccine vial form factor.
 
-[Schott AG](https://www.schott.com), headquartered in Mainz, Germany, was founded by the inventor of borosilicate glass and produces vials in Germany, India, Brazil, and, as of recently, in China.[^67] Schott claims that “three out of four COVID-19 vaccine projects rely on Schott vials” and mentions supplying Operation Warp Speed partners.[^68]
+[Schott AG](https://www.schott.com), headquartered in Mainz, Germany, was founded by the inventor of borosilicate glass and produces vials in Germany, India, Brazil, and, as of recently, in China.[^68] Schott claims that “three out of four COVID-19 vaccine projects rely on Schott vials” and mentions supplying Operation Warp Speed partners.[^69]
 
-Fellow German glass vial maker [Gerresheimer AG](https://www.gerresheimer.com), produces borosilicate glass vials in China, India, USA, Mexico, France, and Poland. The company estimates that it will produce one billion additional vials over the next two years.[^69] I wasn't able to find information about any specific contracts, but [this case study](https://www.gerresheimer.com/en/news-events/corporate-news/show/gerresheimer-sets-foundation-for-profitable-growth-in-2019.html) about how Gerresheimer went about rapidly getting their IT systems up to snuff for a remote workforce provided some welcome diversion from vaccine-related reading.
+Fellow German glass vial maker [Gerresheimer AG](https://www.gerresheimer.com), produces borosilicate glass vials in China, India, USA, Mexico, France, and Poland. The company estimates that it will produce one billion additional vials over the next two years.[^70] I wasn't able to find information about any specific contracts, but [this case study](https://www.gerresheimer.com/en/news-events/corporate-news/show/gerresheimer-sets-foundation-for-profitable-growth-in-2019.html) about how Gerresheimer went about rapidly getting their IT systems up to snuff for a remote workforce provided some welcome diversion from vaccine-related reading.
 
-[Stevanato Group](https://www.stevanatogroup.com/en/) in Padua, Italy, does not supply vials for the Pfizer-BioNTech and Moderna vaccines but supplies 100 million borosilicate glass vials to the [Coalition for Epidemic Preparedness Innovations](https://cepi.net) (CEPI) behind the [COVAX](https://cepi.net/COVAX/) initiative.[^70]
+[Stevanato Group](https://www.stevanatogroup.com/en/) in Padua, Italy, does not supply vials for the Pfizer-BioNTech and Moderna vaccines but supplies 100 million borosilicate glass vials to the [Coalition for Epidemic Preparedness Innovations](https://cepi.net) (CEPI) behind the [COVAX](https://cepi.net/COVAX/) initiative.[^71]
 
 Other borosilicate glass manufacturers who may or may not currently supply borosilicate glass vials COVID-19 vaccines are [Borosil](https://www.borosil.com/what-we-do/pharmaceutical-packaging/) in India and [Corning](https://www.corning.com/worldwide/en/products/pharmaceutical-technologies/valor-glass.html) in the USA (more about Corning below).
 
-Just like COVID-19 catapulted mRNA vaccines from obscurity into high-volume commercial use, it also launched a glass research project into mass production: The company [Corning](https://www.corning.com/worldwide/en/products/pharmaceutical-technologies/valor-glass.html), a brand practically synonymous with all things glass in America, had been developing a new material they call “[Valor Glass](https://www.corning.com/worldwide/en/products/pharmaceutical-technologies/valor-glass.html)” since 2011.[^71] The glass does not contain boron (but instead alumina) and undergoes a surface treatment similar to Corning’s [Gorilla Glass](https://en.wikipedia.org/wiki/Gorilla_Glass) of smartphone screen fame. [This Hackaday post](https://hackaday.com/2020/12/28/the-high-tech-valor-glass-vials-used-to-deliver-the-coronavirus-vaccine/) has more details on the what and how of Valor Glass as well as embedded videos of crushed and shattered vaccine vials. In short: Valor Glass is 50 times stronger under compression and does not suffer from [delamination](https://www.corning.com/worldwide/en/products/pharmaceutical-technologies/pharma-technologies-delamination.html). In May 2020, Pfizer signed a supply agreement for Valor Glass[^72] and in June 2020 Operation Warp Speed provided funding to expand US-based manufacturing of Valor Glass[^73].
+Just like COVID-19 catapulted mRNA vaccines from obscurity into high-volume commercial use, it also launched a glass research project into mass production: The company [Corning](https://www.corning.com/worldwide/en/products/pharmaceutical-technologies/valor-glass.html), a brand practically synonymous with all things glass in America, had been developing a new material they call “[Valor Glass](https://www.corning.com/worldwide/en/products/pharmaceutical-technologies/valor-glass.html)” since 2011.[^72] The glass does not contain boron (but instead alumina) and undergoes a surface treatment similar to Corning’s [Gorilla Glass](https://en.wikipedia.org/wiki/Gorilla_Glass) of smartphone screen fame. [This Hackaday post](https://hackaday.com/2020/12/28/the-high-tech-valor-glass-vials-used-to-deliver-the-coronavirus-vaccine/) has more details on the what and how of Valor Glass as well as embedded videos of crushed and shattered vaccine vials. In short: Valor Glass is 50 times stronger under compression and does not suffer from [delamination](https://www.corning.com/worldwide/en/products/pharmaceutical-technologies/pharma-technologies-delamination.html). In May 2020, Pfizer signed a supply agreement for Valor Glass[^73] and in June 2020 Operation Warp Speed provided funding to expand US-based manufacturing of Valor Glass[^74].
 
-Now that both Gerresheimer and Corning have been introduced, let’s make things even more confusing: In 2015 Gerresheimer sold their pharmaceutical (borosilicate) glass tube production business to Corning. As a result, Corning now owns factories Vineland, New Jersey, and Pisa, Italy. Gerresheim continues to make borosilicate _vials_, and has a 10-year contract to purchase the tubes necessary for doing so from Corning. There’s more: As part of the deal, Corning and Gerresheimer created a 75/25 joint venture to “accelerate Corning innovations for the pharmaceutical glass packaging market”.[^74] That explains why Gerresheimer recently published [this press release](https://www.gerresheimer.com/en/news-events/corporate-news/show/corning-and-gerresheimer-collaborate-to-deliver-new-corning-valortm-glass-to-the-pharmaceutical-packa.html) announcing their increase in supply of Valor Glass together with Corning. Another fun fact about Corning and Gerresheimer: Both companies share their name with the towns they are located in, Corning in Upstate New York and the Gerresheim borough of Düsseldorf in Germany.
+Now that both Gerresheimer and Corning have been introduced, let’s make things even more confusing: In 2015 Gerresheimer sold their pharmaceutical (borosilicate) glass tube production business to Corning. As a result, Corning now owns factories Vineland, New Jersey, and Pisa, Italy. Gerresheim continues to make borosilicate _vials_, and has a 10-year contract to purchase the tubes necessary for doing so from Corning. There’s more: As part of the deal, Corning and Gerresheimer created a 75/25 joint venture to “accelerate Corning innovations for the pharmaceutical glass packaging market”.[^75] That explains why Gerresheimer recently published [this press release](https://www.gerresheimer.com/en/news-events/corporate-news/show/corning-and-gerresheimer-collaborate-to-deliver-new-corning-valortm-glass-to-the-pharmaceutical-packa.html) announcing their increase in supply of Valor Glass together with Corning. Another fun fact about Corning and Gerresheimer: Both companies share their name with the towns they are located in, Corning in Upstate New York and the Gerresheim borough of Düsseldorf in Germany.
 
-[SiO2 Materials Science](https://www.sio2ms.com) in Auburn, Alabama, is another recipient of OWS funds. The company produces a “plastic container with a microscopic, thin, undetectable to the naked eye, pure glass coating”. Since June 2020, the company has increased their staff by 5x and their production rate by 12x.[^75] In 1963, this same company was the first to manufacture the one-gallon plastic milk jug with a built-in handle and leak proof cap that you can still find in fridges all over America today.
+[SiO2 Materials Science](https://www.sio2ms.com) in Auburn, Alabama, is another recipient of OWS funds. The company produces a “plastic container with a microscopic, thin, undetectable to the naked eye, pure glass coating”. Since June 2020, the company has increased their staff by 5x and their production rate by 12x.[^76] In 1963, this same company was the first to manufacture the one-gallon plastic milk jug with a built-in handle and leak proof cap that you can still find in fridges all over America today.
 
-As is true for all other vaccine ingredients and accessory components, the demand for COVID-19 vaccine vials needs to be met on top of the existing demand for all other types of vaccines. Despite the optimistic projections for vial production numbers by all vendors, it’s worth acknowledging that the current situation is a workaround. If glass vial supply was unlimited, manufacturers wouldn’t fill multiple doses into a single vial.[^76] In fact, there would be no vials at all because a preferred form factor for vaccine distribution is the prefilled syringe. In May 2020 the US DoD awarded a contract to [ApiJect Systems America](https://apiject.com) to develop a facility for producing 100 million prefilled syringes for distribution by year-end 2020.[^77] The same company now constructs a second, larger, prefilled syringe facility in Research Triangle Park, North Carolina, and calls it the “ApiJect Gigafactory”.[^78]
+As is true for all other vaccine ingredients and accessory components, the demand for COVID-19 vaccine vials needs to be met on top of the existing demand for all other types of vaccines. Despite the optimistic projections for vial production numbers by all vendors, it’s worth acknowledging that the current situation is a workaround. If glass vial supply was unlimited, manufacturers wouldn’t fill multiple doses into a single vial.[^77] In fact, there would be no vials at all because a preferred form factor for vaccine distribution is the prefilled syringe. In May 2020 the US DoD awarded a contract to [ApiJect Systems America](https://apiject.com) to develop a facility for producing 100 million prefilled syringes for distribution by year-end 2020.[^78] The same company now constructs a second, larger, prefilled syringe facility in Research Triangle Park, North Carolina, and calls it the “ApiJect Gigafactory”.[^79]
 
 
-## Point of Care
+## Point of Use
 
 {% include image.html
   img="/assets/2021/2021-01-10-baltimore.jpg"
@@ -539,7 +539,7 @@ As is true for all other vaccine ingredients and accessory components, the deman
   title="A vaccination station at the University Hospital in Strasbourg on January 8, 2021. The vaccine shown is Pfizer/BioNTech’s Comirnaty. The tray appears to contain four remaining prepared syringes and the empty vial they were drawn from. Source/attribution: © Claude Truong-Ngoc / Wikimedia Commons (CC-BY-SA-4.0)"
 %}
 
-Depending on when and where you receive your vaccine, the “point of care” might be a doctor’s office, vaccine center, pharmacy, etc. Several resources are required for each injection of either vaccine:
+Depending on when and where you receive your vaccine, the “point of use” might be a doctor’s office, vaccine center, pharmacy, etc. Several resources are required for each injection of either vaccine:
 
 
 
@@ -548,11 +548,11 @@ Depending on when and where you receive your vaccine, the “point of care” mi
 *   1 medical exam glove
 *   For disposal, a sharps container needs to be present. In the photo from Baltimore above a tupperware box fills in as the sharps container.
 
-Additional materials are required for the Pfizer-BioNTech vaccine. Each vial needs to be diluted with 1.8mL of 0.9 NaCl (sodium chloride) shortly before use.[^79] The transfer of sodium chloride into the vaccine vial (and removal of corresponding volume of air) requires one sufficiently large syringe (Pfizer recommends 3mL or 5mL) and corresponding needle _per vial_. Furthermore, anyone dealing with Pfizer’s shipping container needs appropriate protective equipment and potentially safety training before handling dry ice.
+Additional materials are required for the Pfizer-BioNTech vaccine. Each vial needs to be diluted with 1.8mL of 0.9 NaCl (sodium chloride) shortly before use.[^80] The transfer of sodium chloride into the vaccine vial (and removal of corresponding volume of air) requires one sufficiently large syringe (Pfizer recommends 3mL or 5mL) and corresponding needle _per vial_. Furthermore, anyone dealing with Pfizer’s shipping container needs appropriate protective equipment and potentially safety training before handling dry ice.
 
-In the United States the government supplies these supplies, as part of Operation Warp Speed (OWS). Kitting and delivery of Moderna and all future OWS partners’ kits is handled by OWS distribution partner McKesson.[^80] In this system, Moderna vaccine shipments are accompanied by the supplies required to administer them. As usual, Pfizer bypasses the government-operated supply chain and ships “mega kits” of supplies that contain enough materials to administer 1,000 doses as well as one set of gloves for handling dry ice. “Mega kits” arrive at the point of care separately from the vaccine.
+In the United States the government supplies these supplies, as part of Operation Warp Speed (OWS). Kitting and delivery of Moderna (and all future OWS partners’ kits) is handled by OWS distribution partner McKesson.[^81] In this system, Moderna vaccine shipments are accompanied by the supplies required to administer them. As usual, Pfizer bypasses the government-operated supply chain and ships “mega kits” of supplies that contain enough materials to administer 1,000 doses as well as one set of gloves for handling dry ice. “Mega kits” arrive at the point of use separately from the vaccine.
 
-The exact type and supplier of syringe in the kits varies, probably because of supply constraints. A key difference between syringe types is the amount of “dead volume” that remains in the syringe after pushing the plunger in all the way. Every syringe has some dead volume, simply because the plunger cannot possibly reach into the syringe needle. Some syringes are specifically advertised as “low dead-volume syringes” and have tens of microliters lower dead volume than those not advertised as such. Multiply that by five doses per vial for Pfizer-BioNTech or 10 doses per vial for Moderna, and you get a number in the same order of magnitude as a vaccination dose. This explains why some vaccination sites report finding extra doses in many vials: They are working with supply kits that contain low dead-volume syringes.[^81]
+The exact type and supplier of syringe in the kits varies, probably because of supply constraints. A key difference between syringe types is the amount of “dead volume” that remains in the syringe after pushing the plunger in all the way. Every syringe has some dead volume, simply because the plunger cannot possibly reach into the syringe needle. Some syringes are specifically advertised as “low dead-volume syringes” and have tens of microliters lower dead volume than those not advertised as such. Multiply that by five doses per vial for Pfizer-BioNTech or 10 doses per vial for Moderna, and you get a number in the same order of magnitude as a vaccination dose. This explains why some vaccination sites report finding extra doses in many vials: They are working with supply kits that contain low dead-volume syringes.[^82]
 
 Not listed on any bill of materials but very much required: A trained healthcare professional to prepare and administer each dose. The human component of healthcare has often been overlooked during this pandemic while the conversation focused on counting ventilators and ICU beds. Who is qualified and permitted to perform vaccine administration varies by country. My personal experience is that in the United States I have received vaccines from nurses and pharmacists and in Germany only from medical doctors.
 
@@ -581,7 +581,7 @@ Additionally, Pfizer-BioNTech have:
 *   Safety information for handling dry ice
 *   Instructions for how to return shipping containers
 
-The exact list and formats of materials must match the needs and regulations of every jurisdiction. For example, many countries require labels and printed materials to be included in a local language. Tracking tens of localized versions of vaccine packages from final filling (when the vial label is applied) to point of care would multiply the supply chain complexity and slow down the process. This has led to unusual accommodation such as the European Commission permitting English-only materials for all EU countries as long as a digital version of the localized materials is available for printing at the point of care.[^82]
+The exact list and formats of materials must match the needs and regulations of every jurisdiction. For example, many countries require labels and printed materials to be included in a local language. Tracking tens of localized versions of vaccine packages from final filling (when the vial label is applied) to point of use would multiply the supply chain complexity and slow down the process. This has led to unusual accommodation such as the European Commission permitting English-only materials for all EU countries as long as a digital version of the localized materials is available for printing at the point of use.[^83]
 
 BioNTech really benefits from working with Pfizer and is miles ahead of Moderna in terms of how materials they have available: At the time of writing, Pfizer-BioNTech has 44 localized websites up, each with its own local domain name and local email addresses and so on. Some of the PDF file names look like “Hqrdtemplateclean_de” suggesting that they follow a playbook and have templates ready. Looking up some of the 44 domains suggests that they are using [Cloudflare](https://www.cloudflare.com) as registrar and hosting provider.
 
@@ -755,120 +755,123 @@ Thanks to [Ted](https://twitter.com/tedder42), [Roman](https://hut.pm), [Noah](h
      [https://investors.modernatx.com/news-releases/news-release-details/moderna-announces-longer-shelf-life-its-covid-19-vaccine](https://investors.modernatx.com/news-releases/news-release-details/moderna-announces-longer-shelf-life-its-covid-19-vaccine)
 
 [^44]:
-
-     [https://www.npr.org/sections/health-shots/2020/11/24/938591815/pfizers-coronavirus-vaccine-supply-contract-excludes-many-taxpayer-protections](https://www.npr.org/sections/health-shots/2020/11/24/938591815/pfizers-coronavirus-vaccine-supply-contract-excludes-many-taxpayer-protections)
+     [https://www.fiercepharma.com/pharma/pfizer-sidelines-us-government-covid-19-vaccine-distribution-plan-favor-its-own-reports](https://www.fiercepharma.com/pharma/pfizer-sidelines-us-government-covid-19-vaccine-distribution-plan-favor-its-own-reports)
 
 [^45]:
 
-     [https://www.mckesson.com/About-McKesson/Coronavirus-Response/](https://www.mckesson.com/About-McKesson/Coronavirus-Response/)
+     [https://www.npr.org/sections/health-shots/2020/11/24/938591815/pfizers-coronavirus-vaccine-supply-contract-excludes-many-taxpayer-protections](https://www.npr.org/sections/health-shots/2020/11/24/938591815/pfizers-coronavirus-vaccine-supply-contract-excludes-many-taxpayer-protections)
 
 [^46]:
-     [https://www.mckesson.com/about-mckesson/newsroom/press-releases/2018/mckesson-announces-new-headquarters-in-las-colinas-texas/](https://www.mckesson.com/about-mckesson/newsroom/press-releases/2018/mckesson-announces-new-headquarters-in-las-colinas-texas/)
+
+     [https://www.mckesson.com/About-McKesson/Coronavirus-Response/](https://www.mckesson.com/About-McKesson/Coronavirus-Response/)
 
 [^47]:
-     [https://www.businessinsider.com/europe-canada-covid-19-vaccine-cuts-as-pfizer-renovates-plant-2021-1](https://www.businessinsider.com/europe-canada-covid-19-vaccine-cuts-as-pfizer-renovates-plant-2021-1)
+     [https://www.mckesson.com/about-mckesson/newsroom/press-releases/2018/mckesson-announces-new-headquarters-in-las-colinas-texas/](https://www.mckesson.com/about-mckesson/newsroom/press-releases/2018/mckesson-announces-new-headquarters-in-las-colinas-texas/)
 
 [^48]:
-     [https://www.canada.ca/en/public-services-procurement/news/2020/12/government-of-canada-awards-contract-to-distribute-covid-19-vaccine-from-coast-to-coast-to-coast.html](https://www.canada.ca/en/public-services-procurement/news/2020/12/government-of-canada-awards-contract-to-distribute-covid-19-vaccine-from-coast-to-coast-to-coast.html)
+     [https://www.businessinsider.com/europe-canada-covid-19-vaccine-cuts-as-pfizer-renovates-plant-2021-1](https://www.businessinsider.com/europe-canada-covid-19-vaccine-cuts-as-pfizer-renovates-plant-2021-1)
 
 [^49]:
-     [https://www.dw.com/en/coronavirus-digest-uk-hits-new-covid-infection-record/a-56071203](https://www.dw.com/en/coronavirus-digest-uk-hits-new-covid-infection-record/a-56071203)
+     [https://www.canada.ca/en/public-services-procurement/news/2020/12/government-of-canada-awards-contract-to-distribute-covid-19-vaccine-from-coast-to-coast-to-coast.html](https://www.canada.ca/en/public-services-procurement/news/2020/12/government-of-canada-awards-contract-to-distribute-covid-19-vaccine-from-coast-to-coast-to-coast.html)
 
 [^50]:
-     [https://www.zeit.de/politik/deutschland/2020-12/corona-impfungen-impfstoff-logistik-impfzentren-gesundheitssystem](https://www.zeit.de/politik/deutschland/2020-12/corona-impfungen-impfstoff-logistik-impfzentren-gesundheitssystem)
+     [https://www.dw.com/en/coronavirus-digest-uk-hits-new-covid-infection-record/a-56071203](https://www.dw.com/en/coronavirus-digest-uk-hits-new-covid-infection-record/a-56071203)
 
 [^51]:
-     [https://newsroom.kuehne-nagel.com/kuehnenagel-finalises-agreement-with-moderna-for-covid-19-vaccine-distribution/](https://newsroom.kuehne-nagel.com/kuehnenagel-finalises-agreement-with-moderna-for-covid-19-vaccine-distribution/)
+     [https://www.zeit.de/politik/deutschland/2020-12/corona-impfungen-impfstoff-logistik-impfzentren-gesundheitssystem](https://www.zeit.de/politik/deutschland/2020-12/corona-impfungen-impfstoff-logistik-impfzentren-gesundheitssystem)
 
 [^52]:
-     [https://newsroom.kuehne-nagel.com/kuehnenagel-invests-in-global-vaccine-distribution-network/](https://newsroom.kuehne-nagel.com/kuehnenagel-invests-in-global-vaccine-distribution-network/)
+     [https://newsroom.kuehne-nagel.com/kuehnenagel-finalises-agreement-with-moderna-for-covid-19-vaccine-distribution/](https://newsroom.kuehne-nagel.com/kuehnenagel-finalises-agreement-with-moderna-for-covid-19-vaccine-distribution/)
 
 [^53]:
-     [https://www.welt.de/wirtschaft/article223706206/Gerresheimer-Trilink-Va-Q-tec-Jetzt-schlaegt-die-Stunde-der-Impfstoff-Gewinner.html](https://www.welt.de/wirtschaft/article223706206/Gerresheimer-Trilink-Va-Q-tec-Jetzt-schlaegt-die-Stunde-der-Impfstoff-Gewinner.html)
+     [https://newsroom.kuehne-nagel.com/kuehnenagel-invests-in-global-vaccine-distribution-network/](https://newsroom.kuehne-nagel.com/kuehnenagel-invests-in-global-vaccine-distribution-network/)
 
 [^54]:
-     [https://www.cnn.com/2020/11/21/world/coronavirus-vaccine-dry-ice-intl/index.html](https://www.cnn.com/2020/11/21/world/coronavirus-vaccine-dry-ice-intl/index.html)
+     [https://www.welt.de/wirtschaft/article223706206/Gerresheimer-Trilink-Va-Q-tec-Jetzt-schlaegt-die-Stunde-der-Impfstoff-Gewinner.html](https://www.welt.de/wirtschaft/article223706206/Gerresheimer-Trilink-Va-Q-tec-Jetzt-schlaegt-die-Stunde-der-Impfstoff-Gewinner.html)
 
 [^55]:
-     [https://www.cganet.com/compressed-gas-industry-expects-sufficient-dry-ice-supply-for-covid-19-vaccines-in-us-canada/](https://www.cganet.com/compressed-gas-industry-expects-sufficient-dry-ice-supply-for-covid-19-vaccines-in-us-canada/)
+     [https://www.cnn.com/2020/11/21/world/coronavirus-vaccine-dry-ice-intl/index.html](https://www.cnn.com/2020/11/21/world/coronavirus-vaccine-dry-ice-intl/index.html)
 
 [^56]:
-     [https://www.cbs58.com/news/cheese-industry-threatened-by-covid-dry-ice-demand](https://www.cbs58.com/news/cheese-industry-threatened-by-covid-dry-ice-demand)
+     [https://www.cganet.com/compressed-gas-industry-expects-sufficient-dry-ice-supply-for-covid-19-vaccines-in-us-canada/](https://www.cganet.com/compressed-gas-industry-expects-sufficient-dry-ice-supply-for-covid-19-vaccines-in-us-canada/)
 
 [^57]:
-     [https://www.gasworld.com/covid-19-vaccine-dry-ice-set-for-spike-in-demand/2020109.article](https://www.gasworld.com/covid-19-vaccine-dry-ice-set-for-spike-in-demand/2020109.article)
+     [https://www.cbs58.com/news/cheese-industry-threatened-by-covid-dry-ice-demand](https://www.cbs58.com/news/cheese-industry-threatened-by-covid-dry-ice-demand)
 
 [^58]:
-     [https://simpleflying.com/boeing-aircraft-vaccine-capacity-increased/](https://simpleflying.com/boeing-aircraft-vaccine-capacity-increased/)
+     [https://www.gasworld.com/covid-19-vaccine-dry-ice-set-for-spike-in-demand/2020109.article](https://www.gasworld.com/covid-19-vaccine-dry-ice-set-for-spike-in-demand/2020109.article)
 
 [^59]:
-     [https://www.wsj.com/articles/united-begins-flying-pfizers-covid-19-vaccine-11606512293](https://www.wsj.com/articles/united-begins-flying-pfizers-covid-19-vaccine-11606512293)
+     [https://simpleflying.com/boeing-aircraft-vaccine-capacity-increased/](https://simpleflying.com/boeing-aircraft-vaccine-capacity-increased/)
 
 [^60]:
-     [https://www.freightwaves.com/news/faa-issues-dry-ice-alert-to-airlines-carrying-vaccine](https://www.freightwaves.com/news/faa-issues-dry-ice-alert-to-airlines-carrying-vaccine)
+     [https://www.wsj.com/articles/united-begins-flying-pfizers-covid-19-vaccine-11606512293](https://www.wsj.com/articles/united-begins-flying-pfizers-covid-19-vaccine-11606512293)
 
 [^61]:
-     [https://va-q-tec.com/en/technology/phase-change-materials/](https://va-q-tec.com/en/technology/phase-change-materials/)
+     [https://www.freightwaves.com/news/faa-issues-dry-ice-alert-to-airlines-carrying-vaccine](https://www.freightwaves.com/news/faa-issues-dry-ice-alert-to-airlines-carrying-vaccine)
 
 [^62]:
-     [https://www.reuters.com/article/health-coronavirus-va-q-tec-idUSKBN2841KU?taid=5fbd0e5e39486a0001899664&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter](https://www.reuters.com/article/health-coronavirus-va-q-tec-idUSKBN2841KU?taid=5fbd0e5e39486a0001899664&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter)
+     [https://va-q-tec.com/en/technology/phase-change-materials/](https://va-q-tec.com/en/technology/phase-change-materials/)
 
 [^63]:
-     [https://www.cvdvaccine.ca/files/Pfizer%20BioNTech%20COVID-19%20Vaccine%20--%20Shipping%20and%20Handling%20Guidelines.pdf](https://www.cvdvaccine.ca/files/Pfizer%20BioNTech%20COVID-19%20Vaccine%20--%20Shipping%20and%20Handling%20Guidelines.pdf)
+     [https://www.reuters.com/article/health-coronavirus-va-q-tec-idUSKBN2841KU?taid=5fbd0e5e39486a0001899664&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter](https://www.reuters.com/article/health-coronavirus-va-q-tec-idUSKBN2841KU?taid=5fbd0e5e39486a0001899664&utm_campaign=trueAnthem:+Trending+Content&utm_medium=trueAnthem&utm_source=twitter)
 
 [^64]:
-     [https://controlant.com/blog/2020/controlant-now-providing-monitoring-and-supply-chain-visibility-for-pfizer-biontech-covid-19-vaccine-distribution-and-storage/](https://controlant.com/blog/2020/controlant-now-providing-monitoring-and-supply-chain-visibility-for-pfizer-biontech-covid-19-vaccine-distribution-and-storage/)
+     [https://www.cvdvaccine.ca/files/Pfizer%20BioNTech%20COVID-19%20Vaccine%20--%20Shipping%20and%20Handling%20Guidelines.pdf](https://www.cvdvaccine.ca/files/Pfizer%20BioNTech%20COVID-19%20Vaccine%20--%20Shipping%20and%20Handling%20Guidelines.pdf)
 
 [^65]:
-     [https://www.pfizer.com/products/coronavirus/manufacturing-and-distribution](https://www.pfizer.com/products/coronavirus/manufacturing-and-distribution)
+     [https://controlant.com/blog/2020/controlant-now-providing-monitoring-and-supply-chain-visibility-for-pfizer-biontech-covid-19-vaccine-distribution-and-storage/](https://controlant.com/blog/2020/controlant-now-providing-monitoring-and-supply-chain-visibility-for-pfizer-biontech-covid-19-vaccine-distribution-and-storage/)
 
 [^66]:
-     [https://www.mckesson.com/Our-Stories/Demystifying-the-Cold-Chain/](https://www.mckesson.com/Our-Stories/Demystifying-the-Cold-Chain/)
+     [https://www.pfizer.com/products/coronavirus/manufacturing-and-distribution](https://www.pfizer.com/products/coronavirus/manufacturing-and-distribution)
 
 [^67]:
-     [https://www.zdf.de/nachrichten/panorama/coronavirus-impfstoff-logistik-100.html](https://www.zdf.de/nachrichten/panorama/coronavirus-impfstoff-logistik-100.html)
+     [https://www.mckesson.com/Our-Stories/Demystifying-the-Cold-Chain/](https://www.mckesson.com/Our-Stories/Demystifying-the-Cold-Chain/)
 
 [^68]:
-     [https://www.schott.com/english/news/press.html?NID=com5812](https://www.schott.com/english/news/press.html?NID=com5812)
+     [https://www.zdf.de/nachrichten/panorama/coronavirus-impfstoff-logistik-100.html](https://www.zdf.de/nachrichten/panorama/coronavirus-impfstoff-logistik-100.html)
 
 [^69]:
-     [https://www.handelsblatt.com/unternehmen/industrie/verpackungshersteller-gerresheimer-will-bis-zu-eine-milliarde-impfflaeschchen-liefern/26732650.html](https://www.handelsblatt.com/unternehmen/industrie/verpackungshersteller-gerresheimer-will-bis-zu-eine-milliarde-impfflaeschchen-liefern/26732650.html)
+     [https://www.schott.com/english/news/press.html?NID=com5812](https://www.schott.com/english/news/press.html?NID=com5812)
 
 [^70]:
-     [https://www.stevanatogroup.com/en/news-events/press-releases/stevanato-group-signs-an-agreement-with-the-coalition-for-epidemic-preparedness-innovations-cepi/](https://www.stevanatogroup.com/en/news-events/press-releases/stevanato-group-signs-an-agreement-with-the-coalition-for-epidemic-preparedness-innovations-cepi/)
+     [https://www.handelsblatt.com/unternehmen/industrie/verpackungshersteller-gerresheimer-will-bis-zu-eine-milliarde-impfflaeschchen-liefern/26732650.html](https://www.handelsblatt.com/unternehmen/industrie/verpackungshersteller-gerresheimer-will-bis-zu-eine-milliarde-impfflaeschchen-liefern/26732650.html)
 
 [^71]:
-     [https://www.newyorker.com/magazine/2020/12/07/the-race-to-make-vials-for-coronavirus-vaccines](https://www.newyorker.com/magazine/2020/12/07/the-race-to-make-vials-for-coronavirus-vaccines)
+     [https://www.stevanatogroup.com/en/news-events/press-releases/stevanato-group-signs-an-agreement-with-the-coalition-for-epidemic-preparedness-innovations-cepi/](https://www.stevanatogroup.com/en/news-events/press-releases/stevanato-group-signs-an-agreement-with-the-coalition-for-epidemic-preparedness-innovations-cepi/)
 
 [^72]:
-     [https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2020/05/corning-and-pfizer-announce-new-supply-agreement-for-corning-valor-glass-packaging.html](https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2020/05/corning-and-pfizer-announce-new-supply-agreement-for-corning-valor-glass-packaging.html)
+     [https://www.newyorker.com/magazine/2020/12/07/the-race-to-make-vials-for-coronavirus-vaccines](https://www.newyorker.com/magazine/2020/12/07/the-race-to-make-vials-for-coronavirus-vaccines)
 
 [^73]:
-     [https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2020/06/us-departments-of-defense-health-human-services-select-corning-valor-glass-packaging-to-accelerate-delivery-of-covid-19-vaccines.html](https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2020/06/us-departments-of-defense-health-human-services-select-corning-valor-glass-packaging-to-accelerate-delivery-of-covid-19-vaccines.html)
+     [https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2020/05/corning-and-pfizer-announce-new-supply-agreement-for-corning-valor-glass-packaging.html](https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2020/05/corning-and-pfizer-announce-new-supply-agreement-for-corning-valor-glass-packaging.html)
 
 [^74]:
-     [https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2015/06/corning-agrees-to-purchase-gerresheimers-pharmaceutical-glass-tubing-business.html](https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2015/06/corning-agrees-to-purchase-gerresheimers-pharmaceutical-glass-tubing-business.html)
+     [https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2020/06/us-departments-of-defense-health-human-services-select-corning-valor-glass-packaging-to-accelerate-delivery-of-covid-19-vaccines.html](https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2020/06/us-departments-of-defense-health-human-services-select-corning-valor-glass-packaging-to-accelerate-delivery-of-covid-19-vaccines.html)
 
 [^75]:
-     [https://www.sio2ms.com/news/48-barda](https://www.sio2ms.com/news/48-barda)
+     [https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2015/06/corning-agrees-to-purchase-gerresheimers-pharmaceutical-glass-tubing-business.html](https://www.corning.com/worldwide/en/about-us/news-events/news-releases/2015/06/corning-agrees-to-purchase-gerresheimers-pharmaceutical-glass-tubing-business.html)
 
 [^76]:
-     [https://www.biopharmadive.com/news/coronavirus-vaccine-vials-supply-bottleneck/578793/](https://www.biopharmadive.com/news/coronavirus-vaccine-vials-supply-bottleneck/578793/)
+     [https://www.sio2ms.com/news/48-barda](https://www.sio2ms.com/news/48-barda)
 
 [^77]:
-     [https://www.defense.gov/Newsroom/Releases/Release/Article/2184808/dod-awards-138-million-contract-enabling-prefilled-syringes-for-future-covid-19/source/GovDelivery/](https://www.defense.gov/Newsroom/Releases/Release/Article/2184808/dod-awards-138-million-contract-enabling-prefilled-syringes-for-future-covid-19/source/GovDelivery/)
+     [https://www.biopharmadive.com/news/coronavirus-vaccine-vials-supply-bottleneck/578793/](https://www.biopharmadive.com/news/coronavirus-vaccine-vials-supply-bottleneck/578793/)
 
 [^78]:
-     [https://apiject.com/wp-content/uploads/2020/11/APIJECT-PRESS-RELEASE-FINAL-%E2%80%93-201119-%E2%80%93-1.pdf](https://apiject.com/wp-content/uploads/2020/11/APIJECT-PRESS-RELEASE-FINAL-%E2%80%93-201119-%E2%80%93-1.pdf)
+     [https://www.defense.gov/Newsroom/Releases/Release/Article/2184808/dod-awards-138-million-contract-enabling-prefilled-syringes-for-future-covid-19/source/GovDelivery/](https://www.defense.gov/Newsroom/Releases/Release/Article/2184808/dod-awards-138-million-contract-enabling-prefilled-syringes-for-future-covid-19/source/GovDelivery/)
 
 [^79]:
-     [https://www.cvdvaccine.ca/product-storage-and-dry-ice](https://www.cvdvaccine.ca/product-storage-and-dry-ice)
+     [https://apiject.com/wp-content/uploads/2020/11/APIJECT-PRESS-RELEASE-FINAL-%E2%80%93-201119-%E2%80%93-1.pdf](https://apiject.com/wp-content/uploads/2020/11/APIJECT-PRESS-RELEASE-FINAL-%E2%80%93-201119-%E2%80%93-1.pdf)
 
 [^80]:
-     [https://coronavirus.health.ny.gov/system/files/documents/2020/12/hospital_vaccine_guidance_week1.pdf](https://coronavirus.health.ny.gov/system/files/documents/2020/12/hospital_vaccine_guidance_week1.pdf)
+     [https://www.cvdvaccine.ca/product-storage-and-dry-ice](https://www.cvdvaccine.ca/product-storage-and-dry-ice)
 
 [^81]:
-     [https://marginalrevolution.com/marginalrevolution/2021/01/the-magical-extra-doses-and-supply-chain-optimization.html](https://marginalrevolution.com/marginalrevolution/2021/01/the-magical-extra-doses-and-supply-chain-optimization.html)
+     [https://coronavirus.health.ny.gov/system/files/documents/2020/12/hospital_vaccine_guidance_week1.pdf](https://coronavirus.health.ny.gov/system/files/documents/2020/12/hospital_vaccine_guidance_week1.pdf)
 
 [^82]:
+     [https://marginalrevolution.com/marginalrevolution/2021/01/the-magical-extra-doses-and-supply-chain-optimization.html](https://marginalrevolution.com/marginalrevolution/2021/01/the-magical-extra-doses-and-supply-chain-optimization.html)
+
+[^83]:
      [https://www.zdf.de/nachrichten/panorama/coronavirus-impfstoff-logistik-100.html](https://www.zdf.de/nachrichten/panorama/coronavirus-impfstoff-logistik-100.html)
