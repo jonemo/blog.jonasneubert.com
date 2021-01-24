@@ -356,7 +356,7 @@ The problem at hand is this: How do you get the four lipids and the mRNA to comb
 
 Vancouver, British Columbia, appears to be one center of expertise for LNPs in the world. The Vancouver company [Precision Nanosystems](https://www.precisionnanosystems.com/workflows/payloads/mrna) makes devices for LNP production and is part of an effort to create a Made in Canada COVID-19 vaccine.[^24] Transferra Nanosciences, also in Vancouver, was recently acquired by German chemistry mega-corp Evonik[^25] but seems to not be involved in any COVID-19 vaccine efforts. The educational content on Precision Nanosystems’ website is worth a watch if you want to know more about the process. [Acuitas Therapeutics](https://acuitastx.com), also in Vancouver, develops LNPs and works with several vaccine developers including Pfizer-BioNTech.[^26]
 
-Klosterneuburg outside Vienna, Austria, is the other global center of excellence for LNPs. That’s where the company [Polymun Scientific Immunbiologische Forschung GmbH](https://www.polymun.com) is located which is the subject of the aforementioned Washington Post article. According to the article, technology transfer to scale up Polymun’s process in-house at Pfizer and/or BioNTech was happening as of November. In addition, Pfizer uses technology developed by Acuitas Therapeutics.[^27] [The other previously referenced Washington Post article](https://www.washingtonpost.com/health/2020/11/17/coronavirus-vaccine-manufacturing/) reports that as of November the LNP production step in Kalamazoo is the bottleneck of the US supply chain.
+Klosterneuburg outside Vienna, Austria, is the other global center of excellence for LNPs. That’s where the company [Polymun Scientific Immunbiologische Forschung GmbH](https://www.polymun.com) is located which is the subject of the aforementioned WSJ article. According to the article, technology transfer to scale up Polymun’s process in-house at Pfizer and/or BioNTech was happening as of November. In addition, Pfizer uses technology developed by Acuitas Therapeutics.[^27] [The previously referenced Washington Post article](https://www.washingtonpost.com/health/2020/11/17/coronavirus-vaccine-manufacturing/) reports that as of November the LNP production step in Kalamazoo is the bottleneck of the US supply chain.
 
 In summary: The exact flow of materials and technology transfers for this step of the supply chain is unclear from published information and might still be in flux.
 
@@ -802,7 +802,7 @@ Thanks to [Ted](https://twitter.com/tedder42), [Roman](https://hut.pm), [Noah](h
      [https://simpleflying.com/boeing-aircraft-vaccine-capacity-increased/](https://simpleflying.com/boeing-aircraft-vaccine-capacity-increased/)
 
 [^59]:
-     [https://www.wsj.com/articles/united-begins-flying-pfizers-covid-19-vaccine-11606512293?mod=djemalertNEWS](https://www.wsj.com/articles/united-begins-flying-pfizers-covid-19-vaccine-11606512293?mod=djemalertNEWS)
+     [https://www.wsj.com/articles/united-begins-flying-pfizers-covid-19-vaccine-11606512293](https://www.wsj.com/articles/united-begins-flying-pfizers-covid-19-vaccine-11606512293)
 
 [^60]:
      [https://www.freightwaves.com/news/faa-issues-dry-ice-alert-to-airlines-carrying-vaccine](https://www.freightwaves.com/news/faa-issues-dry-ice-alert-to-airlines-carrying-vaccine)
