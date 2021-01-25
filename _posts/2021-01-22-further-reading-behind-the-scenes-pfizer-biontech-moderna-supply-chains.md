@@ -54,7 +54,7 @@ in Nature Outlook, by [Elie Dolgin](https://twitter.com/ElieDolgin), published 1
 An overview article about the work on mRNA vaccines as of October 2019. The first half covers amazing results observed with personalized cancer vaccines. The second half covers the seemingly less exciting “off the shelf” applications such as vaccines against Zika, avian influenza, malaria, and so on, before asserting that BioNTech is focused on the oncology market. Those were the times. The subtitle of the article is: "The technology could help to boost immunity against cancer, influenza and much more." Much more indeed.
 
 
-## [How 10 Million Vaccine Doses A Day Could Be Shipped From Chicago O'hare Airport](www.youtube.com/watch?v=xGkwu3TxuoE) (Video)
+## [How 10 Million Vaccine Doses A Day Could Be Shipped From Chicago O'hare Airport](https://www.youtube.com/watch?v=xGkwu3TxuoE) (Video)
 
 by Business Insider, published 11 December 2020
 
