@@ -6,7 +6,7 @@ published: true
 date: January 10, 2021
 ---
 
-_Sections of this post were co-authored by [Cornelia Scheitz](https://www.linkedin.com/in/cornelia-scheitz/). Last updated on January 24, 2021._
+_Sections of this post were co-authored by [Cornelia Scheitz](https://www.linkedin.com/in/cornelia-scheitz/). Last updated on January 28, 2021._
 
 Bert Hubert’s excellent and widely shared article about [Reverse Engineering the source code of the Pfizer-BioNTech SARS-CoV-2 Vaccine](https://berthub.eu/articles/posts/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/) is all it took to turn hundreds of software engineers and other Silicon Valley types into armchair vaccine experts overnight! Jokes aside, the article explains the 4284 base pair long mRNA inside the Pfizer-BioNTech’s COVID-19 vaccine for those who are more familiar with software than molecular biology.
 
@@ -301,7 +301,7 @@ PBS and tris return [860k results](https://scholar.google.com/scholar?hl=en&as_s
 
 ## Sugar
 
-**Sucrose** is the molecule inside sugar, the stuff made from sugar cane or sugar beets. Its purpose in the vaccine is to protect the other components from sustaining damage during frozen storage. In both vaccines it is by far the biggest non-water component by weight, for example at 87 mg/mL in Moderna’s. I wonder if this means that the vaccine tastes sweet.
+**Sucrose** is the molecule that makes up table sugar, the stuff made from sugar cane or sugar beets. Its purpose in the vaccine is to protect the other components from sustaining damage during frozen storage. In both vaccines it is by far the biggest non-water component by weight, for example at 87 mg/mL in Moderna’s. I wonder if this means that the vaccine tastes sweet.
 
 Finally, add water and stir. Just kidding, don’t stir: The instructions for Pfizer-BioNTech specify quickly rotating the vial upside down and back ten times as the protocol for mixing. And don’t worry, you won’t destroy the LNP’s by doing that.
 
