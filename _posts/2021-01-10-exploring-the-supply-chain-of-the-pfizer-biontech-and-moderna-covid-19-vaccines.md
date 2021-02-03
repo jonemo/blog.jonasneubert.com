@@ -263,7 +263,7 @@ All ingredients of the vaccine besides the mRNA are “[excipients](https://en.w
 
 ## Lipids
 
-Lipids are fatty molecules. Each of the two vaccines contains four types of lipid. Cholesterol, phosphatidylcholine, an ionizable cationic lipid, and PEGylated phospholipds. In the vaccine, these lipids form a capsule around the RNA called [lipid nanoparticle](https://en.wikipedia.org/wiki/Solid_lipid_nanoparticle) (LNP) that protects it from the hostile environment until it is inside a human cell.
+Lipids are fatty molecules. Each of the two vaccines contains four types of lipid. Cholesterol, phosphatidylcholine, an ionizable cationic lipid, and PEGylated phospholipds. In the finished vaccine, the lipids will form a capsule around the mRNA to protect the mRNA from the hostile environment until it arrives inside a human cell. The assembly of mRNA and lipids is called the [lipid nanoparticle](https://en.wikipedia.org/wiki/Solid_lipid_nanoparticle) (LNP), but in this section we focus on where the lipid bulk ingredients come from.
 
 Both Pfizer-BioNTech and Moderna use the same structural components which are already approved in many drugs.
 
@@ -272,7 +272,7 @@ Both Pfizer-BioNTech and Moderna use the same structural components which are al
 *   **DSPC**, full name [Distearoylphosphatidylcholine](https://en.wikipedia.org/wiki/Distearoylphosphatidylcholine) or 1,2-distearoyl-sn-glycero-3-phosphocholine, is a key component of the lipid bilayer that protects the mRNA.
 *   **Cholesterol** is natural to the human body. In the vaccine it is used to achieve optimal liposome formation and structure.
 
-The other two ingredients are used to optimize the LNPs for its cargo and the delivery[^7] and are novel or uncommon in drug formulation.
+The other two lipid ingredients will be used to optimize the LNPs for its cargo and the delivery[^7] and are novel or uncommon in drug formulation.
 
 **Cationic**, or positively charged, lipids bind to and help stabilize the negatively charged mRNA during assembly. Once inside the cell, the cell’s different pH environment triggers the release of mRNA
 
@@ -354,9 +354,9 @@ Pfizer sources all four lipids ingredients from UK-headquartered [Croda internat
 Moderna sources all lipids ingredients from the German-headquartered company [CordenPharma](https://www.cordenpharma.com).[^24] One facility in Boulder, Colorado, which was recently expanded and can now produce 400kg per batch[^25], and two facilities in [Liestal, Switzerland](https://www.cordenpharma.com/facilities/liestal/), and [Chenôve, France](https://www.cordenpharma.com/facilities/chenove/), are set up to produce the lipids required by Moderna.
 
 
-## Lipid Nanoparticle (LNP) Production
+## Lipid Nanoparticle (LNP) Assembly
 
-Welcome to the bottleneck of mRNA vaccine production! The number of people in the world who know how to get lipids and mRNA to combine into a lipid nanoparticle (LNP) might be in the low hundreds. And the machines to do it might not be machines at all but one-off lab bench setups like the one in this [Wall Street Journal article](https://www.wsj.com/articles/if-one-leading-coronavirus-vaccine-works-thank-this-tiny-firm-in-rural-austria-11604664001).
+Welcome to the bottleneck of mRNA vaccine production! This is where the mRNA and lipids (see previous sections) get combined. The number of people in the world who know how to get lipids and mRNA to combine into a lipid nanoparticle (LNP) might be in the low hundreds. And the machines to do it might not be machines at all but one-off lab bench setups like the one in this [Wall Street Journal article](https://www.wsj.com/articles/if-one-leading-coronavirus-vaccine-works-thank-this-tiny-firm-in-rural-austria-11604664001).
 
 The problem at hand is this: How do you get the four lipids and the mRNA to combine in such a way that they form the protective sphere of the LNP, in a reproducible way? You can’t just combine all parts in your Vitamix and run the smoothie program. Well, you could, but it’s not going to give you a weird smoothie and not mRNA filled lipid nano-particles. What is of the essence is precise control of molecule sizes, precise control of flow rates, and probably precise control of many other parameters. Microfluidics is the technology of choice for these requirements and are most likely used for nanoparticle formation in mRNA vaccine making.
 
