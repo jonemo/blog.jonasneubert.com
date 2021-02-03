@@ -8,7 +8,7 @@ date: January 10, 2021
 
 _Sections of this post were co-authored by [Cornelia Scheitz](https://www.linkedin.com/in/cornelia-scheitz/)._
 _Noah Leidinger created a [German translation](https://www.noahleidinger.com/unlisted/covid19)._
-_Last updated on January 28, 2021._
+_Last updated on February 2, 2021._
 
 Bert Hubert’s excellent and widely shared article about [Reverse Engineering the source code of the Pfizer-BioNTech SARS-CoV-2 Vaccine](https://berthub.eu/articles/posts/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/) is all it took to turn hundreds of software engineers and other Silicon Valley types into armchair vaccine experts overnight! Jokes aside, the article explains the 4284 base pair long mRNA inside the Pfizer-BioNTech’s COVID-19 vaccine for those who are more familiar with software than molecular biology.
 
@@ -316,9 +316,9 @@ Next up, let’s look at how these ingredients come together into the final prod
 
 Both Pfizer-BioNTech and Moderna each have two largely independent supply chains in Europe and the United States. This makes sense in order to maximize utilization of available manufacturing capacity and to add resilience through redundancy. [Bloomberg’s Supply Lines newsletter](https://www.bloomberg.com/news/articles/2020-07-25/the-supply-chain-to-save-the-world-is-unprepared-for-a-vaccine) points out that it also appeases certain “protectionist governments intent on hobbling international cooperation by exerting sovereignty over supply chains”.
 
-Following the active ingredient from beginning (DNA synthesis) to end (fill-and-finish into vials) takes on the order of weeks. For example, Moderna’s first ever batch of the COVID-19 vaccine was sent off to the National Institutes of Health (NIH) for phase 1 clinical trials 42 days after the design of the vaccine was completed.[^12] However, the final 14 of those 42 days were spent waiting for the fixed-length sterility test experiment to complete.
+Following the active ingredient from beginning (DNA synthesis) to end (fill-and-finish into vials) takes on the order of weeks. For example, Moderna’s first ever batch of the COVID-19 vaccine was sent off to the National Institutes of Health (NIH) for phase 1 clinical trials 42 days after the design of the vaccine was completed.[^12] (The final 14 of those 42 days were spent waiting for the fixed-length sterility test experiment to complete.)
 
-A note about the relationship between BioNTech and Pfizer: BioNTech is the original developer of several COVID-19 vaccine candidates. In March 2020, BioNTech announced a collaboration with Pfizer that involves jointly pursuing clinical trials for the candidates, development of the final vaccine, and all other remaining steps towards global distribution including manufacturing, distribution, finances, and marketing.[^13] Pfizer owns marketing and distribution rights for all but three countries in the world.[^14] Those three exceptions are: Germany and Turkey where BioNTech themselves markets and distributes, and China where [Shanghai Fosun Pharma](https://en.wikipedia.org/wiki/Fosun_Pharma) holds the marketing rights.[^15]
+A note about the relationship between BioNTech and Pfizer: BioNTech is the original developer of several COVID-19 vaccine candidates. In March 2020, BioNTech announced a collaboration with Pfizer that involves jointly pursuing clinical trials for the candidates, development of the final vaccine, and all other remaining steps towards global distribution including manufacturing, distribution, finances, and marketing.[^13] Pfizer owns marketing and distribution rights for all but three countries in the world.[^14] Those three exceptions are: Germany and Turkey where BioNTech themselves markets and distributes, and China where [Shanghai Fosun Pharma](https://en.wikipedia.org/wiki/Fosun_Pharma) holds the marketing rights.[^15] Pfizer and BioNTech share gross profits generated outside of China 50:50.[^16]
 
 Fun fact: BioNTech’s headquarter’s street address is “An der Goldgrube 12” which literally translates to “At the Goldmine 12”.
 
@@ -329,29 +329,29 @@ Pfizer’s US supply chain starts in St Louis, MO, where somewhere in their [250
 
 For each batch, if the quality control passes, the resulting one gram of frozen DNA is shipped to the next facility. This is the transport step for which Pfizer’s reportedly used the company jet or helicopter at times (according to the [WaPo](https://www.washingtonpost.com/health/2020/11/17/coronavirus-vaccine-manufacturing/) article).
 
-Moderna outsources DNA production to Swiss company [Lonza](https://www.lonza.com).[^16] Lonza also performs the subsequent step of creating RNA from DNA, which Pfizer performs in separate facilities (see below).
+Moderna outsources DNA production to Swiss company [Lonza](https://www.lonza.com).[^17] Lonza also performs the subsequent step of creating RNA from DNA, which Pfizer performs in separate facilities (see below).
 
-Lonza constructed four identical new production lines between signing the agreement with Moderna in May 2020 and January 2021.[^17] One of these lines is in Portsmouth, New Hampshire, and started production in July. Three were installed in a formerly empty building near Lonza’s headquarters in Visp, Switzerland, and were reported as pending startup [on December 29, 2020](https://new.rro.ch/story/lonza-startet-produktion-von-coronaimpfstoff/12958). The stated goal in Visp is to produce RNA for a total of 800,000 doses daily. [Moderna’s contract with Lonza](https://www.sec.gov/Archives/edgar/data/1682852/000168285220000023/lonzamodernagltafullye.htm) specifies that vaccine produced at the Visp site or anywhere else outside the United States will never be shipped to the United States.
+Lonza constructed four identical new production lines between signing the agreement with Moderna in May 2020 and January 2021.[^18] One of these lines is in Portsmouth, New Hampshire, and started production in July. Three were installed in a formerly empty building near Lonza’s headquarters in Visp, Switzerland, and were reported as pending startup [on December 29, 2020](https://new.rro.ch/story/lonza-startet-produktion-von-coronaimpfstoff/12958). The stated goal in Visp is to produce RNA for a total of 800,000 doses daily. [Moderna’s contract with Lonza](https://www.sec.gov/Archives/edgar/data/1682852/000168285220000023/lonzamodernagltafullye.htm) specifies that vaccine produced at the Visp site or anywhere else outside the United States will never be shipped to the United States.
 
-Since 2018 Moderna operates a “two-storey, football-pitch-sized manufacturing plant” in Norwood, Massachusetts, where, reportedly, the mRNA for all of Moderna’s previous clinical trials has been produced.[^18]
+Since 2018 Moderna operates a “two-storey, football-pitch-sized manufacturing plant” in Norwood, Massachusetts, where, reportedly, the mRNA for all of Moderna’s previous clinical trials has been produced.[^19]
 
 
 ## mRNA Production
 
 In order to turn grams of DNA into, literally, bags of mRNA, the DNA is now combined with nucleotides and polymerase, as described in the section about ingredients a few sections ago. In practical terms, this will involve inserting all three components (plus supporting materials such as water) into a [bioreactor](https://en.wikipedia.org/wiki/Bioreactor) where the transcription reaction can happen. Process developers for this step decide which ingredients get added to the bioreactor at what feed rates (and which ones to have in the reactor from the start), details of the agitation (shaking or stirring?) and similar parameters. Traditionally, bioreactors take the form of stainless steel tanks with ports for inlets, outlets, and sensors. [Single-use bioreactors](https://en.wikipedia.org/wiki/Single-use_bioreactor) are getting increasingly popular for benefits such as zero risk of cross-batch contamination. After the reaction has occurred, removal of leftover raw ingredients and purification happens, and then we are left with pure mRNA. This is the finalized, active ingredient–the first item from our ingredients list.
 
-In the case of Pfizer, the DNA from St. Louis is shipped to another Pfizer location in Andover, Massachusetts, or to BioNTech in Germany to be converted to mRNA. The aforementioned Washington Post article mentions that the resulting mRNA is frozen in bags “the size of a large shopping bag”.[^19] It seems like a reasonable guess that these bags are actually the single-use bioreactors which the mRNA was made in. The French-headquartered company [Sartorius Stedim Biotech](https://www.sartorius.com/en/company/about-sartorius-stedim-biotech-sa) is a supplier of BioNTech[^20] and advertises their [Flexsafe RM Bags](https://www.sartorius.com/en/products/fermentation-bioreactors/single-use-bioreactors/biostat-rm-flexsafe-rm) (available in volumes up to 200 liters) for use in vaccine production, so it’s a reasonable guess that Pfizer’s bags are something along those lines.
+In the case of Pfizer, the DNA from St. Louis is shipped to another Pfizer location in Andover, Massachusetts, or to BioNTech in Germany to be converted to mRNA. The aforementioned Washington Post article mentions that the resulting mRNA is frozen in bags “the size of a large shopping bag”.[^20] It seems like a reasonable guess that these bags are actually the single-use bioreactors which the mRNA was made in. The French-headquartered company [Sartorius Stedim Biotech](https://www.sartorius.com/en/company/about-sartorius-stedim-biotech-sa) is a supplier of BioNTech[^21] and advertises their [Flexsafe RM Bags](https://www.sartorius.com/en/products/fermentation-bioreactors/single-use-bioreactors/biostat-rm-flexsafe-rm) (available in volumes up to 200 liters) for use in vaccine production, so it’s a reasonable guess that Pfizer’s bags are something along those lines.
 
-The purification and final concentration for BioNTech-produced mRNAs is done by [Rentschler Biopharma](https://www.rentschler-biopharma.com/) in Laupheim, Germany.[^21] Rentschler has a subsidiary in Milford, Massachusetts, but the press release specifically only mentions work for BioNTech in Laupheim and not for Pfizer in Milford. Pfizer and Lonza may perform both steps in-house (in Andover, Portsmouth, and Visp) or maybe I just didn’t find announcements about their respective partnerships.
+The purification and final concentration for BioNTech-produced mRNAs is done by [Rentschler Biopharma](https://www.rentschler-biopharma.com/) in Laupheim, Germany.[^22] Rentschler has a subsidiary in Milford, Massachusetts, but the press release specifically only mentions work for BioNTech in Laupheim and not for Pfizer in Milford. Pfizer and Lonza may perform both steps in-house (in Andover, Portsmouth, and Visp) or maybe I just didn’t find announcements about their respective partnerships.
 
-mRNA production has never been done at the volume required for the COVID-19 vaccines. As a result, it is considered the most risky from a supply chain perspective. On the materials side, some of the enzymes needed to cap the mRNA have limited availability.[^22] On the infrastructure side, until a few months ago the specialized facilities and workers required only handled small research workloads.[^23]
+mRNA production has never been done at the volume required for the COVID-19 vaccines. As a result, it is considered the most risky from a supply chain perspective. On the materials side, some of the enzymes needed to cap the mRNA have limited availability.[^23] On the infrastructure side, until a few months ago the specialized facilities and workers required only handled small research workloads.[^24]
 
 
 ## Lipids Production
 
-Pfizer sources all four lipids ingredients from UK-headquartered [Croda international](https://www.croda.com). The [news release](https://www.croda.com/en-gb/news/2020/11/pfizer-croda) implies that the recently acquired subsidiary [Avanti Polar Lipids](https://avantilipids.com), located in Alabaster, Alabama, would handle the production.
+Pfizer sources all four lipids ingredients from UK-headquartered [Croda International](https://www.croda.com). The [news release](https://www.croda.com/en-gb/news/2020/11/pfizer-croda) implies that the recently acquired subsidiary [Avanti Polar Lipids](https://avantilipids.com), located in Alabaster, Alabama, would handle the production.
 
-Moderna sources all lipids ingredients from the German-headquartered company [CordenPharma](https://www.cordenpharma.com).[^24] One facility in Boulder, Colorado, which was recently expanded and can now produce 400kg per batch[^25], and two facilities in [Liestal, Switzerland](https://www.cordenpharma.com/facilities/liestal/), and [Chenôve, France](https://www.cordenpharma.com/facilities/chenove/), are set up to produce the lipids required by Moderna.
+Moderna sources all lipids ingredients from the German-headquartered company [CordenPharma](https://www.cordenpharma.com).[^25] One facility in Boulder, Colorado, which was recently expanded and can now produce 400kg per batch[^26], and two facilities in [Liestal, Switzerland](https://www.cordenpharma.com/facilities/liestal/), and [Chenôve, France](https://www.cordenpharma.com/facilities/chenove/), are set up to produce the lipids required by Moderna.
 
 
 ## Lipid Nanoparticle (LNP) Assembly
@@ -360,9 +360,11 @@ Welcome to the bottleneck of mRNA vaccine production! This is where the mRNA and
 
 The problem at hand is this: How do you get the four lipids and the mRNA to combine in such a way that they form the protective sphere of the LNP, in a reproducible way? You can’t just combine all parts in your Vitamix and run the smoothie program. Well, you could, but it’s not going to give you a weird smoothie and not mRNA filled lipid nano-particles. What is of the essence is precise control of molecule sizes, precise control of flow rates, and probably precise control of many other parameters. Microfluidics is the technology of choice for these requirements and are most likely used for nanoparticle formation in mRNA vaccine making.
 
-Vancouver, British Columbia, appears to be one center of expertise for LNPs in the world. The Vancouver company [Precision Nanosystems](https://www.precisionnanosystems.com/workflows/payloads/mrna) makes devices for LNP production and is part of an effort to create a Made in Canada COVID-19 vaccine.[^26] The educational content on their website is worth a watch if you want to know more about the process, but neither Pfizer-BioNTech nor Moderna appear to use the devices. Transferra Nanosciences, also in Vancouver, was acquired by German chemistry mega-corp Evonik[^27] in 2016 but seems to not be involved in any COVID-19 vaccine efforts. [Acuitas Therapeutics](https://acuitastx.com), also in Vancouver, developed the LNP for the Pfizer-BioNTech’s vaccine[^28] but the LNP production is done by Pfizer themselves. [The previously referenced Washington Post article](https://www.washingtonpost.com/health/2020/11/17/coronavirus-vaccine-manufacturing/) reports that as of November the LNP production step in Kalamazoo is the bottleneck of the US supply chain.
+This [Youtube video](https://www.youtube.com/watch?v=oNx21jHRTD4) shows a microfluidics-based device for LNP assembly produced by the company [Precision Nanosystems](https://www.precisionnanosystems.com/workflows/payloads/mrna) in Vancouver, Canada. There is no source to suggest that either Pfizer-BioNTech or Moderna use this specific device, but whatever they use is likely to look similar. The educational content on Precision Nanosystems’ website is also worth a watch if you want to know more about the process.
 
-Klosterneuburg outside Vienna, Austria, is the other global center of excellence for LNPs. That’s where the company [Polymun Scientific Immunbiologische Forschung GmbH](https://www.polymun.com) is located which is the subject of the aforementioned WSJ article. According to the article, technology transfer to scale up Polymun’s process in-house at Pfizer and/or BioNTech was happening as of November 2020. Whether Polymun performs a production step or “only” contributed know-how and how Polymun’s contribution to the Pfizer-BioNTech vaccine compares to Acuitas’ is not clear to me.
+Vancouver, British Columbia, appears to be one center of expertise for LNPs in the world. In addition to the aforementioned Precision Nanotech and Transferra Nanosciences, which was acquired by German chemistry mega-corp Evonik[^27] in 2016 but seems to not be involved in any COVID-19 vaccine efforts, Vancouver is also home to [Acuitas Therapeutics](https://acuitastx.com). Acuitas is one of the two companies credited with developing the LNP (and its assembly process) for the Pfizer-BioNTech’s vaccine.[^28] No mRNA is shipped to Vancouver, however; the process happens in-house at Pfizer’s at BioNTech’s sites. [The previously referenced Washington Post article](https://www.washingtonpost.com/health/2020/11/17/coronavirus-vaccine-manufacturing/) reports that as of November the LNP production step in Kalamazoo is the bottleneck of the US supply chain.
+
+Klosterneuburg outside Vienna, Austria, is the other global center of excellence for LNPs. That’s where the company [Polymun Scientific Immunbiologische Forschung GmbH](https://www.polymun.com) is located which is the subject of the aforementioned WSJ article. According to the article, technology transfer to scale up Polymun’s process in-house at Pfizer and/or BioNTech was happening as of November 2020. Whether Polymun performs a production step in Austria or, like Acuitas, “only” contributed know-how has not been reported. How Polymun’s contribution to the Pfizer-BioNTech vaccine relates to Acuitas’ is also not clear to me.
 
 Moderna has an in-house LNP production process[^29] and evidently not much contact with the media as I was not able to uncover any information. Most likely, contract manufacturer Lonza handles this step for Moderna.
 
@@ -371,9 +373,9 @@ Moderna has an in-house LNP production process[^29] and evidently not much conta
 
 The sourcing of the LNPs that contain mRNA and lipids is covered above, the remaining ingredients are generic and abundant enough to not warrant their own section.
 
-The remaining steps in the production of the vaccine itself are “formulation” where LNPs, buffers, and sucrose are combined, and “[fill-and-finish](https://en.wikipedia.org/wiki/Fill_and_finish)”, the pharma industry terminology for the filling into vials, labeling, and packaging.
+The remaining steps in the production of the vaccine itself are “formulation” where LNPs, buffers, and sucrose are combined, and “[fill-and-finish](https://en.wikipedia.org/wiki/Fill_and_finish)”, the pharma industry terminology for the filling into vials, labeling, and packaging. This sounds easy, but keep in mind that at this step of the process we are dealing with lipid nanoparticles that like to be kept frozen, and we all know that frozen liquids don’t mix well.
 
-Pfizer performs these final steps in Kalamazoo, Michigan, where the company has an [80-building campus](https://www.pfizer.com/products/pfizer-global-supply/us-manufacturing-sites/kalamazoo). In Europe, the same process is performed first by Pfizer’s plant in Puurs, Belgium. Once combined, the vaccine is filled into the vials inside of which it will remain until just before it is injected into someone’s arm. In Kalamazoo, there are two filling lines, one of which reaches 600 vials per minute. Kalamazoo is also the location of the “freezer farm” where Pfizer stored vaccines that had been produced before the EUA was granted that allowed their distribution.
+In the United States, Pfizer performs the final steps only in Kalamazoo, Michigan, where the company has an [80-building campus](https://www.pfizer.com/products/pfizer-global-supply/us-manufacturing-sites/kalamazoo). In Europe, the same process is performed first by Pfizer’s plant in Puurs, Belgium. Once combined, the vaccine is filled into the vials inside of which it will remain until just before it is injected into someone’s arm. In Kalamazoo, there are two filling lines, one of which reaches 600 vials per minute. Kalamazoo is also the location of the “freezer farm” where Pfizer stored vaccines that had been produced before the EUA was granted that allowed their distribution.
 
 BioNTech additionally sends vaccine for formulation and fill-and-finish to [Dermapharm](https://www.dermapharm.de)’s facility in Brehna near Leipzig, presumably mostly to serve the German demand.[^30] An additional contract with Swiss company [Siegfried](https://www.siegfried.ch) for a mid-2021 production start in Hameln, Germany, is also signed.[^31] BioNTech also has [its own production facilities](https://biontech.de/our-dna/locations) in Mainz and Idar-Oberstein which are, presumably, smaller than the contract manufacturers because they were built to supply clinical trials and personalized cancer vaccines. In September 2020 BioNTech’s acquired an active production facility (including 300 workers) from Novartis in Marburg, Germany, and announced that this would increase annual production by 750 million doses (out of a total 2 billion between Pfizer and BioNTech) starting in February 2021.[^32]
 
@@ -675,37 +677,37 @@ Thanks to [Ted](https://twitter.com/tedder42), [Roman](https://hut.pm), [Noah](h
      [https://www.reuters.com/article/biontech-fosunpharma-vaccine-collaborati/biontech-in-china-alliance-with-fosun-over-coronavirus-vaccine-candidate-idUSL8N2B90UW](https://www.reuters.com/article/biontech-fosunpharma-vaccine-collaborati/biontech-in-china-alliance-with-fosun-over-coronavirus-vaccine-candidate-idUSL8N2B90UW)
 
 [^16]:
-     [https://www.lonza.com/investor-relations/-/media/38ADC8E8FB834519B5E7FDA0EC1DC15E.ashx](https://www.lonza.com/investor-relations/-/media/38ADC8E8FB834519B5E7FDA0EC1DC15E.ashx)
+     [https://investors.biontech.de/static-files/82c9e451-7503-4217-a51f-ee7fb6497b17](https://investors.biontech.de/static-files/82c9e451-7503-4217-a51f-ee7fb6497b17)
 
 [^17]:
-     [https://cen.acs.org/business/outsourcing/Pfizer-Moderna-ready-vaccine-manufacturing/98/i46](https://cen.acs.org/business/outsourcing/Pfizer-Moderna-ready-vaccine-manufacturing/98/i46)
+     [https://www.lonza.com/investor-relations/-/media/38ADC8E8FB834519B5E7FDA0EC1DC15E.ashx](https://www.lonza.com/investor-relations/-/media/38ADC8E8FB834519B5E7FDA0EC1DC15E.ashx)
 
 [^18]:
-     [https://www.nature.com/articles/d41586-019-03072-8](https://www.nature.com/articles/d41586-019-03072-8)
+     [https://cen.acs.org/business/outsourcing/Pfizer-Moderna-ready-vaccine-manufacturing/98/i46](https://cen.acs.org/business/outsourcing/Pfizer-Moderna-ready-vaccine-manufacturing/98/i46)
 
 [^19]:
-     [https://www.washingtonpost.com/health/2020/11/17/coronavirus-vaccine-manufacturing/](https://www.washingtonpost.com/health/2020/11/17/coronavirus-vaccine-manufacturing/)
+     [https://www.nature.com/articles/d41586-019-03072-8](https://www.nature.com/articles/d41586-019-03072-8)
 
 [^20]:
-     [https://biontechse.gcs-web.com/node/9081/pdf](https://biontechse.gcs-web.com/node/9081/pdf)
+     [https://www.washingtonpost.com/health/2020/11/17/coronavirus-vaccine-manufacturing/](https://www.washingtonpost.com/health/2020/11/17/coronavirus-vaccine-manufacturing/)
 
 [^21]:
-     [https://www.rentschler-biopharma.com/news/press-releases-and-announcements/detail/view/joining-forces-against-sars-cov-2/](https://www.rentschler-biopharma.com/news/press-releases-and-announcements/detail/view/joining-forces-against-sars-cov-2/)
+     [https://biontechse.gcs-web.com/node/9081/pdf](https://biontechse.gcs-web.com/node/9081/pdf)
 
 [^22]:
-     [https://www.scientificamerican.com/article/new-covid-vaccines-need-absurd-amounts-of-material-and-labor1/](https://www.scientificamerican.com/article/new-covid-vaccines-need-absurd-amounts-of-material-and-labor1/)
+     [https://www.rentschler-biopharma.com/news/press-releases-and-announcements/detail/view/joining-forces-against-sars-cov-2/](https://www.rentschler-biopharma.com/news/press-releases-and-announcements/detail/view/joining-forces-against-sars-cov-2/)
 
 [^23]:
-     [https://www.gao.gov/products/GAO-21-207](https://www.gao.gov/products/GAO-21-207)
+     [https://www.scientificamerican.com/article/new-covid-vaccines-need-absurd-amounts-of-material-and-labor1/](https://www.scientificamerican.com/article/new-covid-vaccines-need-absurd-amounts-of-material-and-labor1/)
 
 [^24]:
-     [https://www.cordenpharma.com/CordenPharma_and_Moderna_Extend_Lipid_Supply_Agreement_for_Moderna_Vaccine_mRNA-1273_Against_Novel_Coronavirus_SARS-CoV-2](https://www.cordenpharma.com/CordenPharma_and_Moderna_Extend_Lipid_Supply_Agreement_for_Moderna_Vaccine_mRNA-1273_Against_Novel_Coronavirus_SARS-CoV-2)
+     [https://www.gao.gov/products/GAO-21-207](https://www.gao.gov/products/GAO-21-207)
 
 [^25]:
-     [https://www.cordenpharma.com/press-release/CDMO_Expands_US_Peptide_Manufacturing_Capacity](https://www.cordenpharma.com/press-release/CDMO_Expands_US_Peptide_Manufacturing_Capacity)
+     [https://www.cordenpharma.com/CordenPharma_and_Moderna_Extend_Lipid_Supply_Agreement_for_Moderna_Vaccine_mRNA-1273_Against_Novel_Coronavirus_SARS-CoV-2](https://www.cordenpharma.com/CordenPharma_and_Moderna_Extend_Lipid_Supply_Agreement_for_Moderna_Vaccine_mRNA-1273_Against_Novel_Coronavirus_SARS-CoV-2)
 
 [^26]:
-     [https://www.precisionnanosystems.com/news-room/detail/ISED-Investment-Justin-Trudeau-Announcement](https://www.precisionnanosystems.com/news-room/detail/ISED-Investment-Justin-Trudeau-Announcement)
+     [https://www.cordenpharma.com/press-release/CDMO_Expands_US_Peptide_Manufacturing_Capacity](https://www.cordenpharma.com/press-release/CDMO_Expands_US_Peptide_Manufacturing_Capacity)
 
 [^27]:
      [https://www.pharmaceuticalonline.com/doc/lipid-nanoparticles-are-having-a-breakout-moment-0001](https://www.pharmaceuticalonline.com/doc/lipid-nanoparticles-are-having-a-breakout-moment-0001)
