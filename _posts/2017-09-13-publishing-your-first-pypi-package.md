@@ -3,7 +3,6 @@ layout: post
 title: Publishing your First PyPI Package by/for the Absolute Beginner
 tags:
  - python
- - pypi
 published: true
 date: Sept 13th, 2017
 ---

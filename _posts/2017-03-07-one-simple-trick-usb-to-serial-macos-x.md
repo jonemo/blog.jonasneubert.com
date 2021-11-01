@@ -3,7 +3,7 @@ layout: post
 title: One simple trick for USB-to-Serial on MacOS X
 tags:
  - factorytech
- - serial
+ - barcodes
 published: true
 date: Mar 7th, 2017
 ---

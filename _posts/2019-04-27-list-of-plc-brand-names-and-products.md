@@ -3,6 +3,7 @@ layout: post
 title: "List of PLC brands and products"
 tags:
  - factorytech
+ - plc
 published: true
 date: April 27, 2019
 ---

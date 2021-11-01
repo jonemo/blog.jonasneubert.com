@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Further Reading (vol 2): Research Breakthroughs that led to mRNA COVID-19 Vaccines"
-tags: vaccines
+tags:
+ - vaccines
 published: true
 date: February 6, 2021
 ---

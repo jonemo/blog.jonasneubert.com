@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "I took a shower on a train and I liked it"
-tags: []
+tags:
+ - travel
 published: true
 date: Apr 16th, 2017
 ---

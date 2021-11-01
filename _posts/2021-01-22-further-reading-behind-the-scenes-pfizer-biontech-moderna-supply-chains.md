@@ -2,6 +2,7 @@
 layout: post
 title: "Further Reading: Behind the Scenes of the Pfizer-BioNTech and Moderna Supply Chains"
 tags:
+ - vaccines
 published: true
 date: January 22, 2021
 ---

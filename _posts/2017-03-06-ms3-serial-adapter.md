@@ -2,10 +2,9 @@
 layout: post
 title: MS3 Adapter for Serial Port and Power
 tags:
- - pycon
  - robotics
  - factorytech
- - serial
+ - barcodes
 published: true
 date: Mar 6th, 2017
 ---

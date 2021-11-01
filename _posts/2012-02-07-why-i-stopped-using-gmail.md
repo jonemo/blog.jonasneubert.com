@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why I stopped using GMail
-# tags:
+tags: []
 published: true
 date: Feb 7th, 2012 2:07pm
 ---

@@ -3,7 +3,6 @@ layout: post
 title: "The PyCon Speaker Experience (is phenomenal)"
 tags:
  - pycon
- - "public speaking"
 published: true
 date: Nov 20th, 2017
 ---
