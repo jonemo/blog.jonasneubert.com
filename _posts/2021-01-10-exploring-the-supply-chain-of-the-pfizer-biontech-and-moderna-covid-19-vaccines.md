@@ -248,9 +248,9 @@ The conversion process from DNA to mRNA in living cells is well understood. Howe
 
 
 
-*   [Nucleotides](https://en.wikipedia.org/wiki/Nucleotide) are the raw building blocks for the mRNA.
-*   RNA [Polymerases](https://en.wikipedia.org/wiki/Polymerase) read DNA and translate it to mRNA using these nucleotides.
-*   A method to protect the mRNA from degradation either co- or post-transcriptionally.
+* [Nucleotides](https://en.wikipedia.org/wiki/Nucleotide) are the raw building blocks for the mRNA.
+* RNA [Polymerases](https://en.wikipedia.org/wiki/Polymerase) read DNA and translate it to mRNA using these nucleotides.
+* A method to protect the mRNA from degradation either co- or post-transcriptionally.
 
 As Bert points out in [his article](https://berthub.eu/articles/posts/reverse-engineering-source-code-of-the-biontech-pfizer-vaccine/ ), to ensure the immune system does not attack the foreign mRNA, every [uracil](https://en.wikipedia.org/wiki/Uracil) (the letter U in the RNA sequence) is replaced by 1-methyl-3’-pseudouridylyl (canonical name is N1-Methylpseudouridine). Note that pseudouridylyl is phonetically similar to the more common pseudouridine, but chemically quite different thanks to the addition of a [methyl group](https://en.wikipedia.org/wiki/Methyl_group).[^3] 1-methyl-3’-pseudouridylyl can be purchased from [TriLink](https://www.trilinkbiotech.com/n1-methylpseudouridine-5-triphosphate.html) and [JenaBiosciences](https://www.jenabioscience.com/nucleotides-nucleosides/nucleotides-by-structure/analogs-and-derivatives-of/natural-rna-nucleobases/nu-890-n1-methylpseudo-utp), for example, but both BioNTech and Moderna likely license the molecule from the University of Pennsylvania[^4] and produce it themselves.
 
@@ -271,8 +271,8 @@ Both Pfizer-BioNTech and Moderna use the same structural components which are al
 
 
 
-*   **DSPC**, full name [Distearoylphosphatidylcholine](https://en.wikipedia.org/wiki/Distearoylphosphatidylcholine) or 1,2-distearoyl-sn-glycero-3-phosphocholine, is a key component of the lipid bilayer that protects the mRNA.
-*   **Cholesterol** is natural to the human body. In the vaccine it is used to achieve optimal liposome formation and structure.
+* **DSPC**, full name [Distearoylphosphatidylcholine](https://en.wikipedia.org/wiki/Distearoylphosphatidylcholine) or 1,2-distearoyl-sn-glycero-3-phosphocholine, is a key component of the lipid bilayer that protects the mRNA.
+* **Cholesterol** is natural to the human body. In the vaccine it is used to achieve optimal liposome formation and structure.
 
 The other two lipid ingredients will be used to optimize the LNPs for its cargo and the delivery[^7] and are novel or uncommon in drug formulation.
 
@@ -280,16 +280,16 @@ The other two lipid ingredients will be used to optimize the LNPs for its cargo 
 
 
 
-*   Pfizer-BioNTech uses [ALC-3015](https://en.wikipedia.org/wiki/ALC-0315) patented by Acuitas Therapeutics, Inc.[^8] and it is the most abundant lipid in the mix[^9].
+* Pfizer-BioNTech uses [ALC-3015](https://en.wikipedia.org/wiki/ALC-0315) patented by Acuitas Therapeutics, Inc.[^8] and it is the most abundant lipid in the mix[^9].
 
 
-*   Moderna has a proprietary molecule called Lipid SM-102. Or maybe it isn’t that proprietary, because it might be covered by a patent owned by Arbutus Biopharma.[^10] Moderna’s [Phase 3 Clinical Study Protocol](https://www.modernatx.com/sites/default/files/mRNA-1273-P301-Protocol.pdf) defines it as “heptadecan-9-yl 8-((2-hydroxyethyl) (6-oxo-6-(undecyloxy)hexyl)amino)octanoate” and calls it a “proprietary ionizable lipid”. In 2018, Moderna researchers published [a Cell paper](https://www.cell.com/molecular-therapy-family/molecular-therapy/pdfExtended/S1525-0016(18)30118-7) proposing 10 new lipids, of which SM-102 is number 8, according to [this tweet](https://twitter.com/1stClef/status/1306653592691113986). The paper has a “synthesis” section and supplementary materials which somebody more knowledgeable about such things than I might be able to reproduce. Everyone else will have to purchase it, for example from [Organix Inc at $5,000/100mg](https://organixinc.com/lipids/atx001-crrdc-b9dnh-phs3e) (update: the original link stopped working, [here is a snapshot](https://web.archive.org/web/20210119220956/https://organixinc.com/lipids/atx001-crrdc-b9dnh-phs3e) from January 19, 2021).
+* Moderna has a proprietary molecule called Lipid SM-102. Or maybe it isn’t that proprietary, because it might be covered by a patent owned by Arbutus Biopharma.[^10] Moderna’s [Phase 3 Clinical Study Protocol](https://www.modernatx.com/sites/default/files/mRNA-1273-P301-Protocol.pdf) defines it as “heptadecan-9-yl 8-((2-hydroxyethyl) (6-oxo-6-(undecyloxy)hexyl)amino)octanoate” and calls it a “proprietary ionizable lipid”. In 2018, Moderna researchers published [a Cell paper](https://www.cell.com/molecular-therapy-family/molecular-therapy/pdfExtended/S1525-0016(18)30118-7) proposing 10 new lipids, of which SM-102 is number 8, according to [this tweet](https://twitter.com/1stClef/status/1306653592691113986). The paper has a “synthesis” section and supplementary materials which somebody more knowledgeable about such things than I might be able to reproduce. Everyone else will have to purchase it, for example from [Organix Inc at $5,000/100mg](https://organixinc.com/lipids/atx001-crrdc-b9dnh-phs3e) (update: the original link stopped working, [here is a snapshot](https://web.archive.org/web/20210119220956/https://organixinc.com/lipids/atx001-crrdc-b9dnh-phs3e) from January 19, 2021).
 **PEGylated phospholipids** help stabilize the LNP and protect it from early detection by our immune system. It ensures the LNPs and thus the mRNA can reach its target.
 
 
 
-*   Pfizer-BioNTech uses [ALC-0159](https://en.wikipedia.org/wiki/ALC-0159).
-*   Moderna uses DMG-PEG 2000 or “1-monomethoxypolyethyleneglycol-2,3-dimyristylglycerol” with polyethylene glycol with average molecular weight 2000. This can be purchased, for example from [Sigma Aldrich](http://www.sigmaaldrich.com/catalog/product/avanti/880151p).
+* Pfizer-BioNTech uses [ALC-0159](https://en.wikipedia.org/wiki/ALC-0159).
+* Moderna uses DMG-PEG 2000 or “1-monomethoxypolyethyleneglycol-2,3-dimyristylglycerol” with polyethylene glycol with average molecular weight 2000. This can be purchased, for example from [Sigma Aldrich](http://www.sigmaaldrich.com/catalog/product/avanti/880151p).
 
 The formulation of the LNPs is key to the vaccine and efficiency. The specific combination of lipids is most probably what gives the Moderna nanoparticles the ability to protect the mRNA from degradation at higher temperatures (more about temperature requirements below).
 
@@ -385,24 +385,24 @@ In Europe, BioNTech and Pfizer operate their own plants and work with a growing 
 
 
 
-*   Pfizer’s plant in Puurs, Belgium, was the first operational fill-and-finish site in Pfizer-BioNTech’s European network.
-*   BioNTech also has [its own production facilities](https://biontech.de/our-dna/locations) in Mainz and Idar-Oberstein. I found no source to confirm whether fill-and-finish operations are performed there.
-*   In September 2020 BioNTech’s acquired an active production facility (including 300 workers) from Novartis in Marburg, Germany, and announced that this would increase annual production by 750 million doses (out of a total 2 billion between Pfizer and BioNTech) starting in February 2021.[^35]
+* Pfizer’s plant in Puurs, Belgium, was the first operational fill-and-finish site in Pfizer-BioNTech’s European network.
+* BioNTech also has [its own production facilities](https://biontech.de/our-dna/locations) in Mainz and Idar-Oberstein. I found no source to confirm whether fill-and-finish operations are performed there.
+* In September 2020 BioNTech’s acquired an active production facility (including 300 workers) from Novartis in Marburg, Germany, and announced that this would increase annual production by 750 million doses (out of a total 2 billion between Pfizer and BioNTech) starting in February 2021.[^35]
 
 
-*   [Dermapharm](https://www.dermapharm.de) has a contract to fill-and-finish at its site in Brehna near Leipzig.[^36]
+* [Dermapharm](https://www.dermapharm.de) has a contract to fill-and-finish at its site in Brehna near Leipzig.[^36]
 
 
-*   Swiss company [Siegfried](https://www.siegfried.ch) plans to start production in Hameln, Germany, in mid-2021.[^37]
+* Swiss company [Siegfried](https://www.siegfried.ch) plans to start production in Hameln, Germany, in mid-2021.[^37]
 
 
-*   The [Halle, Germany, site](https://www.baxterbiopharmasolutions.com/about-us/worldwide-facilities/halle.html) of US-based health care company [Baxter](https://www.baxter.com) has been doing trial runs since December 2020 and is slated to start production on February 5, 2021.[^38]
+* The [Halle, Germany, site](https://www.baxterbiopharmasolutions.com/about-us/worldwide-facilities/halle.html) of US-based health care company [Baxter](https://www.baxter.com) has been doing trial runs since December 2020 and is slated to start production on February 5, 2021.[^38]
 
 
-*   On January 26, 2021, Sanofi announced its intention to fill-and-finish Pfizer-BioNTech vaccine at its site in Frankfurt, Germany, starting in August 2021.[^39]
+* On January 26, 2021, Sanofi announced its intention to fill-and-finish Pfizer-BioNTech vaccine at its site in Frankfurt, Germany, starting in August 2021.[^39]
 
 
-*   On January 29, 2021, Novartis announced a not-yet-signed deal with Pfizer-BioNTech which could result in a start of production of to-be-determined quantities in its Stein am Rhein, Switzerland, site in Q2 2021.[^40]
+* On January 29, 2021, Novartis announced a not-yet-signed deal with Pfizer-BioNTech which could result in a start of production of to-be-determined quantities in its Stein am Rhein, Switzerland, site in Q2 2021.[^40]
 Moderna, having no international megacorp partner like Pfizer, [outsourced these same steps](https://investors.modernatx.com/news-releases/news-release-details/moderna-provides-covid-19-vaccine-supply-update) to contract manufacturer [Catalent](https://www.catalent.com) in the US[^41] and to [Laboratorios Farmacéuticos Rovi](https://rovi.es/en/) in Madrid, Spain, for all non-US demand[^42]. On December 30, 2020, Moderna signed an additional deal with Sweden-headquartered [Recipharm](https://www.recipharm.com) to perform fill-and-finish at Recipharm’s [facility in Monts, France](https://www.recipharm.com/france/monts), starting in “early 2021”.[^43]
 
 Assorted details about the fill-and-finish process: BioNTech contract manufacturers install inspection machines by German manufacturer [Seidenader](https://www.seidenader.de). Catalent has posted short videos of its Moderna fill-and-finish line on Twitter [here](https://twitter.com/CatalentPharma/status/1344693064862937090) and [here](https://twitter.com/CatalentPharma/status/1351960182666846208).
@@ -573,10 +573,10 @@ Depending on when and where you receive your vaccine, the “point of use” mig
 
 
 
-*   1 syringe and needle suitable for the injection into the patient’s arm
-*   1 antiseptic wipe/swab for cleaning the injection site on the patient’s arm
-*   1 medical exam glove
-*   For disposal, a sharps container needs to be present. In the photo from Baltimore above a tupperware box fills in as the sharps container.
+* 1 syringe and needle suitable for the injection into the patient’s arm
+* 1 antiseptic wipe/swab for cleaning the injection site on the patient’s arm
+* 1 medical exam glove
+* For disposal, a sharps container needs to be present. In the photo from Baltimore above a tupperware box fills in as the sharps container.
 
 Additional materials are required for the Pfizer-BioNTech vaccine. Each vial needs to be diluted with 1.8mL of 0.9 NaCl (sodium chloride) shortly before use.[^91] The transfer of sodium chloride into the vaccine vial (and removal of corresponding volume of air) requires one sufficiently large syringe (Pfizer recommends 3mL or 5mL) and one corresponding needle _per vial_. Furthermore, anyone who deals with Pfizer’s shipping container needs appropriate protective equipment and safety training before handling dry ice.
 
@@ -599,19 +599,19 @@ For both the Pfizer-BioNTech and Moderna vaccines, I came across the following m
 
 
 
-*   Patient information sheets with information about active ingredients, side effects, etc.
-*   Patient FAQs addressing common questions in everyday language
-*   Guides on handling, storage, and opening of shipments for healthcare providers
-*   Reminder cards or similar printables to increase the likelihood that patients get the second dose, at all and at the right time
-*   Instructions on how to report “adverse events” to the appropriate local authorities ([e.g. the FDA](https://www.fda.gov/drugs/drug-approvals-and-databases/fda-adverse-event-reporting-system-faers)) and the provider.
-*   Video tutorials for healthcare providers
+* Patient information sheets with information about active ingredients, side effects, etc.
+* Patient FAQs addressing common questions in everyday language
+* Guides on handling, storage, and opening of shipments for healthcare providers
+* Reminder cards or similar printables to increase the likelihood that patients get the second dose, at all and at the right time
+* Instructions on how to report “adverse events” to the appropriate local authorities ([e.g. the FDA](https://www.fda.gov/drugs/drug-approvals-and-databases/fda-adverse-event-reporting-system-faers)) and the provider.
+* Video tutorials for healthcare providers
 
 Additionally, Pfizer-BioNTech have:
 
 
 
-*   Safety information for handling dry ice
-*   Instructions for how to return shipping containers
+* Safety information for handling dry ice
+* Instructions for how to return shipping containers
 
 The exact list and formats of materials must match the needs and regulations of every jurisdiction. For example, many countries require labels and printed materials to be included in a local language. Tracking tens of localized versions of vaccine packages from final filling (when the vial label is applied) to point of use would multiply the supply chain complexity and slow down the process. This has led to unusual accommodation such as the European Commission permitting English-only materials for all EU countries as long as a digital version of the localized materials is available for printing at the point of use.[^97]
 
