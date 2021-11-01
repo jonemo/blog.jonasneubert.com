@@ -8,7 +8,7 @@ published: true
 date: October 29, 2019
 ---
 
-*This post is part 3 of [a series]({{ site.url }}/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-id) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html).*
+*This post is part 3 of [a series]({{ site.url }}/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-id) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html).*
 
 Most software engineers are used to writing text-based code using a text editor [of their choice](https://en.wikipedia.org/wiki/Editor_war).
 Things work a little bit differently in the world of PLCs.

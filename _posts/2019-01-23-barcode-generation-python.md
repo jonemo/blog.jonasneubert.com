@@ -31,7 +31,7 @@ To generate barcodes of only a single symbology, I recommend these libraries: [s
     .comparison-table th.comparison-table-symbology {
         white-space: nowrap;
     }
-    
+
     .comparison-table th.comparison-table-symbology>a {
         transform: rotate(-90deg);
         display: block;

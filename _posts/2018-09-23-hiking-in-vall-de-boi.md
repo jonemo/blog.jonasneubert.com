@@ -125,7 +125,7 @@ Park in the parking lot at the far end of Erill la Vall. Follow the signs for "C
 
 ## Hike 1: Estany Llong and Estany Dellui (6 hours)
 
-For our first full day of hiking, we used the taxi service into the National Park. From the taxi drop-off location we followed the well maintained and signposted gravel track to the Refugi Estany Llong. 
+For our first full day of hiking, we used the taxi service into the National Park. From the taxi drop-off location we followed the well maintained and signposted gravel track to the Refugi Estany Llong.
 
 {% include image.html
   img="/assets/2018-09-23-aiguestortes-track.jpg"

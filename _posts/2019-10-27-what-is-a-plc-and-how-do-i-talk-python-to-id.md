@@ -35,9 +35,9 @@ Head over to my [talks page](https://jonasneubert.com/talks/) for links to video
 This blog post is the first in a series that puts the contents of these talks in writing, including all the content I had to cut out due to time limits on conference talks.
 
 * Part 1: Introduction (you are reading it right now)
-* Part 2: [What is a Programmable Logic Controller?]({{ site.url }}/2019/10/28/what-is-a-programmable-logic-controller)
+* Part 2: [What is a Programmable Logic Controller?]({{ site.url }}/2019/10/28/what-is-a-programmable-logic-controller/)
 * Part 3: [Ladder Logic‽]({{ site.url }}/2019/10/29/ladder-logic)
-* Part 4: [Using pymodbus to communicate with a PLC]({{ site.url }}/2019/11/02/using-pymodbus-to-communicate-with-a-plc)
+* Part 4: [Using pymodbus to communicate with a PLC]({{ site.url }}/2019/11/02/using-pymodbus-to-communicate-with-a-plc/)
 * Part 5: Other Python libraries for communicating with PLCs
 * Part 6: PLC vs Raspberry Pi
 * Part 7: How to get started with Python and PLCs?

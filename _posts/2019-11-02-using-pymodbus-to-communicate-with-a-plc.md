@@ -8,7 +8,7 @@ published: true
 date: November 2, 2019
 ---
 
-*This post is part 4 of [a series]({{ site.url }}/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-id/) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html).*
+*This post is part 4 of [a series]({{ site.url }}/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-id/) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html).*
 
 In the previous parts of this series, I covered [what a PLC is]({{ site.url }}/2019/10/28/what-is-a-programmable-logic-controller/), and [how PLCs are programmed]({{ site.url }}/2019/10/29/ladder-logic/).
 In industry, the Python developer is usually not involved in the purchasing, installing, and programming of a PLC.
