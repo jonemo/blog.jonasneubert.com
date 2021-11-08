@@ -655,7 +655,7 @@ This investigation into the supply chain of the Pfizer-BioNTech and Moderna COVI
 
 ## Acknowledgements
 
-Thanks to [Ted](https://twitter.com/tedder42), [Roman](https://hut.pm), [Noah](https://www.noahleidinger.com/en/about), [Keith](https://suddenlyathome.net), [Bill](http://eqvanalytics.com/moderna-vaccine-tracker.html), [Cameron](https://www.linkedin.com/in/cameron-robert-ferguson-597a2b145/), [Manny](https://twitter.com/Riboguy), [Mike](https://twitter.com/MikeDeeeeeee), and [Jim](http://jdlh.com/) for sending corrections and suggestions.
+Thanks to [Ted](https://twitter.com/tedder42), [Roman](https://hut.pm), [Noah](https://www.noahleidinger.com/en/about), [Keith](https://suddenlyathome.net), [Bill](http://eqvanalytics.com/moderna-vaccine-tracker.html), [Cameron](https://www.linkedin.com/in/cameron-robert-ferguson-597a2b145/), [Manny](https://twitter.com/Riboguy), [Mike](https://twitter.com/MikeDeeeeeee), [Jim](http://jdlh.com/), and Bobby for sending corrections and suggestions.
 
 
 ## Notes
