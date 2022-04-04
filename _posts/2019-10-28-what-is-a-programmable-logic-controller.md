@@ -8,7 +8,7 @@ published: true
 date: October 28, 2019
 ---
 
-*This post is part 2 of [a series]({{ site.url }}/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-id) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html).*
+*This post is part 2 of [a series]({{ site.url }}/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-it) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html).*
 
 I have prepared three different conference talks about PLCs for Python programmers.
 Annoyingly, you can't assume that every Python programmer knows what a PLC is, so I always have to sacrifice a few minutes of my time slot[^1] to convey the basics before diving into my actual topic.
