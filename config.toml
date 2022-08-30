@@ -1,3 +1,24 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://blog.jonasneubert.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Blog | Jonas Neubert'
+
+enableRobotsTXT = true
+
+
+[menu]
+  [[menu.nav]]
+    name = "About"
+    url = "https://jonasneubert.com/"
+    weight = 1
+  [[menu.nav]]
+    name = "Projects"
+    url = "https://jonasneubert.com/work/"
+    weight = 2
+  [[menu.nav]]
+    name = "Talks"
+    url = "https://jonasneubert.com/talks/"
+    weight = 3
+  [[menu.nav]]
+    name = "Posts"
+    pageref = "/"
+    weight = 4

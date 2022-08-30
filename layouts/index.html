@@ -1,0 +1,7 @@
+{{ define "head" }} {{ $style := resources.Get "css/home.css" }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" />
+{{ end }} {{ define "main" }}
+
+<p>Hello Welcome to Blog</p>
+
+{{ end }}
