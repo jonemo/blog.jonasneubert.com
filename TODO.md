@@ -29,3 +29,7 @@ I know that this is a broad mix of technical, design, and consulting work. It's 
 ## Milestone 1
 
 Convert blog to Hugo. Milestone complete when ready to publish.
+
+1. Create Blog List  Page/Index Page.
+1. Create Blog Single Page.
+1. Migrate Posts to Hugo.
