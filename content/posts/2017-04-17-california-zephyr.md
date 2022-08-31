@@ -1,8 +1,8 @@
 ---
-date: "2017-04-17T00:00:00Z"
+date: '2017-04-17T00:00:00Z'
 published: true
 tags:
-- travel
+  - travel
 title: I took a shower on a train and I liked it
 ---
 

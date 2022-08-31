@@ -1,10 +1,10 @@
 ---
-date: "2019-01-23T00:00:00Z"
+date: '2019-01-23T00:00:00Z'
 published: true
 tags:
-- factorytech
-- python
-- barcodes
+  - factorytech
+  - python
+  - barcodes
 title: The Best Python Packages for Generating Barcodes
 ---
 
@@ -12,8 +12,7 @@ Barcodes are a cheap and ubiquitous way to add machine-readable information to a
 
 While preparing a conference talk about barcodes, I spent three evenings researching Python packages for generating images of 1D and 2D barcodes. This review article is the result of that work.
 
-*This article was last updated on January 23th, 2019.*
-
+_This article was last updated on January 23th, 2019._
 
 ## Summary: Recommendations
 
@@ -22,7 +21,6 @@ While preparing a conference talk about barcodes, I spent three evenings researc
 However, treepoem requires non-Python dependencies which might be difficult or impossible to install in some situations. If you cannot install treepoem's dependencies, or just don't want to, the next best general purpose option is [**python-barcode**](https://pypi.org/project/python-barcode), the most actively maintained fork of the dormant [pyBarcode](https://pypi.org/project/pyBarcode) package.
 
 To generate barcodes of only a single symbology, I recommend these libraries: [segno](https://pypi.org/project/segno) for QR and MicroQR, [pdf417gen](https://pypi.org/project/pdf417gen) for PDF417, [pylibdmtx](https://pypi.org/project/pylibdmtx/) for Datamatrix, and [PubCode](https://pypi.org/project/PubCode) for Code 128.
-
 
 ## Overview Table
 
@@ -297,7 +295,6 @@ To generate barcodes of only a single symbology, I recommend these libraries: [s
   </tr>
 </table>
 
-
 ## treepoem in detail
 
 [treepoem](https://pypi.org/project/treepoem) stands out by the sheer number of supported symbologies and symbology variants. The way this feat is achieved, however, brings with it a few possible downsides.
@@ -343,26 +340,23 @@ img.convert('1').save('qr.gif')
 
 By the way, the name: barcode → bark ode → tree poem ([source](https://github.com/adamchainz/treepoem#whats-so-clever-about-the-name)).
 
-
 ## Criteria
 
 Compared to web frameworks, data science tools, and the many other problem spaces addressed by open source Python packages, barcodes are only a small niche. However, barcode standards change at a glacial pace, resulting in an ecosystem where even packages that have not been maintained for a decade may enjoy active use. This section contains a few notes explaining the thought process by which I winnowed the list of several dozen options down to those listed in the comparison table and ultimately decided on my recommendations.
-
 
 ### Must Haves
 
 To be included in the review, a package must meet these criteria:
 
-* It is available on PyPI.
-* `pip install [packagename]` succeeds without errors on my 5-year-old MacBook.
+- It is available on PyPI.
+- `pip install [packagename]` succeeds without errors on my 5-year-old MacBook.
 
 Of course, an implicit requirement is that I must be able to discover the package. My methods of searching were:
 
-* Enter various barcode related terminology into the search box on [pypi.org](https://pypi.org).
-* Search Stackoverflow for barcode related terminology.
-* Look at the list of forks for repos associated with packages I had already found.
-* Browse through the issue tracker of packages I had already found and follow links.
-
+- Enter various barcode related terminology into the search box on [pypi.org](https://pypi.org).
+- Search Stackoverflow for barcode related terminology.
+- Look at the list of forks for repos associated with packages I had already found.
+- Browse through the issue tracker of packages I had already found and follow links.
 
 ### Supported Symbologies
 
@@ -376,7 +370,6 @@ A further complication was that some symbologies are subsets of other symbologie
 
 Note that I omit the short versions of UPC and EAN, for example [UPC-E](https://github.com/bwipp/postscriptbarcode/wiki/UPC-E) and [EAN-5](https://github.com/bwipp/postscriptbarcode/wiki/EAN-5), purely for space reasons. Most packages that support the long version also support the common short versions.
 
-
 ### Project Activity and Popularity
 
 Most barcode symbologies have been set in stone for decades. In theory, software for generating them could be truly complete, with zero remaining feature requests or bug fixes. However, even if bug-free software existed, some maintenance would be necessary because the Python language has evolved over the years, and so has the ecosystem of available tools for writing image file formats which many barcode generating tools utilize.
@@ -385,13 +378,11 @@ The usual tradeoff between project completeness and project activity applies: Th
 
 To judge the level of project activity I relied mainly on the date of the most recent project release. In addition, I looked at the number of Github stars, where available, as an indicator of how much secondary activity to expect. Only [qrcode](https://pypi.org/project/qrcode) benefited from this factor, but not enough to compensate for its lack of support for the Micro QR symbology in the head-to-head comparison with [segno](https://pypi.org/project/segno).
 
-
 ### Python 3 support
 
 It's 2019, we are [less than one year](https://mail.python.org/pipermail/python-dev/2018-March/152348.html) away from Python 2 officially becoming obsolete, a big part of the Python ecosystem has [already abandoned it](https://python3statement.org).
 
 All recommendations have explicit Python 3 support. By "explicit" I mean "not accidental": I looked for the "supported Python" package metadata, inclusion it in the test suite, or mentioning it in the Readme.
-
 
 ### Image file format exporters
 
@@ -407,11 +398,9 @@ A reasonable in-between solution is offered by several packages that support a l
 
 The [segno](https://pypi.org/project/segno/) package for QR codes deserves a mention for supporting nine outputs formats without relying on any external dependency.
 
-
 ## Notes about the Contenders
 
 For anyone still reading, this section contains a collection of marginally interesting notes I scribbled down while researching the packages covered in this review.
-
 
 ### pyBarcode and its forks
 
@@ -419,13 +408,11 @@ The genealogy of the [pyBarcode](https://pypi.org/project/pyBarcode/) family is 
 
 PyPI historians will not want to miss a final (?) plot twist in 2017: Suddenly there was [a new pre-release](https://pypi.org/project/pyBarcode/0.8b1/) version of pyBarcode! Sadly, it has stayed a pre-release since then. As, sadly, usual for dormant open source code, the lack of activity does not deter people from filling [the issue tracker](https://bitbucket.org/whitie/python-barcode/issues) and demanding fixes and new features from the solo maintainer.
 
-
 ### code128, PubCode
 
 Most small open source projects eventually go dormant, but some maintainers actively delete their work. This is what happened to code128. The latest version on PyPI is [0.3](https://pypi.org/project/code128/0.3/) from 2015. There are [indications](https://bitbucket.org/01100101/code128/issues/3/typeerror-encoding-is-an-invalid-keyword) that development continued after that date, but [the source code disappeared and remains gone](https://bitbucket.org/01100101/code128/issues/4/code-has-gone).
 
 Based on features alone, I have a preference for code128 over PubCode due to Pillow being optional, but in absence of code or maintenance cannot recommend the package.
-
 
 ### qrcode, PyQRCode, qrcodegen, segno
 
@@ -433,11 +420,9 @@ Based on features alone, I have a preference for code128 over PubCode due to Pil
 
 segno's documentation has [a much more detailed comparison of QR Code generators](https://segno.readthedocs.io/en/stable/comparison-qrcode-libs.html), including some in-the-weeds comparison criteria I don't fully understand.
 
-
 ### libdmtx, pydmtx, pylibdmtx
 
 [pydmtx](https://pypi.org/project/pydmtx/) is part of the main [libdmtx codebase](https://github.com/dmtx/dmtx-wrappers/tree/master/python). The maintenance status of this project is unclear to me: There have been no updates since 2009 but recently the project has been migrated from [Sourceforge](https://sourceforge.net/projects/libdmtx/) to Github. [pylibdmtx](https://pypi.org/project/pylibdmtx/) updates pydmtx to support Python 3 and includes the dll in the Windows wheel but requires a separate install of libdmtx on all other platforms which is why it is my recommendation for generating Datamatrix codes.
-
 
 ## More about Barcodes
 

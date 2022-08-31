@@ -1,15 +1,15 @@
 ---
-date: "2017-02-26T00:00:00Z"
+date: '2017-02-26T00:00:00Z'
 published: true
 tags:
-- pycon
-- robotics
-- factorytech
-- barcodes
+  - pycon
+  - robotics
+  - factorytech
+  - barcodes
 title: Intro to Barcode Readers
 ---
 
-If you read [last week's blog post]({{ site.url }}/2017/02/12/tap-tap-tap/) you already know that I've got three months to put together a physical demo for a [PyCon talk about factory automation](https://us.pycon.org/2017/schedule/presentation/747/). This post is the first in a series of progress updates.
+If you read [last week's blog post](/2017/02/12/tap-tap-tap/) you already know that I've got three months to put together a physical demo for a [PyCon talk about factory automation](https://us.pycon.org/2017/schedule/presentation/747/). This post is the first in a series of progress updates.
 
 In robotics and automation, the smallest realistic demo has three parts: Sensing, control, and actuation. I spent Week 1 selecting and bargain hunting for an industrial barcode reader to cover the _sensing_ part of the demo. As I went along I wrote up my notes as an "Introduction to Barcode Readers"; if you only want to know what I ended up buying, scroll down to the end!
 
@@ -39,44 +39,47 @@ When I write "barcode format", I mean two things: The physical shape of the barc
 
 As for physical shape: There are 1-dimensional (linear) codes and 2-dimensional codes. Half way in between there are _stacked_ codes which are basically multiple 1-dimensional codes side by side.
 
-![1-dimensional barcode formats: PYCON 2017]({{ site.baseurl }}/assets/2017-02-26-one-dimensional-barcodes.png)
+![1-dimensional barcode formats: PYCON 2017](/assets/2017-02-26-one-dimensional-barcodes.png)
 
 The figure above shows a few example of 1-dimensional barcodes[^10]. Wikipedia has a wealth of information on each format
 
-* [Interleaved 2-of-5 (ITF)](https://en.wikipedia.org/wiki/Interleaved_2_of_5) -- Numeric only, five fixed-width bars encode a pair of two digits, hence "interleaved".
-* [Codabar](https://en.wikipedia.org/wiki/Codabar) -- Seven fixed-width bars encode 16 characters (`0-9`, `$`, `+`, `-`, `:`, `.`, `/`), apparently still popular in libraries.
-* [Code 39](https://en.wikipedia.org/wiki/Code_39) -- Nine fixed-width bars encode 43 characters (`0-9`, `A-Z`, `$`, `%`, `.`, ` `, `-`, `+`, `/`).
-* [Full ASCII Code 39](https://en.wikipedia.org/wiki/Code_39#Full_ASCII_Code_39) -- Same as Code 39, but uses 18 bars to encode 255 chars.
-* [Code 93](https://en.wikipedia.org/wiki/Code_93) -- Six variable-width bars encode the same characters as Code 39 in less space
-* [Code 128](https://en.wikipedia.org/wiki/Code_128) -- Six variable-width bars encode 128 characters. There are three subtypes with different character tables (see below).
-* [GS1-128 (EAN-128, UCC)](https://en.wikipedia.org/wiki/GS1-128) -- Subset of Code 128 with application specific fields such as expiration date, [shipping container number](https://en.wikipedia.org/wiki/Serial_shipping_container_code), etc.
-* [UPC-A](https://en.wikipedia.org/wiki/Universal_Product_Code) -- Four variable-width bars encode numbers only. This (or it's EAN-13 equivalent) is the barcode format found on every product in retail stores.
-* [UPC-E](https://en.wikipedia.org/wiki/Universal_Product_Code#UPC-E)  -- Serves the same purpose as UPC-A but is only six characters long. It's meant for packages that are too small for the UPC-A barcode, for example chewing gum packages.
-* [EAN-13](https://en.wikipedia.org/wiki/EAN_5) -- International version of UPC-12. EAN-13 is a superset of UPC-12, prefixing any UPC-12 barcode with a number `0` turns it into the equivalent EAN-13 code. For all EAN-13 codes that don't start with a `0`, there is a [list of prefixes](https://en.wikipedia.org/wiki/List_of_GS1_country_codes).
-* [EAN -2](https://en.wikipedia.org/wiki/EAN_2) and [EAN-5](https://en.wikipedia.org/wiki/EAN_5) are additional barcodes placed next to an EAN-13 barcode to hold supplementary product information, for example, the issue number on magazines or the suggested retail price on a book
-* [EAN-8](https://en.wikipedia.org/wiki/EAN-8) -- Same story as UPC-A vs UPC-E.
-* [Pharmacode](https://en.wikipedia.org/wiki/Pharmacode) -- Variable number of black/white bars encoding numbers between `3` and `131070` in binary
-* [PostNet](https://en.wikipedia.org/wiki/POSTNET) -- 5-7 fixed-width varying height bars to encode a digit. Used by USPS for zip codes.
-* [KarTrak](https://en.wikipedia.org/wiki/KarTrak) Large multi-color codes that were on 90% of US railroad cars in the 1970s.
+- [Interleaved 2-of-5 (ITF)](https://en.wikipedia.org/wiki/Interleaved_2_of_5) -- Numeric only, five fixed-width bars encode a pair of two digits, hence "interleaved".
+- [Codabar](https://en.wikipedia.org/wiki/Codabar) -- Seven fixed-width bars encode 16 characters (`0-9`, `$`, `+`, `-`, `:`, `.`, `/`), apparently still popular in libraries.
+- [Code 39](https://en.wikipedia.org/wiki/Code_39) -- Nine fixed-width bars encode 43 characters (`0-9`, `A-Z`, `$`, `%`, `.`, ` `, `-`, `+`, `/`).
+- [Full ASCII Code 39](https://en.wikipedia.org/wiki/Code_39#Full_ASCII_Code_39) -- Same as Code 39, but uses 18 bars to encode 255 chars.
+- [Code 93](https://en.wikipedia.org/wiki/Code_93) -- Six variable-width bars encode the same characters as Code 39 in less space
+- [Code 128](https://en.wikipedia.org/wiki/Code_128) -- Six variable-width bars encode 128 characters. There are three subtypes with different character tables (see below).
+- [GS1-128 (EAN-128, UCC)](https://en.wikipedia.org/wiki/GS1-128) -- Subset of Code 128 with application specific fields such as expiration date, [shipping container number](https://en.wikipedia.org/wiki/Serial_shipping_container_code), etc.
+- [UPC-A](https://en.wikipedia.org/wiki/Universal_Product_Code) -- Four variable-width bars encode numbers only. This (or it's EAN-13 equivalent) is the barcode format found on every product in retail stores.
+- [UPC-E](https://en.wikipedia.org/wiki/Universal_Product_Code#UPC-E) -- Serves the same purpose as UPC-A but is only six characters long. It's meant for packages that are too small for the UPC-A barcode, for example chewing gum packages.
+- [EAN-13](https://en.wikipedia.org/wiki/EAN_5) -- International version of UPC-12. EAN-13 is a superset of UPC-12, prefixing any UPC-12 barcode with a number `0` turns it into the equivalent EAN-13 code. For all EAN-13 codes that don't start with a `0`, there is a [list of prefixes](https://en.wikipedia.org/wiki/List_of_GS1_country_codes).
+- [EAN -2](https://en.wikipedia.org/wiki/EAN_2) and [EAN-5](https://en.wikipedia.org/wiki/EAN_5) are additional barcodes placed next to an EAN-13 barcode to hold supplementary product information, for example, the issue number on magazines or the suggested retail price on a book
+- [EAN-8](https://en.wikipedia.org/wiki/EAN-8) -- Same story as UPC-A vs UPC-E.
+- [Pharmacode](https://en.wikipedia.org/wiki/Pharmacode) -- Variable number of black/white bars encoding numbers between `3` and `131070` in binary
+- [PostNet](https://en.wikipedia.org/wiki/POSTNET) -- 5-7 fixed-width varying height bars to encode a digit. Used by USPS for zip codes.
+- [KarTrak](https://en.wikipedia.org/wiki/KarTrak) Large multi-color codes that were on 90% of US railroad cars in the 1970s.
 
-![2-dimensional barcode formats: PYCON 2017]({{ site.baseurl }}/assets/2017-02-26-two-dimensional-barcodes.png)
+![2-dimensional barcode formats: PYCON 2017](/assets/2017-02-26-two-dimensional-barcodes.png)
 
 There are fewer commonly used stacked and 2-dimensional barcode formats than there are 1-dimensional ones, probably because the technology to read them has been around for a shorter time span. For the sake of completeness, here's the list including links to Wikipedia:
 
 Stacked:
-* PDF417 [Wikipedia](https://en.wikipedia.org/wiki/PDF417) -- These are often used on flight boarding passes, the encoding contains almost 1000 "words" and is complicated.
-* [GS1 Databar (RSS-14)](https://en.wikipedia.org/wiki/GS1_DataBar) -- A family of formats that include UPC-A and EAN-13 where the bars are arranged in multiple (usually two) rows instead of a single one, basically a barcode with "line breaks".
-* Several other formats that consist of multiple 1-dimensional codes placed on top of each other, or a single 1-dimensional code spread over multiple rows.
+
+- PDF417 [Wikipedia](https://en.wikipedia.org/wiki/PDF417) -- These are often used on flight boarding passes, the encoding contains almost 1000 "words" and is complicated.
+- [GS1 Databar (RSS-14)](https://en.wikipedia.org/wiki/GS1_DataBar) -- A family of formats that include UPC-A and EAN-13 where the bars are arranged in multiple (usually two) rows instead of a single one, basically a barcode with "line breaks".
+- Several other formats that consist of multiple 1-dimensional codes placed on top of each other, or a single 1-dimensional code spread over multiple rows.
 
 2D:
-* [Datamatrix](https://en.wikipedia.org/wiki/Data_Matrix)
-* [Quick Response (QR)](https://en.wikipedia.org/wiki/QR_code)
-* [Aztec](https://en.wikipedia.org/wiki/Aztec_Code)
+
+- [Datamatrix](https://en.wikipedia.org/wiki/Data_Matrix)
+- [Quick Response (QR)](https://en.wikipedia.org/wiki/QR_code)
+- [Aztec](https://en.wikipedia.org/wiki/Aztec_Code)
 
 Of the symbologies I am familiar with of, Code 128 has the most complex encoding. There exist three different variants, Code 128-A through C. All three variants use non-interleaved "building blocks" that represent seven bits each. Wikipedia has the [table of mappings from bit value to text representation](https://en.wikipedia.org/wiki/Code_128#Bar_code_widths):
-* Code 128-A contains numbers, uppercase characters, and control characters.
-* Code 128-B contains all 127 ASCII characters.
-* Code 128-C has dedicated patterns for numbers from 0 through 126
+
+- Code 128-A contains numbers, uppercase characters, and control characters.
+- Code 128-B contains all 127 ASCII characters.
+- Code 128-C has dedicated patterns for numbers from 0 through 126
 
 The benefit, of course, is that you can use any ASCII character with Code 128-B but can also get very dense numbers-only barcodes with Code 128-C. But wait, there is more! There are control characters to switch between variant mid-string! To print a string like `AbcD123456` in Code 128, you would start with four characters of Code 128-B (because A is the one with lowercase characters), then a control character followed by three characters (representing `12`, `34`, and `56`) in Code 128-C (because C is the one that needs least linear space for numeric strings). Or you could just use Code 128-B for the entire string. Yes, this means that the same text string has multiple Code 128 representations. It also means that the length of the barcode is not proportional to the length of the string it encodes. In fact, a shorter barcode could represent a longer string.
 
@@ -91,9 +94,10 @@ When CCD technology became viable (in the mid-1990s?), people put a single line 
 Finally, _2D imagers_. These are basically digital cameras that take images that are analyzed by computer vision algorithms to find the geometrical features that make up the barcode. The specs by which you purchase imagers are similar to what you'd select a DSLR by: Resolution is important, the higher the resolution the further away the barcode can be (or the smaller, if that's what you're after). For some people, shutter speed is important because it defines how fast you can move the barcode past the camera without getting a blurry image. Other DSLR specs don't really matter, such as color accuracy. Often you get these for free, though, because the same hardware you purchase as a barcode imager might also be sold as optical inspection instrumentation (the embedded software and the price tag will be different).
 
 How do you recognize what type a barcode reader is? Here are a few tricks:
-* If you point your barcode scanner at a surface and you see a pattern of distinct lines, you are holding a laser scanner. Linear CCDs and imagers have a diffuse light. I'm not sure why, but it seems like linear CCDs use red light while imagers use green.
-* If you hear a humming sound or feel a vibration when you touch the device, it's also got a laser scanner. Remember, there is a rotating mirror inside every laser scanner that is constantly in motion. By the way: The moving parts are a big drawback of laser scanners. Like with everything else (hard drives!), solid state devices run circles around devices with moving parts when it comes to reliability.
-* Another thing you can try is scanning a barcode from a phone screen: It won't work with laser scanners because the laser light gets reflected at the outer glass surface of the screen before it can reach the pattern. That's why you have to type in your phone number at the grocery store checkout to get your "loyalty points" -- if they had imaging barcode readers they'd probably let you swipe your phone like at the airport gate.
+
+- If you point your barcode scanner at a surface and you see a pattern of distinct lines, you are holding a laser scanner. Linear CCDs and imagers have a diffuse light. I'm not sure why, but it seems like linear CCDs use red light while imagers use green.
+- If you hear a humming sound or feel a vibration when you touch the device, it's also got a laser scanner. Remember, there is a rotating mirror inside every laser scanner that is constantly in motion. By the way: The moving parts are a big drawback of laser scanners. Like with everything else (hard drives!), solid state devices run circles around devices with moving parts when it comes to reliability.
+- Another thing you can try is scanning a barcode from a phone screen: It won't work with laser scanners because the laser light gets reflected at the outer glass surface of the screen before it can reach the pattern. That's why you have to type in your phone number at the grocery store checkout to get your "loyalty points" -- if they had imaging barcode readers they'd probably let you swipe your phone like at the airport gate.
 
 I'm sure that there's a lot more to be written about reader technology, but until now I have gotten away without doing a deep dive into this material. Besides, when I got to this point in the blog post I really just wanted to make a decision on what reader to buy.
 
@@ -104,25 +108,26 @@ The point of scanning the barcode is rarely to just show the text content of the
 The way this is almost always done is a great example of [keeping it simple stupid](https://en.wikipedia.org/wiki/KISS_principle). Barcode readers are plugged into the computer like a keyboard and act exactly like a keyboard.
 
 At a checkout register the process is this:
-* The cursor is always active on the form field for the next EAN-13 code.
-* When the barcode reader reads a barcode it "types" it into the form field
-* Because the barcode reader is configured to append a carriage return to every barcode, the form gets submitted and the process starts from the beginning
+
+- The cursor is always active on the form field for the next EAN-13 code.
+- When the barcode reader reads a barcode it "types" it into the form field
+- Because the barcode reader is configured to append a carriage return to every barcode, the form gets submitted and the process starts from the beginning
 
 The best part is: If the scanner fails to read a barcode, the cashier can type in the EAN-13 using the regular keyboard and hit enter -- no separate workflow needed for the error recovery!
 
 Every barcode scanner (that I know of) can be set up in this fashion as a "keyboard" with minimal effort. The mechanics differ by device:
 
-* Many handheld devices have a [PS/2 port](https://en.wikipedia.org/wiki/PS/2_port) or USB cable built in
-* More new-fangled devices connect to the host computer via Bluetooth and register themselves as [Human Interface Device](https://en.wikipedia.org/wiki/List_of_Bluetooth_profiles#Human_Interface_Device_Profile_.28HID.29)
-* Other require a "keyboard wedge" accessory that converts from the built-in cable to PS/2 or USB
+- Many handheld devices have a [PS/2 port](https://en.wikipedia.org/wiki/PS/2_port) or USB cable built in
+- More new-fangled devices connect to the host computer via Bluetooth and register themselves as [Human Interface Device](https://en.wikipedia.org/wiki/List_of_Bluetooth_profiles#Human_Interface_Device_Profile_.28HID.29)
+- Other require a "keyboard wedge" accessory that converts from the built-in cable to PS/2 or USB
 
 The caveat with this "as-a-keyboard" setup is that it always requires a host computer. If you have a factory with hundreds of barcode scanners, that would quickly get pricey and annoying. That's (probably) why non-handheld barcode readers often come with a serial port (RS-232), which makes them a bit more versatile. You could use these with:
 
-* A computer that has a serial port
-* A computer and a USB-to-serial converter
-* The keyboard wedge accessory that's probably available in the manufacturer catalog
-* To a programmable logic controller (PLC) with an RS-232 port
-*  To an RS232 server (a gadget that makes serial devices available over Ethernet)
+- A computer that has a serial port
+- A computer and a USB-to-serial converter
+- The keyboard wedge accessory that's probably available in the manufacturer catalog
+- To a programmable logic controller (PLC) with an RS-232 port
+- To an RS232 server (a gadget that makes serial devices available over Ethernet)
 
 With Python, you could imagine going either route: as-a-keyboard or serial device.
 
@@ -131,11 +136,12 @@ If your reader has an RS-232 interface, you can use the actively maintained and 
 ## Bargain Hunting on Ebay
 
 I started shopping around for barcode readers with this list of requirements:
-* Under $50
-* RS-232 interface
-* Must have detailed manual/documentation available
-* Prefer small unit with mounting holes over handheld "gun shaped" ones
-* Should support a range of symbologies
+
+- Under $50
+- RS-232 interface
+- Must have detailed manual/documentation available
+- Prefer small unit with mounting holes over handheld "gun shaped" ones
+- Should support a range of symbologies
 
 That last point is worth noting. Most barcode reader shoppers probably have one specific barcode type to support, which limits the selection right out of the gate. Because I can make up my "application" as I go along, I decided to get the barcode reader first and then decide on what barcode type to use.
 
@@ -146,10 +152,11 @@ The most relevant categories are [Other Automation Equipment](http://www.ebay.co
 I was pretty excited about a [Keyence SR-501](http://www.keyence.com/products/vision/barcode/sr-500/models/sr-510/index.jsp). Checks all the boxes and supports all common 1D and 2D barcode types. The 17-28 days delivery time from Thailand was a show stopper :/
 
 I ended up buying an MS3 from Microscan for $29.99, a compact little laser scanner. Obviously, this limits my demo to 1-dimensional barcodes but this one has a few things going for it:
-* Not handheld, I wanted a compact easy to mount unit
-* Very detailed (200 pages!) and freely available documentation
-* Doesn't require special software to configure, just serial commands covered in documentation
-* Just in case, there's also a freely available Windows software
+
+- Not handheld, I wanted a compact easy to mount unit
+- Very detailed (200 pages!) and freely available documentation
+- Doesn't require special software to configure, just serial commands covered in documentation
+- Just in case, there's also a freely available Windows software
 
 The day after buying the MS3 I was browsing around the Microscan website and saw a discontinued 2D reader model called MS4. It's a "legacy product", but my understanding is that this is actually an imager that can read most 2D symbologies while having the same well documented serial command interface as the MS3. Feeling lucky, I typed "Microscan MS4" into Ebay and sure enough found one in the "Automotive" section for $25. Talk about misclassified bargains. I ended up buying that as a backup.
 
@@ -159,8 +166,8 @@ Ok, now I wrote everything I know about barcode readers up in a 3500-word blog p
 
 The next two big items on my todo list are:
 
-* Write a Python driver for these barcode readers. You can follow along on Github: https://github.com/jonemo/microscan-driver
-* Purchase a conveyor belt. This one worries me because these things can be heavy and bulky and expensive. And I need one that I can afford and bring to Portland in a suitcase. I'll write a blog post about it when I figured it out...
+- Write a Python driver for these barcode readers. You can follow along on Github: https://github.com/jonemo/microscan-driver
+- Purchase a conveyor belt. This one worries me because these things can be heavy and bulky and expensive. And I need one that I can afford and bring to Portland in a suitcase. I'll write a blog post about it when I figured it out...
 
 One more thing: [The talk abstract for my talk](https://us.pycon.org/2017/schedule/presentation/747/) is now up on the PyCon website.
 

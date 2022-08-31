@@ -1,9 +1,9 @@
 ---
-date: "2017-03-07T00:00:00Z"
+date: '2017-03-07T00:00:00Z'
 published: true
 tags:
-- factorytech
-- barcodes
+  - factorytech
+  - barcodes
 title: One simple trick for USB-to-Serial on MacOS X
 ---
 
@@ -23,7 +23,6 @@ macOS includes kernel drivers for FTDI chips as of version 10.9, aka "Mavericks"
 
 I had no idea because the last time I tried using a USB-to-Serial cable on macOS was with version 10.8.
 
-
 ## FTDI vs. Prolific
 
 Admittedly, I'm less certain about this part of the amazing trick.
@@ -34,10 +33,8 @@ My anecdotal evidence is that the cable with the Prolific chip paired with the [
 
 Therefore, the cable with the Prolific chip now lives at Ox Mountain (the local landfill) while the cable with the FTDI chip will be used to connect to a barcode reader.
 
-
 ## Other USB-to-Serial Trivia
 
-* FTDI stands for Future Technology Devices International Ltd. and is headquartered in Scotland.
-* There are two types of drivers for FTDI chips: The VCP driver (Virtual COM Port) makes a port show up that can be used by any program as if it were a serial port. There's also a version that comes as a DLL and is meant for being bundled with device software.
-* Every serial device shows up as two entries in `/dev`, one starting with `cu.` and another starting with `tty.`. [This Stackoverflow post](http://stackoverflow.com/questions/8632586/macos-whats-the-difference-between-dev-tty-and-dev-cu) explains the history of that in a way that does not assume prior knowledge of pre-internet style networking. Because most modern RS232 devices don't even have the hardware flow control lines connected, `tty` and `cu` usually behave identically. But when they don't, `cu` is usually the device you want to open, as explained in [this SO thread](http://stackoverflow.com/questions/26498582/opening-a-serial-port-on-os-x-hangs-forever-without-o-nonblock-flag).
-
+- FTDI stands for Future Technology Devices International Ltd. and is headquartered in Scotland.
+- There are two types of drivers for FTDI chips: The VCP driver (Virtual COM Port) makes a port show up that can be used by any program as if it were a serial port. There's also a version that comes as a DLL and is meant for being bundled with device software.
+- Every serial device shows up as two entries in `/dev`, one starting with `cu.` and another starting with `tty.`. [This Stackoverflow post](http://stackoverflow.com/questions/8632586/macos-whats-the-difference-between-dev-tty-and-dev-cu) explains the history of that in a way that does not assume prior knowledge of pre-internet style networking. Because most modern RS232 devices don't even have the hardware flow control lines connected, `tty` and `cu` usually behave identically. But when they don't, `cu` is usually the device you want to open, as explained in [this SO thread](http://stackoverflow.com/questions/26498582/opening-a-serial-port-on-os-x-hangs-forever-without-o-nonblock-flag).

@@ -1,19 +1,19 @@
 ---
-date: "2011-04-18T00:00:00Z"
+date: '2011-04-18T00:00:00Z'
 published: true
 tags:
-- fluidinfo
+  - fluidinfo
 title: 'Fluidinfo API Contest: Design Decisions'
 ---
 
 I announced yesterday that I am currently working on a submission to the O'Reilly/Fluidinfo API contest. You should check out the other submissions so far:
 
-* [BookChirpa](http://www.bookchirpa.com/) by Mark McSpadden is a data mashup project showing recent tweets about O'Reilly books enriched with information about these books which is pulled from Fluidinfo. There is an [About page with a whole bunch of technical info](http://www.bookchirpa.com/about). Ironically, the top entry on the [Bookchirpa library page](http://www.bookchirpa.com/books) is "21 Recipes for Mining Twitter".
-* David Karapetyan opts for a submission which only adds data to the Fluidinfo data store but doesn't have a frontend. That's legit by the contest rules. [Here's a blog post about how he added Amazon Suggestions to each book](http://articulationstudy.posterous.com/oreilly-writable-api-competition). 90% of his post are crossed out indicating that the story behind his submission isn't exactly linear.
-* Eric Seidel's submission is really similar to Skillshelv.es. Shockingly similar. [Read about it in his blog](http://eseidel.org/blog/2011/04/fluidinfo-oreilly-competition/). By the looks of it he's been a Fluidinfo aficionado before because his prior project FluidCV is based on it. His submission to the contest is to let people add O'Reilly books to their FluidCV to - hold your breath - show their skills based on the books they own. Disclaimer: I hadn't seen his project when I started working on [Skillshelv.es](http://www.skillshelv.es/).
-* Michael Hawes noticed that the books which Fluidinfo imported into their database are only those English language ones sold in the USA. But O'Reilly also publishes books in other languages in the small part of the earth known as ROTW to Americans (the acronym stands for both Rest of the World and Rim of the World). He embarked on the mission to add links to the foreign language equivalents to all existing Fluidinfo book objects. Like David K.'s entry, Michael's has no front page, [but extensive documentation on his blog](http://www.gottahavacuppamocha.com/about/oreilly-fluidinfo-api-competition/).
-* Rachel Willmer [wrote an extension](http://luzme.com/blog/2011/04/luzme-enters-fluidinfos-writable-api-competition/) to her eBook price aggregator [Luzme.com](http://www.luzme.com/) to send up to date eBook pricing details into the Fluidinfo data store. She writes that she will only sync this data for the duration of the competition but I sure hope she continues to do so after the deadline on Sunday night.
-It strikes me how open everyone is about what their entry is and how they went about creating it. So I won't hold back either and write up the details on my submission, predominantly in this blog and maybe later on as part of the Skillshelv.es site. Today, let's talk about the design decision that had to be made before I started touching my keyboard.
+- [BookChirpa](http://www.bookchirpa.com/) by Mark McSpadden is a data mashup project showing recent tweets about O'Reilly books enriched with information about these books which is pulled from Fluidinfo. There is an [About page with a whole bunch of technical info](http://www.bookchirpa.com/about). Ironically, the top entry on the [Bookchirpa library page](http://www.bookchirpa.com/books) is "21 Recipes for Mining Twitter".
+- David Karapetyan opts for a submission which only adds data to the Fluidinfo data store but doesn't have a frontend. That's legit by the contest rules. [Here's a blog post about how he added Amazon Suggestions to each book](http://articulationstudy.posterous.com/oreilly-writable-api-competition). 90% of his post are crossed out indicating that the story behind his submission isn't exactly linear.
+- Eric Seidel's submission is really similar to Skillshelv.es. Shockingly similar. [Read about it in his blog](http://eseidel.org/blog/2011/04/fluidinfo-oreilly-competition/). By the looks of it he's been a Fluidinfo aficionado before because his prior project FluidCV is based on it. His submission to the contest is to let people add O'Reilly books to their FluidCV to - hold your breath - show their skills based on the books they own. Disclaimer: I hadn't seen his project when I started working on [Skillshelv.es](http://www.skillshelv.es/).
+- Michael Hawes noticed that the books which Fluidinfo imported into their database are only those English language ones sold in the USA. But O'Reilly also publishes books in other languages in the small part of the earth known as ROTW to Americans (the acronym stands for both Rest of the World and Rim of the World). He embarked on the mission to add links to the foreign language equivalents to all existing Fluidinfo book objects. Like David K.'s entry, Michael's has no front page, [but extensive documentation on his blog](http://www.gottahavacuppamocha.com/about/oreilly-fluidinfo-api-competition/).
+- Rachel Willmer [wrote an extension](http://luzme.com/blog/2011/04/luzme-enters-fluidinfos-writable-api-competition/) to her eBook price aggregator [Luzme.com](http://www.luzme.com/) to send up to date eBook pricing details into the Fluidinfo data store. She writes that she will only sync this data for the duration of the competition but I sure hope she continues to do so after the deadline on Sunday night.
+  It strikes me how open everyone is about what their entry is and how they went about creating it. So I won't hold back either and write up the details on my submission, predominantly in this blog and maybe later on as part of the Skillshelv.es site. Today, let's talk about the design decision that had to be made before I started touching my keyboard.
 
 ## Quick Recap
 
@@ -43,7 +43,7 @@ Let's think about the types of queries Skillshelv.es will run: We'll need to kno
 1. Use the `contains` operator for the single `skills` tag containing a list of skills.
 2. Use the `matches` operator for the namespace of individual `skills` tags.
 
-But what if I want to store some additional meta info for each skill? I am currently toying with the idea of categorizing each book as *Beginner*, *Intermediate*, or *Expert*. This could still be stored either way (instead of a list, use a JSON object), but I don't think the `contains` operator can look inside opaque tag values and even if it can it would probably be way slower.
+But what if I want to store some additional meta info for each skill? I am currently toying with the idea of categorizing each book as _Beginner_, _Intermediate_, or _Expert_. This could still be stored either way (instead of a list, use a JSON object), but I don't think the `contains` operator can look inside opaque tag values and even if it can it would probably be way slower.
 
 ## Where is the data?
 
@@ -55,4 +55,4 @@ This question is about where data should be stored. There is the data store loca
 
 ## Summary
 
-The above is a tour de force through all the major design decision I made before sitting down to code Skillshelv.es. I think I'll be doing a pretty decent job at demonstrating how Fludinfo can be used as the main data storage location for a project. Obviously I am betting on my luck by planning on pulling this project off in less than two weekends while using technologies I am not very familiar with. We'll see how it goes. *[The Editor: It went ok.]*
+The above is a tour de force through all the major design decision I made before sitting down to code Skillshelv.es. I think I'll be doing a pretty decent job at demonstrating how Fludinfo can be used as the main data storage location for a project. Obviously I am betting on my luck by planning on pulling this project off in less than two weekends while using technologies I am not very familiar with. We'll see how it goes. _[The Editor: It went ok.]_

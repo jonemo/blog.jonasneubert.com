@@ -1,8 +1,8 @@
 ---
-date: "2017-11-20T00:00:00Z"
+date: '2017-11-20T00:00:00Z'
 published: true
 tags:
-- pycon
+  - pycon
 title: The PyCon Speaker Experience (is phenomenal)
 ---
 

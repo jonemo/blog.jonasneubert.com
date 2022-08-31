@@ -1,13 +1,13 @@
 ---
-date: "2019-10-28T00:00:00Z"
+date: '2019-10-28T00:00:00Z'
 published: true
 tags:
-- factorytech
-- plc
+  - factorytech
+  - plc
 title: What is a Programmable Logic Controller?
 ---
 
-*This post is part 2 of [a series]({{ site.url }}/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-it) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html).*
+_This post is part 2 of [a series](/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-it) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html)._
 
 I have prepared three different conference talks about PLCs for Python programmers.
 Annoyingly, you can't assume that every Python programmer knows what a PLC is, so I always have to sacrifice a few minutes of my time slot[^1] to convey the basics before diving into my actual topic.
@@ -36,8 +36,6 @@ It's a stock photo but it contains the important parts:
 A box with a few LEDs and lots of wires connected to it.
 
 ![Stock photo of a Programmable Logic Controller (PLC)](/assets/2019/2019-10-28-this-is-what-a-plc-looks-like.jpg)
-
-
 
 Those colorful wires connect to the "field devices", a fancy term for sensors and actuators.
 Let's do a quick crash course on field devices!
@@ -88,11 +86,9 @@ You can even turn a Windows PC into a PLC by installing a "Software PLC".
 I will cover this in more detail in later parts of this series.
 But first, let's look at how PLCs are programmed (spoiler: it's not Python).
 
-
 ---
 
 ###### Footnotes
 
 [^1]: Most conference give you 25 or 30 minutes to speak.
-
 [^2]: If the embedded slide deck below doesn't load, click [this link](https://speakerdeck.com/jonemo/plc-inside-gallery) to see it.

@@ -1,9 +1,9 @@
 ---
-date: "2019-03-22T00:00:00Z"
+date: '2019-03-22T00:00:00Z'
 published: true
 tags:
-- travel
-- dataviz
+  - travel
+  - dataviz
 title: My US Travel Map
 ---
 

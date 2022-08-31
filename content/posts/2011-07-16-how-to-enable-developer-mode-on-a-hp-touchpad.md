@@ -1,9 +1,9 @@
 ---
-date: "2011-07-16T00:00:00Z"
+date: '2011-07-16T00:00:00Z'
 published: true
 tags:
-- webos
-- palm
+  - webos
+  - palm
 title: How to enable developer mode on a HP TouchPad
 ---
 
