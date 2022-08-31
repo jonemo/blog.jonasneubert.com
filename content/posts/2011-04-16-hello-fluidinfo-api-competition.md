@@ -1,7 +1,9 @@
 ---
-title: "Hello Fluidinfo API Competition"
-date: 2022-08-30T21:24:59+05:30
-draft: false
+date: "2011-04-16T00:00:00Z"
+published: true
+tags:
+- fluidinfo
+title: Hello Fluidinfo API Competition
 ---
 
 How does a small startup get the word out about their API? The people at Fluidinfo probably thought that a full page ad in the New York Times is a bad idea. They decided to run a contest instead. If things go well, contests are great because tens or hundreds or thousands of people ("contest participants") create value according to your specification but you only have to pay a few of them ("lucky winners"). If all goes wrong only a few people create very little value and you have to pay all of them. That's really all there is to know about contests.
