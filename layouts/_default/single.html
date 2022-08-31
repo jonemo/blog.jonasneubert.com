@@ -5,13 +5,30 @@
         {{ .Title }}
       </h1>
 
-      <div>
+      <div class="flex justify-center gap-4">
+        {{- $pubdate := .PublishDate.Format "Jan 02 2006" }}
+
+
         <p class="text-gray-600 font-medium">
           <span class="text-gray-500"> Published - </span>
-          {{ .Date.Format "Jan 02 2006" }}
+          {{ $pubdate }}
         </p>
+
+        <!-- Last Updated Date -->
+        {{- if .Lastmod }}
+          {{- $lastmod := .Lastmod.Format  "Jan 02 2006" }}
+          {{- if ne $lastmod $pubdate }}
+            <p>
+              (Updated:
+              <time datetime="{{ .Lastmod }}" title="{{ .Lastmod }}">
+                {{ $lastmod }} </time
+              >)
+            </div>
+          {{- end }}
+        {{- end }}
       </div>
     </div>
+
     <article class="prose md:prose-xl mx-auto w-full max-w-none">
       {{ .Content }}
     </article>
