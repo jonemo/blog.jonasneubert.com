@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Blog | Jonas Neubert'
 
 enableRobotsTXT = true
-
+enableGitInfo = true
 
 [menu]
   [[menu.nav]]
@@ -22,3 +22,6 @@ enableRobotsTXT = true
     name = "Posts"
     pageref = "/"
     weight = 4
+
+[frontmatter]
+  lastmod = ["lastmod", ":git", "date", "publishDate"]

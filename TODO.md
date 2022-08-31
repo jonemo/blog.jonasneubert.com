@@ -32,4 +32,6 @@ Convert blog to Hugo. Milestone complete when ready to publish.
 
 1. Create Blog List  Page/Index Page.
 1. Create Blog Single Page.
+   - Add Tags Support  
+   - Add Date
 1. Migrate Posts to Hugo.
