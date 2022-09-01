@@ -1,3 +1,7 @@
+#local Backup Files 
+content.bak/
+*.bak/
+
 # where Jeykyll keeps compiled things
 _site/
 .sass-cache/
