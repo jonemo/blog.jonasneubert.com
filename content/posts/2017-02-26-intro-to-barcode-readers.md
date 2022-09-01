@@ -9,7 +9,7 @@ tags:
 title: Intro to Barcode Readers
 ---
 
-If you read [last week's blog post]({{ site.url }}/2017/02/12/tap-tap-tap/) you already know that I've got three months to put together a physical demo for a [PyCon talk about factory automation](https://us.pycon.org/2017/schedule/presentation/747/). This post is the first in a series of progress updates.
+If you read [last week's blog post](/2017/02/12/tap-tap-tap/) you already know that I've got three months to put together a physical demo for a [PyCon talk about factory automation](https://us.pycon.org/2017/schedule/presentation/747/). This post is the first in a series of progress updates.
 
 In robotics and automation, the smallest realistic demo has three parts: Sensing, control, and actuation. I spent Week 1 selecting and bargain hunting for an industrial barcode reader to cover the _sensing_ part of the demo. As I went along I wrote up my notes as an "Introduction to Barcode Readers"; if you only want to know what I ended up buying, scroll down to the end!
 

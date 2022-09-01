@@ -34,13 +34,13 @@ Head over to my [talks page](https://jonasneubert.com/talks/) for links to video
 This blog post is the first in a series that puts the contents of these talks in writing, including all the content I had to cut out due to time limits on conference talks.
 
 * Part 1: Introduction (you are reading it right now)
-* Part 2: [What is a Programmable Logic Controller?]({{ site.url }}/2019/10/28/what-is-a-programmable-logic-controller/)
-* Part 3: [Ladder Logic‽]({{ site.url }}/2019/10/29/ladder-logic)
-* Part 4: [Using pymodbus to communicate with a PLC]({{ site.url }}/2019/11/02/using-pymodbus-to-communicate-with-a-plc/)
+* Part 2: [What is a Programmable Logic Controller?](/2019/10/28/what-is-a-programmable-logic-controller/)
+* Part 3: [Ladder Logic‽](/2019/10/29/ladder-logic)
+* Part 4: [Using pymodbus to communicate with a PLC](/2019/11/02/using-pymodbus-to-communicate-with-a-plc/)
 * Part 5: Other Python libraries for communicating with PLCs
 * Part 6: PLC vs Raspberry Pi
 * Part 7: How to get started with Python and PLCs?
-* Appendix: [List of PLC brands and products]({{ site.url }}/2019/04/27/list-of-plc-brand-names-and-products)
+* Appendix: [List of PLC brands and products](/2019/04/27/list-of-plc-brand-names-and-products)
 
 I will add links to the table of contents as I publish each part.
 
@@ -48,6 +48,6 @@ I will add links to the table of contents as I publish each part.
 
 ###### Footnotes
 
-[^1]: In case you are wondering about the money: There isn't any. Presenting at PyCon [is a great experience]({{ site.url }}/2017/11/20/the-pycon-speaker-experience), but PyCon do not get paid.
+[^1]: In case you are wondering about the money: There isn't any. Presenting at PyCon [is a great experience](/2017/11/20/the-pycon-speaker-experience), but PyCon do not get paid.
 [^2]: Technically, I didn't go to "high school" because that concept doesn't really exist in Germany. I was in the final two years of [Gymnasium](https://en.wikipedia.org/wiki/Gymnasium_(school)#Germany), which, for the majority non-German audience of this blog is easiest translated with "high school".
 

@@ -6,7 +6,7 @@ tags:
 title: 'Fluidinfo API: Likes & Dislikes'
 ---
 
-I spent the last two weekends[1] working with the Fluidinfo API ([here is why]({{ site.url }}/2011/04/16/hello-fluidinfo-api-competition/)). Using Fluidinfo is pretty easy, I found two weekends enough to discover most of what is possible with Fluidinfo.[2] Here's my collection of likes and dislikes which accumulated while working with Fluidinfo. In the spirit of a true pessimist, I start with dislikes.
+I spent the last two weekends[1] working with the Fluidinfo API ([here is why](/2011/04/16/hello-fluidinfo-api-competition/)). Using Fluidinfo is pretty easy, I found two weekends enough to discover most of what is possible with Fluidinfo.[2] Here's my collection of likes and dislikes which accumulated while working with Fluidinfo. In the spirit of a true pessimist, I start with dislikes.
 
 ## Dislikes
 

@@ -8,7 +8,7 @@ tags:
 title: MS3 Adapter for Serial Port and Power
 ---
 
-In last week's post [about barcode readers]({{ site.url }}/2017/02/26/intro-to-barcode-readers) I mentioned that I purchased an [MS3 from Microscan](http://www.microscan.com/en-us/products/laser-barcode-scanners/ms-3-compact-laser-barcode-scanner) for my PyCon demo.
+In last week's post [about barcode readers](/2017/02/26/intro-to-barcode-readers) I mentioned that I purchased an [MS3 from Microscan](http://www.microscan.com/en-us/products/laser-barcode-scanners/ms-3-compact-laser-barcode-scanner) for my PyCon demo.
 What I had forgotten from last time I worked with the MS3 is that the pin-out of cable attached to the barcode reader is not just a DB9 (nine pin) serial port connector but a DB15 (VGA style) plug.
 Those extra pins are used for sending power to the device and to accommodate a few extra features, namely trigger and reset inputs.
 

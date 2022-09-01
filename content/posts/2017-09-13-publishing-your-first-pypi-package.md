@@ -8,7 +8,7 @@ title: Publishing your First PyPI Package by/for the Absolute Beginner
 
 The process for packaging and publishing Python packages is subject to much community discussion and frequent change. That leads to a lot of outdated information about it floating around the interwebs.
 
-As part of [my PyCon 2017 talk]({{ site.url }}/2017/06/10/pycon-2017-video/) preparations I wrote [a driver for a barcode reader](https://github.com/jonemo/microscan-driver) that was part of the live demo in my presentation. Having never published a package to PyPI before[^1], I thought this would be a good opportunity to learn about the Python Package Index (PyPI) and how to use it.
+As part of [my PyCon 2017 talk](/2017/06/10/pycon-2017-video/) preparations I wrote [a driver for a barcode reader](https://github.com/jonemo/microscan-driver) that was part of the live demo in my presentation. Having never published a package to PyPI before[^1], I thought this would be a good opportunity to learn about the Python Package Index (PyPI) and how to use it.
 
 It only took me a quick five minutes to realize that the top search results contain piles of obsolete and contradictory information. Case in point: Even the [instructions linked to on pypi.python.org](https://wiki.python.org/moin/CheeseShopTutorial#Submitting_Packages_to_the_Package_Index) are not the "state of the art" and are, in fact, actively discouraged elsewhere.[^2]
 

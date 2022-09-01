@@ -7,9 +7,9 @@ tags:
 title: Using pymodbus to communicate with a PLC
 ---
 
-*This post is part 4 of [a series]({{ site.url }}/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-it/) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html).*
+*This post is part 4 of [a series](/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-it/) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html).*
 
-In the previous parts of this series, I covered [what a PLC is]({{ site.url }}/2019/10/28/what-is-a-programmable-logic-controller/), and [how PLCs are programmed]({{ site.url }}/2019/10/29/ladder-logic/).
+In the previous parts of this series, I covered [what a PLC is](/2019/10/28/what-is-a-programmable-logic-controller/), and [how PLCs are programmed](/2019/10/29/ladder-logic/).
 In industry, the Python developer is usually not involved in the purchasing, installing, and programming of a PLC.
 If you find yourself working with PLCs in academia or for a hobby project, you might actually be the one doing these things yourself.
 Either way, I assume that you somehow found yourself with a programmed PLC and now want to connect to it using Python.
@@ -192,6 +192,6 @@ For example, with my traffic signal I could set up the PLC to change Modbus vari
 
 [^2]: PLC program variables are often called "tags". Because this post is written as an introductory explainer for Python programmers, I'll stick with the "variable" terminology.
 
-[^3]: For my conference talk demos I usually use the TCP version of the Modbus protocol because I have spent too many hours of my life [troubleshooting USB-to-RS232 converter problems]({{ site.url }}/2017/03/07/one-simple-trick-usb-to-serial-macos-x/) already.
+[^3]: For my conference talk demos I usually use the TCP version of the Modbus protocol because I have spent too many hours of my life [troubleshooting USB-to-RS232 converter problems](/2017/03/07/one-simple-trick-usb-to-serial-macos-x/) already.
 
 [^4]: While I have never seen a vendor charge extra for Modbus functionality, I have seen it for other industry-standard communication protocols.
