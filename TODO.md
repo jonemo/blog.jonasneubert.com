@@ -39,5 +39,9 @@ Convert blog to Hugo. Milestone complete when ready to publish.
 
 
 1. Migrate Posts to Hugo.
-   - fix link issues lik e {{.site.url}}
+   - fix link issues lik e {{.site.url}} [done]
    - images are put as {% include image.html img="/assets/2021/2021-01-10-moderna-vaccine-in-fridge.jpg" title=“Source/attribution: U.S. Navy Photo by Elaine Heirigs, NHC/NMRTC Lemoore public affairs/Released, https://www.flickr.com/photos/navymedicine/50755819886/" %} [done]
+
+1. Change Posts url 
+
+1. Change posts file name
