@@ -30,8 +30,14 @@ I know that this is a broad mix of technical, design, and consulting work. It's 
 
 Convert blog to Hugo. Milestone complete when ready to publish.
 
-1. Create Blog List  Page/Index Page.
-1. Create Blog Single Page.
-   - Add Tags Support  
-   - Add Date
+1. Create Blog List  Page/Index Page. [done]
+1. Create Blog Single Page. [done]
+   - Add Last Modified  [done]
+   - Add Date [ done ]
+   - Fix Css issues due to main.css
+   
+
+
 1. Migrate Posts to Hugo.
+   - fix link issues lik e {{.site.url}}
+   - images are put as {% include image.html img="/assets/2021/2021-01-10-moderna-vaccine-in-fridge.jpg" title=“Source/attribution: U.S. Navy Photo by Elaine Heirigs, NHC/NMRTC Lemoore public affairs/Released, https://www.flickr.com/photos/navymedicine/50755819886/" %} [done]
