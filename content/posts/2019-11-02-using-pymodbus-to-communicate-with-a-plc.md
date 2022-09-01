@@ -80,19 +80,19 @@ If you want to follow along, the ladder logic of the example is [on Github](http
 A prerequisite for configuring a variable to be available through the Modbus server is to use variables in the first place.
 Here is one example of a ladder logic block referencing a variable instead of a fixed numerical value:
 
-{% include image.html
-  img="/assets/2019/2019-11-02-timer-with-variable.png"
+{{< figure
+  src="/assets/2019/2019-11-02-timer-with-variable.png"
   title="A Timer block in a ladder logic program with the timer duration set to the variable `TMRWaitDuration` (instead of a fixed numerical value). Screenshot from my Pycon 2019 presentation."
-%}
+>}}
 
 Once variables are in use for all relevant values in the ladder logic program, you can head to the "Tag Database".
 This is a table listing all variables used in the entire ladder logic program with a bunch of information about each variable such as the initial value (on PLC startup) of the variable and its data type.
 In the following screenshot you can see how I used the "Mod Start" and "Mod End" columns to assign Modbus register numbers to six of the variables in my program.
 
-{% include image.html
-  img="/assets/2019/2019-11-02-tag-database-modbus.png"
+{{< figure
+  src="/assets/2019/2019-11-02-tag-database-modbus.png"
   title="The Tag Database popup showing six ladder logic variables being assigned Modbus registers. Screenshot from my Pycon 2019 presentation."
-%}
+>}}
 
 At this point, there is a PLC that is configured to store some of its internal variables in Modbus registers that can be read and written to over the network.
 If you are following my example of the pedestrian crossing traffic signal, we have the waiting time between pressing the pedestrian request button (aka "[beg button](https://gizmodo.com/why-should-pedestrians-press-beg-buttons-to-cross-the-1515091907)") and the car signal turning yellow in holding register `40001` and `40002` (two registers because it's a 32 bit variable and registers are 16 bits).

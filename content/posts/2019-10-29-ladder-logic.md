@@ -24,18 +24,18 @@ After reviewing ~20 PLC programming softwares I settled on buying a PLC from [Au
 
 The screenshot below is of Automation Direct's software, showing the program I used to make my traffic light flash red during the onstage demo:
 
-{% include image.html
-  img="/assets/2019/2019-10-29-ladder-logic-screenshot-productivity.png"
+{{< figure
+  src="/assets/2019/2019-10-29-ladder-logic-screenshot-productivity.png"
   title="Screenshot of a simple ladder logic program taken in Automation Direct's Productivity software"
-%}
+>}}
 
 Ladder logic is designed to mirror "ladder diagrams" that electricians of yesteryear were familiar with.
 As a result, a lot of the terminology has a distinctly electrical bend:
 
-{% include image.html
-  img="/assets/2019/2019-10-29-ladder-logic-slide-terminology.png"
+{{< figure
+  src="/assets/2019/2019-10-29-ladder-logic-slide-terminology.png"
   title="Ladder logic terminology. Slide from my Pycon 2019 presentation."
-%}
+>}}
 
 The name _ladder_ logic comes from the fact that when you write a longer program, it looks like a ladder.
 Sticking with the ladder analogy, the horizontal lines are called _rungs_ (even if they end up having branches or snake back and forth as it is the case in some editors).
@@ -68,10 +68,10 @@ The reason this terminology and the electrical analogy with hot and neutral rail
 
 If you go to the top of an old building and figure out a way to get into the elevator control room[^1], you might still run into something that looks like this:
 
-{% include image.html
-  img="/assets/2019/2019-10-29-ladder-logic-slide-relays.png"
+{{< figure
+  src="/assets/2019/2019-10-29-ladder-logic-slide-relays.png"
   title="Slide from my Pycon 2019 presentation showing a photo of elevator logic by Tom Magliery on Flickr (CC-BY-NC-SA-2.0). Source: https://www.flickr.com/photos/mag3737/306386128."
-%}
+>}}
 
 ([This](https://www.flickr.com/photos/dieselducy/15237515106) is a better picture of an elevator control room but its license doesn't allow me to embed it in the blog post or my presentation, so you'll have to click the link.)
 
@@ -131,10 +131,10 @@ Among the PLC vendors, I found AutomationDirect worth looking at for hobbyists w
 Ladder logic is not the only language available for programming PLCs[^3].
 This (skipped) slide from my PyCon talk covers the most noteworthy other languages:
 
-{% include image.html
-  img="/assets/2019/2019-10-29-ladder-logic-slide-other-languages.png"
+{{< figure
+  src="/assets/2019/2019-10-29-ladder-logic-slide-other-languages.png"
   title="Languages other than ladder logic that can be used to program (some) PLCs. Skipped slide from my Pycon 2019 presentation."
-%}
+>}}
 
 The most important thing to know is that there exists a well-established standard that defines what a PLC is and what requirements it must satisfy: [IEC 61131](https://en.wikipedia.org/wiki/IEC_61131)[^4].
 Part 3 of this standard, [IEC-61131-3](https://en.wikipedia.org/wiki/IEC_61131-3) specifies five programming languages for PLCs, including ladder logic.

@@ -339,10 +339,10 @@ img = treepoem.generate_barcode(
 img.convert('1').save('qr.gif')
 ```
 
-{% include image.html
-  img="/assets/2019-01-23-barcodes-generated-with-treepoem.png"
+{{< figure
+  src="/assets/2019-01-23-barcodes-generated-with-treepoem.png"
   title="A selection of barcodes generated with treepoem, using symbologies from the common to the obscure. Columnwise starting in top left: UPC-A, Maxicode, Code 128, Royal Mail 4 State Customer Code, QR Code, Italian Pharmacode, Aztec Code."
-%}
+>}}
 
 By the way, the name: barcode → bark ode → tree poem ([source](https://github.com/adamchainz/treepoem#whats-so-clever-about-the-name)).
 

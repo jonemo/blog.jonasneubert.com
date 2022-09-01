@@ -27,10 +27,10 @@ This text was written over a week worth of evenings in early January 2021. It co
 
 It is unlikely that I got everything right. Corrections and suggestions are welcome, please email jn@jonasneubert.com.
 
-{% include image.html
-  img="/assets/2021/2021-01-10-moderna-vaccine-in-fridge.jpg"
+{{< figure
+  src="/assets/2021/2021-01-10-moderna-vaccine-in-fridge.jpg"
   title="Source/attribution: U.S. Navy Photo by Elaine Heirigs, NHC/NMRTC Lemoore public affairs/Released, https://www.flickr.com/photos/navymedicine/50755819886/"
-%}
+>}}
 
 
 ## Ingredients List
@@ -448,10 +448,10 @@ While there are no doubt fundamental reasons for temperature requirements, it is
 
 [Operation Warp Speed](https://www.hhs.gov/coronavirus/explaining-operation-warp-speed/index.html) (OWS) is an effort by numerous US government agencies to facilitate the development and distribution of 300 million doses of COVID-19 vaccine by January 2021. The predominant tools employed are monetary grants and centralized sourcing. The vaccine distribution process within the United States is largely driven by OWS. The following figure is a schematic of the process as of the time of writing when only the Pfizer-BioNTech and Moderna vaccines were authorized for distribution in the US.
 
-{% include image.html
-  img="/assets/2021/2021-01-10-ows-vaccine-distribution-process.png"
+{{< figure
+  src="/assets/2021/2021-01-10-ows-vaccine-distribution-process.png"
   title="Operation Warp Speed vaccine distribution process. Source: U.S. Department of Health & Human Services, https://www.hhs.gov/coronavirus/explaining-operation-warp-speed/index.html"
-%}
+>}}
 
 There are notable differences between the path shown for the Pfizer-BioNTech and Moderna vaccines. Pfizer appears to bypass almost all distribution steps! Indeed, Pfizer chose to ship its vaccine directly from its factory to the point of use.[^59] This is due to two reasons:
 
@@ -564,15 +564,15 @@ As is true for all other vaccine ingredients and accessory components, the deman
 
 ## Point of Use
 
-{% include image.html
-  img="/assets/2021/2021-01-10-baltimore.jpg"
+{{< figure
+  src="/assets/2021/2021-01-10-baltimore.jpg"
   title="A station at a vaccination clinic for Baltimore County frontline health workers on Wednesday, December 23, 2020. This clinic used the Moderna vaccine. Source/attribution: Baltimore County Government, https://www.flickr.com/photos/baltimorecounty/50753216127/"
-%}
+>}}
 
-{% include image.html
-  img="/assets/2021/2021-01-10-strasbourg.jpg"
+{{< figure
+  src="/assets/2021/2021-01-10-strasbourg.jpg"
   title="A vaccination station at the University Hospital in Strasbourg on January 8, 2021. The vaccine shown is Pfizer/BioNTech’s Comirnaty. The tray appears to contain four remaining prepared syringes and the empty vial they were drawn from. Source/attribution: © Claude Truong-Ngoc / Wikimedia Commons (CC-BY-SA-4.0)"
-%}
+>}}
 
 Depending on when and where you receive your vaccine, the “point of use” might be a doctor’s office, vaccine center, pharmacy, etc. Several resources are required for each injection of either vaccine:
 

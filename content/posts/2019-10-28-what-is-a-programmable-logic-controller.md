@@ -35,10 +35,10 @@ And this is what a PLC looks like.
 It's a stock photo but it contains the important parts:
 A box with a few LEDs and lots of wires connected to it.
 
-{% include image.html
-  img="/assets/2019/2019-10-28-this-is-what-a-plc-looks-like.jpg"
+{{< figure
+  src="/assets/2019/2019-10-28-this-is-what-a-plc-looks-like.jpg"
   title="Stock photo of a Programmable Logic Controller (PLC)"
-%}
+>}}
 
 Those colorful wires connect to the "field devices", a fancy term for sensors and actuators.
 Let's do a quick crash course on field devices!
@@ -61,10 +61,10 @@ Digital I/O is for physical phenomena that are either on or off, the electrical 
 Analog I/O represents a continuous physical phenomenon, the electrical signal needs to be measured with some resolution, and we'll want to use a numeric data type to reference the signal.
 In my presentations I use the slide below to illustrate these points.
 
-{% include image.html
-  img="/assets/2019/2019-10-28-schematic.png"
+{{< figure
+  src="/assets/2019/2019-10-28-schematic.png"
   title="Example schematic of a PLC with six different I/O modules to connect to various types of field device"
-%}
+>}}
 
 The hypothetical PLC in the example contains six different types of I/O module:
 Digital inputs (abbreviated DI), analog inputs (abbreviated AI), and digital outputs (abbreviated DQ).
@@ -74,10 +74,10 @@ You'll see DI, AI, DQ, and AQ again in variable names in later parts of this ser
 Finally, it's time to talk about what the PLC actuall does.
 Like every computing device in the world, it executes an Input-Process-Output (IPO) cycle.
 
-{% include image.html
-  img="/assets/2019/2019-10-28-input-process-output-cycle.png"
+{{< figure
+  src="/assets/2019/2019-10-28-input-process-output-cycle.png"
   title="Input-Process-Output. The PLC runs this cycle indefinitely. The second step is the programmable one."
-%}
+>}}
 
 First: Inputs.
 Using signal processing electronics, the electrical signals from field devices are read and converted into variables which are stored in a section of memory traditionally called "Process Image In".
