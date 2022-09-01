@@ -5,6 +5,9 @@ title = 'Blog | Jonas Neubert'
 enableRobotsTXT = true
 enableGitInfo = true
 
+[permalinks]
+  posts = '/:year/:month/:day/:title/'
+
 [menu]
   [[menu.nav]]
     name = "About"
