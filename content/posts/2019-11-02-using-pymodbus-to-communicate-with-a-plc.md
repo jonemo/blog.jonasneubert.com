@@ -1,15 +1,15 @@
 ---
-date: '2019-11-02T00:00:00Z'
+date: "2019-11-02T00:00:00Z"
 published: true
 tags:
-  - factorytech
-  - plc
+- factorytech
+- plc
 title: Using pymodbus to communicate with a PLC
 ---
 
-_This post is part 4 of [a series](/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-it/) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html)._
+*This post is part 4 of [a series]({{ site.url }}/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-it/) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html).*
 
-In the previous parts of this series, I covered [what a PLC is](/2019/10/28/what-is-a-programmable-logic-controller/), and [how PLCs are programmed](/2019/10/29/ladder-logic/).
+In the previous parts of this series, I covered [what a PLC is]({{ site.url }}/2019/10/28/what-is-a-programmable-logic-controller/), and [how PLCs are programmed]({{ site.url }}/2019/10/29/ladder-logic/).
 In industry, the Python developer is usually not involved in the purchasing, installing, and programming of a PLC.
 If you find yourself working with PLCs in academia or for a hobby project, you might actually be the one doing these things yourself.
 Either way, I assume that you somehow found yourself with a programmed PLC and now want to connect to it using Python.
@@ -30,7 +30,7 @@ Enough reasons for me to use it when demonstrating the connection of Python and 
 
 What do we need to know about Modbus?
 
-The key point is: _Modbus allows read-write access to PLC program variables[^2] over Ethernet or Serial._
+The key point is: *Modbus allows read-write access to PLC program variables[^2] over Ethernet or Serial.*
 If you're in a rush, you can step reading now.
 Seriously.
 Everything below are details on how to do this accessing of variables over Ethernet[^3].
@@ -80,13 +80,19 @@ If you want to follow along, the ladder logic of the example is [on Github](http
 A prerequisite for configuring a variable to be available through the Modbus server is to use variables in the first place.
 Here is one example of a ladder logic block referencing a variable instead of a fixed numerical value:
 
-![A Timer block in a ladder logic program with the timer duration set to the variable `TMRWaitDuration` (instead of a fixed numerical value). Screenshot from my Pycon 2019 presentation.](/assets/2019/2019-11-02-timer-with-variable.png)
+{% include image.html
+  img="/assets/2019/2019-11-02-timer-with-variable.png"
+  title="A Timer block in a ladder logic program with the timer duration set to the variable `TMRWaitDuration` (instead of a fixed numerical value). Screenshot from my Pycon 2019 presentation."
+%}
 
 Once variables are in use for all relevant values in the ladder logic program, you can head to the "Tag Database".
 This is a table listing all variables used in the entire ladder logic program with a bunch of information about each variable such as the initial value (on PLC startup) of the variable and its data type.
 In the following screenshot you can see how I used the "Mod Start" and "Mod End" columns to assign Modbus register numbers to six of the variables in my program.
 
-![The Tag Database popup showing six ladder logic variables being assigned Modbus registers. Screenshot from my Pycon 2019 presentation.](/assets/2019/2019-11-02-tag-database-modbus.png)
+{% include image.html
+  img="/assets/2019/2019-11-02-tag-database-modbus.png"
+  title="The Tag Database popup showing six ladder logic variables being assigned Modbus registers. Screenshot from my Pycon 2019 presentation."
+%}
 
 At this point, there is a PLC that is configured to store some of its internal variables in Modbus registers that can be read and written to over the network.
 If you are following my example of the pedestrian crossing traffic signal, we have the waiting time between pressing the pedestrian request button (aka "[beg button](https://gizmodo.com/why-should-pedestrians-press-beg-buttons-to-cross-the-1515091907)") and the car signal turning yellow in holding register `40001` and `40002` (two registers because it's a 32 bit variable and registers are 16 bits).
@@ -120,14 +126,14 @@ This outputs:
 Your results will look different if you are running a different program, of course.
 Based on my PLC configuration, the various timer intervals in my traffic signal program are:
 
-| PLC Variable          | Description                               | Value  |
-| --------------------- | ----------------------------------------- | ------ |
+| PLC Variable          | Description | Value |
+| --------------------- | ----------- | ----- |
 | `TMRWaitDuration`     | Time between ped. button press and yellow | 5000ms |
-| `TMRYellowDuration`   | Time between yellow on and red on         | 3000ms |
-| `TMRBufferDuration`   | Time between red on and walk on           | 1000ms |
-| `TMRWalkDuration`     | Time walk signal is visible               | 3000ms |
-| `TMRDontWalkDuration` | Time flashing hand is visible             | 7000ms |
-| `TMRBuffer2Duration`  | Time between                              | 500ms  |
+| `TMRYellowDuration`   | Time between yellow on and red on | 3000ms |
+| `TMRBufferDuration`   | Time between red on and walk on | 1000ms |
+| `TMRWalkDuration`     | Time walk signal is visible | 3000ms |
+| `TMRDontWalkDuration` | Time flashing hand is visible  | 7000ms |
+| `TMRBuffer2Duration`  | Time between | 500ms |
 
 As mentioned above, the variables in my ladder logic program are in units of hundredths of seconds.
 And all my variables are 32 bit integers covering two Modbus holding registers, explaining the zeros in every other register.
@@ -177,11 +183,15 @@ And if you can change the ladder logic on your PLC, you probably have further, b
 One reason one might set up their system with the PLC as Modbus client is that it enables event based logging instead of periodic polling.
 For example, with my traffic signal I could set up the PLC to change Modbus variable on my pymodbus-based Modbus server whenever the light changes.
 
+
 ---
 
 ###### Footnotes:
 
 [^1]: The terminology around this is muddy at best, but [SCADA](https://en.wikipedia.org/wiki/SCADA) and [DCS](https://en.wikipedia.org/wiki/Distributed_control_system) are often used to talk about the difference between centrally controlled and distributed control systems.
+
 [^2]: PLC program variables are often called "tags". Because this post is written as an introductory explainer for Python programmers, I'll stick with the "variable" terminology.
-[^3]: For my conference talk demos I usually use the TCP version of the Modbus protocol because I have spent too many hours of my life [troubleshooting USB-to-RS232 converter problems](/2017/03/07/one-simple-trick-usb-to-serial-macos-x/) already.
+
+[^3]: For my conference talk demos I usually use the TCP version of the Modbus protocol because I have spent too many hours of my life [troubleshooting USB-to-RS232 converter problems]({{ site.url }}/2017/03/07/one-simple-trick-usb-to-serial-macos-x/) already.
+
 [^4]: While I have never seen a vendor charge extra for Modbus functionality, I have seen it for other industry-standard communication protocols.

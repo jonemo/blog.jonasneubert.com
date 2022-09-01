@@ -1,9 +1,9 @@
 ---
-date: '2019-03-22T00:00:00Z'
+date: "2019-03-22T00:00:00Z"
 published: true
 tags:
-  - travel
-  - dataviz
+- travel
+- dataviz
 title: My US Travel Map
 ---
 
@@ -13,7 +13,10 @@ I have wanted to create a visualization of some of my travels for a long time bu
 
 Here's my US Travel Map as of March 2019:
 
-![United States counties I have lived in (blue), stayed overnight in (red), and passed through (orange)](/assets/2010-03-22-us-travel-map.png)
+{% include image.html
+  img="/assets/2010-03-22-us-travel-map.png"
+  title="United States counties I have lived in (blue), stayed overnight in (red), and passed through (orange)."
+%}
 
 The best part of travel, to me anyway, are the memories that I get from it. The few hours it took to research past trips in order to create this map were a great opportunity to recall those, from the crowded bus rides between Ithaca and New York City to the amazing thunderstorms we saw from our Amtrak bunk bed near Omaha. While I don't remember every US county I passed through (sorry, Lincoln County Oregon and Kearney County NE), I could tell you a story about the journey that brought me there and the day of for each and every one.
 

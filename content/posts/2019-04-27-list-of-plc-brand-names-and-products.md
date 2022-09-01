@@ -1,9 +1,9 @@
 ---
-date: '2019-04-27T00:00:00Z'
+date: "2019-04-27T00:00:00Z"
 published: true
 tags:
-  - factorytech
-  - plc
+- factorytech
+- plc
 title: List of PLC brands and products
 ---
 

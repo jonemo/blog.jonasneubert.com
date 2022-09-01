@@ -1,8 +1,8 @@
 ---
-date: '2012-05-06T00:00:00Z'
+date: "2012-05-06T00:00:00Z"
 published: true
 tags:
-  - digitalmanufacturing
+- digitalmanufacturing
 title: Manufacturers are also just Middle Men
 ---
 

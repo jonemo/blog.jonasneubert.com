@@ -1,13 +1,13 @@
 ---
-date: '2019-10-28T00:00:00Z'
+date: "2019-10-28T00:00:00Z"
 published: true
 tags:
-  - factorytech
-  - plc
+- factorytech
+- plc
 title: What is a Programmable Logic Controller?
 ---
 
-_This post is part 2 of [a series](/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-it) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html)._
+*This post is part 2 of [a series]({{ site.url }}/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-it) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html).*
 
 I have prepared three different conference talks about PLCs for Python programmers.
 Annoyingly, you can't assume that every Python programmer knows what a PLC is, so I always have to sacrifice a few minutes of my time slot[^1] to convey the basics before diving into my actual topic.
@@ -35,7 +35,10 @@ And this is what a PLC looks like.
 It's a stock photo but it contains the important parts:
 A box with a few LEDs and lots of wires connected to it.
 
-![Stock photo of a Programmable Logic Controller (PLC)](/assets/2019/2019-10-28-this-is-what-a-plc-looks-like.jpg)
+{% include image.html
+  img="/assets/2019/2019-10-28-this-is-what-a-plc-looks-like.jpg"
+  title="Stock photo of a Programmable Logic Controller (PLC)"
+%}
 
 Those colorful wires connect to the "field devices", a fancy term for sensors and actuators.
 Let's do a quick crash course on field devices!
@@ -58,7 +61,10 @@ Digital I/O is for physical phenomena that are either on or off, the electrical 
 Analog I/O represents a continuous physical phenomenon, the electrical signal needs to be measured with some resolution, and we'll want to use a numeric data type to reference the signal.
 In my presentations I use the slide below to illustrate these points.
 
-![Example schematic of a PLC with six different I/O modules to connect to various types of field device](/assets/2019/2019-10-28-schematic.png)
+{% include image.html
+  img="/assets/2019/2019-10-28-schematic.png"
+  title="Example schematic of a PLC with six different I/O modules to connect to various types of field device"
+%}
 
 The hypothetical PLC in the example contains six different types of I/O module:
 Digital inputs (abbreviated DI), analog inputs (abbreviated AI), and digital outputs (abbreviated DQ).
@@ -68,7 +74,10 @@ You'll see DI, AI, DQ, and AQ again in variable names in later parts of this ser
 Finally, it's time to talk about what the PLC actuall does.
 Like every computing device in the world, it executes an Input-Process-Output (IPO) cycle.
 
-![Input-Process-Output. The PLC runs this cycle indefinitely. The second step is the programmable one.](/assets/2019/2019-10-28-input-process-output-cycle.png)
+{% include image.html
+  img="/assets/2019/2019-10-28-input-process-output-cycle.png"
+  title="Input-Process-Output. The PLC runs this cycle indefinitely. The second step is the programmable one."
+%}
 
 First: Inputs.
 Using signal processing electronics, the electrical signals from field devices are read and converted into variables which are stored in a section of memory traditionally called "Process Image In".
@@ -86,9 +95,11 @@ You can even turn a Windows PC into a PLC by installing a "Software PLC".
 I will cover this in more detail in later parts of this series.
 But first, let's look at how PLCs are programmed (spoiler: it's not Python).
 
+
 ---
 
 ###### Footnotes
 
 [^1]: Most conference give you 25 or 30 minutes to speak.
+
 [^2]: If the embedded slide deck below doesn't load, click [this link](https://speakerdeck.com/jonemo/plc-inside-gallery) to see it.

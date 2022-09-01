@@ -1,8 +1,8 @@
 ---
-date: '2022-06-12T00:00:00Z'
+date: "2022-06-12T00:00:00Z"
 published: true
 tags:
-  - nationalparks
+- nationalparks
 title: List of US National Parks Twitter Accounts
 ---
 
@@ -82,13 +82,12 @@ It's also available as a [Twitter List](https://twitter.com/i/lists/153328219446
 If you go on Twitter and search for National Parks lists, you will find many lists that contain many more entries than the 54 shown above.
 What causes the discrepancy?
 
-These are only the _parks_ and only one primary account for each.
-This list does _not_ include:
-
-- Other entities managed by the National Park Service (NPS), such as [National Memorials](https://en.wikipedia.org/wiki/List_of_national_memorials_of_the_United_States), [National Seashores](https://en.wikipedia.org/wiki/List_of_national_lakeshores_and_seashores_of_the_United_States), [National Historic Sites](<https://en.wikipedia.org/wiki/National_Historic_Site_(United_States)>), and so on
-- Secondary accounts of parks, such as [@SmokiesRoadsNPS](https://twitter.com/SmokiesRoadsNPS)
-- Accounts that cover more than one park such as [@NatlParkService](https://twitter.com/NatlParkService) or [@ClimateNPS](https://twitter.com/ClimateNPS)
-- Accounts operated by parties not affiliated with the NPS or where the affiliation is unclear.
+These are only the _parks_ and only one primary account for each. 
+This list does _not_ include: 
+* Other entities managed by the National Park Service (NPS), such as [National Memorials](https://en.wikipedia.org/wiki/List_of_national_memorials_of_the_United_States), [National Seashores](https://en.wikipedia.org/wiki/List_of_national_lakeshores_and_seashores_of_the_United_States), [National Historic Sites](https://en.wikipedia.org/wiki/National_Historic_Site_(United_States)), and so on
+* Secondary accounts of parks, such as [@SmokiesRoadsNPS](https://twitter.com/SmokiesRoadsNPS)
+* Accounts that cover more than one park such as [@NatlParkService](https://twitter.com/NatlParkService) or [@ClimateNPS](https://twitter.com/ClimateNPS)
+* Accounts operated by parties not affiliated with the NPS or where the affiliation is unclear.
 
 ## Sources
 

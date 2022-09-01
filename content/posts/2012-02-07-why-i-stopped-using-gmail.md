@@ -1,5 +1,5 @@
 ---
-date: '2012-02-07T00:00:00Z'
+date: "2012-02-07T00:00:00Z"
 published: true
 tags: []
 title: Why I stopped using GMail
