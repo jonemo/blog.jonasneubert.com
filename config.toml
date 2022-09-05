@@ -8,6 +8,10 @@ enableGitInfo = true
 [permalinks]
   posts = '/:year/:month/:day/:title/'
 
+
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
+
 [menu]
   [[menu.nav]]
     name = "About"
