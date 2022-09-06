@@ -1,29 +1,31 @@
-# Welcome to My Personal Site. 
+# blog.jonasneubert.com
 
-Hi, I'm Jonas.
+## Requirements
 
-I am automation engineer and software developer. Put differently: I like bits and atoms equally. I enjoy working on multi-disciplinary projects that are more complex than complicated.
-Previously, I helped build some of the world's most advanced laboratory automation at Counsyl and Zymergen and was graduate student in Hod Lipson's Creative Machines Lab at Cornell University where I worked on modular robotics and programmable matter. I have also been involved in Ignite Ithaca, a postcards thing, a property search engine, a steel factory, a cinema, and a prison teaching program.
+| Requirement | Install instructions |
+| --- | --- |
+| Hugo | https://gohugo.io/getting-started/installing/ |
+| node | https://github.com/nvm-sh/nvm#installing-and-updating |
+| yarn | `corepack enable` |
 
-Before moving to the New World, I completed an M.Eng. (my undergrad degree) at Imperial College London and was born and raised in the country famous for no speed limits and no humor.
 
-## How to Develop Locally
+## Build CSS using Tailwind
 
-Requirements :
-  hugo , node , yarn needs to be installed on your system. 
+```sh
+yarn install
+yarn build-tw  # creates assets/css/style.css from main.css
+```
 
-Required Hugo version :-  hugo v0.102.0 or above
+## Run Hug
 
-Install dependencies using :
+Create `/public` directory:
 
-``` yarn install ```  ( inside the project root)
+```sh
+hugo --minify
+```
 
-Develop Locally :
+Hugo dev server, watches for changes and serves on localhost:1313:
 
-```yarn dev```
-
-Build for production :
-
-```yarn build```
-
-The build artifacts will be inside public dir. 
+```sh
+hugo server
+```
