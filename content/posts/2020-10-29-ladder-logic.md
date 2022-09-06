@@ -1,4 +1,5 @@
 ---
+slug: ladder-logic
 date: "2019-10-29T00:00:00Z"
 published: true
 tags:

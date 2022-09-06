@@ -1,4 +1,5 @@
 ---
+slug: barcode-generation-python
 date: "2019-01-23T00:00:00Z"
 published: true
 tags:

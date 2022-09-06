@@ -1,4 +1,5 @@
 ---
+slug: hiking-in-vall-de-boi
 date: "2018-09-23T00:00:00Z"
 published: true
 tags:

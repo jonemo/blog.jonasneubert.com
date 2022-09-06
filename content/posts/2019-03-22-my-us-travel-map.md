@@ -1,4 +1,5 @@
 ---
+slug: my-us-travel-map
 date: "2019-03-22T00:00:00Z"
 published: true
 tags:

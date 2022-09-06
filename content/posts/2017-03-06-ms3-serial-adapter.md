@@ -1,4 +1,5 @@
 ---
+slug: ms3-serial-adapter
 date: "2017-03-06T00:00:00Z"
 published: true
 tags:

@@ -1,4 +1,5 @@
 ---
+slug: whats-in-a-robotics-demo
 date: "2017-03-13T00:00:00Z"
 published: true
 tags:

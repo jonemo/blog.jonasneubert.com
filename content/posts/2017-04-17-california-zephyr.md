@@ -1,4 +1,5 @@
 ---
+slug: california-zephyr
 date: "2017-04-17T00:00:00Z"
 published: true
 tags:

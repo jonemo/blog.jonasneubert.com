@@ -1,4 +1,5 @@
 ---
+slug: why-i-stopped-using-gmail
 date: "2012-02-07T00:00:00Z"
 published: true
 tags: []

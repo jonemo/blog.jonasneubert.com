@@ -1,4 +1,5 @@
 ---
+slug: hello-fluidinfo-api-competition
 date: "2011-04-16T00:00:00Z"
 published: true
 tags:

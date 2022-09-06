@@ -1,4 +1,5 @@
 ---
+slug: the-cubelets-arrived
 date: "2011-07-18T00:00:00Z"
 published: true
 tags:

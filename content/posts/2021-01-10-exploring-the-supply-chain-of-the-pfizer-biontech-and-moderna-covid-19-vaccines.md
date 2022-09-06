@@ -1,4 +1,5 @@
 ---
+slug: exploring-the-supply-chain-of-the-pfizer-biontech-and-moderna-covid-19-vaccines
 date: "2021-01-10T00:00:00Z"
 published: true
 tags:

@@ -1,4 +1,5 @@
 ---
+slug: one-simple-trick-usb-to-serial-macos-x
 date: "2017-03-07T00:00:00Z"
 published: true
 tags:

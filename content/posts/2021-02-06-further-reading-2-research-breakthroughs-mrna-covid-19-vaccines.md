@@ -1,4 +1,5 @@
 ---
+slug: further-reading-2-research-breakthroughs-mrna-covid-19-vaccines
 date: "2021-02-06T00:00:00Z"
 published: true
 tags:

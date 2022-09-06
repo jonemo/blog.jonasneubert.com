@@ -1,4 +1,5 @@
 ---
+slug: national-park-twitter-accounts
 date: "2022-06-12T00:00:00Z"
 published: true
 tags:
