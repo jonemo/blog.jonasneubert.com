@@ -14,19 +14,31 @@
           <span class="text-gray-500"> Published - </span>
           {{ $pubdate }}
         </p>
-
+        
+        {{ $lastmod := false }}
         <!-- Last Updated Date -->
-        {{- if .Lastmod }}
-          {{- $lastmod := .Lastmod.Format  "Jan 02 2006" }}
-          {{- if ne $lastmod $pubdate }}
+        {{ if .Params.updated_date }}
+             {{ $lastmod = .Params.updated_date }}
+        
+        {{ else if ne .Lastmod $pubdate  }}
+             {{ $lastmod = .Lastmod.Format "Jan 02 2006"}}
+             <!-- Hide updates during the migration time -->
+             {{ if eq $lastmod "Sep 01 2022"}}
+             {{$lastmod = false}}
+             {{end}}
+        {{ end }}
+
+
+
+          {{ if $lastmod  }}
             <p>
               (Updated:
-              <time datetime="{{ .Lastmod }}" title="{{ .Lastmod }}">
+              <time datetime="{{ $lastmod }}" title="{{ $lastmod }}">
                 {{ $lastmod }} </time
               >)
+
+          {{ end }}
             </div>
-          {{- end }}
-        {{- end }}
       </div>
 
     <article class="prose md:prose-xl mx-auto w-full max-w-none">
