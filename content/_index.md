@@ -1,3 +1,3 @@
 ---
-title: "Blog"
+title: "Jonas Neubert"
 ---
