@@ -446,3 +446,7 @@ segno's documentation has [a much more detailed comparison of QR Code generators
 
 The content of this article was part of my talk "Zebras & Lasers" at PyBay 2018. [Slide deck and video from the talk are here](https://jonasneubert.com/talks/pybay2018).
 
+Other posts about barcodes on my blog:
+{% for post in site.tags["barcodes"] if post.url != page.url %}
+* <a href="{{ post.url }}">{{ post.title }}</a>
+{% endfor %}
