@@ -1,6 +1,6 @@
 baseURL = 'https://blog.jonasneubert.com/'
 languageCode = 'en-us'
-title = 'Jonas Neubert'
+title = 'Blog | Jonas Neubert'
 
 enableRobotsTXT = true
 enableGitInfo = true

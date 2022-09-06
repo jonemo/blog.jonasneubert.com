@@ -29,7 +29,7 @@
     {{ $style := resources.Get "css/style.css" }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
-    <title>{{ .Page.Title }} - {{.Site.Title }} </title>
+    <title>{{ .Title }}</title>
     {{ block "head" . }}{{ end }}
   </head>
 
