@@ -1,5 +1,5 @@
 ---
-date: "2019-03-22T00:00:00Z"
+date: "2019-03-22"
 published: true
 tags:
 - travel

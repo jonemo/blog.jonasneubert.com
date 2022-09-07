@@ -1,5 +1,5 @@
 ---
-date: "2017-02-26T00:00:00Z"
+date: "2017-02-26"
 published: true
 tags:
 - pycon

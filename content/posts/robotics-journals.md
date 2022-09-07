@@ -1,5 +1,5 @@
 ---
-date: "2014-01-05T00:00:00Z"
+date: "2014-01-05"
 published: true
 tags:
 - robotics

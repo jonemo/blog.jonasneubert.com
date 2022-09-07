@@ -1,5 +1,5 @@
 ---
-date: "2021-01-22T00:00:00Z"
+date: "2021-01-22"
 published: true
 tags:
 - vaccines

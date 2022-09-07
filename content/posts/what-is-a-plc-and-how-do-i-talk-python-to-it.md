@@ -1,5 +1,5 @@
 ---
-date: "2019-10-27T00:00:00Z"
+date: "2019-10-27"
 published: true
 tags:
 - factorytech

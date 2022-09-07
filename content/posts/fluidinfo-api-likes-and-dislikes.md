@@ -1,5 +1,5 @@
 ---
-date: "2011-04-24T00:00:00Z"
+date: "2011-04-24"
 published: true
 tags:
 - fluidinfo

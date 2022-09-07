@@ -1,5 +1,5 @@
 ---
-date: "2011-07-16T00:00:00Z"
+date: "2011-07-16"
 published: true
 tags:
 - webos
