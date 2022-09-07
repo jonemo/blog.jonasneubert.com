@@ -193,6 +193,6 @@ For example, with my traffic signal I could set up the PLC to change Modbus vari
 
 [^2]: PLC program variables are often called "tags". Because this post is written as an introductory explainer for Python programmers, I'll stick with the "variable" terminology.
 
-[^3]: For my conference talk demos I usually use the TCP version of the Modbus protocol because I have spent too many hours of my life [troubleshooting USB-to-RS232 converter problems](/2017/03/07/one-simple-trick-usb-to-serial-macos-x/) already.
+[^3]: For my conference talk demos I usually use the TCP version of the Modbus protocol because I have spent too many hours of my life [troubleshooting USB-to-RS232 converter problems]({{< ref "2017-03-07-one-simple-trick-usb-to-serial-macos-x/" >}}) already.
 
 [^4]: While I have never seen a vendor charge extra for Modbus functionality, I have seen it for other industry-standard communication protocols.
