@@ -1,9 +1,8 @@
-
-Other posts about barcodes on my blog:
+Other posts about {{ .Get "tag" }} on my blog:
 <ul>
-{{ range where .Site.RegularPages "Params.tags" "intersect" (slice (.Get "tag") ) }}
-  {{ if ne .Permalink $.Page.Permalink }}
-  <li><a href="{{.Permalink}}" > {{.Title}} </a></li>
+  {{ range where .Site.RegularPages "Params.tags" "intersect" (slice (.Get "tag") ) }}
+    {{ if ne .Permalink $.Page.Permalink }}
+      <li><a href="{{ .Permalink }}"> {{ .Title }} </a></li>
+    {{ end }}
   {{ end }}
-{{ end }}
 </ul>
