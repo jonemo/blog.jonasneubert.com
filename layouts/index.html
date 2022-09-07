@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <main class="w-full max-w-6xl mx-auto py-10 px-4 md:py-16">
+    <section class="pb-4">
+      <h1 class="text-3xl md:text-5xl mb-8">Posts</h1>
+
+      {{ $section := where $.Site.RegularPages "Section" "posts" }}
+      {{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") 100 }}
+
+
+      <ul>
+        {{ range $paginator.Pages }}
+          <li class="py-2 text-lg font-medium text-black">
+            <a href="{{ .RelPermalink }}"> {{ .Title }}</a> -
+            {{ .PublishDate.Format "Jan 2006" }}
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+
+    {{ partial "paginator.html" . }}
+
+  </main>
+{{ end }}

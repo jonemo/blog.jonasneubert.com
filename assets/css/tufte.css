@@ -1,0 +1,422 @@
+@charset "UTF-8";
+
+
+/* Tufte CSS styles */
+/* Based on http://localhost:8001/projects/tufte-sample/, modified to play well with Tailwind, to
+   use Quicksand font, and for various other personal preferences. */
+
+article {
+    /* width: 87.5%; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* padding-left: 12.5%; */
+    /* font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; */
+    /* background-color: #fffff8; */
+    /* color: #111; */
+    /* max-width: 1400px; */
+    counter-reset: sidenote-counter;
+}
+
+article h1 {
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.2rem;
+    line-height: 1;
+}
+
+article h2 {
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 2.1rem;
+    margin-bottom: 1.4rem;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+article h3 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    margin-bottom: 1.4rem;
+    line-height: 1;
+}
+
+article hr {
+    display: block;
+    height: 1px;
+    /* width: 55%; */
+    width: 62%;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+article p.subtitle {
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    line-height: 1;
+}
+
+/* article .numeral {
+    font-family: et-book-roman-old-style;
+} */
+
+article .danger {
+    color: red;
+}
+
+article section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+article p,
+article dl,
+article ol,
+article ul {
+    /* font-size: 1.4rem; */
+    /* line-height: 2rem; */
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+article p {
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    padding-right: 0;
+    vertical-align: baseline;
+}
+
+/* Chapter Epigraphs */
+article div.epigraph {
+    margin: 5em 0;
+}
+
+article div.epigraph > blockquote {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+article div.epigraph > blockquote,
+article div.epigraph > blockquote > p {
+    font-style: italic;
+}
+
+article div.epigraph > blockquote > footer {
+    font-style: normal;
+}
+
+article div.epigraph > blockquote > footer > cite {
+    font-style: italic;
+}
+/* end chapter epigraphs styles */
+
+article blockquote {
+    width: 62%;
+    font-size: 1.2rem;
+    padding-left: 1.5em;
+}
+
+article blockquote p,
+article blockquote footer {
+    width: 100%;
+    font-size: 1.0rem;
+    line-height: 1.4rem;
+}
+
+article blockquote footer {
+    text-align: right;
+}
+
+article section > p,
+article section > footer,
+article section > table,
+article section > dl,
+article section > ol,
+article section > ul {
+    /* width: 55%; */
+    width: 62%;
+}
+
+article dt:not(:first-child),
+article li:not(:first-child) {
+    margin-top: 0.25rem;
+}
+
+article figure {
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    /* width: 55%; */
+    max-width: 62%;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin: 0 0 3em 0;
+}
+
+article figcaption {
+    float: right;
+    clear: right;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    vertical-align: baseline;
+    position: relative;
+    max-width: 40%;
+}
+
+article figure.fullwidth figcaption {
+    margin-right: 24%;
+}
+
+/* Links: replicate underline that clears descenders */
+article a:link,
+article a:visited {
+    color: inherit;
+}
+
+article .no-tufte-underline:link {
+    background: unset;
+    text-shadow: unset;
+}
+
+article a:link, .tufte-underline, .hover-tufte-underline:hover {
+    text-decoration: none;
+    background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(currentColor, currentColor);
+    background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(currentColor, currentColor);
+    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 #fffff8, -0.03em 0 #fffff8, 0 0.03em #fffff8, 0 -0.03em #fffff8, 0.06em 0 #fffff8, -0.06em 0 #fffff8, 0.09em 0 #fffff8, -0.09em 0 #fffff8, 0.12em 0 #fffff8, -0.12em 0 #fffff8, 0.15em 0 #fffff8, -0.15em 0 #fffff8;
+    background-position: 0% 93%, 100% 93%, 0% 93%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    article a:link, article .tufte-underline, article .hover-tufte-underline:hover {
+        background-position-y: 87%, 87%, 87%;
+    }
+}
+
+article a:link::selection,
+article a:link::-moz-selection {
+    text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
+    background: #b4d5fe;
+}
+
+/* Sidenotes, margin notes, figures, captions */
+article img {
+    max-width: 100%;
+}
+
+article .sidenote,
+article .marginnote {
+    float: right;
+    clear: right;
+    margin-right: -60%;
+    width: 50%;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    /* font-size: 1.1rem; */
+    font-size: 0.9rem;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
+}
+
+article .sidenote-number {
+    counter-increment: sidenote-counter;
+}
+
+article .sidenote-number:after,
+article .sidenote:before {
+    font-family: et-book-roman-old-style;
+    position: relative;
+    vertical-align: baseline;
+}
+
+article .sidenote-number:after {
+    content: counter(sidenote-counter);
+    font-size: 1rem;
+    top: -0.5rem;
+    left: 0.1rem;
+}
+
+article .sidenote:before {
+    content: counter(sidenote-counter) " ";
+    font-size: 1rem;
+    top: -0.5rem;
+}
+
+article blockquote .sidenote,
+article blockquote .marginnote {
+    margin-right: -82%;
+    min-width: 59%;
+    text-align: left;
+}
+
+article div.fullwidth,
+article table.fullwidth {
+    width: 100%;
+}
+
+article div.table-wrapper {
+    overflow-x: auto;
+    font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
+}
+
+article .sans {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    letter-spacing: .03em;
+}
+
+article code,
+article pre > code {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 1.0rem;
+    line-height: 1.42;
+    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+}
+
+article .sans > code {
+    font-size: 1.2rem;
+}
+
+article h1 > code,
+article h2 > code,
+article h3 > code {
+    font-size: 0.80em;
+}
+
+article .marginnote > code,
+article .sidenote > code {
+    font-size: 1rem;
+}
+
+article pre > code {
+    font-size: 0.9rem;
+    width: 52.5%;
+    margin-left: 2.5%;
+    overflow-x: auto;
+    display: block;
+}
+
+article pre.fullwidth > code {
+    width: 90%;
+}
+
+article .fullwidth {
+    max-width: 98%;
+    clear: both;
+}
+
+article span.newthought {
+    font-variant: small-caps;
+    font-size: 1.2em;
+}
+
+article input.margin-toggle {
+    display: none;
+}
+
+article label.sidenote-number {
+    display: inline-block;
+    max-height: 2rem; /* should be less than or equal to paragraph line-height */
+}
+
+article label.margin-toggle:not(.sidenote-number) {
+    display: none;
+}
+
+article .iframe-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+article .iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 760px) {
+    article {
+        /* width: 84%; */
+        /* padding-left: 8%; */
+        /* padding-right: 8%; */
+    }
+
+    article hr,
+    article section > p,
+    article section > footer,
+    article section > table {
+        width: 100%;
+    }
+
+    article pre > code {
+        width: 97%;
+    }
+
+    article section > dl,
+    article section > ol,
+    article section > ul {
+        width: 90%;
+    }
+
+    article figure {
+        max-width: 95%;
+    }
+
+    article figcaption,
+    article figure.fullwidth figcaption {
+        margin-right: 0%;
+        max-width: none;
+    }
+
+    article label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+
+    article .sidenote,
+    article .marginnote {
+        display: none;
+    }
+
+    article .margin-toggle:checked + .sidenote,
+    article .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 98%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
+
+    article label {
+        cursor: pointer;
+    }
+
+    article div.table-wrapper,
+    article table {
+        width: 85%;
+    }
+
+    article img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,34 @@
+baseURL = 'https://blog.jonasneubert.com/'
+languageCode = 'en-us'
+title = 'Blog | Jonas Neubert'
+
+enableRobotsTXT = true
+enableGitInfo = true
+
+[permalinks]
+  posts = '/:year/:month/:day/:slug/'
+
+
+[markup.goldmark.renderer]
+  unsafe = true # Allow HTML in md files
+
+[menu]
+  [[menu.nav]]
+    name = "About"
+    url = "https://jonasneubert.com/"
+    weight = 1
+  [[menu.nav]]
+    name = "Projects"
+    url = "https://jonasneubert.com/work/"
+    weight = 2
+  [[menu.nav]]
+    name = "Talks"
+    url = "https://jonasneubert.com/talks/"
+    weight = 3
+  [[menu.nav]]
+    name = "Blog"
+    pageref = "/"
+    weight = 4
+
+[frontmatter]
+  lastmod = ["lastmod", ":git", "date", "publishDate"]

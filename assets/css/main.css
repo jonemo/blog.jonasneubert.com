@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*
+   Primary colors:
+   red = #c40d0b
+   yellow = #ffe400
+*/
+
+
+
+html {
+    font-family: Quicksand, "Century Gothic", AppleGothic, sans-serif;
+    letter-spacing: 0.04em;  /* bring back spacing from pre-Google fonts version of Quicksand */
+    font-weight:300;
+}
+
+main a, main a:visited, main a:link {
+    color: #c40d0b;
+    text-decoration:none;
+    font-weight:500;
+}
+
+main ::selection {
+    background: #c40d0b;
+    color: white;
+}
+
+main .highlighter {
+    background: #ffe400;
+    font-style: italic;
+}

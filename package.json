@@ -1,0 +1,21 @@
+{
+  "name": "blog.jonasneubert.com",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build-tw": "tailwindcss -w -i ./assets/css/main.css -o ./assets/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "yarn build-tw & hugo server",
+    "build": "tailwindcss  -i ./assets/css/main.css -o ./assets/css/style.css && hugo --minify"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.4",
+    "autoprefixer": "^10.4.8",
+    "postcss": "^8.4.16",
+    "prettier-plugin-go-template": "^0.0.13",
+    "tailwindcss": "^3.1.8"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}
