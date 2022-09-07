@@ -8,9 +8,9 @@ tags:
 title: Using pymodbus to communicate with a PLC
 ---
 
-*This post is part 4 of [a series](/2019/10/27/what-is-a-plc-and-how-do-i-talk-python-to-it/) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html).*
+*This post is part 4 of [a series]({{< ref "2019-10-27-what-is-a-plc-and-how-do-i-talk-python-to-it/" >}}) covering material I presented in a [talk at PyCon 2019](https://jonasneubert.com/talks/python2019.html).*
 
-In the previous parts of this series, I covered [what a PLC is](/2019/10/28/what-is-a-programmable-logic-controller/), and [how PLCs are programmed](/2019/10/29/ladder-logic/).
+In the previous parts of this series, I covered [what a PLC is]({{< ref "2019-10-28-what-is-a-programmable-logic-controller/" >}}), and [how PLCs are programmed]({{< ref "2020-10-29-ladder-logic/" >}}).
 In industry, the Python developer is usually not involved in the purchasing, installing, and programming of a PLC.
 If you find yourself working with PLCs in academia or for a hobby project, you might actually be the one doing these things yourself.
 Either way, I assume that you somehow found yourself with a programmed PLC and now want to connect to it using Python.

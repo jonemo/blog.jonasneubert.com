@@ -9,7 +9,7 @@ tags:
 title: 'PyCon Talk Progress Update: What needs to be in a Robotics Demo?'
 ---
 
-It's been a month since [my factory automation talk got accepted into PyCon](/2017/02/12/tap-tap-tap/). If you've been following along by means of this blog you've seen that I [bought a barcode reader on Ebay](/2017/02/26/intro-to-barcode-readers/), [made an adapter for it](/2017/03/06/ms3-serial-adapter/) and wasted some time figuring out [how to do Serial-to-USB on a Mac](/2017/03/07/serial-to-usb-on-mac/).
+It's been a month since [my factory automation talk got accepted into PyCon]({{< ref "2017-02-12-tap-tap-tap/" >}}). If you've been following along by means of this blog you've seen that I [bought a barcode reader on Ebay]({{< ref "2017-02-26-intro-to-barcode-readers/" >}}), [made an adapter for it]({{< ref "2017-03-06-ms3-serial-adapter/" >}}) and wasted some time figuring out [how to do Serial-to-USB on a Mac](/2017/03/07/serial-to-usb-on-mac/).
 
 Barcode readers are cool stuff, but when you promised a factory automation demo, reading a few barcodes doesn't really cut it. The same goes for a lot of other automation equipment like pushers, shakers, label printers and so on: It might technically be factory automation, but nobody comes to PyCon to see tech that contains fewer transistors than the blender in their kitchen at home.
 
