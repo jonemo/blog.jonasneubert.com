@@ -1,6 +1,6 @@
 ---
 slug: what-is-a-plc-and-how-do-i-talk-python-to-it
-date: "2019-10-27T00:00:00Z"
+date: "2019-10-27"
 published: true
 tags:
 - factorytech

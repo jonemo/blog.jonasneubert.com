@@ -1,6 +1,6 @@
 ---
 slug: fluidinfo-api-contest-design-decisions
-date: "2011-04-18T00:00:00Z"
+date: "2011-04-18"
 published: true
 tags:
 - fluidinfo

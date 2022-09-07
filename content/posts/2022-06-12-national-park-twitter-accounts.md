@@ -1,6 +1,6 @@
 ---
 slug: national-park-twitter-accounts
-date: "2022-06-12T00:00:00Z"
+date: "2022-06-12"
 published: true
 tags:
 - nationalparks

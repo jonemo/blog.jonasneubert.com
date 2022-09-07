@@ -1,6 +1,6 @@
 ---
 slug: what-is-a-programmable-logic-controller
-date: "2019-10-28T00:00:00Z"
+date: "2019-10-28"
 published: true
 tags:
 - factorytech

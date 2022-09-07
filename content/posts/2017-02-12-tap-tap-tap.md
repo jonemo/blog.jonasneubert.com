@@ -1,6 +1,6 @@
 ---
 slug: tap-tap-tap
-date: "2017-02-12T00:00:00Z"
+date: "2017-02-12"
 published: true
 tags:
 - pycon

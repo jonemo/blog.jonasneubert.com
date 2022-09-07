@@ -1,6 +1,6 @@
 ---
 slug: ladder-logic
-date: "2019-10-29T00:00:00Z"
+date: "2019-10-29"
 published: true
 tags:
 - factorytech

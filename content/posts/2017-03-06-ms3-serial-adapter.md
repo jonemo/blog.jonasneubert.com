@@ -1,6 +1,6 @@
 ---
 slug: ms3-serial-adapter
-date: "2017-03-06T00:00:00Z"
+date: "2017-03-06"
 published: true
 tags:
 - robotics

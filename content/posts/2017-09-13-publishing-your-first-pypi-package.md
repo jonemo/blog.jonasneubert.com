@@ -1,6 +1,6 @@
 ---
 slug: publishing-your-first-pypi-package
-date: "2017-09-13T00:00:00Z"
+date: "2017-09-13"
 published: true
 tags:
 - python

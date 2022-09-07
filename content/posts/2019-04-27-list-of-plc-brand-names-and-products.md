@@ -1,6 +1,6 @@
 ---
 slug: list-of-plc-brand-names-and-products
-date: "2019-04-27T00:00:00Z"
+date: "2019-04-27"
 published: true
 tags:
 - factorytech

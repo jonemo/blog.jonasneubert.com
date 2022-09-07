@@ -1,6 +1,6 @@
 ---
 slug: california-zephyr
-date: "2017-04-17T00:00:00Z"
+date: "2017-04-17"
 published: true
 tags:
 - travel

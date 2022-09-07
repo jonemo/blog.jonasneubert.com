@@ -1,6 +1,6 @@
 ---
 slug: the-pycon-speaker-experience
-date: "2017-11-20T00:00:00Z"
+date: "2017-11-20"
 published: true
 tags:
 - pycon

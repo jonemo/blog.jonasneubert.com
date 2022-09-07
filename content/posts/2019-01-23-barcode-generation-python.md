@@ -1,6 +1,6 @@
 ---
 slug: barcode-generation-python
-date: "2019-01-23T00:00:00Z"
+date: "2019-01-23"
 published: true
 tags:
 - factorytech
