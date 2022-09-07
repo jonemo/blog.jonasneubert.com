@@ -4,7 +4,7 @@
       <h1 class="text-3xl md:text-5xl mb-8">Posts</h1>
 
       {{ $section := where $.Site.RegularPages "Section" "posts" }}
-      {{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") 20 }}
+      {{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") 100 }}
 
 
       <ul>
