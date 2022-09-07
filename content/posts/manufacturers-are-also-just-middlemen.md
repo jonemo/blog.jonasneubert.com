@@ -1,5 +1,6 @@
 ---
-date: "2012-05-06"
+slug: manufacturers-are-also-just-middlemen
+date: "2012-05-06T00:00:00Z"
 published: true
 tags:
 - digitalmanufacturing

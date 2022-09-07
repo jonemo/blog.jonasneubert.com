@@ -1,5 +1,6 @@
 ---
-date: "2017-02-26"
+slug: intro-to-barcode-readers
+date: "2017-02-26T00:00:00Z"
 published: true
 tags:
 - pycon

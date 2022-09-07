@@ -1,5 +1,6 @@
 ---
-date: "2014-01-05"
+slug: robotics-journals
+date: "2014-01-05T00:00:00Z"
 published: true
 tags:
 - robotics

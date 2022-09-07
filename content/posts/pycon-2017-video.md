@@ -1,5 +1,6 @@
 ---
-date: "2017-06-10"
+slug: pycon-2017-video
+date: "2017-06-10T00:00:00Z"
 published: true
 tags:
 - pycon

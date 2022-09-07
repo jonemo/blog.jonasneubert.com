@@ -6,7 +6,7 @@ enableRobotsTXT = true
 enableGitInfo = true
 
 [permalinks]
-  posts = '/:year/:month/:day/:filename/'
+  posts = '/:year/:month/:day/:slug/'
 
 
 [markup.goldmark.renderer]

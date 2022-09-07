@@ -1,5 +1,6 @@
 ---
-date: "2011-04-24"
+slug: fluidinfo-api-likes-and-dislikes
+date: "2011-04-24T00:00:00Z"
 published: true
 tags:
 - fluidinfo

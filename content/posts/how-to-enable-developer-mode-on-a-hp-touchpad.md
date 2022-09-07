@@ -1,5 +1,6 @@
 ---
-date: "2011-07-16"
+slug: how-to-enable-developer-mode-on-a-hp-touchpad
+date: "2011-07-16T00:00:00Z"
 published: true
 tags:
 - webos

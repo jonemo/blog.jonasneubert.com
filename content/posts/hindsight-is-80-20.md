@@ -1,5 +1,6 @@
 ---
-date: "2017-04-27"
+slug: hindsight-is-80-20
+date: "2017-04-27T00:00:00Z"
 published: true
 tags:
 - pycon

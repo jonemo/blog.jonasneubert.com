@@ -1,5 +1,6 @@
 ---
-date: "2011-04-16"
+slug: hello-world
+date: "2011-04-16T00:00:00Z"
 published: true
 tags: []
 title: Hello World!
