@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build-tw": "tailwindcss -w -i ./assets/css/main.css -o ./assets/css/style.css",
+    "tw-build": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css",
+    "tw-dev": "tailwindcss -w -i ./assets/css/main.css -o ./assets/css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "yarn build-tw & hugo server",
-    "build": "tailwindcss  -i ./assets/css/main.css -o ./assets/css/style.css && hugo --minify"
+    "dev": "yarn tw-dev & hugo server",
+    "build": "yarn tw-build && hugo --minify"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.4",
