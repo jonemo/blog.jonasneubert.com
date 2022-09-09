@@ -2,30 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
+  html {
+    @apply tracking-wider font-light; /* bring back spacing from pre-Google fonts version of Quicksand */
+  }
 
-    html{
-        @apply tracking-wider font-light  ;  /* bring back spacing from pre-Google fonts version of Quicksand */
-    }
+  main a,
+  main a:visited,
+  main a:link {
+    @apply text-red-600 decoration-transparent font-medium;
+  }
 
-    main a, main a:visited, main a:link {
-        @apply text-red-600 decoration-transparent font-medium;
-        
-    }
-
-    main ::selection {
-        
-        @apply bg-red-600 text-white;
-    }
-
+  main ::selection {
+    @apply bg-red-600 text-white;
+  }
 }
 
-@utilities{
-    
-    .highlighter {
-        @apply bg-yellow-600 italic 
-    }
-
+@layer utilities {
+  .highlighter {
+    @apply bg-yellow-600 italic;
+  }
 }
-
