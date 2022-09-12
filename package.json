@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "tw-build": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css",
+    "tw-build": "tailwindcss -i  ./assets/css/main.css -o ./assets/css/style.css --minify",
     "tw-dev": "tailwindcss -w -i ./assets/css/main.css -o ./assets/css/style.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "yarn tw-dev & hugo server",
@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.4",
-    "autoprefixer": "^10.4.8",
-    "postcss": "^8.4.16",
     "prettier-plugin-go-template": "^0.0.13",
     "tailwindcss": "^3.1.8"
   },
