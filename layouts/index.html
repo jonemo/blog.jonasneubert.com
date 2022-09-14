@@ -1,7 +1,7 @@
 {{ define "main" }}
-  <main class="w-full max-w-6xl mx-auto py-10 px-4 md:py-16">
-    <section class="pb-4">
-      <h1 class="text-3xl md:text-5xl mb-8">Posts</h1>
+  <section class="w-full max-w-5xl mx-auto py-10 px-4 md:py-16">
+    <div class="pb-4 prose max-w-5xl">
+      <h1 class="mb-8">Posts</h1>
 
       {{ $section := where $.Site.RegularPages "Section" "posts" }}
       {{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") 100 }}
@@ -15,9 +15,9 @@
           </li>
         {{ end }}
       </ul>
-    </section>
+    </div>
 
     {{ partial "paginator.html" . }}
 
-  </main>
+  </section>
 {{ end }}
