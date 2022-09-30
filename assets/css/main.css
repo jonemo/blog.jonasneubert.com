@@ -16,6 +16,10 @@
   main ::selection {
     @apply bg-red-600 text-white;
   }
+
+  table.comparison-table {
+    font-size: 0.8em;
+  }
 }
 
 @layer utilities {
