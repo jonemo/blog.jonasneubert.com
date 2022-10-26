@@ -1,9 +1,9 @@
 baseURL = 'https://blog.jonasneubert.com/'
 languageCode = 'en-us'
 title = 'Blog | Jonas Neubert'
-
 enableRobotsTXT = true
 enableGitInfo = true
+googleAnalytics = 'G-PQDETJ3151'
 
 [permalinks]
   posts = '/:year/:month/:day/:slug/'
@@ -32,3 +32,14 @@ enableGitInfo = true
 
 [frontmatter]
   lastmod = ["lastmod", ":git", "date", "publishDate"]
+
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    respectDoNotTrack = true
+    useSessionStorage = false
+  [privacy.twitter]
+    enableDNT = true
+    simple = false
+  [privacy.youtube]
+    privacyEnhanced = true
