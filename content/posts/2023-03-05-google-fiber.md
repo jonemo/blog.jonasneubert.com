@@ -2,6 +2,7 @@
 title: "How not to get Google Fiber in Salt Lake City"
 slug: google-fiber-in-salt-lake-city
 date: "2023-03-05"
+updated_date: "2023-04-08"
 tags:
 published: true
 ---
@@ -281,17 +282,27 @@ I plan my weekend accordingly and look forward to another friendly but pointless
 > Toni B.
 > Google Fiber Construction Escalations Team
 
+#### 2023-03-07
+
+I tweeted about this blog post. @googlefiber responds:
+
+> Hi Jonas, apologies for the rough start to your Fiber experience. Please don't hesitate to shoot me a DM and I'll be glad to check on this to provide feedback and to see if I can help. -Gregory
+
+I'm not sure what I could DM them beyond what they already know, so I pass.
+
+#### 2023-04-08
+
+It's been an exciting month since I wrote this blog post. Warm spring weather mixed with several winter storms. The construction work on our house is coming together nicely. No news from Google Fiber.
+
 #### A note about the weather
 
 I suspect that the weather plays a role in this story.
 Salt Lake City is a past, and maybe also future, host city for the Winter Olympics Games.
 We are in the middle of a winter with above-average snowfall.
-In January and February 2023, SLC had a few weeks with more than a foot of snow on the ground and below-freezing daily high temperatures.
-And other weeks with higher temperatures and sunshine when most of the snow melted away.
+In January and February 2023, SLC had a few weeks with more than a foot of snow on the ground and below-freezing daily high temperatures—as well as other weeks with higher temperatures and sunshine when most of the snow melted away.
 
-If there had been any communication between the fiber drop crew and me, the homeowner, we could have figured this out.
-We could have planned around the weather forecast.
-I would have shoveled any offending snow out of the way, and suggested NIU mounting location closer to the street than the default.
+If there had been any communication between the fiber drop crew and me, the homeowner, we could have figured this out and planned around the weather forecast.
+I could have shoveled any offending snow out of the way, and suggested NIU mounting location closer to the street than the default.
 If you choose to operate in Salt Lake City, the occasional snow day shouldn't cause a complete process failure in your system, even when you're headquartered in fair-weathered Mountain View.
 
 
