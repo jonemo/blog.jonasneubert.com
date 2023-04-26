@@ -2,7 +2,7 @@
 title: "How not to get Google Fiber in Salt Lake City"
 slug: google-fiber-in-salt-lake-city
 date: "2023-03-05"
-updated_date: "2023-04-08"
+updated_date: "2023-04-25"
 tags:
 published: true
 ---
@@ -293,6 +293,45 @@ I'm not sure what I could DM them beyond what they already know, so I pass.
 #### 2023-04-08
 
 It's been an exciting month since I wrote this blog post. Warm spring weather mixed with several winter storms. The construction work on our house is coming together nicely. No news from Google Fiber.
+
+#### 2023-04-22
+
+Our outdoor security camera detected some motion.
+Is this a fiber cable on our lawn?
+The workers were outside the camera frame but sure enough, a cable had been run down the side of the house and a NIC unit installed.
+Success?
+
+#### 2023-04-23
+
+The technician is back, and this time I'm there to meet him.
+He proudly shows me the NIC which he installed at the most inconvenient (for him and us) location on the house.
+"Just run a cable back up to where you want the internet connection," he says.
+
+Next step for us is to call the hotline to schedule our install!
+
+#### 2023-04-24
+
+Email from Google Fiber:
+
+> **Your Google Fiber account has been canceled**
+>
+> Google Fiber won't be installed at [the address] and we've cancelled your account. If you paid a deposit, it'll be refunded shortly to the credit or debit card on file for your account.
+>
+> **Google Drive storage**
+>
+> Your additional 1 terabyte of Google Drive storage will be removed and your storage limits will be set back to the free levels.
+>
+> Everything in Google Drive, Google Photos, and Gmail will still be accessible but you won't be able to create or add anything new over the free storage limit.
+>
+> **Network Interface Unit checkup**
+>
+> If a Network Interface Unit or "NIU" (a small grey box) has already been installed on the outside of your home, you may see a technician return to your home for a very brief visit.
+>
+> This only happens in rare cases where our technicians need to ensure that all steps of the NIU installation process are complete and that nothing will pose any hazards to the residents of the home.
+>
+> Although we'd love to bring you Fiber service, your address isn't eligible to sign up. We're sorry for any inconvenience we've caused you.
+>
+> **Have questions? We're here to help.**
 
 #### A note about the weather
 
