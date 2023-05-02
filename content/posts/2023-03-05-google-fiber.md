@@ -2,7 +2,7 @@
 title: "How not to get Google Fiber in Salt Lake City"
 slug: google-fiber-in-salt-lake-city
 date: "2023-03-05"
-updated_date: "2023-04-25"
+updated_date: "2023-05-01"
 tags:
 published: true
 ---
@@ -298,13 +298,13 @@ It's been an exciting month since I wrote this blog post. Warm spring weather mi
 
 Our outdoor security camera detected some motion.
 Is this a fiber cable on our lawn?
-The workers were outside the camera frame but sure enough, a cable had been run down the side of the house and a NIC unit installed.
+The workers were outside the camera frame but sure enough, a cable had been run down the side of the house and a NIU installed.
 Success?
 
 #### 2023-04-23
 
 The technician is back, and this time I'm there to meet him.
-He proudly shows me the NIC which he installed at the most inconvenient (for him and us) location on the house.
+He proudly shows me the NIU which he installed at the most inconvenient (for him and us) location on the house.
 "Just run a cable back up to where you want the internet connection," he says.
 
 Next step for us is to call the hotline to schedule our install!
@@ -332,6 +332,43 @@ Email from Google Fiber:
 > Although we'd love to bring you Fiber service, your address isn't eligible to sign up. We're sorry for any inconvenience we've caused you.
 >
 > **Have questions? We're here to help.**
+
+#### 2023-04-25
+
+I call the Google Fiber hotline.
+
+"I see your phone number is not associated with an existing account. Are you a prospective customer?"
+
+When they deleted my account, they also deleted all records of previous conversations and tickets related to my address.
+This blog post is now the only log of the sequence of events since I first made contact with the Google Fiber website almost five months ago.
+
+I give a brief summary of the events so far and the agent commends me for being able to laugh about the ~situation~ institutional incompetency.
+During the following 20 minutes the agent multi-tasks:
+On chat he wordsmithes an escalation ticket that explains my apparently quite unusual case in a way that won't get misunderstood elsewhere in the bureaucracy.
+At the same time I learn about the life story of him which is (and this is no sarcasm) book-worthy.
+
+The escalation gets submitted and we chat some more while I explore a blog the agent wrote many years ago before we wrap up.
+How many call center agents work there anyway?
+What percentage of them have I met already?
+
+#### 2023-04-26
+
+Call from the Google Fiber number.
+
+A friendly agent informs me that my case is officially getting reviewed and I can expect an update within 30 days.
+Asked if he has any more information on what happened he tells me: No, he just gets a list of numbers to call and what to say if someone answers.
+
+#### 2023-05-01
+
+Email from Google Fiber:
+
+> **Hi. Nice to meet you.**
+>
+> Thanks for your interest in Google Fiber. We're glad to be in touch.
+>
+> Now that you're signed up for updates, we'll email you from time to time with the latest on our progress, and, of course, we'll reach out as soon as we know if your address is able to get connected to Google Fiber.
+>
+> In the meantime, we'll be working hard on our commitment to connect more people to gigabit internet that’s open, fast, reliable, and fairly-priced. If you're as excited about more access to fast, fair internet as we are, be sure to tell your neighbors. We’d love to get to know them, too.
 
 #### A note about the weather
 
