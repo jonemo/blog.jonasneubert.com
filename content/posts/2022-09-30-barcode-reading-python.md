@@ -2,6 +2,7 @@
 title: "The Best Python Packages for Reading Barcodes"
 slug: the-best-python-packages-for-reading-barcodes
 date: "2022-09-30"
+updated_date: "2023-06-15"
 tags:
  - factorytech
  - python
@@ -132,7 +133,7 @@ Instead of repetitively listing the supported [barcode symbologies]({{< ref "201
   <tr>
     <td><a href="https://pypi.org/project/libzbar-ctypes">libzbar-ctypes</a></td>
     <td>May 2017</td>
-    <td>LGPC</td>
+    <td>LGPL</td>
     <td>0</td>
     <td>original zbar</td>
     <td>pillow</td>
@@ -150,7 +151,7 @@ Instead of repetitively listing the supported [barcode symbologies]({{< ref "201
   <tr>
     <td><a href="https://pypi.org/project/zxing-cpp/">zxing-cpp</a></td>
     <td>Jul 2022</td>
-    <td>MIT</td>
+    <td>Apache 2.0</td>
     <td>(647)</td>
     <td>zxing C++</td>
     <td>pillow, OpenCV</td>
@@ -222,7 +223,7 @@ Instead of repetitively listing the supported [barcode symbologies]({{< ref "201
     <td><a href="https://github.com/bwipp/postscriptbarcode/wiki/Code-39">Code 39</a></td>
     <td class="text-center"> ✓ </td>
     <td class="text-center"> ✓ </td>
-    <td class="text-center"></td>
+    <td class="text-center"> ✓ </td>
     <td class="text-center"></td>
   </tr>
   <tr>
@@ -328,7 +329,7 @@ The name "zbar" is used for two-and-a-half different pieces of software:
 
 Both original and new zbar are licensed under the LGPL version 2.1.
 
-In lieu of up-to-date documentation, [this source code folder](https://github.com/mchehab/zbar/tree/master/zbar/decoder) served as my reference for compiling the list of supported symbologies (see table above). In addition to what's shown in the table, zbar also supports "SQ Code", [a strong contendor for the title of "world's most obscure barcode symbology"](https://github.com/mchehab/zbar/discussions/232).
+In lieu of up-to-date documentation, [this source code folder](https://github.com/mchehab/zbar/tree/master/zbar/decoder) served as my reference for compiling the list of supported symbologies (see table above). In addition to what's shown in the table, zbar also supports "SQ Code", [a strong contender for the title of "world's most obscure barcode symbology"](https://github.com/mchehab/zbar/discussions/232).
 
 Of the zbar wrapper packages available on PyPI, [**pyzbar**](https://pypi.org/project/pyzbar) is the most likely to work out-of-the-box for most users. Like most other Python barcode reading packages it wraps the zbar C library, but sets itself apart by advertising (and delivering) ease of installation on Windows.  It is actively maintained by members of the [Natural History Museum in London](https://www.nhm.ac.uk). If you don't care about Windows support and instead want a 1-step install on Linux, consider [fastzbarlight](https://pypi.org/project/fastzbarlight) which bundles the original zbar but is unmaintained.
 
@@ -350,13 +351,13 @@ The homonymous [**zxing**](https://pypi.org/project/zxing) PyPI package offers a
 
 ### zxing C++
 
-The zxing code repo once contained a sub-directory with a C++ rewrite of the library which was deleted around 2018. The "zxing-cpp" project now maintains a fork of this C++ code in [this Github repo](https://github.com/zxing-cpp/zxing-cpp). The official Python bindings for the fork are in the [zxing-cpp PyPI package](https://pypi.org/project/zxing-cpp/). zxing-cpp is very actively maintained and exceeds its parent in performance and functionality. Just like its Java parent, zxing C++ is licensed under the Apache 2.0 license.
+The zxing code repo once contained a sub-directory with a C++ rewrite of the library which was deleted around 2018. The "zxing-cpp" project ~now maintains a fork of this C++ code in~[^3] picked up the idea and wrote a second C++ port [this Github repo](https://github.com/zxing-cpp/zxing-cpp). The official Python bindings for the ~fork~ project are in the [zxing-cpp PyPI package](https://pypi.org/project/zxing-cpp/). zxing-cpp is very actively maintained and exceeds its parent in performance and functionality. Just like its Java parent, zxing C++ is licensed under the Apache 2.0 license.
 
 MicroQR is the one symbology supported by zxing C++ on top of the original zxing's.
 
 There is only one PyPI package that wraps Zxing C++, and it is the main recommendation at the top of this blog post: [**zxing-cpp**](https://pypi.org/project/zxing-cpp/).
 
-Note that there is [another Github repo named `zxing-cpp`](https://github.com/glassechidna/zxing-cpp) that is also a fork of the original Zxing C++ port. This project seems discontinued, with the last update in 2019. The PyPI package [zxinglight](https://pypi.org/project/zxinglight) is a Python wrapper for this discontinued other port.
+Note that there is [another Github repo named `zxing-cpp`](https://github.com/glassechidna/zxing-cpp) that is ~also~ a fork of the original Zxing C++ port. This project seems discontinued, with the last update in 2019. The PyPI package [zxinglight](https://pypi.org/project/zxinglight) is a Python wrapper for this discontinued other port.
 
 ### libdmtx
 
@@ -420,8 +421,7 @@ With [OpenCV](https://pypi.org/project/opencv-python/) (`pip install opencv-pyth
 import cv2
 import numpy
 img_cv = cv2.imread("path/to/my/file.png")
-np_arr = numpy.array(img_cv)
-results = zxingcpp.read_barcodes(np_arr)
+results = zxingcpp.read_barcodes(img_cv)
 ```
 
 Matplotlib also works, although I'm not sure it ever makes sense to use it (you'd already know what's in the barcode):
@@ -504,7 +504,7 @@ The `decode` function also accepts numpy arrays, so all the options shown above 
 
 No endorsement is implied. Do your own research!
 
-I found two commercial (not free and not open source) barcode reading SDKs that advertise Python libraries as part of their offering.[^3]
+I found two commercial (not free and not open source) barcode reading SDKs that advertise Python libraries as part of their offering.[^4]
 
 ### Dynamsoft Barcode Reader
 
@@ -629,5 +629,5 @@ The content of this article is an updated version of a section of my talk "Zebra
 
 [^1]: The verbs "read", "decode", and "scan" are often used synonymously for "barcode". When precise terminology matters, there are subtle differences between them: _Reading_ covers finding a barcode and decoding it. _Decoding_ is to convert an already located (and aligned and cropped) barcode into its corresponding value (usually a string or a number or URL). Arguably, you can't find a barcode without also decoding it, how else are you going to know that what you found actually is a barcode? _Scanning_ is a specific method for reading that involves a device that captures an image line by line, usually a laser. My post [Intro to Barcode Readers]({{< ref "2017-02-26-intro-to-barcode-readers.md" >}}) goes into more detail on how barcodes work.
 [^2]: Performance metrics for barcode reading are about read success rate and read speed. Success rate covers how stretched, misaligned, partially covered, faded, and otherwise damaged a barcode can be to still be read. Speed measures the time between data acquisition of the raw pixels and a decoded value being returned.
-[^3]: Both happen to be headquartered in Canada: Dynamsoft is in Vancouver and Matrox in Montreal. Matrox is now owned by [Zebra Technologies](https://en.wikipedia.org/wiki/Zebra_Technologies).
-[^4]: There's one exception to this criterion: The zbar PyPI package is mentioned in the text despite not working with recent versions of Python. It is mentioned because its former popularity and simple name make it show up in search results for many related terms. Omitting it entirely may have appeared like an oversight.
+[^3]: Thank you to [axxel](https://github.com/axxel) for [sending corrections](https://github.com/jonemo/blog.jonasneubert.com/commit/6814c5ec594975c7f2fb458a18b087359ff64e44#r118205554) about the zxing-cpp project. The post was updated to incorporate these on 2023-06-15.
+[^4]: Both happen to be headquartered in Canada: Dynamsoft is in Vancouver and Matrox in Montreal. Matrox is now owned by [Zebra Technologies](https://en.wikipedia.org/wiki/Zebra_Technologies).
