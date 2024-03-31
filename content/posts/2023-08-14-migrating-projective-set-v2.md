@@ -43,8 +43,8 @@ The tech stack of the new version is this:
 
 There are now more files than I care to enumerate in the repo. Nine of those files are config files whose content I understand but wouldn't have been able to come up with. Most code files are shorter than 50 lines and the code has become a lot more modular and encapsulated.
 
-This isn't one of those blog posts that laments what happened to frontend development in the last years. My brain is still young and adjust to writing `v-for` instead of `ng-for` not problem! People have chosen to build evermore complex solutions in the frontend and thankfully the tooling has evolved to meet those needs while hiding as much complexity as possible. The biggest difference to me is that today it's difficult to avoid using build and developer tools even for trivial apps whereas ten years ago the browser was all I needed.
+This isn't one of those blog posts that laments what happened to frontend development in the last years. My brain is still young and adjusts to writing `v-for` instead of `ng-for`! People have chosen to build evermore complex solutions in the frontend and thankfully the tooling has evolved to meet those needs while hiding as much complexity as possible. The biggest difference to me is that today it's difficult to avoid using build and developer tools even for trivial apps whereas ten years ago the browser was all I needed.
 
 ## Footnotes
 
-[^1]: To be precise: The last meaningful update to the app was on May 20, 2014. Since then the repo had to commits, one for adding a CNAME file when I switched hosting to Github Pages and another for [Google Analytics' v4 migration](https://support.google.com/analytics/answer/11583528?hl=en). The full history is [here](https://github.com/jonemo/ProjectiveSet/commits/main).
+[^1]: To be precise: The last meaningful update to the app was on May 20, 2014. Since then the repo had two commits, one for adding a CNAME file when I switched hosting to Github Pages and another for [Google Analytics' v4 migration](https://support.google.com/analytics/answer/11583528?hl=en). The full history is [here](https://github.com/jonemo/ProjectiveSet/commits/main).
