@@ -40,7 +40,7 @@ A box with a few LEDs and lots of wires connected to it.
 src="/assets/2019/2019-10-28-this-is-what-a-plc-looks-like.jpg"
 title="Stock photo of a Programmable Logic Controller (PLC)"
 
-> }}
+>}}
 
 Those colorful wires connect to the "field devices", a fancy term for sensors and actuators.
 Let's do a quick crash course on field devices!
@@ -67,7 +67,7 @@ In my presentations I use the slide below to illustrate these points.
 src="/assets/2019/2019-10-28-schematic.png"
 title="Example schematic of a PLC with six different I/O modules to connect to various types of field device"
 
-> }}
+>}}
 
 The hypothetical PLC in the example contains six different types of I/O module:
 Digital inputs (abbreviated DI), analog inputs (abbreviated AI), and digital outputs (abbreviated DQ).
@@ -81,7 +81,7 @@ Like every computing device in the world, it executes an Input-Process-Output (I
 src="/assets/2019/2019-10-28-input-process-output-cycle.png"
 title="Input-Process-Output. The PLC runs this cycle indefinitely. The second step is the programmable one."
 
-> }}
+>}}
 
 First: Inputs.
 Using signal processing electronics, the electrical signals from field devices are read and converted into variables which are stored in a section of memory traditionally called "Process Image In".
