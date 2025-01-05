@@ -10,29 +10,28 @@ on:
 
 # allow one concurrent deployment
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: true # need for fetching Hugo themes
           fetch-depth: 0 # fetch all history for .GitInfo and .Lastmod
 
       - id: pages
-        uses: actions/configure-pages@v2
+        uses: actions/configure-pages@v5
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: latest
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '16'
           cache: yarn
@@ -48,7 +47,7 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
@@ -64,6 +63,6 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
-        # this step knows where to pick up the files because the build job used the 
+        uses: actions/deploy-pages@v4
+        # this step knows where to pick up the files because the build job used the
         # actions/upload-pages-artifact action
