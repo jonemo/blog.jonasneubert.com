@@ -1,7 +1,7 @@
 ---
 slug: fluidinfo-api-likes-and-dislikes
 date: "2011-04-24"
-published: true
+draft: false
 tags:
 - fluidinfo
 title: 'Fluidinfo API: Likes & Dislikes'

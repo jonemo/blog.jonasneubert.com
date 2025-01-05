@@ -1,7 +1,7 @@
 ---
 slug: exploring-the-supply-chain-of-the-pfizer-biontech-and-moderna-covid-19-vaccines
 date: "2021-01-10"
-published: true
+draft: false
 tags:
 - vaccines
 title: Exploring the Supply Chain of the Pfizer/BioNTech and Moderna COVID-19 vaccines

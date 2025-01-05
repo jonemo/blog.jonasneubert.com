@@ -1,7 +1,7 @@
 ---
 slug: ladder-logic
 date: "2019-10-29"
-published: true
+draft: false
 tags:
 - factorytech
 - plc

@@ -1,7 +1,7 @@
 ---
 slug: further-reading-2-research-breakthroughs-mrna-covid-19-vaccines
 date: "2021-02-06"
-published: true
+draft: false
 tags:
 - vaccines
 title: 'Further Reading (vol 2): Research Breakthroughs that led to mRNA COVID-19

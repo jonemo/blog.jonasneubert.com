@@ -1,7 +1,7 @@
 ---
 slug: one-simple-trick-usb-to-serial-macos-x
 date: "2017-03-07"
-published: true
+draft: false
 tags:
 - factorytech
 - barcodes

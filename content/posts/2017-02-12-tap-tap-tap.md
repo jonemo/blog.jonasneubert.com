@@ -1,7 +1,7 @@
 ---
 slug: tap-tap-tap
 date: "2017-02-12"
-published: true
+draft: false
 tags:
 - pycon
 - robotics

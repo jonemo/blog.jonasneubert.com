@@ -1,7 +1,7 @@
 ---
 slug: hello-world
 date: "2011-04-16"
-published: true
+draft: false
 tags: []
 title: Hello World!
 ---

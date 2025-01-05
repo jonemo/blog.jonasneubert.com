@@ -1,7 +1,7 @@
 ---
 slug: what-is-a-programmable-logic-controller
 date: "2019-10-28"
-published: true
+draft: false
 tags:
 - factorytech
 - plc
@@ -37,9 +37,10 @@ It's a stock photo but it contains the important parts:
 A box with a few LEDs and lots of wires connected to it.
 
 {{< figure
-  src="/assets/2019/2019-10-28-this-is-what-a-plc-looks-like.jpg"
-  title="Stock photo of a Programmable Logic Controller (PLC)"
->}}
+src="/assets/2019/2019-10-28-this-is-what-a-plc-looks-like.jpg"
+title="Stock photo of a Programmable Logic Controller (PLC)"
+
+> }}
 
 Those colorful wires connect to the "field devices", a fancy term for sensors and actuators.
 Let's do a quick crash course on field devices!
@@ -63,9 +64,10 @@ Analog I/O represents a continuous physical phenomenon, the electrical signal ne
 In my presentations I use the slide below to illustrate these points.
 
 {{< figure
-  src="/assets/2019/2019-10-28-schematic.png"
-  title="Example schematic of a PLC with six different I/O modules to connect to various types of field device"
->}}
+src="/assets/2019/2019-10-28-schematic.png"
+title="Example schematic of a PLC with six different I/O modules to connect to various types of field device"
+
+> }}
 
 The hypothetical PLC in the example contains six different types of I/O module:
 Digital inputs (abbreviated DI), analog inputs (abbreviated AI), and digital outputs (abbreviated DQ).
@@ -76,9 +78,10 @@ Finally, it's time to talk about what the PLC actuall does.
 Like every computing device in the world, it executes an Input-Process-Output (IPO) cycle.
 
 {{< figure
-  src="/assets/2019/2019-10-28-input-process-output-cycle.png"
-  title="Input-Process-Output. The PLC runs this cycle indefinitely. The second step is the programmable one."
->}}
+src="/assets/2019/2019-10-28-input-process-output-cycle.png"
+title="Input-Process-Output. The PLC runs this cycle indefinitely. The second step is the programmable one."
+
+> }}
 
 First: Inputs.
 Using signal processing electronics, the electrical signals from field devices are read and converted into variables which are stored in a section of memory traditionally called "Process Image In".
@@ -96,11 +99,9 @@ You can even turn a Windows PC into a PLC by installing a "Software PLC".
 I will cover this in more detail in later parts of this series.
 But first, let's look at how PLCs are programmed (spoiler: it's not Python).
 
-
 ---
 
 ###### Footnotes
 
 [^1]: Most conference give you 25 or 30 minutes to speak.
-
 [^2]: If the embedded slide deck below doesn't load, click [this link](https://speakerdeck.com/jonemo/plc-inside-gallery) to see it.

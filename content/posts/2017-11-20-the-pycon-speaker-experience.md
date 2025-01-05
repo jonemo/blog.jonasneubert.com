@@ -1,7 +1,7 @@
 ---
 slug: the-pycon-speaker-experience
 date: "2017-11-20"
-published: true
+draft: false
 tags:
 - pycon
 title: The PyCon Speaker Experience (is phenomenal)

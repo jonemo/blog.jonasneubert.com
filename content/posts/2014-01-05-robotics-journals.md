@@ -1,7 +1,7 @@
 ---
 slug: robotics-journals
 date: "2014-01-05"
-published: true
+draft: false
 tags:
 - robotics
 - gradschool

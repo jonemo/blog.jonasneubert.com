@@ -4,7 +4,7 @@ slug: google-fiber-in-salt-lake-city
 date: "2023-03-05"
 updated_date: "2023-05-01"
 tags:
-published: true
+draft: false
 ---
 
 This blog post is my (not sponsored) writeup of the experience of not getting a Google Fiber internet connection in Salt Lake City.

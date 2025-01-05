@@ -1,7 +1,7 @@
 ---
 slug: whats-in-a-robotics-demo
 date: "2017-03-13"
-published: true
+draft: false
 tags:
 - pycon
 - robotics

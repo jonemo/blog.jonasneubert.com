@@ -1,7 +1,7 @@
 ---
 slug: fluidinfo-api-contest-design-decisions
 date: "2011-04-18"
-published: true
+draft: false
 tags:
 - fluidinfo
 title: 'Fluidinfo API Contest: Design Decisions'

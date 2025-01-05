@@ -1,7 +1,7 @@
 ---
 slug: using-pymodbus-to-communicate-with-a-plc
 date: "2019-11-02"
-published: true
+draft: false
 tags:
 - factorytech
 - plc

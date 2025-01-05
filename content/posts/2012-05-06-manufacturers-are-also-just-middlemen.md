@@ -1,7 +1,7 @@
 ---
 slug: manufacturers-are-also-just-middlemen
 date: "2012-05-06"
-published: true
+draft: false
 tags:
 - digitalmanufacturing
 title: Manufacturers are also just Middle Men

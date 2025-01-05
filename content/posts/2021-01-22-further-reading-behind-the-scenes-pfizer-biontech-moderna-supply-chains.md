@@ -1,7 +1,7 @@
 ---
 slug: further-reading-behind-the-scenes-pfizer-biontech-moderna-supply-chains
 date: "2021-01-22"
-published: true
+draft: false
 tags:
 - vaccines
 title: 'Further Reading: Behind the Scenes of the Pfizer-BioNTech and Moderna Supply

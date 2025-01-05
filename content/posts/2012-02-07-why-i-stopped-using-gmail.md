@@ -1,7 +1,7 @@
 ---
 slug: why-i-stopped-using-gmail
 date: "2012-02-07"
-published: true
+draft: false
 tags: []
 title: Why I stopped using GMail
 ---

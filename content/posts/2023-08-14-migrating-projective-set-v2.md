@@ -3,7 +3,7 @@ title: "Migrating Projective Set from AngularJS v2 to VueJS v3"
 slug: migrating-projective-set-v2
 date: "2023-08-14"
 tags: projective-set
-published: true
+draft: false
 ---
 
 Today I updated [a small web app](https://projectiveset.jonemo.de/) that I created a decade ago and haven't touched since then.[^1]

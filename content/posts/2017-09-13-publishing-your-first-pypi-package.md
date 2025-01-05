@@ -1,7 +1,7 @@
 ---
 slug: publishing-your-first-pypi-package
 date: "2017-09-13"
-published: true
+draft: false
 tags:
 - python
 title: Publishing your First PyPI Package by/for the Absolute Beginner

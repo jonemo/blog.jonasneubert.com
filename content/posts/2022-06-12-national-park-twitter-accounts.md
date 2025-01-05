@@ -1,7 +1,7 @@
 ---
 slug: national-park-twitter-accounts
 date: "2022-06-12"
-published: true
+draft: false
 tags:
 - nationalparks
 title: List of US National Parks Twitter Accounts

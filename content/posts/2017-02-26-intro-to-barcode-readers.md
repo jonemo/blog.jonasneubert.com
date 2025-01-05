@@ -1,7 +1,7 @@
 ---
 slug: intro-to-barcode-readers
 date: "2017-02-26"
-published: true
+draft: false
 tags:
 - pycon
 - robotics

@@ -7,7 +7,7 @@ tags:
  - factorytech
  - python
  - barcodes
-published: true
+draft: false
 ---
 
 Three years ago I published a blog post on [how to _generate_ barcodes using Python]({{< ref "2019-01-23-barcode-generation-python" >}}). It's one of the most visited posts on the blog! Occasionally a reader emails to ask: "But what if I want to _read_/_decode_/_scan_[^1] a barcode, not write it?"

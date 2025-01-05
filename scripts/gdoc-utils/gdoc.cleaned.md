@@ -3,7 +3,7 @@ layout: post
 title: "Exploring the Supply Chain of the Pfizer/BioNTech and Moderna COVID-19 vaccines"
 tags:
  - vaccines
-published: true
+draft: false
 date: January 10, 2021
 ---
 

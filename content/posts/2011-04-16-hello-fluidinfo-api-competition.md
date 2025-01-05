@@ -1,7 +1,7 @@
 ---
 slug: hello-fluidinfo-api-competition
 date: "2011-04-16"
-published: true
+draft: false
 tags:
 - fluidinfo
 title: Hello Fluidinfo API Competition

@@ -1,7 +1,7 @@
 ---
 slug: the-cubelets-arrived
 date: "2011-07-18"
-published: true
+draft: false
 tags:
 - robotics
 title: The Cubelets arrived!

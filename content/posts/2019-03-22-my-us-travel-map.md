@@ -1,7 +1,7 @@
 ---
 slug: my-us-travel-map
 date: "2019-03-22"
-published: true
+draft: false
 tags:
 - travel
 - dataviz

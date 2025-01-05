@@ -1,7 +1,7 @@
 ---
 slug: hiking-in-vall-de-boi
 date: "2018-09-23"
-published: true
+draft: false
 tags:
 - travel
 title: Hiking in Vall de Boí

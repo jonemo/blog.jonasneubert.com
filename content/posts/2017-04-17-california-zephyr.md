@@ -1,7 +1,7 @@
 ---
 slug: california-zephyr
 date: "2017-04-17"
-published: true
+draft: false
 tags:
 - travel
 title: I took a shower on a train and I liked it
