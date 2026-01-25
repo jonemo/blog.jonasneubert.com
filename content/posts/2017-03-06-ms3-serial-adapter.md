@@ -7,7 +7,6 @@ tags:
 - factorytech
 - barcodes
 title: MS3 Adapter for Serial Port and Power
-draft: false
 ---
 
 In last week's post 
