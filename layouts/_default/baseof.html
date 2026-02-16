@@ -21,8 +21,10 @@
     <link rel="icon" type="image/x-icon" href="/favicon.svg" />
 
     <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700"
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -30,6 +32,9 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
 
     <title>{{ .Title }}</title>
+    {{ range .AlternativeOutputFormats -}}
+      <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Site.Title }}" />
+    {{ end -}}
     {{ block "head" . }}{{ end }}
   </head>
 

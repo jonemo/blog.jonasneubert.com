@@ -20,10 +20,20 @@
   table.comparison-table {
     font-size: 0.8em;
   }
-}
 
-@layer utilities {
-  .highlighter {
-    @apply bg-yellow-600 italic;
+  th.comparison-table-symbology {
+    height: 140px;
+    white-space: nowrap;
+  }
+
+  th.comparison-table-symbology > div {
+    transform: translate(15px, 50px) rotate(315deg);
+    width: 30px;
+  }
+  th.comparison-table-symbology > div > span,
+  th.comparison-table-symbology > div > a {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
   }
 }
+
