@@ -13,10 +13,10 @@
 
 ```sh
 yarn install
-yarn build-tw  # creates assets/css/style.css from main.css
+yarn tw-build  # creates assets/css/style.css from main.css
 ```
 
-## Run Hug
+## Run Hugo
 
 Create `/public` directory:
 
