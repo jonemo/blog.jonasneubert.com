@@ -2,7 +2,7 @@
 title: "Migrating Projective Set from AngularJS v2 to VueJS v3"
 slug: migrating-projective-set-v2
 date: "2023-08-14"
-tags: projective-set
+tags: [projective-set]
 draft: false
 ---
 
