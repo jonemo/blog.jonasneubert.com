@@ -28,10 +28,7 @@
 
         {{ if $lastmod }}
           <p>
-            (Updated:
-            <time datetime="{{ $lastmod }}" title="{{ $lastmod }}">
-              {{ $lastmod }} </time
-            >)
+            (Updated: <time datetime="{{ $lastmod }}" title="{{ $lastmod }}">{{ $lastmod }}</time>)
           </p>
         {{ end }}
       </div>

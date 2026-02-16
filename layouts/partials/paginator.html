@@ -31,7 +31,7 @@
           Previous
         </a>
       {{ else }}
-        <span>&laquo; Previous</span>
+        <span class="text-gray-400" aria-disabled="true">&laquo; Previous</span>
       {{ end }}
 
       {{ if $paginator.HasNext }}
@@ -42,7 +42,7 @@
           Next
         </a>
       {{ else }}
-        <span>Next &raquo;</span>
+        <span class="text-gray-400" aria-disabled="true">Next &raquo;</span>
       {{ end }}
 
     </div>

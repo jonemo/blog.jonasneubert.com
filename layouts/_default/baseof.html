@@ -28,8 +28,8 @@
       rel="stylesheet"
     />
 
-    {{ $style := resources.Get "css/style.css" }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}" />
+    {{ $style := resources.Get "css/style.css" | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" />
 
     <title>{{ .Title }}</title>
 
@@ -76,9 +76,10 @@
   </head>
 
   <body>
+    <a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
     <div class="min-h-screen flex flex-col overflow-x-hidden  md:flex-row">
       {{ partial "side-nav.html" . }}
-      <main class="w-full">
+      <main id="main-content" class="w-full">
         {{ block "main" . }}{{ end }}
       </main>
     </div>
