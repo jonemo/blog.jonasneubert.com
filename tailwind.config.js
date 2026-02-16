@@ -17,8 +17,6 @@ module.exports = {
         'Helvetica',
         'sans-serif',
       ],
-
-      monospace: ['Cutive Mono', 'monospace'],
     },
 
     extend: {
