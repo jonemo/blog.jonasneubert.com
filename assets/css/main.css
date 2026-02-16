@@ -35,5 +35,10 @@
     border-bottom: 1px solid #ccc;
     padding: 5px 10px;
   }
+
+  /* Make all tables in prose content horizontally scrollable on overflow */
+  .prose table {
+    @apply block overflow-x-auto;
+  }
 }
 
