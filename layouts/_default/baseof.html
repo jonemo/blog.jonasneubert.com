@@ -79,7 +79,7 @@
     <a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
     <div class="min-h-screen flex flex-col overflow-x-hidden  md:flex-row">
       {{ partial "side-nav.html" . }}
-      <main id="main-content" class="w-full">
+      <main id="main-content" class="w-full min-w-0">
         {{ block "main" . }}{{ end }}
       </main>
     </div>

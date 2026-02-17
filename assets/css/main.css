@@ -39,6 +39,7 @@
   /* Make all tables in prose content horizontally scrollable on overflow */
   .prose table {
     @apply block overflow-x-auto;
+    min-width: 0; /* prevent table min-content width from blowing out the scroll container */
   }
 }
 
