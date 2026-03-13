@@ -43,7 +43,7 @@
     <meta property="og:description" content="{{ $description }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:site_name" content="{{ .Site.Title }}" />
-    {{ $image := .Params.image | default "/favicon-192px.png" }}
+    {{ $image := .Params.image | default "/og-default.png" }}
     {{ if not (hasPrefix $image "http") }}
       {{ $image = printf "%s%s" .Site.BaseURL (strings.TrimPrefix "/" $image) }}
     {{ end }}
