@@ -56,152 +56,153 @@ The closest we have to a standard for the email address string format is a set o
 - [RFC 5322](https://www.rfc-editor.org/rfc/rfc5322) defines the email address format. Wouldn't it be nice if this list ended here?
 - [RFC 5321](https://www.rfc-editor.org/rfc/rfc5321) defines the entire SMTP protocol (for email sending). The protocol defines a slightly stricter grammar for email addresses to which emails can be sent with SMTP.
 - RFCs [6530](https://www.rfc-editor.org/rfc/rfc6530), [6531](https://www.rfc-editor.org/rfc/rfc6531), [6532](https://www.rfc-editor.org/rfc/rfc6532) all have something to say about international email addresses. Where "international" refers to alphabets that go beyond ASCII. And also [emojis](https://mailoji.com).
-- The above RFCs generally say that the part after the "@" must be a valid domain name. [RFC 10356530](https://www.rfc-editor.org/rfc/rfc1035) defines those.
-
-One difference between RFC 5322 and RFC 5321 features in two of Stavros' examples: The former has the concept of parentheses-enclosed comments like `(comment)name@domain.com` or `na(comment)me@domain.com`.
+- The above RFCs generally say that the part after the "@" must be a valid domain name. [RFC 1035](https://www.rfc-editor.org/rfc/rfc1035) defines those.
 
 Separate from RFCs, [the HTML5 standard specifies a regular expression](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/email#validation) with which browsers should validate inputs for `<input type="email" />` form fields.
 
-Some libraries declare that they implement [RFC 5321](https://www.rfc-editor.org/rfc/rfc5321) or [RFC 5322](https://www.rfc-editor.org/rfc/rfc5322) or the HTML5 standard, but most intentionally or unintentionally don't strictly follow either.
+Some libraries declare that they implement [RFC 5321](https://www.rfc-editor.org/rfc/rfc5321) or [RFC 5322](https://www.rfc-editor.org/rfc/rfc5322) or the HTML5 standard, but many intentionally or unintentionally don't strictly follow either.
 
-## Comparison Table
+Stavros examples follow RFC 5322: His examples contain parentheses-enclosed comments like `(comment)name@domain.com` or `na(comment)me@domain.com` and classify these as valid email addresses. This matches RFC 5322 whereas RFC 5321 does not allow for these parentheses comments.
 
-## Summary
+## Results Summary
+
+**Note: Scroll past the tables for the methodology section and brief notes about each of the tested libraries. Go to [the Github repo](https://github.com/jonemo/email-validation-olympics) to see the code or to file a complaint.**
 
 | Library                  | Correct | False Negatives | False Positives |
 | ------------------------ | ------- | --------------- | --------------- |
-| aftership-email-verifier | 22      | 6               | 0               |
-| apache-commons-validator | 22      | 4               | 2               |
-| checkmail                | 25      | 2               | 1               |
-| deep-email-validator     | 15      | 3               | 10              |
-| django-emailvalidator    | 20      | 8               | 0               |
-| egulias-email-validator  | 23      | 2               | 3               |
-| email-addresses          | 25      | 1               | 2               |
-| email-valid-perl         | 24      | 2               | 2               |
-| email-validator          | 18      | 10              | 0               |
-| emailvalidation-dotnet   | 21      | 7               | 0               |
-| hibernate-validator      | 21      | 5               | 2               |
-| joi                      | 19      | 9               | 0               |
-| libvldmail               | 23      | 2               | 3               |
-| mailaddress-dotnet       | 22      | 3               | 3               |
-| mailkit-dotnet           | 25      | 1               | 2               |
-| net-mail                 | 23      | 4               | 1               |
-| php-filter-var           | 18      | 9               | 1               |
-| pyisemail                | 21      | 6               | 1               |
-| python-email-validator   | 22      | 6               | 0               |
-| rust-email-address       | 24      | 3               | 1               |
-| symfony-validator        | 16      | 10              | 2               |
-| truemail                 | 16      | 10              | 2               |
-| valid-email2             | 19      | 7               | 2               |
-| validator-js             | 23      | 5               | 0               |
-| validator-rust           | 17      | 8               | 3               |
-| wordpress-is-email       | 16      | 10              | 2               |
-| zod                      | 16      | 12              | 0               |
+| aftership-email-verifier | 20      | 6               | 0               |
+| apache-commons-validator | 20      | 4               | 2               |
+| checkmail                | 23      | 2               | 1               |
+| deep-email-validator     | 14      | 3               | 9               |
+| django-emailvalidator    | 18      | 8               | 0               |
+| egulias-email-validator  | 21      | 2               | 3               |
+| email-addresses          | 25      | 0               | 1               |
+| email-valid-perl         | 24      | 1               | 1               |
+| email-validator          | 16      | 10              | 0               |
+| emailvalidation-dotnet   | 19      | 7               | 0               |
+| hibernate-validator      | 21      | 4               | 1               |
+| joi                      | 17      | 9               | 0               |
+| libvldmail               | 23      | 1               | 2               |
+| mailaddress-dotnet       | 20      | 3               | 3               |
+| mailkit-dotnet           | 25      | 0               | 1               |
+| net-mail                 | 21      | 4               | 1               |
+| php-filter-var           | 18      | 8               | 0               |
+| pyisemail                | 19      | 6               | 1               |
+| python-email-validator   | 20      | 6               | 0               |
+| rust-email-address       | 22      | 3               | 1               |
+| symfony-validator        | 14      | 10              | 2               |
+| truemail                 | 14      | 10              | 2               |
+| valid-email2             | 19      | 6               | 1               |
+| validator-js             | 21      | 5               | 0               |
+| validator-rust           | 15      | 8               | 3               |
+| wordpress-is-email       | 14      | 10              | 2               |
+| zod                      | 14      | 12              | 0               |
+
+## Detailed Results
 
 ## Expected Valid Emails
 
-- ✓ = correctly accepted
-- ✗ = false negative (incorrectly rejected)
+| ID  | email string                | explanation                                    |
+| --- | --------------------------- | ---------------------------------------------- |
+| v01 | `hi@stavros.io`             | simple test case                               |
+| v02 | `hi+there@stavros.io`       | plus is allowed                                |
+| v03 | `stavros.k@stavros.io`      | dot in local part is valid (separates "atoms") |
+| v04 | `f*uck@stavros.io`          | asterisks are allowed in local part            |
+| v05 | `#$%!^/&@stavros.io`        | all valid characters in local part             |
+| v06 | `(sta)vros@stavros.io`      | (sta) is a comment, valid at beginning         |
+| v07 | `stavros@stavros.io(io)`    | (io) is a comment, valid at end                |
+| v08 | `"hi@you"@stavros.io`       | quoted @ symbol in local part is allowed       |
+| v09 | `"hi you"@stavros.io`       | quoted space in local part is allowed          |
+| v10 | `" "@stavros.io`            | quoted space in local part is allowed          |
+| v11 | `"<\"@\\".!.#%$@stavros.io` | quotes are separated by dots                   |
+| v12 | `cow@[dead::beef]`          | IPv6 domain part                               |
+| v13 | `stavros@io`                | domain part is TLD                             |
+| v14 | `我買@屋企.香港`            | valid Unicode characters                       |
+| v15 | `1@[23456789]`              | [23456789] is a decimal IPv4 address           |
 
-1. `foo@bar.com` - simple test case
-2. `hi@stavros.io`
-3. `hi+there@stavros.io` - plus is allowed
-4. `stavros.k@stavros.io` - dot in local part is valid
-5. `f*uck@stavros.io` - asterisks are allowed in local part
-6. `#$%!^/&@stavros.io`
-7. `(sta)vros@stavros.io` - (sta) is a comment
-8. `stavros@stavros.io(io)` - (io) is a comment
-9. `"hi@you"@stavros.io` - quoted at symbol in local part is allowed
-10. `"hi you"@stavros.io` - quoted space in local part is allowed
-11. `" "@stavros.io` - quoted space in local part is allowed
-12. `"<\"@\\"".!#%$@stavros.io` - quotes are separated by dots
-13. `cow@[dead::beef]` - IPv6 domain part
-14. `stavros@io` - domain part is TLD
-15. `我買@屋企.香港`
-16. `1@[23456789]` - [23456789] is a decimal IPv4 address
+✓ = correctly accepted, ✗ = false negative (incorrectly rejected)
 
-| Library                  | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  | 16  |
-| ------------------------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| aftership-email-verifier | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✓   | ✗   |
-| apache-commons-validator | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✗   |
-| checkmail                | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✗   | ✓   |
-| deep-email-validator     | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✗   |
-| django-emailvalidator    | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✗   | ✗   | ✗   | ✓   | ✗   | ✗   | ✗   |
-| egulias-email-validator  | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✓   |
-| email-addresses          | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✓   |
-| email-valid-perl         | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✗   | ✓   |
-| email-validator          | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   |
-| emailvalidation-dotnet   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   |
-| hibernate-validator      | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✗   |
-| joi                      | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✓   | ✗   |
-| libvldmail               | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✓   |
-| mailaddress-dotnet       | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✓   |
-| mailkit-dotnet           | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✓   |
-| net-mail                 | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✗   |
-| php-filter-var           | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   |
-| pyisemail                | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✗   | ✗   |
-| python-email-validator   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✓   | ✗   |
-| rust-email-address       | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✓   |
-| symfony-validator        | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   |
-| truemail                 | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✓   | ✗   |
-| valid-email2             | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   |
-| validator-js             | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✗   | ✓   | ✗   | ✓   | ✗   |
-| validator-rust           | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✓   | ✓   | ✗   | ✗   |
-| wordpress-is-email       | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   |
-| zod                      | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   |
+| Library                  | v01 | v02 | v03 | v04 | v05 | v06 | v07 | v08 | v09 | v10 | v11 | v12 | v13 | v14 | v15 |
+| ------------------------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| aftership-email-verifier | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✓   | ✗   |
+| apache-commons-validator | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✗   |
+| checkmail                | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✗   | ✓   |
+| deep-email-validator     | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✗   |
+| django-emailvalidator    | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✗   | ✗   | ✗   | ✓   | ✗   | ✗   | ✗   |
+| egulias-email-validator  | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✓   |
+| email-addresses          | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
+| email-valid-perl         | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   |
+| email-validator          | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   |
+| emailvalidation-dotnet   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   |
+| hibernate-validator      | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✗   |
+| joi                      | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✓   | ✗   |
+| libvldmail               | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
+| mailaddress-dotnet       | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✓   |
+| mailkit-dotnet           | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
+| net-mail                 | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✗   |
+| php-filter-var           | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✗   | ✗   | ✓   | ✗   | ✗   | ✗   | ✗   |
+| pyisemail                | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✗   | ✗   |
+| python-email-validator   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✓   | ✗   |
+| rust-email-address       | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✓   |
+| symfony-validator        | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   |
+| truemail                 | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✓   | ✗   |
+| valid-email2             | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   |
+| validator-js             | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✗   | ✓   | ✗   | ✓   | ✗   |
+| validator-rust           | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✓   | ✓   | ✗   | ✗   |
+| wordpress-is-email       | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   |
+| zod                      | ✓   | ✓   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   |
 
-## Expected Invalid Emails
+### Expected Invalid Emails
 
-- ✓ = correctly rejected
-- ✗ = false positive (incorrectly accepted)
+| ID  | (not an) email string     | explanation                                        |
+| --- | ------------------------- | -------------------------------------------------- |
+| i01 | `hi@`                     | missing domain part                                |
+| i02 | `stavros.@stavros.io`     | dot at end of local part (empty atom)              |
+| i03 | `stavros..k@stavros.io`   | two dots in sequence in local part (empty atom)    |
+| i04 | `!#$%&'*(-/=?@stavros.io` | unmatched opening parenthesis (unfinished comment) |
+| i05 | `h(a)i@stavros.io`        | parentheses (comment) in the middle of local part  |
+| i06 | `em@il@stavros.io`        | two @ symbols                                      |
+| i07 | `"<\"@\".!#%$@stavros.io` | unmatched quotation mark (the initial one)         |
+| i08 | `<\"@\\".!#%$@stavros.io` | unmatched quotation mark (the one before `.`)      |
+| i09 | `hi"@"you@stavros.io`     | quoted parts must atoms (dot-separated)            |
+| i10 | `hi\ there@stavros.io`    | spaces must be quoted even if escaped              |
+| i11 | `1@23456789`              | 23456789 is not a valid TLD                        |
 
-1. `f o o@bar.com` - contains spaces
-2. `hi@` - missing domain part
-3. `stavros.@stavros.io` - dot at end of local part is invalid
-4. `stavros..k@stavros.io` - two dots in sequence in local part
-5. `!#$%&'*(-/=?@stavros.io`
-6. `h(a)i@stavros.io` - parentheses in name part
-7. `em@il@stavros.io` - two at symbols
-8. `"<\"@\"".!#%$@stavros.io` - illegal characters
-9. `<\"@\\".!#%$@stavros.io` - illegal characters
-10. `hi"@"you@stavros.io` - the quotes must be dot-separated
-11. `hi\ there@stavros.io` - spaces must be quoted even if escaped
-12. `1@23456789` - 23456789 is not a valid TLD
+✓ = correctly rejected, ✗ = false positive (incorrectly accepted)
 
-| Library                  | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  |
-| ------------------------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| aftership-email-verifier | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
-| apache-commons-validator | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✗   | ✓   |
-| checkmail                | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
-| deep-email-validator     | ✗   | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✓   |
-| django-emailvalidator    | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
-| egulias-email-validator  | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   |
-| email-addresses          | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✗   |
-| email-valid-perl         | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✗   |
-| email-validator          | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
-| emailvalidation-dotnet   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
-| hibernate-validator      | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✗   |
-| joi                      | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
-| libvldmail               | ✓   | ✗   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✗   |
-| mailaddress-dotnet       | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
-| mailkit-dotnet           | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✗   |
-| net-mail                 | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
-| php-filter-var           | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✓   |
-| pyisemail                | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
-| python-email-validator   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
-| rust-email-address       | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
-| symfony-validator        | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
-| truemail                 | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
-| valid-email2             | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✗   | ✓   | ✓   |
-| validator-js             | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
-| validator-rust           | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
-| wordpress-is-email       | ✓   | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
-| zod                      | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
+| Library                  | i01 | i02 | i03 | i04 | i05 | i06 | i07 | i08 | i09 | i10 | i11 |
+| ------------------------ | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| aftership-email-verifier | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
+| apache-commons-validator | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✗   | ✓   |
+| checkmail                | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
+| deep-email-validator     | ✓   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✗   | ✓   |
+| django-emailvalidator    | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
+| egulias-email-validator  | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   | ✓   | ✓   | ✗   | ✗   |
+| email-addresses          | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
+| email-valid-perl         | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
+| email-validator          | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
+| emailvalidation-dotnet   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
+| hibernate-validator      | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
+| joi                      | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
+| libvldmail               | ✗   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
+| mailaddress-dotnet       | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
+| mailkit-dotnet           | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
+| net-mail                 | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
+| php-filter-var           | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
+| pyisemail                | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
+| python-email-validator   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
+| rust-email-address       | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
+| symfony-validator        | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
+| truemail                 | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
+| valid-email2             | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   | ✓   | ✓   |
+| validator-js             | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
+| validator-rust           | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✗   |
+| wordpress-is-email       | ✓   | ✗   | ✗   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
+| zod                      | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   | ✓   |
 
 ## Methodology
 
-You can see the scripts I used for validating Stavros' collection of strings against each library below in the Appendix.
-The test harness and complete scripts are in [this Github repo](https://github.com/jonemo/email-validation-olympics).
+You can see the test harness and complete scripts for each library that I used for validating Stavros' collection of strings in [this Github repo](https://github.com/jonemo/email-validation-olympics).
 Please open a PR there if you see issues with any of the test scripts or to add additional libraries.
 
 Full disclosure: I used Claude Code to write most of the test scripts.
@@ -213,37 +214,6 @@ This way I avoid unintentional transformations of the string by the test harness
 My first version used comma separated values (CSV) files but quickly realized that CSV parsers and strings with quotes and backslash characters don't mix well.
 
 ## The Test Cases
-
-I transcribed the email addresses shown in Stavros' talk, hopefully without typos:
-
-```
-hi@stavros.io
-hi@
-hi+there@stavros.io
-stavros.k@stavros.io
-stavros.@stavros.io
-stavros..k@stavros.io
-!#$%&'*(-/=?@stavros.io
-f*uck@stavros.io
-#$%!^/&@stavros.io
-h(a)i@stavros.io
-(sta)vros@stavros.io
-stavros@stavros.io(io)
-em@il@stavros.io
-"<\"@\"".!#%$@stavros.io
-<\"@\\".!#%$@stavros.io
-"hi@you"@stavros.io
-"hi you"@stavros.io
-" "@stavros.io
-hi"@"you@stavros.io
-"<\"@\\"".!#%$@stavros.io
-hi\ there@stavros.io
-cow@[dead::beef]
-stavros@io
-我買@屋企.香港
-1@23456789
-1@[23456789]
-```
 
 Notes:
 
@@ -1035,3 +1005,9 @@ It's the only library that lets the `hi@` example slip through as valid, somethi
 - [Falsehoods about Email](https://beesbuzz.biz/code/439-Falsehoods-programmers-believe-about-email)
 - [I Knew How to Validate an Email Address Until I Read the RFC](https://haacked.com/archive/2007/08/21/i-knew-how-to-validate-an-email-address-until-i.aspx/)
 - [Your E-Mail Validation Logic is Wrong](https://www.netmeister.org/blog/email.html)
+
+<script>
+document.querySelectorAll('article td').forEach(td => {
+  if (td.textContent.trim() === '✓') td.style.color = 'grey';
+});
+</script>
